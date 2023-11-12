@@ -13,8 +13,9 @@
 			<li>detvisor.pulseweaponry</li>
 		</mods>
 		<packageId>true</packageId>
+		<caseTrue>
 
-		<match Class="PatchOperationSequence">
+		<Operation Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
@@ -270,6 +271,7 @@
 					</caseFalse>
 				</li>
 			</operations>
-		</match>
+		</Operation>
+		</caseTrue>
 	</Operation>
 </Patch>
