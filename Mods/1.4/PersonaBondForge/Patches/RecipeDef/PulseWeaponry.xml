@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ===== Pulse Weaponry ===== -->
 <Patch>
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="XmlExtensions.FindMod">
         <mods>
-            <li>Pulse Weaponry</li>
+            <li>Pyrodes.PulseWeaponry</li>
         </mods>
+        <packageId>true</packageId>
 
         <match Class="PatchOperationSequence">
             <operations>
