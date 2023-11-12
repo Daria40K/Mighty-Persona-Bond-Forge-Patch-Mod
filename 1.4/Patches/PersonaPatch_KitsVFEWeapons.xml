@@ -13,13 +13,13 @@
 	KIT_Gun_PlasmaSniper_Bond = persona plasma sniper
 -->
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Kit's VFE Weapons</li>
-			<li>Kit's VFE Weapons Continued </li>
-		</mods>
-
-		<match Class="PatchOperationSequence">
+	<Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>KIT.VFEWeapons</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+        <Operation Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
@@ -111,11 +111,11 @@
 							</tools>
 							<generateCommonality>0.0</generateCommonality>
 							<weaponTags>
-								<li>CryptoHeavyMelee</li>
+								<li>CryptoLightMelee</li>
 							</weaponTags>
 							<modExtensions>
 								<li Class="VFECore.ThingDefExtension">
-									<usableWithShields>false</usableWithShields>
+									<usableWithShields>true</usableWithShields>
 								</li>
 							</modExtensions>
 						</ThingDef>
@@ -581,6 +581,7 @@
 					</caseFalse>
 				</li>
 			</operations>
-		</match>
+		</Operation>
+	</caseTrue>
 	</Operation>
 </Patch>
