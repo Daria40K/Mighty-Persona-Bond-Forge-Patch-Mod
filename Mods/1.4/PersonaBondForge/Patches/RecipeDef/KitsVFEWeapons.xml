@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ===== Kit's VFE Weapons ===== -->
 <Patch>
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="XmlExtensions.FindMod">
         <mods>
-            <li>Kit's VFE Weapons</li>
-            <li>Kit's VFE Weapons Continued </li>
+            <li>KIT.VFEWeapons</li>
         </mods>
-
-        <match Class="PatchOperationSequence">
+        <packageId>true</packageId>
+        <caseTrue>
+        <Operation Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs</xpath>
@@ -279,6 +279,7 @@
                     </match>
                 </li>
             </operations>
-        </match>
+        </Operation>
+        </caseTrue>
     </Operation>
 </Patch>
