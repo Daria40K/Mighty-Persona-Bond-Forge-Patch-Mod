@@ -1352,8 +1352,9 @@
     <!-- Kit's VFE Weapons -->
     <Operation Class="XmlExtensions.FindMod">
         <mods>
-            <li>Kit's VFE Weapons</li>
+            <li>KIT.VFEWeapons</li>
         </mods>
+        <packageId>true</packageId>
         <caseTrue>
             <Operation Class="XmlExtensions.PatchOperationInsert">
                 <xpath>Defs/XmlExtensions.SettingsMenuDef[modId="Daria40K.MightyPersonaBondForgePatch"]/settings/li[@Class="XmlExtensions.Setting.ResetSettings"]</xpath>
