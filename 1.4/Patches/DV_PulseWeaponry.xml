@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== DetVisor's Pulse Weaponry =====
+
+    == Range
+    DV_PulseSMG_Bond = persona pulse SMG
+    DV_PulseRifle_Bond = persona pulse rifle
+    DV_PulseSuppressor_Bond = persona pulse suppressor
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>detvisor.pulseweaponry</li>
+		</mods>
+		<packageId>true</packageId>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<!-- ===== Range ===== -->
+						<!-- DV_PulseSMG_Bond -->
+						<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun">
+							<techLevel>Spacer</techLevel>
+							<defName>DV_PulseSMG_Bond</defName>
+							<label>persona pulse SMG</label>
+							<description>A portable pulse-energy submachine gun. It fires bursts of pulse plugs with high accuracy which disintegrate upon impact, releasing all of their kinetic energy against the target and stopping them in their tracks. \n\nThese deadly weapons are often  by urbworld peacekeepers and private military companies alike.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+							<graphicData>
+								<texPath>Things/WeaponRanged/PulseSMG</texPath>
+								<drawSize>1.05</drawSize>
+								<graphicClass>Graphic_Single</graphicClass>
+								<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+							</graphicData>
+							<soundInteract>Interact_Rifle</soundInteract>
+							<statBases>
+								<Mass>5.2</Mass>
+								<AccuracyTouch>0.78</AccuracyTouch>
+								<AccuracyShort>0.9</AccuracyShort>
+								<AccuracyMedium>0.85</AccuracyMedium>
+								<AccuracyLong>0.71</AccuracyLong>
+								<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+							</statBases>
+							<weaponTags>
+								<li>SpacerGun</li>
+							</weaponTags>
+							<equippedStatOffsets>
+								<MoveSpeed>0.15</MoveSpeed>
+							</equippedStatOffsets>
+							<tradeTags>
+								<li>WeaponRanged</li>
+							</tradeTags>
+							<weaponClasses>
+								<li>RangedLight</li>
+							</weaponClasses>
+							<verbs>
+								<li>
+									<verbClass>Verb_Shoot</verbClass>
+									<label>burst</label>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>PulseBullet_Bond</defaultProjectile>
+									<warmupTime>1.05</warmupTime>
+									<range>24.5</range>
+									<burstShotCount>3</burstShotCount>
+									<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+									<soundCast>Shot_PulseLight</soundCast>
+									<soundCastTail>GunTail_Medium</soundCastTail>
+									<muzzleFlashScale>9</muzzleFlashScale>
+								</li>
+							</verbs>
+							<tools>
+								<li>
+									<label>handle</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>10</power>
+									<cooldownTime>1.75</cooldownTime>
+								</li>
+								<li>
+									<label>barrel</label>
+									<capacities>
+										<li>Blunt</li>
+										<li>Poke</li>
+									</capacities>
+									<power>10</power>
+									<cooldownTime>1.75</cooldownTime>
+								</li>
+							</tools>
+						</ThingDef>
+
+						<!-- DV_PulseRifle_Bond -->
+						<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun">
+							<techLevel>Spacer</techLevel>
+							<defName>DV_PulseRifle_Bond</defName>
+							<label>persona pulse rifle</label>
+							<description>A complex and deadly pulse-energy assault rifle. It fires powerful pulse plugs with high accuracy which disintegrate upon impact, releasing all of their kinetic energy against the target and stopping them in their tracks. Additionally, the pulse rifle is capable of releasing a sphere of volatile electro-pulse energy which can stun and damage electronics. \n\nWeapons like these are utilized by mega-corp militias to silence protests and rebellions, or to conquer planets for their own gains.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+							<graphicData>
+								<texPath>Things/WeaponRanged/PulseRifle</texPath>
+								<drawSize>1.05</drawSize>
+								<graphicClass>Graphic_Single</graphicClass>
+								<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+							</graphicData>
+							<soundInteract>Interact_Rifle</soundInteract>
+							<statBases>
+								<Mass>5.2</Mass>
+								<AccuracyTouch>0.76</AccuracyTouch>
+								<AccuracyShort>0.85</AccuracyShort>
+								<AccuracyMedium>0.93</AccuracyMedium>
+								<AccuracyLong>0.65</AccuracyLong>
+								<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+							</statBases>
+							<weaponTags>
+								<li>SpacerGun</li>
+							</weaponTags>
+							<tradeTags>
+								<li>WeaponRanged</li>
+							</tradeTags>
+							<weaponClasses>
+								<li>RangedLight</li>
+							</weaponClasses>
+							<verbs>
+								<li>
+									<verbClass>Verb_Shoot</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>PulseBullet_Bond</defaultProjectile>
+									<warmupTime>1.1</warmupTime>
+									<range>29.5</range>
+									<burstShotCount>7</burstShotCount>
+									<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+									<soundCast>Shot_PulseMedium</soundCast>
+									<soundCastTail>GunTail_Medium</soundCastTail>
+									<muzzleFlashScale>9</muzzleFlashScale>
+								</li>
+							</verbs>
+							<tools>
+								<li>
+									<label>stock</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>10</power>
+									<cooldownTime>1.8</cooldownTime>
+								</li>
+								<li>
+									<label>barrel</label>
+									<capacities>
+										<li>Blunt</li>
+										<li>Poke</li>
+									</capacities>
+									<power>10</power>
+									<cooldownTime>1.6</cooldownTime>
+								</li>
+							</tools>
+							<comps>
+								<li Class="AthenaFramework.CompProperties_EquippableAbility">
+									<ability>PulseCharge_Overload</ability>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<!-- DV_PulseSuppressor_Bond -->
+						<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun">
+							<defName>DV_PulseSuppressor_Bond</defName>
+							<label>persona pulse rifle</label>
+							<description>A more refined and powerful iteration of the charged-shot assault rifle in use by some early glitterworld special forces. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+							<techLevel>Spacer</techLevel>
+							<graphicData>
+								<texPath>Things/Item/Equipment/WeaponRanged/PulseRifle</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<soundInteract>Interact_ChargeRifle</soundInteract>
+							<statBases>
+								<Mass>5</Mass>
+								<AccuracyTouch>0.88</AccuracyTouch>
+								<AccuracyShort>0.935</AccuracyShort>
+								<AccuracyMedium>0.99</AccuracyMedium>
+								<AccuracyLong>0.935</AccuracyLong>
+								<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+							</statBases>
+							<weaponTags>
+								<li>SpacerGun</li>
+							</weaponTags>
+							<weaponClasses>
+								<li>RangedHeavy</li>
+							</weaponClasses>
+							<verbs>
+								<li>
+									<verbClass>Verb_Shoot</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Bullet_PulseRifle_Bond</defaultProjectile>
+									<warmupTime>1.7</warmupTime>
+									<range>30</range>
+									<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+									<burstShotCount>2</burstShotCount>
+									<soundCast>ChargeLance_Fire</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<muzzleFlashScale>9</muzzleFlashScale>
+								</li>
+							</verbs>
+							<tools>
+								<li>
+									<label>stock</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>9.9</power>
+									<cooldownTime>1.7</cooldownTime>
+								</li>
+								<li>
+									<label>barrel</label>
+									<capacities>
+										<li>Blunt</li>
+										<li>Poke</li>
+									</capacities>
+									<power>9.9</power>
+									<cooldownTime>1.7</cooldownTime>
+								</li>
+							</tools>
+						</ThingDef>
+						
+						<!-- Bullets -->
+						<ThingDef ParentName="BaseBullet">
+							<defName>DV_PulseBullet</defName>
+							<label>Pulse projectile</label>
+							<graphicData>
+								<texPath>Things/PulseBullet</texPath>
+								<shaderType>TransparentPostLight</shaderType>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<projectile>
+								<damageDef>Bullet</damageDef>
+								<damageAmountBase>20</damageAmountBase>
+								<armorPenetrationBase>0.1</armorPenetrationBase>
+								<stoppingPower>4.2</stoppingPower>
+								<speed>85</speed>
+							</projectile>
+							<comps>
+								<li Class="AthenaFramework.CompProperties_ProjectileImpactEffect">
+									<mote>PulseBulletImpact</mote>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="XmlExtensions.OptionalPatch" MayRequire="imranfish.xmlextensions">
+					<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+					<key>Daria40K_MightyPersonaBondForgePatch_DV_PulseWeaponry</key>
+					<defaultValue>true</defaultValue>
+					<caseFalse>
+						<!-- DV_PulseSMG_Bond -->
+						<Operation Class="XmlExtensions.PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="DV_PulseSMG_Bond"]</xpath>
+						</Operation>
+
+						<!-- DV_PulseRifle_Bond -->
+						<Operation Class="XmlExtensions.PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="DV_PulseRifle_Bond"]</xpath>
+						</Operation>
+
+						<!-- DV_PulseSuppressor_Bond -->
+						<Operation Class="XmlExtensions.PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="DV_PulseSuppressor_Bond"]</xpath>
+						</Operation>
+
+						<Operation Class="XmlExtensions.PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="DV_PulseBullet"]</xpath>
+						</Operation>
+					</caseFalse>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
