@@ -163,7 +163,7 @@
 						<!-- DV_PulseSuppressor_Bond -->
 						<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun">
 							<defName>DV_PulseSuppressor_Bond</defName>
-							<label>persona pulse rifle</label>
+							<label>persona pulse suppressor</label>
 							<description>A more refined and powerful iteration of the charged-shot assault rifle in use by some early glitterworld special forces. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 							<techLevel>Spacer</techLevel>
 							<graphicData>
@@ -189,7 +189,7 @@
 								<li>
 									<verbClass>Verb_Shoot</verbClass>
 									<hasStandardCommand>true</hasStandardCommand>
-									<defaultProjectile>Bullet_PulseRifle_Bond</defaultProjectile>
+									<defaultProjectile>PulseBullet_Bond</defaultProjectile>
 									<warmupTime>1.7</warmupTime>
 									<range>30</range>
 									<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
@@ -222,7 +222,7 @@
 						
 						<!-- Bullets -->
 						<ThingDef ParentName="BaseBullet">
-							<defName>DV_PulseBullet</defName>
+							<defName>PulseBullet_Bond</defName>
 							<label>Pulse projectile</label>
 							<graphicData>
 								<texPath>Things/PulseBullet</texPath>
@@ -266,7 +266,7 @@
 						</Operation>
 
 						<Operation Class="XmlExtensions.PatchOperationRemove">
-							<xpath>Defs/ThingDef[defName="DV_PulseBullet"]</xpath>
+							<xpath>Defs/ThingDef[defName="PulseBullet_Bond"]</xpath>
 						</Operation>
 					</caseFalse>
 				</li>
