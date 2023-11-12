@@ -6,8 +6,8 @@
             <li>Pyrodes.PulseWeaponry</li>
         </mods>
         <packageId>true</packageId>
-
-        <match Class="PatchOperationSequence">
+        <caseTrue>
+        <Operation Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs</xpath>
@@ -134,6 +134,7 @@
                     </match>
                 </li>
             </operations>
-        </match>
+        </Operation>
+        </caseTrue>
     </Operation>
 </Patch>
