@@ -1991,11 +1991,12 @@
         </caseTrue>
     </Operation>
 
-    <!-- Pulse Weaponry -->
+    <!-- Pulse Weaponry (Pyrodes) -->
     <Operation Class="XmlExtensions.FindMod">
         <mods>
-            <li>Pulse Weaponry</li>
+            <li>Pyrodes.PulseWeaponry</li>
         </mods>
+        <packageId>true</packageId>
         <caseTrue>
             <Operation Class="XmlExtensions.PatchOperationInsert">
                 <xpath>Defs/XmlExtensions.SettingsMenuDef[modId="Daria40K.MightyPersonaBondForgePatch"]/settings/li[@Class="XmlExtensions.Setting.ResetSettings"]</xpath>
@@ -2004,6 +2005,27 @@
                     <li Class="XmlExtensions.Setting.Checkbox">
                         <key>Daria40K_MightyPersonaBondForgePatch_PulseWeaponry</key>
                         <label>Pulse Weaponry</label>
+                        <defaultValue>true</defaultValue>
+                    </li>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <!-- Pulse Weaponry (DetVisor) -->
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>detvisor.pulseweaponry</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationInsert">
+                <xpath>Defs/XmlExtensions.SettingsMenuDef[modId="Daria40K.MightyPersonaBondForgePatch"]/settings/li[@Class="XmlExtensions.Setting.ResetSettings"]</xpath>
+                <order>Prepend</order>
+                <value>
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <key>Daria40K_MightyPersonaBondForgePatch_DV_PulseWeaponry</key>
+                        <label>DetVisor's Pulse Weaponry</label>
                         <defaultValue>true</defaultValue>
                     </li>
                 </value>
