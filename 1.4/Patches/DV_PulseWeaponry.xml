@@ -59,7 +59,7 @@
 									<verbClass>Verb_Shoot</verbClass>
 									<label>burst</label>
 									<hasStandardCommand>true</hasStandardCommand>
-									<defaultProjectile>PulseBullet_Bond</defaultProjectile>
+									<defaultProjectile>DV_PulseBullet_Bond</defaultProjectile>
 									<warmupTime>1.05</warmupTime>
 									<range>24.5</range>
 									<burstShotCount>3</burstShotCount>
@@ -124,7 +124,7 @@
 								<li>
 									<verbClass>Verb_Shoot</verbClass>
 									<hasStandardCommand>true</hasStandardCommand>
-									<defaultProjectile>PulseBullet_Bond</defaultProjectile>
+									<defaultProjectile>DV_PulseBullet_Bond</defaultProjectile>
 									<warmupTime>1.1</warmupTime>
 									<range>29.5</range>
 									<burstShotCount>7</burstShotCount>
@@ -167,7 +167,7 @@
 							<description>A more refined and powerful iteration of the charged-shot assault rifle in use by some early glitterworld special forces. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 							<techLevel>Spacer</techLevel>
 							<graphicData>
-								<texPath>Things/Item/Equipment/WeaponRanged/PulseRifle</texPath>
+								<texPath>Things/WeaponRanged/PulseSuppressor</texPath>
 								<graphicClass>Graphic_Single</graphicClass>
 							</graphicData>
 							<soundInteract>Interact_ChargeRifle</soundInteract>
@@ -189,7 +189,7 @@
 								<li>
 									<verbClass>Verb_Shoot</verbClass>
 									<hasStandardCommand>true</hasStandardCommand>
-									<defaultProjectile>PulseBullet_Bond</defaultProjectile>
+									<defaultProjectile>DV_PulseBullet_Bond</defaultProjectile>
 									<warmupTime>1.7</warmupTime>
 									<range>30</range>
 									<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
@@ -221,8 +221,8 @@
 						</ThingDef>
 						
 						<!-- Bullets -->
-						<ThingDef ParentName="BaseBullet">
-							<defName>PulseBullet_Bond</defName>
+						<ThingDef ParentName="MPBFPM_BaseBullet">
+							<defName>DV_PulseBullet_Bond</defName>
 							<label>Pulse projectile</label>
 							<graphicData>
 								<texPath>Things/PulseBullet</texPath>
@@ -266,7 +266,7 @@
 						</Operation>
 
 						<Operation Class="XmlExtensions.PatchOperationRemove">
-							<xpath>Defs/ThingDef[defName="PulseBullet_Bond"]</xpath>
+							<xpath>Defs/ThingDef[defName="DV_PulseBullet_Bond"]</xpath>
 						</Operation>
 					</caseFalse>
 				</li>
