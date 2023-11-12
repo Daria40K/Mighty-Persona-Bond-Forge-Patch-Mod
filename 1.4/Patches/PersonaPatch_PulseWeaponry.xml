@@ -8,10 +8,11 @@
     Gun_PulseRifle_Bond = persona pulse rifle
 -->
 <Patch>
-    <Operation Class="PatchOperationFindMod">
+    <Operation Class="XmlExtensions.FindMod">
         <mods>
-            <li>Pulse Weaponry</li>
+            <li>Pyrodes.PulseWeaponry</li>
         </mods>
+        <packageId>true</packageId>
 
         <match Class="PatchOperationSequence">
             <operations>
