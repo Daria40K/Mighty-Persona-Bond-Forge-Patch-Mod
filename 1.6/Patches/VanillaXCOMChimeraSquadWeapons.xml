@@ -1,0 +1,406 @@
+<?xml version="1.0" ?>
+<!--
+	===== Vanilla XCOM Chimera Squad Weapons =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>flangopink.vanillaxcomcsweapons</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Name="MPBFPM_XCOMCS_BluntMeleeBase" ParentName="MPBFPM_BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+						<rotatable>true</rotatable>
+						<graphicData>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<possessionCount>1</possessionCount>
+						<techLevel>Spacer</techLevel>
+						<weaponClasses>
+							<li>MeleeBlunt</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>SpacerMelee</li>
+							<li>UltratechMelee</li>
+						</weaponTags>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_BluntMeleeBase" Name="XCOMCS_Melee_ShockMace_Bond" Abstract="True">
+						<label>persona chimera shock mace</label>
+						<description>A spacer-tech mace for delivering bone-shattering blows amplified by a built-in shock generator.\n\nEffective against organic and robotic targets.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Weapons/Chimera_Melee_ShockMace</texPath>
+							<drawSize>0.95</drawSize>
+						</graphicData>
+						<uiIconScale>1.2</uiIconScale>
+						<statBases>
+							<Mass>2.5</Mass>
+						</statBases>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>13.162</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>head</label>
+								<labelUsedInLogging>false</labelUsedInLogging>
+								<capacities>
+									<li>XCOMCS_BluntShockEffect</li>
+								</capacities>
+								<power>18.873</power>
+								<cooldownTime>1.7</cooldownTime>
+								<extraMeleeDamages>
+									<li>
+										<def>Burn</def>
+										<amount>6</amount>
+									</li>
+									<li>
+										<def>XCOMCS_DamageBluescreen</def>
+										<amount>6</amount>
+									</li>
+									<li>
+										<def>EMP</def>
+										<amount>6</amount>
+									</li>
+								</extraMeleeDamages>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_BluntMeleeBase" Name="XCOMCS_Melee_Sledgemace_Bond" Abstract="True">
+						<label>persona chimera sledgemace</label>
+						<description>A massive two-handed spacer-tech mace for dealing devatating blows and demolishing structures.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Weapons/Chimera_Melee_Sledgemace</texPath>
+							<drawSize>1.05</drawSize>
+						</graphicData>
+						<statBases>
+							<Mass>8</Mass>
+						</statBases>
+						<relicChance>2</relicChance>
+						<equippedAngleOffset>-25</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>15.464</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>head</label>
+								<labelUsedInLogging>false</labelUsedInLogging>
+								<capacities>
+									<li>XCOMCS_Demolish</li>
+								</capacities>
+								<power>33.292</power>
+								<cooldownTime>2.55</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="MPBFPM_XCOMCS_GunBase" Abstract="True">
+						<rotatable>true</rotatable>
+						<graphicData>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.15</drawSize>
+						</graphicData>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<techLevel>Spacer</techLevel>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<tools>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_GunBase" Name="XCOMCS_Gun_Rifle_Bond" Abstract="True">
+						<label>persona chimera rifle</label>
+						<description>A reliable and versatile magnetic rifle with high velocity rounds and improved armor penetration compared to conventional rifles, perfect for mid-range engagements.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<weaponClasses>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<graphicData>
+							<texPath>Weapons/Chimera_Rifle</texPath>
+							<drawSize>1.2</drawSize>
+						</graphicData>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>XCOMCS_Bullet_Rifle_Bond</defaultProjectile>
+								<soundCast>Chimera_Rifle</soundCast>
+								<soundCastTail>GunTail_Light</soundCastTail>
+								<range>22.9</range>
+								<warmupTime>1.5</warmupTime>
+								<burstShotCount>3</burstShotCount>
+								<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+							</li>
+						</verbs>
+						<statBases>
+							<Mass>5.5</Mass>
+							<AccuracyTouch>0.726</AccuracyTouch>
+							<AccuracyShort>0.871</AccuracyShort>
+							<AccuracyMedium>0.726</AccuracyMedium>
+							<AccuracyLong>0.557</AccuracyLong>
+							<RangedWeapon_Cooldown>1.517</RangedWeapon_Cooldown>
+						</statBases>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_GunBase" Name="XCOMCS_Gun_Pistol_Bond" Abstract="True">
+						<label>persona chimera pistol</label>
+						<description>A worthy backup for any soldier. This sidearm utilizes magnetic propulsion for extra punch and increased stopping power.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<weaponClasses>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<graphicData>
+							<texPath>Weapons/Chimera_Pistol</texPath>
+						</graphicData>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>XCOMCS_Bullet_Pistol_Bond</defaultProjectile>
+								<soundCast>Chimera_Pistol</soundCast>
+								<soundCastTail>GunTail_Light</soundCastTail>
+								<range>19.9</range>
+								<warmupTime>1.1</warmupTime>
+							</li>
+						</verbs>
+						<statBases>
+							<Mass>3</Mass>
+							<AccuracyTouch>0.992</AccuracyTouch>
+							<AccuracyShort>0.944</AccuracyShort>
+							<AccuracyMedium>0.678</AccuracyMedium>
+							<AccuracyLong>0.46</AccuracyLong>
+							<RangedWeapon_Cooldown>1.265</RangedWeapon_Cooldown>
+						</statBases>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_GunBase" Name="XCOMCS_Gun_Shotgun_Bond" Abstract="True">
+						<label>persona chimera shotgun</label>
+						<description>This magnetic shotgun delivers a tighter spread and increased range compared to conventional models. Excellent for dealing with heavily armored targets at close range.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<weaponClasses>
+							<li>ShortShots</li>
+						</weaponClasses>
+						<graphicData>
+							<texPath>Weapons/Chimera_Shotgun</texPath>
+							<drawSize>1.1</drawSize>
+						</graphicData>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>XCOMCS_Bullet_Shotgun_Bond</defaultProjectile>
+								<soundCast>Chimera_Shotgun</soundCast>
+								<soundCastTail>GunTail_Light</soundCastTail>
+								<range>19.9</range>
+								<warmupTime>1.1</warmupTime>
+							</li>
+						</verbs>
+						<statBases>
+							<Mass>4</Mass>
+							<AccuracyTouch>1.113</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.75</AccuracyMedium>
+							<AccuracyLong>0.484</AccuracyLong>
+							<RangedWeapon_Cooldown>1.445</RangedWeapon_Cooldown>
+						</statBases>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_GunBase" Name="XCOMCS_Gun_SMG_Bond" Abstract="True">
+						<label>persona chimera SMG</label>
+						<description>A lightweight and maneuverable SMG with magnetic acceleration. Ideal for soldiers who like to get up close and personal.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<weaponClasses>
+							<li>ShortShots</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<graphicData>
+							<texPath>Weapons/Chimera_SMG</texPath>
+							<drawSize>1.05</drawSize>
+						</graphicData>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>XCOMCS_Bullet_SMG_Bond</defaultProjectile>
+								<soundCast>Chimera_SMG</soundCast>
+								<soundCastTail>GunTail_Light</soundCastTail>
+								<warmupTime>1.2</warmupTime>
+								<range>20.9</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+							</li>
+						</verbs>
+						<statBases>
+							<Mass>5</Mass>
+							<AccuracyTouch>1.089</AccuracyTouch>
+							<AccuracyShort>0.895</AccuracyShort>
+							<AccuracyMedium>0.484</AccuracyMedium>
+							<AccuracyLong>0.339</AccuracyLong>
+							<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+						</statBases>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_XCOMCS_GunBase" Name="XCOMCS_Gun_SniperRifle_Bond" Abstract="True">
+						<label>persona chimera marksman rifle</label>
+						<description>The magnetic marksman rifle offers superior precision at longer ranges compared to conventional models. Perfect for picking off high-value targets from a distance.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<weaponTags>
+							<li>SniperRifle</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>LongShots</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<graphicData>
+							<texPath>Weapons/Chimera_Sniper</texPath>
+							<drawSize>1.2</drawSize>
+						</graphicData>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>XCOMCS_Bullet_SniperRifle_Bond</defaultProjectile>
+								<soundCast>Chimera_Sniper</soundCast>
+								<soundCastTail>GunTail_Light</soundCastTail>
+								<range>24.9</range>
+								<warmupTime>1.25</warmupTime>
+							</li>
+						</verbs>
+						<statBases>
+							<Mass>5.5</Mass>
+							<AccuracyTouch>0.508</AccuracyTouch>
+							<AccuracyShort>0.581</AccuracyShort>
+							<AccuracyMedium>0.871</AccuracyMedium>
+							<AccuracyLong>0.786</AccuracyLong>
+							<RangedWeapon_Cooldown>1.626</RangedWeapon_Cooldown>
+						</statBases>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="XCOMCS_BulletBase" Abstract="True">
+						<graphicData>
+							<texPath>Projectiles/Bullet_Chimera_Small</texPath>
+							<shaderType>TransparentPostLight</shaderType>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="XCOMCS_BulletBase" Name="XCOMCS_Bullet_Rifle_Bond" Abstract="True">
+						<label>chimera rifle shot</label>
+						<projectile>
+							<damageAmountBase>18</damageAmountBase>
+							<armorPenetrationBase>0.32</armorPenetrationBase>
+							<stoppingPower>1</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="XCOMCS_BulletBase" Name="XCOMCS_Bullet_Pistol_Bond" Abstract="True">
+						<label>chimera pistol shot</label>
+						<projectile>
+							<damageAmountBase>21</damageAmountBase>
+							<armorPenetrationBase>0.28</armorPenetrationBase>
+							<stoppingPower>0.75</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="XCOMCS_BulletBase" Name="XCOMCS_Bullet_Shotgun_Bond" Abstract="True">
+						<label>chimera shotgun shot</label>
+						<graphicData>
+							<texPath>Projectiles/Bullet_Chimera_Shotgun</texPath>
+						</graphicData>
+						<projectile>
+							<damageAmountBase>33</damageAmountBase>
+							<armorPenetrationBase>0.38</armorPenetrationBase>
+							<stoppingPower>2.5</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="XCOMCS_BulletBase" Name="XCOMCS_Bullet_SMG_Bond" Abstract="True">
+						<label>chimera SMG shot</label>
+						<projectile>
+							<damageAmountBase>15</damageAmountBase>
+							<speed>70</speed>
+							<stoppingPower>1</stoppingPower>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="XCOMCS_BulletBase" Name="XCOMCS_Bullet_SniperRifle_Bond" Abstract="True">
+						<label>chimera marksman rifle shot</label>
+						<projectile>
+							<damageAmountBase>27</damageAmountBase>
+							<armorPenetrationBase>0.40</armorPenetrationBase>
+							<stoppingPower>2.25</stoppingPower>
+							<speed>90</speed>
+						</projectile>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_VanillaXCOMChimeraSquadWeapons</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="XCOMCS_Melee_ShockMace_Bond">
+								<defName>XCOMCS_Melee_ShockMace_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Melee_Sledgemace_Bond">
+								<defName>XCOMCS_Melee_Sledgemace_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Gun_Rifle_Bond">
+								<defName>XCOMCS_Gun_Rifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Gun_Pistol_Bond">
+								<defName>XCOMCS_Gun_Pistol_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Gun_Shotgun_Bond">
+								<defName>XCOMCS_Gun_Shotgun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Gun_SMG_Bond">
+								<defName>XCOMCS_Gun_SMG_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Gun_SniperRifle_Bond">
+								<defName>XCOMCS_Gun_SniperRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Bullet_Rifle_Bond">
+								<defName>XCOMCS_Bullet_Rifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Bullet_Pistol_Bond">
+								<defName>XCOMCS_Bullet_Pistol_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Bullet_Shotgun_Bond">
+								<defName>XCOMCS_Bullet_Shotgun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Bullet_SMG_Bond">
+								<defName>XCOMCS_Bullet_SMG_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="XCOMCS_Bullet_SniperRifle_Bond">
+								<defName>XCOMCS_Bullet_SniperRifle_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
