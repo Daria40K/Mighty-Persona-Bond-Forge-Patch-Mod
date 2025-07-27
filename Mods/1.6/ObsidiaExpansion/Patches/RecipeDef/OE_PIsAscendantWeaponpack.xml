@@ -1,0 +1,683 @@
+<?xml version="1.0" ?>
+<!--
+	===== PI's Ascendant Weapon pack =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>pi.ascendantweapons</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_AdvancedChargeRifle_Bond" Abstract="True">
+						<label>bond advanced charge rifle</label>
+						<description>Bond an advanced charge rifle.</description>
+						<jobString>Bonding a advanced charge rifle.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT1</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_AdvancedChargeRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_AdvancedChargeRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_AdvancedChargeRifle_Bond>1</Gun_AdvancedChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_AdvancedChargeRifle_Bond_Reset" Abstract="True">
+						<label>Reset advanced charge rifle</label>
+						<description>Reset a advanced charge rifle.</description>
+						<jobString>Resetting a advanced charge rifle.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT1</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_AdvancedChargeRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_AdvancedChargeRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_AdvancedChargeRifle_Bond>1</Gun_AdvancedChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_AdvancedChargeLance_Bond" Abstract="True">
+						<label>bond advanced charge lance</label>
+						<description>Bond an advanced charge lance.</description>
+						<jobString>Bonding a advanced charge lance.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT1</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_AdvancedChargeLance</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_AdvancedChargeLance</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_AdvancedChargeLance_Bond>1</Gun_AdvancedChargeLance_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_AdvancedChargeLance_Bond_Reset" Abstract="True">
+						<label>Reset advanced charge lance</label>
+						<description>Reset a advanced charge lance.</description>
+						<jobString>Resetting a advanced charge lance.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT1</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_AdvancedChargeLance_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_AdvancedChargeLance_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_AdvancedChargeLance_Bond>1</Gun_AdvancedChargeLance_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_GlitterBlasterRifle_Bond" Abstract="True">
+						<label>bond glitter blaster rifle</label>
+						<description>Bond an glitter blaster rifle.</description>
+						<jobString>Bonding a glitter blaster rifle.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterBlasterRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterBlasterRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterBlasterRifle_Bond>1</Gun_GlitterBlasterRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_GlitterBlasterRifle_Bond_Reset" Abstract="True">
+						<label>Reset glitter blaster rifle</label>
+						<description>Reset a glitter blaster rifle.</description>
+						<jobString>Resetting a glitter blaster rifle.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterBlasterRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterBlasterRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterBlasterRifle_Bond>1</Gun_GlitterBlasterRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_GlitterMinigun_Bond" Abstract="True">
+						<label>bond glitter minigun</label>
+						<description>Bond an glitter minigun.</description>
+						<jobString>Bonding a glitter minigun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterMinigun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterMinigun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterMinigun_Bond>1</Gun_GlitterMinigun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_GlitterMinigun_Bond_Reset" Abstract="True">
+						<label>Reset glitter minigun</label>
+						<description>Reset a glitter minigun.</description>
+						<jobString>Resetting a glitter minigun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterMinigun_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterMinigun_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterMinigun_Bond>1</Gun_GlitterMinigun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_GlitterLance_Bond" Abstract="True">
+						<label>bond glitter lance</label>
+						<description>Bond an glitter lance.</description>
+						<jobString>Bonding a glitter lance.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterLance</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterLance</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterLance_Bond>1</Gun_GlitterLance_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_GlitterLance_Bond_Reset" Abstract="True">
+						<label>Reset glitter lance</label>
+						<description>Reset a glitter lance.</description>
+						<jobString>Resetting a glitter lance.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterLance_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterLance_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterLance_Bond>1</Gun_GlitterLance_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_GlitterTacticalShotgun_Bond" Abstract="True">
+						<label>bond glitter tactical shotgun</label>
+						<description>Bond an glitter tactical shotgun.</description>
+						<jobString>Bonding a glitter tactical shotgun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterTacticalShotgun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterTacticalShotgun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterTacticalShotgun_Bond>1</Gun_GlitterTacticalShotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_GlitterTacticalShotgun_Bond_Reset" Abstract="True">
+						<label>Reset glitter tactical shotgun</label>
+						<description>Reset a glitter tactical shotgun.</description>
+						<jobString>Resetting a glitter tactical shotgun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT2</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GlitterTacticalShotgun_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GlitterTacticalShotgun_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GlitterTacticalShotgun_Bond>1</Gun_GlitterTacticalShotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_OmegaPulseRifle_Bond" Abstract="True">
+						<label>bond &quot;Omega&quot; pulse rifle</label>
+						<description>Bond an &quot;Omega&quot; pulse rifle.</description>
+						<jobString>Bonding a &quot;Omega&quot; pulse rifle.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_OmegaPulseRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_OmegaPulseRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_OmegaPulseRifle_Bond>1</Gun_OmegaPulseRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_OmegaPulseRifle_Bond_Reset" Abstract="True">
+						<label>Reset &quot;Omega&quot; pulse rifle</label>
+						<description>Reset a &quot;Omega&quot; pulse rifle.</description>
+						<jobString>Resetting a &quot;Omega&quot; pulse rifle.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_OmegaPulseRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_OmegaPulseRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_OmegaPulseRifle_Bond>1</Gun_OmegaPulseRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_ThunderstormMinigun_Bond" Abstract="True">
+						<label>bond &quot;Thunderstorm&quot; minigun</label>
+						<description>Bond an &quot;Thunderstorm&quot; minigun.</description>
+						<jobString>Bonding a &quot;Thunderstorm&quot; minigun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_ThunderstormMinigun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_ThunderstormMinigun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_ThunderstormMinigun_Bond>1</Gun_ThunderstormMinigun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_ThunderstormMinigun_Bond_Reset" Abstract="True">
+						<label>Reset &quot;Thunderstorm&quot; minigun</label>
+						<description>Reset a &quot;Thunderstorm&quot; minigun.</description>
+						<jobString>Resetting a &quot;Thunderstorm&quot; minigun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_ThunderstormMinigun_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_ThunderstormMinigun_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_ThunderstormMinigun_Bond>1</Gun_ThunderstormMinigun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_GungnirAntimaterielLance_Bond" Abstract="True">
+						<label>bond &quot;Gungnir&quot; anti-materiel lance</label>
+						<description>Bond an &quot;Gungnir&quot; anti-materiel lance.</description>
+						<jobString>Bonding a &quot;Gungnir&quot; anti-materiel lance.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GungnirAntimaterielLance</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GungnirAntimaterielLance</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GungnirAntimaterielLance_Bond>1</Gun_GungnirAntimaterielLance_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_GungnirAntimaterielLance_Bond_Reset" Abstract="True">
+						<label>Reset &quot;Gungnir&quot; anti-materiel lance</label>
+						<description>Reset a &quot;Gungnir&quot; anti-materiel lance.</description>
+						<jobString>Resetting a &quot;Gungnir&quot; anti-materiel lance.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_GungnirAntimaterielLance_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_GungnirAntimaterielLance_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_GungnirAntimaterielLance_Bond>1</Gun_GungnirAntimaterielLance_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_ShattererShotgun_Bond" Abstract="True">
+						<label>bond &quot;Shatterer&quot; shotgun</label>
+						<description>Bond an &quot;Shatterer&quot; shotgun.</description>
+						<jobString>Bonding a &quot;Shatterer&quot; shotgun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_ShattererShotgun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_ShattererShotgun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_ShattererShotgun_Bond>1</Gun_ShattererShotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_ShattererShotgun_Bond_Reset" Abstract="True">
+						<label>Reset &quot;Shatterer&quot; shotgun</label>
+						<description>Reset a &quot;Shatterer&quot; shotgun.</description>
+						<jobString>Resetting a &quot;Shatterer&quot; shotgun.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT3</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_ShattererShotgun_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_ShattererShotgun_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_ShattererShotgun_Bond>1</Gun_ShattererShotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_Singularity_Bond" Abstract="True">
+						<label>bond Singularity</label>
+						<description>Bond an Singularity.</description>
+						<jobString>Bonding a Singularity.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT4</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_Singularity</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_Singularity</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_Singularity_Bond>1</Gun_Singularity_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_Singularity_Bond_Reset" Abstract="True">
+						<label>Reset Singularity</label>
+						<description>Reset a Singularity.</description>
+						<jobString>Resetting a Singularity.</jobString>
+						<researchPrerequisites>
+							<li>AscendantWeaponsT4</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_Singularity_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_Singularity_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_Singularity_Bond>1</Gun_Singularity_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_PIsAscendantWeaponpack</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_OE_PIsAscendantWeaponpack</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_OE_Gun_AdvancedChargeRifle_Bond">
+												<defName>Make_OE_Gun_AdvancedChargeRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_AdvancedChargeRifle_Bond_Reset">
+												<defName>Make_OE_Gun_AdvancedChargeRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_AdvancedChargeLance_Bond">
+												<defName>Make_OE_Gun_AdvancedChargeLance_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_AdvancedChargeLance_Bond_Reset">
+												<defName>Make_OE_Gun_AdvancedChargeLance_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterBlasterRifle_Bond">
+												<defName>Make_OE_Gun_GlitterBlasterRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterBlasterRifle_Bond_Reset">
+												<defName>Make_OE_Gun_GlitterBlasterRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterMinigun_Bond">
+												<defName>Make_OE_Gun_GlitterMinigun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterMinigun_Bond_Reset">
+												<defName>Make_OE_Gun_GlitterMinigun_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterLance_Bond">
+												<defName>Make_OE_Gun_GlitterLance_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterLance_Bond_Reset">
+												<defName>Make_OE_Gun_GlitterLance_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterTacticalShotgun_Bond">
+												<defName>Make_OE_Gun_GlitterTacticalShotgun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GlitterTacticalShotgun_Bond_Reset">
+												<defName>Make_OE_Gun_GlitterTacticalShotgun_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_OmegaPulseRifle_Bond">
+												<defName>Make_OE_Gun_OmegaPulseRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_OmegaPulseRifle_Bond_Reset">
+												<defName>Make_OE_Gun_OmegaPulseRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_ThunderstormMinigun_Bond">
+												<defName>Make_OE_Gun_ThunderstormMinigun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_ThunderstormMinigun_Bond_Reset">
+												<defName>Make_OE_Gun_ThunderstormMinigun_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GungnirAntimaterielLance_Bond">
+												<defName>Make_OE_Gun_GungnirAntimaterielLance_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_GungnirAntimaterielLance_Bond_Reset">
+												<defName>Make_OE_Gun_GungnirAntimaterielLance_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_ShattererShotgun_Bond">
+												<defName>Make_OE_Gun_ShattererShotgun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_ShattererShotgun_Bond_Reset">
+												<defName>Make_OE_Gun_ShattererShotgun_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_Singularity_Bond">
+												<defName>Make_OE_Gun_Singularity_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_Singularity_Bond_Reset">
+												<defName>Make_OE_Gun_Singularity_Bond_Reset</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

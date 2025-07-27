@@ -1,0 +1,817 @@
+<?xml version="1.0" ?>
+<!--
+	===== PI's Ascendant Weapon pack =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>pi.ascendantweapons</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingCategoryDef Name="MPBFPM_WeaponsRanged" Abstract="True">
+						<label>persona</label>
+						<parent>WeaponsRanged</parent>
+					</ThingCategoryDef>
+					<ThingDef Name="MPBFPM_AWExclusiveWeaponT2" ParentName="MPBFPM_BaseHumanMakeableGun" Abstract="True">
+						<statBases>
+							<MaxHitPoints>200</MaxHitPoints>
+						</statBases>
+						<weaponTags>
+							<li>AW_Exclusive_Weapon_T2</li>
+						</weaponTags>
+					</ThingDef>
+					<ThingDef Name="MPBFPM_AWExclusiveWeaponT3" ParentName="MPBFPM_BaseHumanMakeableGun" Abstract="True">
+						<relicChance>0</relicChance>
+						<statBases>
+							<MaxHitPoints>400</MaxHitPoints>
+						</statBases>
+						<weaponTags>
+							<li>AW_Exclusive_Weapon_T3</li>
+						</weaponTags>
+					</ThingDef>
+					<ThingDef Name="MPBFPM_Tier4ArchoWeapon" Abstract="True" ParentName="MPBFPM_BaseWeapon">
+						<techLevel>Ultra</techLevel>
+						<relicChance>0</relicChance>
+						<thingCategories>
+							<li>MPBFPM_WeaponsRanged</li>
+						</thingCategories>
+						<weaponClasses>
+							<li>Ranged</li>
+						</weaponClasses>
+						<inspectorTabs>
+							<li>ITab_Art</li>
+						</inspectorTabs>
+						<statBases>
+							<MaxHitPoints>1000</MaxHitPoints>
+							<Flammability>0</Flammability>
+							<MarketValue>30250.0</MarketValue>
+						</statBases>
+						<weaponTags>
+							<li>T4_Archotech_Weapons</li>
+						</weaponTags>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Gun_AdvancedChargeRifle_Bond" Abstract="True">
+						<label>persona advanced charge rifle</label>
+						<description>An upgraded version of the classic charge rifle. Improved range and accuracy, with a refined energy focusing module that enhances consistency in mid-range firefights.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/AdvancedChargeRifle</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<statBases>
+							<Mass>4.6</Mass>
+							<AccuracyTouch>0.726</AccuracyTouch>
+							<AccuracyShort>0.847</AccuracyShort>
+							<AccuracyMedium>0.786</AccuracyMedium>
+							<AccuracyLong>0.665</AccuracyLong>
+							<RangedWeapon_Cooldown>1.445</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_AdvancedChargeRifle_Bond</defaultProjectile>
+								<warmupTime>1.0</warmupTime>
+								<range>31.9</range>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+								<soundCast>Shot_ChargeRifle</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Gun_AdvancedChargeLance_Bond" Abstract="True">
+						<label>persona advanced charge lance</label>
+						<description>A refined charge-based energy weapon designed for precision long-range strikes. With an enhanced focusing chamber and high-output flow architecture, it offers greatly extended range and superior penetration at distance, providing strong battlefield suppression from afar.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/AdvancedChargeLance</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeLance</soundInteract>
+						<statBases>
+							<Mass>8</Mass>
+							<AccuracyTouch>0.786</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>1.065</AccuracyMedium>
+							<AccuracyLong>1.089</AccuracyLong>
+							<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_AdvancedChargeLance_Bond</defaultProjectile>
+								<warmupTime>3.0</warmupTime>
+								<range>42.9</range>
+								<soundCast>ChargeLance_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT2" Name="Gun_GlitterBlasterRifle_Bond" Abstract="True">
+						<label>persona glitter blaster rifle</label>
+						<description>Once standard issue for Glitterworld shipboard assault units, this rifle has long since ceased production. It fires high-velocity charge pulses through a compact energy rail system, originally engineered for short-range engagements in zero-G environments—yet it still proves highly effective even by today’s standards.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/GlitterBlasterRifle</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<statBases>
+							<Mass>4.8</Mass>
+							<AccuracyTouch>0.786</AccuracyTouch>
+							<AccuracyShort>0.847</AccuracyShort>
+							<AccuracyMedium>0.847</AccuracyMedium>
+							<AccuracyLong>0.726</AccuracyLong>
+							<RangedWeapon_Cooldown>1.445</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_GlitterBlasterRifle_Bond</defaultProjectile>
+								<warmupTime>0.9</warmupTime>
+								<range>33.9</range>
+								<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+								<burstShotCount>4</burstShotCount>
+								<soundCast>Shot_ChargeRifle</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT2" Name="Gun_GlitterMinigun_Bond" Abstract="True">
+						<label>persona glitter minigun</label>
+						<description>A high-speed energy rotary weapon once used for close-quarters suppression aboard spacecraft. Despite its age, its relentless fire rate and efficient power cycling system still deliver terrifying suppressive force—even against modern combat units.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/GlitterMinigun</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeLance</soundInteract>
+						<statBases>
+							<Mass>11</Mass>
+							<AccuracyTouch>0.303</AccuracyTouch>
+							<AccuracyShort>0.363</AccuracyShort>
+							<AccuracyMedium>0.363</AccuracyMedium>
+							<AccuracyLong>0.278</AccuracyLong>
+							<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+						</statBases>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.6</MoveSpeed>
+						</equippedStatOffsets>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_GlitterMinigun_Bond</defaultProjectile>
+								<warmupTime>2.4</warmupTime>
+								<range>32.9</range>
+								<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+								<burstShotCount>25</burstShotCount>
+								<soundCast>Shot_Minigun</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>barrels</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12.555</power>
+								<cooldownTime>2.21</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT2" Name="Gun_GlitterLance_Bond" Abstract="True">
+						<label>persona glitter lance</label>
+						<description>A precision energy sniper once used for long-range high-priority eliminations. Equipped with advanced focusing and stabilization components, it can accurately punch through heavy armor from extreme distances. Even today, it remains a rare and deadly one-shot suppressor.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/GlitterLance</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeLance</soundInteract>
+						<statBases>
+							<Mass>8.4</Mass>
+							<AccuracyTouch>0.786</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>1.065</AccuracyMedium>
+							<AccuracyLong>1.089</AccuracyLong>
+							<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_GlitterLance_Bond</defaultProjectile>
+								<warmupTime>2.9</warmupTime>
+								<range>46.9</range>
+								<soundCast>ChargeLance_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT2" Name="Gun_GlitterTacticalShotgun_Bond" Abstract="True">
+						<label>persona glitter tactical shotgun</label>
+						<description>Designed for urban pacification and heavy-entry operations, this high-energy shotgun utilizes a distributed scatter matrix and recoil compensation system. It maintains hit density and firing control even at point-blank range, making it a favored close-quarters weapon among Glitterworld tactical units.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/GlitterTacticalShotgun</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Shotgun</soundInteract>
+						<statBases>
+							<Mass>4.5</Mass>
+							<AccuracyTouch>0.726</AccuracyTouch>
+							<AccuracyShort>0.811</AccuracyShort>
+							<AccuracyMedium>0.544</AccuracyMedium>
+							<AccuracyLong>0.363</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_GlitterTacticalShotgun_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>15.9</range>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+								<soundCast>Shot_Shotgun</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_OmegaPulseRifle_Bond" Abstract="True">
+						<label>persona &quot;Omega&quot; pulse rifle</label>
+						<description>This pulse rifle represents the upper limit of personal high-firepower armament. Enhanced pulse modules and a composite stabilization system grant it exceptional accuracy, fire rate, and damage output—earning its place as the definitive end of rifle design.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Ultra</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/OmegaPulseRifle</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<statBases>
+							<Mass>4.8</Mass>
+							<AccuracyTouch>0.786</AccuracyTouch>
+							<AccuracyShort>0.907</AccuracyShort>
+							<AccuracyMedium>0.907</AccuracyMedium>
+							<AccuracyLong>0.786</AccuracyLong>
+							<RangedWeapon_Cooldown>1.373</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_OmegaPulseRifle_Bond</defaultProjectile>
+								<warmupTime>0.9</warmupTime>
+								<range>35.9</range>
+								<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+								<burstShotCount>5</burstShotCount>
+								<soundCast>Shot_ChargeRifle</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_ThunderstormMinigun_Bond" Abstract="True">
+						<label>persona &quot;Thunderstorm&quot; minigun</label>
+						<description>This minigun pushes firepower to the edge of conventional technology. Its overwhelming rate of fire and sustained barrage can shred light-armored targets in seconds. Thanks to enhanced core power systems and upgraded penetrator modules, it delivers rare suppressive power even against heavily armored units.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Ultra</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/ThunderstormMinigun</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeLance</soundInteract>
+						<statBases>
+							<Mass>11</Mass>
+							<AccuracyTouch>0.303</AccuracyTouch>
+							<AccuracyShort>0.399</AccuracyShort>
+							<AccuracyMedium>0.399</AccuracyMedium>
+							<AccuracyLong>0.303</AccuracyLong>
+							<RangedWeapon_Cooldown>1.011</RangedWeapon_Cooldown>
+						</statBases>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.4</MoveSpeed>
+						</equippedStatOffsets>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_ThunderstormMinigun_Bond</defaultProjectile>
+								<warmupTime>2.2</warmupTime>
+								<range>34.9</range>
+								<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+								<burstShotCount>30</burstShotCount>
+								<soundCast>Shot_Minigun</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>barrels</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12.555</power>
+								<cooldownTime>2.21</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_GungnirAntimaterielLance_Bond" Abstract="True">
+						<label>persona &quot;Gungnir&quot; anti-materiel lance</label>
+						<description>Building on the already exceptional anti-armor performance of its predecessor, this sniper weapon further enhances range, stopping power, and accuracy. At extreme distances, it can reliably disable even the most heavily fortified targets—making it the definitive answer for long-range elimination.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Ultra</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/GungnirAntimaterielLance</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeLance</soundInteract>
+						<statBases>
+							<Mass>8.8</Mass>
+							<AccuracyTouch>0.726</AccuracyTouch>
+							<AccuracyShort>1.065</AccuracyShort>
+							<AccuracyMedium>1.089</AccuracyMedium>
+							<AccuracyLong>1.21</AccuracyLong>
+							<RangedWeapon_Cooldown>1.228</RangedWeapon_Cooldown>
+						</statBases>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.4</MoveSpeed>
+						</equippedStatOffsets>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_GungnirAntimaterielLance_Bond</defaultProjectile>
+								<warmupTime>2.8</warmupTime>
+								<range>49.9</range>
+								<soundCast>ChargeLance_Fire</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_ShattererShotgun_Bond" Abstract="True">
+						<label>persona &quot;Shatterer&quot; shotgun</label>
+						<description>Engineered for close-quarters elimination, the “shredder” shotgun features a refined spread pattern that delivers exceptional accuracy at point-blank range. With overwhelming pellet density, stopping power, and burst potential, it tears through anything in its path within seconds.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Ultra</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/ShattererShotgun</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Shotgun</soundInteract>
+						<statBases>
+							<Mass>5</Mass>
+							<AccuracyTouch>0.786</AccuracyTouch>
+							<AccuracyShort>0.907</AccuracyShort>
+							<AccuracyMedium>0.605</AccuracyMedium>
+							<AccuracyLong>0.399</AccuracyLong>
+							<RangedWeapon_Cooldown>0.795</RangedWeapon_Cooldown>
+						</statBases>
+						<equippedStatOffsets>
+							<MoveSpeed>0.1</MoveSpeed>
+						</equippedStatOffsets>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_ShattererShotgun_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>17.9</range>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+								<burstShotCount>4</burstShotCount>
+								<soundCast>Shot_Shotgun</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Tier4ArchoWeapon" Name="Gun_Singularity_Bond" Abstract="True">
+						<label>persona Singularity</label>
+						<description>Implanted with a persona core, this weapon establishes a faint yet functional link to an Archotech. Each shot is a brief transmission, a translated fragment of divine intent.\n\nUpon firing, nanoscale Archotech machines embed themselves onto the projectile. On impact, they induce low-grade interference within the target’s physiological and cognitive systems, causing temporary systemic disruption.\n\nWhile it retains the appearance of physical ammunition, its rounds are far from standard—they are engineered vessels built to carry a fragment of interference.\n\nIts purpose is not to break armor,  but to gently nudge the target away from what they were meant to be.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<tickerType>Normal</tickerType>
+						<techLevel>Ultra</techLevel>
+						<graphicData>
+							<texPath>Things/WeaponRanged/Singularity</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeLance</soundInteract>
+						<statBases>
+							<Mass>1</Mass>
+							<AccuracyTouch>0.932</AccuracyTouch>
+							<AccuracyShort>0.932</AccuracyShort>
+							<AccuracyMedium>0.932</AccuracyMedium>
+							<AccuracyLong>0.932</AccuracyLong>
+							<RangedWeapon_Cooldown>0.145</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_Singularity_Bond</defaultProjectile>
+								<warmupTime>0.3</warmupTime>
+								<range>41.9</range>
+								<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+								<burstShotCount>1</burstShotCount>
+								<soundCast>PsychicShockLanceCast</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>0.85</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>0.85</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_AdvancedChargeRifle_Bond" Abstract="True">
+						<label>advanced charge rifle bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T1Rifle</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>21</damageAmountBase>
+							<armorPenetrationBase>0.4</armorPenetrationBase>
+							<stoppingPower>0.6</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_AdvancedChargeLance_Bond" Abstract="True">
+						<label>advanced charge lance bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T1Lance</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>46</damageAmountBase>
+							<armorPenetrationBase>0.5</armorPenetrationBase>
+							<stoppingPower>1.5</stoppingPower>
+							<speed>120</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_GlitterBlasterRifle_Bond" Abstract="True">
+						<label>glitter blaster rifle bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T2Rifle</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>22</damageAmountBase>
+							<armorPenetrationBase>0.45</armorPenetrationBase>
+							<stoppingPower>0.7</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_GlitterMinigun_Bond" Abstract="True">
+						<label>glitter minigun bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T2Minigun</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>14</damageAmountBase>
+							<armorPenetrationBase>0.23</armorPenetrationBase>
+							<stoppingPower>0.5</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_GlitterLance_Bond" Abstract="True">
+						<label>glitter lance bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T2Lance</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>57</damageAmountBase>
+							<armorPenetrationBase>0.65</armorPenetrationBase>
+							<stoppingPower>1.8</stoppingPower>
+							<speed>120</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_GlitterTacticalShotgun_Bond" Abstract="True">
+						<label>glitter tactical shotgun bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T2Shotgun</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>32</damageAmountBase>
+							<armorPenetrationBase>0.4</armorPenetrationBase>
+							<stoppingPower>3.0</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_OmegaPulseRifle_Bond" Abstract="True">
+						<label>&quot;Omega&quot; pulse rifle bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T3Rifle</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>24</damageAmountBase>
+							<armorPenetrationBase>0.5</armorPenetrationBase>
+							<stoppingPower>0.8</stoppingPower>
+							<speed>80</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_ThunderstormMinigun_Bond" Abstract="True">
+						<label>&quot;Thunderstorm&quot; minigun bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T3Minigun</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>15</damageAmountBase>
+							<armorPenetrationBase>0.3</armorPenetrationBase>
+							<stoppingPower>0.5</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_GungnirAntimaterielLance_Bond" Abstract="True">
+						<label>&quot;Gungnir&quot; anti-materiel lance bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T3Lance</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>78</damageAmountBase>
+							<armorPenetrationBase>0.8</armorPenetrationBase>
+							<stoppingPower>3.0</stoppingPower>
+							<speed>150</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_ShattererShotgun_Bond" Abstract="True">
+						<label>&quot;Shatterer&quot; shotgun bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T3Shotgun</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>35</damageAmountBase>
+							<armorPenetrationBase>0.6</armorPenetrationBase>
+							<stoppingPower>3.5</stoppingPower>
+							<speed>80</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Singularity_Bond" Abstract="True">
+						<label>Singularity bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_T4Archo</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>AW_ArchoBullet</damageDef>
+							<damageAmountBase>48</damageAmountBase>
+							<armorPenetrationBase>1.28</armorPenetrationBase>
+							<stoppingPower>1.0</stoppingPower>
+							<speed>99</speed>
+						</projectile>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_PIsAscendantWeaponpack</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingCategoryDef ParentName="MPBFPM_WeaponsRanged">
+								<defName>MPBFPM_WeaponsRanged</defName>
+							</ThingCategoryDef>
+							<ThingDef ParentName="Gun_AdvancedChargeRifle_Bond">
+								<defName>Gun_AdvancedChargeRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_AdvancedChargeLance_Bond">
+								<defName>Gun_AdvancedChargeLance_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_GlitterBlasterRifle_Bond">
+								<defName>Gun_GlitterBlasterRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_GlitterMinigun_Bond">
+								<defName>Gun_GlitterMinigun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_GlitterLance_Bond">
+								<defName>Gun_GlitterLance_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_GlitterTacticalShotgun_Bond">
+								<defName>Gun_GlitterTacticalShotgun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_OmegaPulseRifle_Bond">
+								<defName>Gun_OmegaPulseRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_ThunderstormMinigun_Bond">
+								<defName>Gun_ThunderstormMinigun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_GungnirAntimaterielLance_Bond">
+								<defName>Gun_GungnirAntimaterielLance_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_ShattererShotgun_Bond">
+								<defName>Gun_ShattererShotgun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Gun_Singularity_Bond">
+								<defName>Gun_Singularity_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_AdvancedChargeRifle_Bond">
+								<defName>Bullet_AdvancedChargeRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_AdvancedChargeLance_Bond">
+								<defName>Bullet_AdvancedChargeLance_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_GlitterBlasterRifle_Bond">
+								<defName>Bullet_GlitterBlasterRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_GlitterMinigun_Bond">
+								<defName>Bullet_GlitterMinigun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_GlitterLance_Bond">
+								<defName>Bullet_GlitterLance_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_GlitterTacticalShotgun_Bond">
+								<defName>Bullet_GlitterTacticalShotgun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_OmegaPulseRifle_Bond">
+								<defName>Bullet_OmegaPulseRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_ThunderstormMinigun_Bond">
+								<defName>Bullet_ThunderstormMinigun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_GungnirAntimaterielLance_Bond">
+								<defName>Bullet_GungnirAntimaterielLance_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_ShattererShotgun_Bond">
+								<defName>Bullet_ShattererShotgun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_Singularity_Bond">
+								<defName>Bullet_Singularity_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
