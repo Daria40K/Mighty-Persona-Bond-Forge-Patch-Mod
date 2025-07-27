@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<!--
+	===== Randy Random's Rayguns - Ordinary Spacer Weapons =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>redmattis.madapril2025</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BS_RandyRaygun_Bond" Abstract="True">
+						<label>bond randy raygun</label>
+						<description>Bond an randy raygun.</description>
+						<jobString>Bonding a randy raygun.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>BS_RandyRaygun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>BS_RandyRaygun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<BS_RandyRaygun_Bond>1</BS_RandyRaygun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BS_RandyRaygunMKII_Bond" Abstract="True">
+						<label>bond randy raygun mk2</label>
+						<description>Bond an randy raygun mk2.</description>
+						<jobString>Bonding a randy raygun mk2.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>BS_RandyRaygunMKII</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>BS_RandyRaygunMKII</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<BS_RandyRaygunMKII_Bond>1</BS_RandyRaygunMKII_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_RandyRandomsRaygunsOrdinarySpacerWeapons</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_RandyRandomsRaygunsOrdinarySpacerWeapons</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_BS_RandyRaygun_Bond">
+												<defName>Make_BS_RandyRaygun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_BS_RandyRaygunMKII_Bond">
+												<defName>Make_BS_RandyRaygunMKII_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

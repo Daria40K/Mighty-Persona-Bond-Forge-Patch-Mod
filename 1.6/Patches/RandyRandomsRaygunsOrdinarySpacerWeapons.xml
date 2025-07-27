@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<!--
+	===== Randy Random's Rayguns - Ordinary Spacer Weapons =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>redmattis.madapril2025</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Name="BS_RandyRaygun_Bond" ParentName="MPBFPM_BaseHumanMakeableGun" Abstract="True">
+						<label>persona randy raygun</label>
+						<description>Just what the heck is this thing? Shoots fast but does nothing..?\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/BS_RandyRay</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<generateCommonality>0.1</generateCommonality>
+						<statBases>
+							<Mass>8</Mass>
+							<AccuracyTouch>0.303</AccuracyTouch>
+							<AccuracyShort>0.665</AccuracyShort>
+							<AccuracyMedium>0.944</AccuracyMedium>
+							<AccuracyLong>0.605</AccuracyLong>
+							<RangedWeapon_Cooldown>0.145</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>SpacerGun</li>
+							<li>MadScience</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>BS_RandyRayShot_Bond</defaultProjectile>
+								<warmupTime>1</warmupTime>
+								<range>28.9</range>
+								<burstShotCount>8</burstShotCount>
+								<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+								<soundCast>Resurrect_Resolve</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>13.901</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="BS_RandyRaygun_Bond" Name="BS_RandyRaygunMKII_Bond" Abstract="True">
+						<label>persona randy raygun mk2</label>
+						<description>What a dud!\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/BS_RandyRayMK2</texPath>
+							<drawSize>(1.15, 1.15)</drawSize>
+						</graphicData>
+						<statBases>
+							<Mass>8</Mass>
+							<AccuracyTouch>1.028</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.944</AccuracyMedium>
+							<AccuracyLong>0.786</AccuracyLong>
+							<RangedWeapon_Cooldown>0.289</RangedWeapon_Cooldown>
+							<MarketValue>3025.0</MarketValue>
+						</statBases>
+						<verbs Inherit="False">
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>BS_RandyRayShotMKII_Bond</defaultProjectile>
+								<warmupTime>1</warmupTime>
+								<range>28.9</range>
+								<burstShotCount>2</burstShotCount>
+								<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+								<soundCast>Resurrect_Resolve</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>18</muzzleFlashScale>
+							</li>
+						</verbs>
+					</ThingDef>
+					<ThingDef Name="BS_RandyRayShot_Bond" ParentName="MPBFPM_BaseBullet" Abstract="True">
+						<label>Randy ray ray</label>
+						<graphicData>
+							<texPath>Things/BS_RandyRayProjectile_1</texPath>
+							<shaderType>MoteGlow</shaderType>
+							<drawSize>0.8</drawSize>
+						</graphicData>
+						<projectile>
+							<damageDef>BS_IndictedDamage</damageDef>
+							<damageAmountBase>19</damageAmountBase>
+							<stoppingPower>0.15</stoppingPower>
+							<speed>70</speed>
+						</projectile>
+						<thingClass>BigAndSmall.BS_StatusBullet</thingClass>
+						<modExtensions>
+							<li Class="BigAndSmall.ModExtension_StatusAfflicter">
+								<hediffToAdd>BS_RandyRayAffliction</hediffToAdd>
+								<severity>0.01</severity>
+								<scaleSeverityByDamage>true</scaleSeverityByDamage>
+								<softScaleSeverityByBodySize>true</softScaleSeverityByBodySize>
+							</li>
+						</modExtensions>
+					</ThingDef>
+					<ThingDef ParentName="BS_RandyRayShot" Name="BS_RandyRayShotMKII_Bond" Abstract="True">
+						<label>Randy ray ray ray ray ray ray</label>
+						<projectile>
+							<damageDef>BS_IndictedDamage</damageDef>
+							<damageAmountBase>48</damageAmountBase>
+							<stoppingPower>0.75</stoppingPower>
+							<speed>50</speed>
+						</projectile>
+						<graphicData>
+							<texPath>Things/BS_RandyRayProjectileMK2</texPath>
+							<shaderType>MoteGlow</shaderType>
+							<drawSize>1</drawSize>
+							<color>(255, 190, 180)</color>
+						</graphicData>
+						<modExtensions Inherit="False">
+							<li Class="BigAndSmall.ModExtension_StatusAfflicter">
+								<hediffToAdd>BS_RandyRayAffliction</hediffToAdd>
+								<severity>0.04</severity>
+								<scaleSeverityByDamage>true</scaleSeverityByDamage>
+								<softScaleSeverityByBodySize>true</softScaleSeverityByBodySize>
+							</li>
+						</modExtensions>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_RandyRandomsRaygunsOrdinarySpacerWeapons</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="BS_RandyRaygun_Bond">
+								<defName>BS_RandyRaygun_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="BS_RandyRaygunMKII_Bond">
+								<defName>BS_RandyRaygunMKII_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="BS_RandyRayShot_Bond">
+								<defName>BS_RandyRayShot_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="BS_RandyRayShotMKII_Bond">
+								<defName>BS_RandyRayShotMKII_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
