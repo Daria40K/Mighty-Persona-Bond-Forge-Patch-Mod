@@ -1,0 +1,1321 @@
+<?xml version="1.0" ?>
+<!--
+	===== Misstall's Armory Charge Weapons =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>misstall.chargeweaponzzz</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_MeleeWeapon_CW_STB_Bond" Abstract="True">
+						<label>bond C-85S shock baton</label>
+						<description>Bond an C-85S shock baton.</description>
+						<jobString>Bonding a C-85S shock baton.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_CW_STB</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_CW_STB</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_CW_STB_Bond>1</MeleeWeapon_CW_STB_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_MeleeWeapon_CW_STB_Bond_Reset" Abstract="True">
+						<label>Reset C-85S shock baton</label>
+						<description>Reset a C-85S shock baton.</description>
+						<jobString>Resetting a C-85S shock baton.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_CW_STB_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_CW_STB_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_CW_STB_Bond>1</MeleeWeapon_CW_STB_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_MeleeWeapon_CW_CK_Bond" Abstract="True">
+						<label>bond C-6 fighting knife</label>
+						<description>Bond an C-6 fighting knife.</description>
+						<jobString>Bonding a C-6 fighting knife.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_CW_CK</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_CW_CK</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_CW_CK_Bond>1</MeleeWeapon_CW_CK_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_MeleeWeapon_CW_CK_Bond_Reset" Abstract="True">
+						<label>Reset C-6 fighting knife</label>
+						<description>Reset a C-6 fighting knife.</description>
+						<jobString>Resetting a C-6 fighting knife.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_CW_CK_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_CW_CK_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_CW_CK_Bond>1</MeleeWeapon_CW_CK_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_MeleeWeapon_CW_BLD_Bond" Abstract="True">
+						<label>bond C-8 fighting blade</label>
+						<description>Bond an C-8 fighting blade.</description>
+						<jobString>Bonding a C-8 fighting blade.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_CW_BLD</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_CW_BLD</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_CW_BLD_Bond>1</MeleeWeapon_CW_BLD_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_MeleeWeapon_CW_BLD_Bond_Reset" Abstract="True">
+						<label>Reset C-8 fighting blade</label>
+						<description>Reset a C-8 fighting blade.</description>
+						<jobString>Resetting a C-8 fighting blade.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_CW_BLD_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_CW_BLD_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_CW_BLD_Bond>1</MeleeWeapon_CW_BLD_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_CW_45CPS_Bond" Abstract="True">
+						<label>bond C-48S shock pistol</label>
+						<description>Bond an C-48S shock pistol.</description>
+						<jobString>Bonding a C-48S shock pistol.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_CW_45CPS</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_CW_45CPS</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_CW_45CPS_Bond>1</Gun_CW_45CPS_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_CW_45CPS_Bond_Reset" Abstract="True">
+						<label>Reset C-48S shock pistol</label>
+						<description>Reset a C-48S shock pistol.</description>
+						<jobString>Resetting a C-48S shock pistol.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_CW_45CPS_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_CW_45CPS_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_CW_45CPS_Bond>1</Gun_CW_45CPS_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_multipleATrocket_Bond" Abstract="True">
+						<label>bond CRR-66 multiple rocket launcher</label>
+						<description>Bond an CRR-66 multiple rocket launcher.</description>
+						<jobString>Bonding a CRR-66 multiple rocket launcher.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_multipleATrocket</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_multipleATrocket</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_multipleATrocket_Bond>1</Gun_multipleATrocket_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_multipleATrocket_Bond_Reset" Abstract="True">
+						<label>Reset CRR-66 multiple rocket launcher</label>
+						<description>Reset a CRR-66 multiple rocket launcher.</description>
+						<jobString>Resetting a CRR-66 multiple rocket launcher.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_multipleATrocket_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_multipleATrocket_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_multipleATrocket_Bond>1</Gun_multipleATrocket_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeLMG_Bond" Abstract="True">
+						<label>bond C9-L charge LMG</label>
+						<description>Bond an C9-L charge LMG.</description>
+						<jobString>Bonding a C9-L charge LMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeLMG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeLMG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeLMG_Bond>1</CW_CR8ChargeLMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeLMG_Bond_Reset" Abstract="True">
+						<label>Reset C9-L charge LMG</label>
+						<description>Reset a C9-L charge LMG.</description>
+						<jobString>Resetting a C9-L charge LMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeLMG_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeLMG_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeLMG_Bond>1</CW_CR8ChargeLMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeGPMG_Bond" Abstract="True">
+						<label>bond C9-H charge GPMG</label>
+						<description>Bond an C9-H charge GPMG.</description>
+						<jobString>Bonding a C9-H charge GPMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeGPMG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeGPMG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeGPMG_Bond>1</CW_CR8ChargeGPMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeGPMG_Bond_Reset" Abstract="True">
+						<label>Reset C9-H charge GPMG</label>
+						<description>Reset a C9-H charge GPMG.</description>
+						<jobString>Resetting a C9-H charge GPMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeGPMG_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeGPMG_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeGPMG_Bond>1</CW_CR8ChargeGPMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeSMG_Bond" Abstract="True">
+						<label>bond C-10 charge SMG</label>
+						<description>Bond an C-10 charge SMG.</description>
+						<jobString>Bonding a C-10 charge SMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeSMG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeSMG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeSMG_Bond>1</CW_CR8ChargeSMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeSMG_Bond_Reset" Abstract="True">
+						<label>Reset C-10 charge SMG</label>
+						<description>Reset a C-10 charge SMG.</description>
+						<jobString>Resetting a C-10 charge SMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeSMG_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeSMG_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeSMG_Bond>1</CW_CR8ChargeSMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargePDW_Bond" Abstract="True">
+						<label>bond C-11 bullpup SMG</label>
+						<description>Bond an C-11 bullpup SMG.</description>
+						<jobString>Bonding a C-11 bullpup SMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargePDW</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargePDW</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargePDW_Bond>1</CW_CR8ChargePDW_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargePDW_Bond_Reset" Abstract="True">
+						<label>Reset C-11 bullpup SMG</label>
+						<description>Reset a C-11 bullpup SMG.</description>
+						<jobString>Resetting a C-11 bullpup SMG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargePDW_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargePDW_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargePDW_Bond>1</CW_CR8ChargePDW_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargePDWS_Bond" Abstract="True">
+						<label>bond C-11K charge PDW</label>
+						<description>Bond an C-11K charge PDW.</description>
+						<jobString>Bonding a C-11K charge PDW.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargePDWS</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargePDWS</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargePDWS_Bond>1</CW_CR8ChargePDWS_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargePDWS_Bond_Reset" Abstract="True">
+						<label>Reset C-11K charge PDW</label>
+						<description>Reset a C-11K charge PDW.</description>
+						<jobString>Resetting a C-11K charge PDW.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargePDWS_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargePDWS_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargePDWS_Bond>1</CW_CR8ChargePDWS_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeSG_Bond" Abstract="True">
+						<label>bond C-20 charge riot gun</label>
+						<description>Bond an C-20 charge riot gun.</description>
+						<jobString>Bonding a C-20 charge riot gun.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeSG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeSG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeSG_Bond>1</CW_CR8ChargeSG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeSG_Bond_Reset" Abstract="True">
+						<label>Reset C-20 charge riot gun</label>
+						<description>Reset a C-20 charge riot gun.</description>
+						<jobString>Resetting a C-20 charge riot gun.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeSG_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeSG_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeSG_Bond>1</CW_CR8ChargeSG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeSGA_Bond" Abstract="True">
+						<label>bond C-21 charge frechette gun</label>
+						<description>Bond an C-21 charge frechette gun.</description>
+						<jobString>Bonding a C-21 charge frechette gun.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeSGA</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeSGA</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeSGA_Bond>1</CW_CR8ChargeSGA_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeSGA_Bond_Reset" Abstract="True">
+						<label>Reset C-21 charge frechette gun</label>
+						<description>Reset a C-21 charge frechette gun.</description>
+						<jobString>Resetting a C-21 charge frechette gun.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeSGA_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeSGA_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeSGA_Bond>1</CW_CR8ChargeSGA_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_CW_45CP_Bond" Abstract="True">
+						<label>bond C-48 charge pistol</label>
+						<description>Bond an C-48 charge pistol.</description>
+						<jobString>Bonding a C-48 charge pistol.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_CW_45CP</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_CW_45CP</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_CW_45CP_Bond>1</Gun_CW_45CP_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_CW_45CP_Bond_Reset" Abstract="True">
+						<label>Reset C-48 charge pistol</label>
+						<description>Reset a C-48 charge pistol.</description>
+						<jobString>Resetting a C-48 charge pistol.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_CW_45CP_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_CW_45CP_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_CW_45CP_Bond>1</Gun_CW_45CP_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeRifle_Bond" Abstract="True">
+						<label>bond C-8L charge rifle</label>
+						<description>Bond an C-8L charge rifle.</description>
+						<jobString>Bonding a C-8L charge rifle.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeRifle_Bond>1</CW_CR8ChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeRifle_Bond_Reset" Abstract="True">
+						<label>Reset C-8L charge rifle</label>
+						<description>Reset a C-8L charge rifle.</description>
+						<jobString>Resetting a C-8L charge rifle.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeRifle_Bond>1</CW_CR8ChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeDMR_Bond" Abstract="True">
+						<label>bond C-8H charge DMR</label>
+						<description>Bond an C-8H charge DMR.</description>
+						<jobString>Bonding a C-8H charge DMR.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeDMR</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeDMR</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeDMR_Bond>1</CW_CR8ChargeDMR_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeDMR_Bond_Reset" Abstract="True">
+						<label>Reset C-8H charge DMR</label>
+						<description>Reset a C-8H charge DMR.</description>
+						<jobString>Resetting a C-8H charge DMR.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeDMR_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeDMR_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeDMR_Bond>1</CW_CR8ChargeDMR_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8ChargeRifleGL_Bond" Abstract="True">
+						<label>bond C-8L charge rifle GL</label>
+						<description>Bond an C-8L charge rifle GL.</description>
+						<jobString>Bonding a C-8L charge rifle GL.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeRifleGL</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeRifleGL</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeRifleGL_Bond>1</CW_CR8ChargeRifleGL_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8ChargeRifleGL_Bond_Reset" Abstract="True">
+						<label>Reset C-8L charge rifle GL</label>
+						<description>Reset a C-8L charge rifle GL.</description>
+						<jobString>Resetting a C-8L charge rifle GL.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8ChargeRifleGL_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8ChargeRifleGL_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8ChargeRifleGL_Bond>1</CW_CR8ChargeRifleGL_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CRH8ChargeRifle_Bond" Abstract="True">
+						<label>bond C-8H charge rifle</label>
+						<description>Bond an C-8H charge rifle.</description>
+						<jobString>Bonding a C-8H charge rifle.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CRH8ChargeRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CRH8ChargeRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CRH8ChargeRifle_Bond>1</CW_CRH8ChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CRH8ChargeRifle_Bond_Reset" Abstract="True">
+						<label>Reset C-8H charge rifle</label>
+						<description>Reset a C-8H charge rifle.</description>
+						<jobString>Resetting a C-8H charge rifle.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CRH8ChargeRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CRH8ChargeRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CRH8ChargeRifle_Bond>1</CW_CRH8ChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8HChargeRifleGL_Bond" Abstract="True">
+						<label>bond C-8H charge rifle GL</label>
+						<description>Bond an C-8H charge rifle GL.</description>
+						<jobString>Bonding a C-8H charge rifle GL.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8HChargeRifleGL</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8HChargeRifleGL</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8HChargeRifleGL_Bond>1</CW_CR8HChargeRifleGL_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8HChargeRifleGL_Bond_Reset" Abstract="True">
+						<label>Reset C-8H charge rifle GL</label>
+						<description>Reset a C-8H charge rifle GL.</description>
+						<jobString>Resetting a C-8H charge rifle GL.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8HChargeRifleGL_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8HChargeRifleGL_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8HChargeRifleGL_Bond>1</CW_CR8HChargeRifleGL_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_CW_24SR_Bond" Abstract="True">
+						<label>bond C-8A charge AMR</label>
+						<description>Bond an C-8A charge AMR.</description>
+						<jobString>Bonding a C-8A charge AMR.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_CW_24SR</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_CW_24SR</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_CW_24SR_Bond>1</Gun_CW_24SR_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_CW_24SR_Bond_Reset" Abstract="True">
+						<label>Reset C-8A charge AMR</label>
+						<description>Reset a C-8A charge AMR.</description>
+						<jobString>Resetting a C-8A charge AMR.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_CW_24SR_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_CW_24SR_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_CW_24SR_Bond>1</Gun_CW_24SR_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8CChargeRifle_Bond" Abstract="True">
+						<label>bond C-8K charge carbine</label>
+						<description>Bond an C-8K charge carbine.</description>
+						<jobString>Bonding a C-8K charge carbine.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8CChargeRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8CChargeRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8CChargeRifle_Bond>1</CW_CR8CChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8CChargeRifle_Bond_Reset" Abstract="True">
+						<label>Reset C-8K charge carbine</label>
+						<description>Reset a C-8K charge carbine.</description>
+						<jobString>Resetting a C-8K charge carbine.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8CChargeRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8CChargeRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8CChargeRifle_Bond>1</CW_CR8CChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8SFChargeRifle_Bond" Abstract="True">
+						<label>bond C-8SK charge carbine</label>
+						<description>Bond an C-8SK charge carbine.</description>
+						<jobString>Bonding a C-8SK charge carbine.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8SFChargeRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8SFChargeRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8SFChargeRifle_Bond>1</CW_CR8SFChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8SFChargeRifle_Bond_Reset" Abstract="True">
+						<label>Reset C-8SK charge carbine</label>
+						<description>Reset a C-8SK charge carbine.</description>
+						<jobString>Resetting a C-8SK charge carbine.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8SFChargeRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8SFChargeRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8SFChargeRifle_Bond>1</CW_CR8SFChargeRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_CW_CR8SFChargeRifleSG_Bond" Abstract="True">
+						<label>bond C-8SK charge carbine SG</label>
+						<description>Bond an C-8SK charge carbine SG.</description>
+						<jobString>Bonding a C-8SK charge carbine SG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8SFChargeRifleSG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8SFChargeRifleSG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8SFChargeRifleSG_Bond>1</CW_CR8SFChargeRifleSG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_CW_CR8SFChargeRifleSG_Bond_Reset" Abstract="True">
+						<label>Reset C-8SK charge carbine SG</label>
+						<description>Reset a C-8SK charge carbine SG.</description>
+						<jobString>Resetting a C-8SK charge carbine SG.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>CW_CR8SFChargeRifleSG_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>CW_CR8SFChargeRifleSG_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<CW_CR8SFChargeRifleSG_Bond>1</CW_CR8SFChargeRifleSG_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_MisstallsArmoryChargeWeapons</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_OE_MisstallsArmoryChargeWeapons</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_OE_MeleeWeapon_CW_STB_Bond">
+												<defName>Make_OE_MeleeWeapon_CW_STB_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_MeleeWeapon_CW_STB_Bond_Reset">
+												<defName>Make_OE_MeleeWeapon_CW_STB_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_MeleeWeapon_CW_CK_Bond">
+												<defName>Make_OE_MeleeWeapon_CW_CK_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_MeleeWeapon_CW_CK_Bond_Reset">
+												<defName>Make_OE_MeleeWeapon_CW_CK_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_MeleeWeapon_CW_BLD_Bond">
+												<defName>Make_OE_MeleeWeapon_CW_BLD_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_MeleeWeapon_CW_BLD_Bond_Reset">
+												<defName>Make_OE_MeleeWeapon_CW_BLD_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_CW_45CPS_Bond">
+												<defName>Make_OE_Gun_CW_45CPS_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_CW_45CPS_Bond_Reset">
+												<defName>Make_OE_Gun_CW_45CPS_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_multipleATrocket_Bond">
+												<defName>Make_OE_Gun_multipleATrocket_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_multipleATrocket_Bond_Reset">
+												<defName>Make_OE_Gun_multipleATrocket_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeLMG_Bond">
+												<defName>Make_OE_CW_CR8ChargeLMG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeLMG_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeLMG_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeGPMG_Bond">
+												<defName>Make_OE_CW_CR8ChargeGPMG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeGPMG_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeGPMG_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeSMG_Bond">
+												<defName>Make_OE_CW_CR8ChargeSMG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeSMG_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeSMG_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargePDW_Bond">
+												<defName>Make_OE_CW_CR8ChargePDW_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargePDW_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargePDW_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargePDWS_Bond">
+												<defName>Make_OE_CW_CR8ChargePDWS_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargePDWS_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargePDWS_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeSG_Bond">
+												<defName>Make_OE_CW_CR8ChargeSG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeSG_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeSG_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeSGA_Bond">
+												<defName>Make_OE_CW_CR8ChargeSGA_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeSGA_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeSGA_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_CW_45CP_Bond">
+												<defName>Make_OE_Gun_CW_45CP_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_CW_45CP_Bond_Reset">
+												<defName>Make_OE_Gun_CW_45CP_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeRifle_Bond">
+												<defName>Make_OE_CW_CR8ChargeRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeRifle_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeDMR_Bond">
+												<defName>Make_OE_CW_CR8ChargeDMR_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeDMR_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeDMR_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeRifleGL_Bond">
+												<defName>Make_OE_CW_CR8ChargeRifleGL_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8ChargeRifleGL_Bond_Reset">
+												<defName>Make_OE_CW_CR8ChargeRifleGL_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CRH8ChargeRifle_Bond">
+												<defName>Make_OE_CW_CRH8ChargeRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CRH8ChargeRifle_Bond_Reset">
+												<defName>Make_OE_CW_CRH8ChargeRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8HChargeRifleGL_Bond">
+												<defName>Make_OE_CW_CR8HChargeRifleGL_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8HChargeRifleGL_Bond_Reset">
+												<defName>Make_OE_CW_CR8HChargeRifleGL_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_CW_24SR_Bond">
+												<defName>Make_OE_Gun_CW_24SR_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_Gun_CW_24SR_Bond_Reset">
+												<defName>Make_OE_Gun_CW_24SR_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8CChargeRifle_Bond">
+												<defName>Make_OE_CW_CR8CChargeRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8CChargeRifle_Bond_Reset">
+												<defName>Make_OE_CW_CR8CChargeRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8SFChargeRifle_Bond">
+												<defName>Make_OE_CW_CR8SFChargeRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8SFChargeRifle_Bond_Reset">
+												<defName>Make_OE_CW_CR8SFChargeRifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8SFChargeRifleSG_Bond">
+												<defName>Make_OE_CW_CR8SFChargeRifleSG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_CW_CR8SFChargeRifleSG_Bond_Reset">
+												<defName>Make_OE_CW_CR8SFChargeRifleSG_Bond_Reset</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
