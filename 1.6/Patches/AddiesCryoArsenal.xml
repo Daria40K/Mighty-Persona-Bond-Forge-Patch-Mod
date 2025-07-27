@@ -1,0 +1,361 @@
+<?xml version="1.0" ?>
+<!--
+	===== Addie's Cryo Arsenal =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>addie.addiescryoarsenal</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Addie_HailstormRifle_Bond" Abstract="True">
+						<techLevel>Spacer</techLevel>
+						<label>persona icicle rifle</label>
+						<description>The II-02 &quot;Hailstorm&quot; rifle fires hyper-dense, razor sharp icicles of ice-7 which pierce armor with ease and freeze their target as easily as they impale them.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>HailstormRifle</texPath>
+							<drawSize>1.5</drawSize>
+							<graphicClass>Graphic_Single</graphicClass>
+							<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+						</graphicData>
+						<uiIconScale>1.4</uiIconScale>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<generateCommonality>1.8</generateCommonality>
+						<statBases>
+							<Mass>5.2</Mass>
+							<AccuracyTouch>0.786</AccuracyTouch>
+							<AccuracyShort>0.847</AccuracyShort>
+							<AccuracyMedium>0.605</AccuracyMedium>
+							<AccuracyLong>0.423</AccuracyLong>
+							<RangedWeapon_Cooldown>1.445</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<tradeTags>
+							<li>WeaponRanged</li>
+						</tradeTags>
+						<weaponClasses>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Addie_Hailstorm_Bullet_Bond</defaultProjectile>
+								<warmupTime>1.1</warmupTime>
+								<range>24</range>
+								<burstShotCount>4</burstShotCount>
+								<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+								<soundCast>Addie_HailstormShotSound</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Addie_WintersReignHandcannon_Bond" Abstract="True">
+						<label>persona cryo handcannon</label>
+						<description>II-01 &quot;Winters Reign&quot; is ornate, heavy cryotech handcannon created to take down even the most resilient of targets.\nFires a small gel cap containing a microscopic amount of the superweapon ice-9, which on impact explodes and rapidly liquifies covering those within the radius in near absolute-zero gel, violently freezing all of the moisture in the target and ensuring a painful end.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<generateCommonality>0.000015</generateCommonality>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>WintersReign</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.75</drawSize>
+						</graphicData>
+						<uiIconScale>2</uiIconScale>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<weaponClasses>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<statBases>
+							<MarketValue>2117.5</MarketValue>
+							<Mass>1</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>0.907</AccuracyShort>
+							<AccuracyMedium>0.726</AccuracyMedium>
+							<AccuracyLong>0.605</AccuracyLong>
+							<RangedWeapon_Cooldown>1.265</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Addie_Cryocap_Bullet_Bond</defaultProjectile>
+								<warmupTime>1</warmupTime>
+								<range>25.9</range>
+								<burstShotCount>1</burstShotCount>
+								<soundCast>Addie_WintersShotSound</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Addie_GalePDW_Bond" Abstract="True">
+						<label>persona cryo PDW</label>
+						<description>the II-06 &quot;Gale&quot; is a lightweight cryotech PDW that excels in slowing down targets.\n Fires miniscule globs of coolant in rapid fire bursts, trading direct damage for supression ability.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<generateCommonality>0.0012</generateCommonality>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>GalePDW</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.75</drawSize>
+						</graphicData>
+						<uiIconScale>1.5</uiIconScale>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<weaponClasses>
+							<li>RangedLight</li>
+							<li>ShortShots</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<statBases>
+							<MarketValue>1210.0</MarketValue>
+							<Mass>2</Mass>
+							<AccuracyTouch>1.028</AccuracyTouch>
+							<AccuracyShort>0.847</AccuracyShort>
+							<AccuracyMedium>0.303</AccuracyMedium>
+							<AccuracyLong>0.242</AccuracyLong>
+							<RangedWeapon_Cooldown>0.722</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Addie_CoolantPDWBullet_Bond</defaultProjectile>
+								<warmupTime>0.4</warmupTime>
+								<range>19.9</range>
+								<burstShotCount>4</burstShotCount>
+								<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+								<soundCast>Shot_ChargeRifle</soundCast>
+								<soundCastTail>GunTail_Light</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Addie_CometshardSniper_Bond" Abstract="True">
+						<techLevel>Spacer</techLevel>
+						<label>persona cometshard sniper</label>
+						<description>The II-07 &quot;Cometshard&quot; sniper fires an extremely unstable shard of ice-7 that explodes on contact, shredding the surrounding area with shards of razor sharp ice.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>CometSniper</texPath>
+							<drawSize>1.75</drawSize>
+							<graphicClass>Graphic_Single</graphicClass>
+							<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+						</graphicData>
+						<uiIconScale>1.5</uiIconScale>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<generateCommonality>1</generateCommonality>
+						<statBases>
+							<Mass>5.2</Mass>
+							<AccuracyTouch>0.544</AccuracyTouch>
+							<AccuracyShort>0.786</AccuracyShort>
+							<AccuracyMedium>0.907</AccuracyMedium>
+							<AccuracyLong>1.028</AccuracyLong>
+							<RangedWeapon_Cooldown>2.529</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<tradeTags>
+							<li>WeaponRanged</li>
+						</tradeTags>
+						<weaponClasses>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Addie_CometBullet_Bond</defaultProjectile>
+								<warmupTime>3.8</warmupTime>
+								<range>50.9</range>
+								<burstShotCount>1</burstShotCount>
+								<forcedMissRadius>0.1</forcedMissRadius>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+								<soundCast>Addie_WintersShotSound</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>stock</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Addie_Hailstorm_Bullet_Bond" Abstract="True">
+						<label>hailstorm icicle</label>
+						<projectile>
+							<damageDef>Addie_CryoStab</damageDef>
+							<damageAmountBase>20</damageAmountBase>
+							<armorPenetrationBase>0.58</armorPenetrationBase>
+							<stoppingPower>2</stoppingPower>
+							<speed>120</speed>
+						</projectile>
+						<graphicData>
+							<texPath>Projectiles/IcicleProjectile</texPath>
+						</graphicData>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Addie_Cryocap_Bullet_Bond" Abstract="True">
+						<label>cryo cap</label>
+						<projectile>
+							<damageDef>Addie_CryoCapBlunt</damageDef>
+							<damageAmountBase>30</damageAmountBase>
+							<armorPenetrationBase>0.35</armorPenetrationBase>
+							<stoppingPower>2</stoppingPower>
+							<speed>120</speed>
+						</projectile>
+						<graphicData>
+							<texPath>Projectiles/IceCapProjectile</texPath>
+						</graphicData>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Addie_CoolantPDWBullet_Bond" Abstract="True">
+						<label>coolant glob</label>
+						<graphicData>
+							<texPath>Projectiles/IceCapProjectile</texPath>
+							<drawSize>1</drawSize>
+						</graphicData>
+						<projectile>
+							<damageDef>Addie_CoolantFrostburn</damageDef>
+							<damageAmountBase>6</damageAmountBase>
+							<armorPenetrationBase>0.10</armorPenetrationBase>
+							<speed>90</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Addie_CometBullet_Bond" Abstract="True">
+						<label>comet shard</label>
+						<thingClass>Projectile_Explosive</thingClass>
+						<projectile>
+							<damageDef>Addie_FrostImpact</damageDef>
+							<damageAmountBase>51</damageAmountBase>
+							<armorPenetrationBase>0.65</armorPenetrationBase>
+							<stoppingPower>2.1</stoppingPower>
+							<explosionRadius>1.9</explosionRadius>
+							<speed>110</speed>
+						</projectile>
+						<graphicData>
+							<texPath>Projectiles/IcicleProjectile</texPath>
+							<shaderType>TransparentPostLight</shaderType>
+						</graphicData>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_AddiesCryoArsenal</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="Addie_HailstormRifle_Bond">
+								<defName>Addie_HailstormRifle_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_WintersReignHandcannon_Bond">
+								<defName>Addie_WintersReignHandcannon_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_GalePDW_Bond">
+								<defName>Addie_GalePDW_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_CometshardSniper_Bond">
+								<defName>Addie_CometshardSniper_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_Hailstorm_Bullet_Bond">
+								<defName>Addie_Hailstorm_Bullet_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_Cryocap_Bullet_Bond">
+								<defName>Addie_Cryocap_Bullet_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_CoolantPDWBullet_Bond">
+								<defName>Addie_CoolantPDWBullet_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Addie_CometBullet_Bond">
+								<defName>Addie_CometBullet_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
