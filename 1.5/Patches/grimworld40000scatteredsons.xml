@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== Grimworld 40,000 - Scattered Sons =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>grimworld.scatteredsons</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="GW_SS_LionSword_Bond" Abstract="True">
+                        <label>persona Fealty</label>
+                        <description>A mysterious power sword wielded by Lion El'Jonson upon his return in the 41st Millennium. Drawn from the stones of Mirror-Caliban, this blade stops for no opponent - no traitor, no xenos, and no daemon.\n\nMirror-Caliban appears as a forest without end, inhabited by Watchers in the Dark (the diminutive servants of the Dark Angels) and Great Beasts of Caliban. The Lion discovered Fealty and the Emperor's Shield within the realm, and was able to use it as a passageway through space.\n\nLike its wielder, however, this Fealty is a replica, well-crafted as it is.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <graphicData>
+                            <texPath>Things/Weapons/GW_LionSword</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <shaderType>CutoutComplex</shaderType>
+                            <drawSize>1.5</drawSize>
+                            <onGroundRandomRotateAngle>55</onGroundRandomRotateAngle>
+                        </graphicData>
+                        <uiIconPath>Things/Weapons/GW_LionSword</uiIconPath>
+                        <techLevel>Spacer</techLevel>
+                        <tradeability>Sellable</tradeability>
+                        <weaponTags>
+                            <li>GW_LionSword</li>
+                        </weaponTags>
+                        <generateCommonality>0.01</generateCommonality>
+                        <statBases>
+                            <MaxHitPoints>5000</MaxHitPoints>
+                            <Mass>5</Mass>
+                            <MarketValue>6600.0</MarketValue>
+                        </statBases>
+                        <equippedStatOffsets>
+                            <MoveSpeed>1</MoveSpeed>
+                            <Beauty>150</Beauty>
+                        </equippedStatOffsets>
+                        <relicChance>1</relicChance>
+                        <equippedAngleOffset>0</equippedAngleOffset>
+                        <tools>
+                            <li>
+                                <label>handle</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>35.477</power>
+                                <cooldownTime>1.105</cooldownTime>
+                                <chanceFactor>0.07</chanceFactor>
+                            </li>
+                            <li>
+                                <label>point</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>88.944</power>
+                                <cooldownTime>1.02</cooldownTime>
+                                <chanceFactor>0.5</chanceFactor>
+                                <armorPenetration>3.63</armorPenetration>
+                            </li>
+                            <li>
+                                <label>edge</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>110.0</power>
+                                <cooldownTime>0.85</cooldownTime>
+                                <chanceFactor>1</chanceFactor>
+                                <armorPenetration>2.97</armorPenetration>
+                            </li>
+                        </tools>
+                        <comps>
+                            <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit" />
+                        </comps>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="GW_SM_Melee_FlameSword_Bond" Abstract="True">
+                        <label>persona Emperor's sword</label>
+                        <description>The Emperor's Sword is a giant, flaming sword that was created and wielded by the God-Emperor of Mankind Himself. Not only can no armor withstand its sundering stroke, but His blade can also destroy daemons permanently, instead of merely banishing them back to the Warp.\n\nThousands of daemons were felled by this blade, and thousands more were felled by Roboute Guilliman, the Imperial Regent, who wielded the Emperor's Sword during the Thirteenth Black Crusade of the 41st Millennium.\n\nOf course, this blade is a mere replica - a fine one it is, but the true Emperor's Sword and its wielder are too important to leave Terra except for the most imperative tasks.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Weapons/FlameSword</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.5, 1.5</drawSize>
+                            <shaderType>CutoutComplex</shaderType>
+                        </graphicData>
+                        <tradeability>Sellable</tradeability>
+                        <uiIconScale>1.2</uiIconScale>
+                        <burnableByRecipe>false</burnableByRecipe>
+                        <statBases>
+                            <MaxHitPoints>5000</MaxHitPoints>
+                            <Mass>12</Mass>
+                            <MarketValue>6600.0</MarketValue>
+                        </statBases>
+                        <equippedStatOffsets>
+                            <MoveSpeed>0.50</MoveSpeed>
+                            <Beauty>150</Beauty>
+                        </equippedStatOffsets>
+                        <techLevel>Archotech</techLevel>
+                        <relicChance>3</relicChance>
+                        <weaponTags>
+                            <li>GW_GuillimanSword</li>
+                            <li>UltratechMelee</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>Melee</li>
+                            <li>Ultratech</li>
+                        </weaponClasses>
+                        <tools>
+                            <li>
+                                <label>pommel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>88.944</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>183.038</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>point</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>141.402</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                        </tools>
+                        <comps>
+                            <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit" />
+                        </comps>
+                    </ThingDef>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_grimworld40000scatteredsons</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+                            <ThingDef ParentName="GW_SS_LionSword_Bond">
+                                <defName>GW_SS_LionSword_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="GW_SM_Melee_FlameSword_Bond">
+                                <defName>GW_SM_Melee_FlameSword_Bond</defName>
+                            </ThingDef>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
