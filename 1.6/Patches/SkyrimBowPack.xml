@@ -1,0 +1,1033 @@
+<?xml version="1.0" ?>
+<!--
+	===== Skyrim Bow Pack =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>doublec.skyrimbowpack</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Ancient_Nord_Bow_Bond" Abstract="True">
+						<label>persona ancient nord bow</label>
+						<description>A old and rusty, but well crafted, bow.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_AncientNord_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>0.5,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.3</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.726</AccuracyLong>
+							<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Ancient_Nord_Bond</defaultProjectile>
+								<warmupTime>1.3</warmupTime>
+								<range>28.9</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.854</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Dwarven_Bow_Bond" Abstract="True">
+						<label>persona dwarven bow</label>
+						<description>A bow smelted of a golden alloy.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Dwarven_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.3</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.847</AccuracyLong>
+							<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Dwarven_Bond</defaultProjectile>
+								<warmupTime>1.25</warmupTime>
+								<range>31</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>11.829</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Elven_Bow_Bond" Abstract="True">
+						<label>persona elven bow</label>
+						<description>A golden bow, with eagle theming.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Elven_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.907</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Elven_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>34</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>15.968</power>
+								<cooldownTime>1.615</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Nordic_Bow_Bond" Abstract="True">
+						<label>persona nordic bow</label>
+						<description>A bow with traditional nordic design.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Nordic_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.968</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Nordic_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>34</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>15.968</power>
+								<cooldownTime>1.615</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Glass_Bow_Bond" Abstract="True">
+						<label>persona glass bow</label>
+						<description>A bow made of a gold and mixed with a glass-like material.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Glass_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.968</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Glass_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>35</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>17.0</power>
+								<cooldownTime>1.53</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Stalhrim_Bow_Bond" Abstract="True">
+						<label>persona stalhrim bow</label>
+						<description>A bow made from what's rumored to be &quot;enchanted ice&quot; known as stalhrim.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Stalhrim_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.968</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Stalhrim_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>37</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>19.061</power>
+								<cooldownTime>1.53</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Ebony_Bow_Bond" Abstract="True">
+						<label>persona ebony bow</label>
+						<description>A bow made of Ebony and detailed with gold.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Ebony_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.968</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Ebony_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>37</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>19.061</power>
+								<cooldownTime>1.53</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Daedric_Bow_Bond" Abstract="True">
+						<label>persona daedric bow</label>
+						<description>A bow with hellish origin, and truly a weapon to behold for any archer.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Daedric_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.089</AccuracyShort>
+							<AccuracyMedium>1.028</AccuracyMedium>
+							<AccuracyLong>0.968</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Daedric_Bond</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>38</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>21.118</power>
+								<cooldownTime>1.445</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Dragonbone_Bow_Bond" Abstract="True">
+						<label>persona dragonbone bow</label>
+						<description>The ultimate bow, doubling as a decent melee weapon, and the most powerful arrow-fed weapon on the battlfield.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Dragonbone_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.2</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.089</AccuracyShort>
+							<AccuracyMedium>1.089</AccuracyMedium>
+							<AccuracyLong>1.028</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Dragonbone_Bond</defaultProjectile>
+								<warmupTime>1</warmupTime>
+								<range>40</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Cut</li>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>26.25</power>
+								<cooldownTime>1.36</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Long_Bow_Bond" Abstract="True">
+						<label>persona long bow</label>
+						<description>A long bow made from wood and string.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Long_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.847</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.847</AccuracyMedium>
+							<AccuracyLong>0.544</AccuracyLong>
+							<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Long_Bond</defaultProjectile>
+								<warmupTime>1.4</warmupTime>
+								<range>26.9</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.854</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Hunting_Bow_Bond" Abstract="True">
+						<label>persona hunting bow</label>
+						<description>A hunting bow reinforced with leather strips.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Hunting_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.3</Mass>
+							<AccuracyTouch>0.847</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.907</AccuracyMedium>
+							<AccuracyLong>0.484</AccuracyLong>
+							<RangedWeapon_Cooldown>1.011</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Hunting_Bond</defaultProjectile>
+								<warmupTime>1.3</warmupTime>
+								<range>28.9</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.854</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Imperial_Bow_Bond" Abstract="True">
+						<label>persona imperial bow</label>
+						<description>A bow wrapped in leather and stitched with high quality craftsmanship.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Imperial_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.2</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.786</AccuracyLong>
+							<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Imperial_Bond</defaultProjectile>
+								<warmupTime>1.3</warmupTime>
+								<range>29</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.958</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Orcish_Bow_Bond" Abstract="True">
+						<label>persona orcish bow</label>
+						<description>A bow crafted of a green metal crudlely shaped together, with a leather wrapped grip.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Orcish_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.2</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.786</AccuracyLong>
+							<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Orcish_Bond</defaultProjectile>
+								<warmupTime>1.3</warmupTime>
+								<range>29</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>10.271</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Falmer_Bow_Bond" Abstract="True">
+						<label>persona falmer bow</label>
+						<description>A bow used by the elves hidden underground, known as the Falmer.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Falmer_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.3</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.847</AccuracyLong>
+							<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Falmer_Bond</defaultProjectile>
+								<warmupTime>1.25</warmupTime>
+								<range>31</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>11.829</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="Skyrim_Forsworn_Bow_Bond" Abstract="True">
+						<label>persona forsworn bow</label>
+						<description>A bow crafted from wood, bones, and leather. It is typically yielded by the Forsworn, a group of natives of the Reach, in Skyrim.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponRanged/Skyrim_Forsworn_Bow</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.0,1.0</drawSize>
+						</graphicData>
+						<soundInteract>Bow_Small</soundInteract>
+						<statBases>
+							<Mass>1.3</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>1.028</AccuracyShort>
+							<AccuracyMedium>0.968</AccuracyMedium>
+							<AccuracyLong>0.847</AccuracyLong>
+							<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>NeolithicRangedBasic</li>
+						</weaponTags>
+						<weaponClasses>
+							<li>Ranged</li>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Forsworn_Bond</defaultProjectile>
+								<warmupTime>1.25</warmupTime>
+								<range>31</range>
+								<soundCast>Bow_Small</soundCast>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>limb</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>11.829</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<rotateInShelves>false</rotateInShelves>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Ancient_Nord_Bond" Abstract="True">
+						<label>ancientnordbow arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_AncientNord</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>18</damageAmountBase>
+							<armorPenetrationBase>0.1</armorPenetrationBase>
+							<speed>48</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Dwarven_Bond" Abstract="True">
+						<label>dwarven arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Dwarven</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>24</damageAmountBase>
+							<stoppingPower>1.6</stoppingPower>
+							<armorPenetrationBase>0.25</armorPenetrationBase>
+							<speed>49</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Elven_Bond" Abstract="True">
+						<label>elven arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Elven</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>28</damageAmountBase>
+							<stoppingPower>1.75</stoppingPower>
+							<armorPenetrationBase>0.35</armorPenetrationBase>
+							<speed>50</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Nordic_Bond" Abstract="True">
+						<label>nordic arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Nordic</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>28</damageAmountBase>
+							<stoppingPower>1.75</stoppingPower>
+							<armorPenetrationBase>0.35</armorPenetrationBase>
+							<speed>50</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Glass_Bond" Abstract="True">
+						<label>glass arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Glass</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>29</damageAmountBase>
+							<stoppingPower>1.75</stoppingPower>
+							<armorPenetrationBase>0.4</armorPenetrationBase>
+							<speed>50</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Stalhrim_Bond" Abstract="True">
+						<label>stalhrim arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Stalhrim</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>32</damageAmountBase>
+							<stoppingPower>1.85</stoppingPower>
+							<armorPenetrationBase>0.45</armorPenetrationBase>
+							<speed>50</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Ebony_Bond" Abstract="True">
+						<label>ebony arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Ebony</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>32</damageAmountBase>
+							<stoppingPower>1.85</stoppingPower>
+							<armorPenetrationBase>0.45</armorPenetrationBase>
+							<speed>50</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Daedric_Bond" Abstract="True">
+						<label>daedric arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Daedric</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>35</damageAmountBase>
+							<stoppingPower>2</stoppingPower>
+							<armorPenetrationBase>0.5</armorPenetrationBase>
+							<speed>50</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Dragonbone_Bond" Abstract="True">
+						<label>dragonbone arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Dragonbone</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>38</damageAmountBase>
+							<stoppingPower>2</stoppingPower>
+							<armorPenetrationBase>0.5</armorPenetrationBase>
+							<speed>55</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Long_Bond" Abstract="True">
+						<label>longbow arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Iron</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>18</damageAmountBase>
+							<stoppingPower>0.5</stoppingPower>
+							<armorPenetrationBase>0.05</armorPenetrationBase>
+							<speed>47</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Hunting_Bond" Abstract="True">
+						<label>huntingbow arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Small</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>18</damageAmountBase>
+							<armorPenetrationBase>0.05</armorPenetrationBase>
+							<speed>48</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Imperial_Bond" Abstract="True">
+						<label>imperial arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Small</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>19</damageAmountBase>
+							<armorPenetrationBase>0.1</armorPenetrationBase>
+							<speed>49</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Orcish_Bond" Abstract="True">
+						<label>orcish arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Orcish</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>20</damageAmountBase>
+							<armorPenetrationBase>0.15</armorPenetrationBase>
+							<speed>49</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Falmer_Bond" Abstract="True">
+						<label>falmer arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Falmer</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>24</damageAmountBase>
+							<stoppingPower>1.6</stoppingPower>
+							<armorPenetrationBase>0.25</armorPenetrationBase>
+							<speed>49</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Arrow_Forsworn_Bond" Abstract="True">
+						<label>forsworn arrow</label>
+						<graphicData>
+							<texPath>Things/Projectile/Arrow_Forsworn</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Arrow</damageDef>
+							<damageAmountBase>24</damageAmountBase>
+							<stoppingPower>1.6</stoppingPower>
+							<armorPenetrationBase>0.25</armorPenetrationBase>
+							<speed>49</speed>
+						</projectile>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_SkyrimBowPack</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="Skyrim_Ancient_Nord_Bow_Bond">
+								<defName>Skyrim_Ancient_Nord_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Dwarven_Bow_Bond">
+								<defName>Skyrim_Dwarven_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Elven_Bow_Bond">
+								<defName>Skyrim_Elven_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Nordic_Bow_Bond">
+								<defName>Skyrim_Nordic_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Glass_Bow_Bond">
+								<defName>Skyrim_Glass_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Stalhrim_Bow_Bond">
+								<defName>Skyrim_Stalhrim_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Ebony_Bow_Bond">
+								<defName>Skyrim_Ebony_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Daedric_Bow_Bond">
+								<defName>Skyrim_Daedric_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Dragonbone_Bow_Bond">
+								<defName>Skyrim_Dragonbone_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Long_Bow_Bond">
+								<defName>Skyrim_Long_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Hunting_Bow_Bond">
+								<defName>Skyrim_Hunting_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Imperial_Bow_Bond">
+								<defName>Skyrim_Imperial_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Orcish_Bow_Bond">
+								<defName>Skyrim_Orcish_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Falmer_Bow_Bond">
+								<defName>Skyrim_Falmer_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Skyrim_Forsworn_Bow_Bond">
+								<defName>Skyrim_Forsworn_Bow_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Ancient_Nord_Bond">
+								<defName>Arrow_Ancient_Nord_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Dwarven_Bond">
+								<defName>Arrow_Dwarven_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Elven_Bond">
+								<defName>Arrow_Elven_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Nordic_Bond">
+								<defName>Arrow_Nordic_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Glass_Bond">
+								<defName>Arrow_Glass_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Stalhrim_Bond">
+								<defName>Arrow_Stalhrim_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Ebony_Bond">
+								<defName>Arrow_Ebony_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Daedric_Bond">
+								<defName>Arrow_Daedric_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Dragonbone_Bond">
+								<defName>Arrow_Dragonbone_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Long_Bond">
+								<defName>Arrow_Long_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Hunting_Bond">
+								<defName>Arrow_Hunting_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Imperial_Bond">
+								<defName>Arrow_Imperial_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Orcish_Bond">
+								<defName>Arrow_Orcish_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Falmer_Bond">
+								<defName>Arrow_Falmer_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Arrow_Forsworn_Bond">
+								<defName>Arrow_Forsworn_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
