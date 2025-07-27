@@ -12,10 +12,6 @@
 			<Operation Class="XmlExtensions.PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
-					<ThingCategoryDef Name="MPBFPM_WeaponsRanged" Abstract="True">
-						<label>persona</label>
-						<parent>WeaponsRanged</parent>
-					</ThingCategoryDef>
 					<ThingDef Name="MPBFPM_AWExclusiveWeaponT2" ParentName="MPBFPM_BaseHumanMakeableGun" Abstract="True">
 						<statBases>
 							<MaxHitPoints>200</MaxHitPoints>
@@ -37,7 +33,7 @@
 						<techLevel>Ultra</techLevel>
 						<relicChance>0</relicChance>
 						<thingCategories>
-							<li>MPBFPM_WeaponsRanged</li>
+							<li>PersonaWeaponsRanged</li>
 						</thingCategories>
 						<weaponClasses>
 							<li>Ranged</li>
@@ -154,7 +150,7 @@
 					</ThingDef>
 					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT2" Name="Gun_GlitterBlasterRifle_Bond" Abstract="True">
 						<label>persona glitter blaster rifle</label>
-						<description>Once standard issue for Glitterworld shipboard assault units, this rifle has long since ceased production. It fires high-velocity charge pulses through a compact energy rail system, originally engineered for short-range engagements in zero-G environments—yet it still proves highly effective even by today’s standards.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<description>Once standard issue for Glitterworld shipboard assault units, this rifle has long since ceased production. It fires high-velocity charge pulses through a compact energy rail system, originally engineered for short-range engagements in zero-G environmentsï¿½yet it still proves highly effective even by todayï¿½s standards.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 						<techLevel>Spacer</techLevel>
 						<graphicData>
 							<texPath>Things/WeaponRanged/GlitterBlasterRifle</texPath>
@@ -205,7 +201,7 @@
 					</ThingDef>
 					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT2" Name="Gun_GlitterMinigun_Bond" Abstract="True">
 						<label>persona glitter minigun</label>
-						<description>A high-speed energy rotary weapon once used for close-quarters suppression aboard spacecraft. Despite its age, its relentless fire rate and efficient power cycling system still deliver terrifying suppressive force—even against modern combat units.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<description>A high-speed energy rotary weapon once used for close-quarters suppression aboard spacecraft. Despite its age, its relentless fire rate and efficient power cycling system still deliver terrifying suppressive forceï¿½even against modern combat units.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 						<techLevel>Spacer</techLevel>
 						<graphicData>
 							<texPath>Things/WeaponRanged/GlitterMinigun</texPath>
@@ -342,7 +338,7 @@
 					</ThingDef>
 					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_OmegaPulseRifle_Bond" Abstract="True">
 						<label>persona &quot;Omega&quot; pulse rifle</label>
-						<description>This pulse rifle represents the upper limit of personal high-firepower armament. Enhanced pulse modules and a composite stabilization system grant it exceptional accuracy, fire rate, and damage output—earning its place as the definitive end of rifle design.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<description>This pulse rifle represents the upper limit of personal high-firepower armament. Enhanced pulse modules and a composite stabilization system grant it exceptional accuracy, fire rate, and damage outputï¿½earning its place as the definitive end of rifle design.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 						<techLevel>Ultra</techLevel>
 						<graphicData>
 							<texPath>Things/WeaponRanged/OmegaPulseRifle</texPath>
@@ -438,7 +434,7 @@
 					</ThingDef>
 					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_GungnirAntimaterielLance_Bond" Abstract="True">
 						<label>persona &quot;Gungnir&quot; anti-materiel lance</label>
-						<description>Building on the already exceptional anti-armor performance of its predecessor, this sniper weapon further enhances range, stopping power, and accuracy. At extreme distances, it can reliably disable even the most heavily fortified targets—making it the definitive answer for long-range elimination.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<description>Building on the already exceptional anti-armor performance of its predecessor, this sniper weapon further enhances range, stopping power, and accuracy. At extreme distances, it can reliably disable even the most heavily fortified targetsï¿½making it the definitive answer for long-range elimination.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 						<techLevel>Ultra</techLevel>
 						<graphicData>
 							<texPath>Things/WeaponRanged/GungnirAntimaterielLance</texPath>
@@ -482,7 +478,7 @@
 					</ThingDef>
 					<ThingDef ParentName="MPBFPM_AWExclusiveWeaponT3" Name="Gun_ShattererShotgun_Bond" Abstract="True">
 						<label>persona &quot;Shatterer&quot; shotgun</label>
-						<description>Engineered for close-quarters elimination, the “shredder” shotgun features a refined spread pattern that delivers exceptional accuracy at point-blank range. With overwhelming pellet density, stopping power, and burst potential, it tears through anything in its path within seconds.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<description>Engineered for close-quarters elimination, the ï¿½shredderï¿½ shotgun features a refined spread pattern that delivers exceptional accuracy at point-blank range. With overwhelming pellet density, stopping power, and burst potential, it tears through anything in its path within seconds.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 						<techLevel>Ultra</techLevel>
 						<graphicData>
 							<texPath>Things/WeaponRanged/ShattererShotgun</texPath>
@@ -536,7 +532,7 @@
 					</ThingDef>
 					<ThingDef ParentName="MPBFPM_Tier4ArchoWeapon" Name="Gun_Singularity_Bond" Abstract="True">
 						<label>persona Singularity</label>
-						<description>Implanted with a persona core, this weapon establishes a faint yet functional link to an Archotech. Each shot is a brief transmission, a translated fragment of divine intent.\n\nUpon firing, nanoscale Archotech machines embed themselves onto the projectile. On impact, they induce low-grade interference within the target’s physiological and cognitive systems, causing temporary systemic disruption.\n\nWhile it retains the appearance of physical ammunition, its rounds are far from standard—they are engineered vessels built to carry a fragment of interference.\n\nIts purpose is not to break armor,  but to gently nudge the target away from what they were meant to be.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<description>Implanted with a persona core, this weapon establishes a faint yet functional link to an Archotech. Each shot is a brief transmission, a translated fragment of divine intent.\n\nUpon firing, nanoscale Archotech machines embed themselves onto the projectile. On impact, they induce low-grade interference within the targetï¿½s physiological and cognitive systems, causing temporary systemic disruption.\n\nWhile it retains the appearance of physical ammunition, its rounds are far from standardï¿½they are engineered vessels built to carry a fragment of interference.\n\nIts purpose is not to break armor,  but to gently nudge the target away from what they were meant to be.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
 						<tickerType>Normal</tickerType>
 						<techLevel>Ultra</techLevel>
 						<graphicData>
@@ -739,9 +735,6 @@
 					<Operation Class="XmlExtensions.PatchOperationAdd">
 						<xpath>Defs</xpath>
 						<value>
-							<ThingCategoryDef ParentName="MPBFPM_WeaponsRanged">
-								<defName>MPBFPM_WeaponsRanged</defName>
-							</ThingCategoryDef>
 							<ThingDef ParentName="Gun_AdvancedChargeRifle_Bond">
 								<defName>Gun_AdvancedChargeRifle_Bond</defName>
 							</ThingDef>
