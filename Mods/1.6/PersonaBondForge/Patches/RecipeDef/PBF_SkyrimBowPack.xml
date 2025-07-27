@@ -1,0 +1,450 @@
+<?xml version="1.0" ?>
+<!--
+	===== Skyrim Bow Pack =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>doublec.skyrimbowpack</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Ancient_Nord_Bow_Bond" Abstract="True">
+						<label>bond ancient nord bow</label>
+						<description>Bond an ancient nord bow.</description>
+						<jobString>Bonding a ancient nord bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Ancient_Nord_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Ancient_Nord_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Ancient_Nord_Bow_Bond>1</Skyrim_Ancient_Nord_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Dwarven_Bow_Bond" Abstract="True">
+						<label>bond dwarven bow</label>
+						<description>Bond an dwarven bow.</description>
+						<jobString>Bonding a dwarven bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Dwarven_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Dwarven_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Dwarven_Bow_Bond>1</Skyrim_Dwarven_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Elven_Bow_Bond" Abstract="True">
+						<label>bond elven bow</label>
+						<description>Bond an elven bow.</description>
+						<jobString>Bonding a elven bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Elven_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Elven_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Elven_Bow_Bond>1</Skyrim_Elven_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Nordic_Bow_Bond" Abstract="True">
+						<label>bond nordic bow</label>
+						<description>Bond an nordic bow.</description>
+						<jobString>Bonding a nordic bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Nordic_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Nordic_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Nordic_Bow_Bond>1</Skyrim_Nordic_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Glass_Bow_Bond" Abstract="True">
+						<label>bond glass bow</label>
+						<description>Bond an glass bow.</description>
+						<jobString>Bonding a glass bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Glass_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Glass_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Glass_Bow_Bond>1</Skyrim_Glass_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Stalhrim_Bow_Bond" Abstract="True">
+						<label>bond stalhrim bow</label>
+						<description>Bond an stalhrim bow.</description>
+						<jobString>Bonding a stalhrim bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Stalhrim_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Stalhrim_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Stalhrim_Bow_Bond>1</Skyrim_Stalhrim_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Ebony_Bow_Bond" Abstract="True">
+						<label>bond ebony bow</label>
+						<description>Bond an ebony bow.</description>
+						<jobString>Bonding a ebony bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Ebony_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Ebony_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Ebony_Bow_Bond>1</Skyrim_Ebony_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Daedric_Bow_Bond" Abstract="True">
+						<label>bond daedric bow</label>
+						<description>Bond an daedric bow.</description>
+						<jobString>Bonding a daedric bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Daedric_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Daedric_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Daedric_Bow_Bond>1</Skyrim_Daedric_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Dragonbone_Bow_Bond" Abstract="True">
+						<label>bond dragonbone bow</label>
+						<description>Bond an dragonbone bow.</description>
+						<jobString>Bonding a dragonbone bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Dragonbone_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Dragonbone_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Dragonbone_Bow_Bond>1</Skyrim_Dragonbone_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Long_Bow_Bond" Abstract="True">
+						<label>bond long bow</label>
+						<description>Bond an long bow.</description>
+						<jobString>Bonding a long bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Long_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Long_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Long_Bow_Bond>1</Skyrim_Long_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Hunting_Bow_Bond" Abstract="True">
+						<label>bond hunting bow</label>
+						<description>Bond an hunting bow.</description>
+						<jobString>Bonding a hunting bow.</jobString>
+						<researchPrerequisites>
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Hunting_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Hunting_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Hunting_Bow_Bond>1</Skyrim_Hunting_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Imperial_Bow_Bond" Abstract="True">
+						<label>bond imperial bow</label>
+						<description>Bond an imperial bow.</description>
+						<jobString>Bonding a imperial bow.</jobString>
+						<researchPrerequisites>
+							<li>RecurveBow</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Imperial_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Imperial_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Imperial_Bow_Bond>1</Skyrim_Imperial_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Orcish_Bow_Bond" Abstract="True">
+						<label>bond orcish bow</label>
+						<description>Bond an orcish bow.</description>
+						<jobString>Bonding a orcish bow.</jobString>
+						<researchPrerequisites>
+							<li>Greatbow</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Orcish_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Orcish_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Orcish_Bow_Bond>1</Skyrim_Orcish_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Falmer_Bow_Bond" Abstract="True">
+						<label>bond falmer bow</label>
+						<description>Bond an falmer bow.</description>
+						<jobString>Bonding a falmer bow.</jobString>
+						<researchPrerequisites>
+							<li>Greatbow</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Falmer_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Falmer_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Falmer_Bow_Bond>1</Skyrim_Falmer_Bow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Skyrim_Forsworn_Bow_Bond" Abstract="True">
+						<label>bond forsworn bow</label>
+						<description>Bond an forsworn bow.</description>
+						<jobString>Bonding a forsworn bow.</jobString>
+						<researchPrerequisites>
+							<li>Greatbow</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Skyrim_Forsworn_Bow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Skyrim_Forsworn_Bow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Skyrim_Forsworn_Bow_Bond>1</Skyrim_Forsworn_Bow_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_SkyrimBowPack</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_SkyrimBowPack</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_Skyrim_Ancient_Nord_Bow_Bond">
+												<defName>Make_Skyrim_Ancient_Nord_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Dwarven_Bow_Bond">
+												<defName>Make_Skyrim_Dwarven_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Elven_Bow_Bond">
+												<defName>Make_Skyrim_Elven_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Nordic_Bow_Bond">
+												<defName>Make_Skyrim_Nordic_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Glass_Bow_Bond">
+												<defName>Make_Skyrim_Glass_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Stalhrim_Bow_Bond">
+												<defName>Make_Skyrim_Stalhrim_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Ebony_Bow_Bond">
+												<defName>Make_Skyrim_Ebony_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Daedric_Bow_Bond">
+												<defName>Make_Skyrim_Daedric_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Dragonbone_Bow_Bond">
+												<defName>Make_Skyrim_Dragonbone_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Long_Bow_Bond">
+												<defName>Make_Skyrim_Long_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Hunting_Bow_Bond">
+												<defName>Make_Skyrim_Hunting_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Imperial_Bow_Bond">
+												<defName>Make_Skyrim_Imperial_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Orcish_Bow_Bond">
+												<defName>Make_Skyrim_Orcish_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Falmer_Bow_Bond">
+												<defName>Make_Skyrim_Falmer_Bow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Skyrim_Forsworn_Bow_Bond">
+												<defName>Make_Skyrim_Forsworn_Bow_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
