@@ -1,0 +1,409 @@
+<?xml version="1.0" ?>
+<!--
+	===== Vanilla XCOM Chimera Squad Weapons =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>flangopink.vanillaxcomcsweapons</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Melee_ShockMace_Bond" Abstract="True">
+						<label>bond chimera shock mace</label>
+						<description>Bond an chimera shock mace.</description>
+						<jobString>Bonding a chimera shock mace.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Melee_ShockMace</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Melee_ShockMace</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Melee_ShockMace_Bond>1</XCOMCS_Melee_ShockMace_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Melee_ShockMace_Bond_Reset" Abstract="True">
+						<label>Reset chimera shock mace</label>
+						<description>Reset a chimera shock mace.</description>
+						<jobString>Resetting a chimera shock mace.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Melee_ShockMace_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Melee_ShockMace_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Melee_ShockMace_Bond>1</XCOMCS_Melee_ShockMace_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Melee_Sledgemace_Bond" Abstract="True">
+						<label>bond chimera sledgemace</label>
+						<description>Bond an chimera sledgemace.</description>
+						<jobString>Bonding a chimera sledgemace.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Melee_Sledgemace</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Melee_Sledgemace</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Melee_Sledgemace_Bond>1</XCOMCS_Melee_Sledgemace_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Melee_Sledgemace_Bond_Reset" Abstract="True">
+						<label>Reset chimera sledgemace</label>
+						<description>Reset a chimera sledgemace.</description>
+						<jobString>Resetting a chimera sledgemace.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Melee_Sledgemace_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Melee_Sledgemace_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Melee_Sledgemace_Bond>1</XCOMCS_Melee_Sledgemace_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Gun_Rifle_Bond" Abstract="True">
+						<label>bond chimera rifle</label>
+						<description>Bond an chimera rifle.</description>
+						<jobString>Bonding a chimera rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_Rifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_Rifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_Rifle_Bond>1</XCOMCS_Gun_Rifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Gun_Rifle_Bond_Reset" Abstract="True">
+						<label>Reset chimera rifle</label>
+						<description>Reset a chimera rifle.</description>
+						<jobString>Resetting a chimera rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_Rifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_Rifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_Rifle_Bond>1</XCOMCS_Gun_Rifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Gun_Pistol_Bond" Abstract="True">
+						<label>bond chimera pistol</label>
+						<description>Bond an chimera pistol.</description>
+						<jobString>Bonding a chimera pistol.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_Pistol</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_Pistol</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_Pistol_Bond>1</XCOMCS_Gun_Pistol_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Gun_Pistol_Bond_Reset" Abstract="True">
+						<label>Reset chimera pistol</label>
+						<description>Reset a chimera pistol.</description>
+						<jobString>Resetting a chimera pistol.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_Pistol_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_Pistol_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_Pistol_Bond>1</XCOMCS_Gun_Pistol_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Gun_Shotgun_Bond" Abstract="True">
+						<label>bond chimera shotgun</label>
+						<description>Bond an chimera shotgun.</description>
+						<jobString>Bonding a chimera shotgun.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_Shotgun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_Shotgun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_Shotgun_Bond>1</XCOMCS_Gun_Shotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Gun_Shotgun_Bond_Reset" Abstract="True">
+						<label>Reset chimera shotgun</label>
+						<description>Reset a chimera shotgun.</description>
+						<jobString>Resetting a chimera shotgun.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_Shotgun_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_Shotgun_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_Shotgun_Bond>1</XCOMCS_Gun_Shotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Gun_SMG_Bond" Abstract="True">
+						<label>bond chimera SMG</label>
+						<description>Bond an chimera SMG.</description>
+						<jobString>Bonding a chimera SMG.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_SMG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_SMG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_SMG_Bond>1</XCOMCS_Gun_SMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Gun_SMG_Bond_Reset" Abstract="True">
+						<label>Reset chimera SMG</label>
+						<description>Reset a chimera SMG.</description>
+						<jobString>Resetting a chimera SMG.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_SMG_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_SMG_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_SMG_Bond>1</XCOMCS_Gun_SMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_XCOMCS_Gun_SniperRifle_Bond" Abstract="True">
+						<label>bond chimera marksman rifle</label>
+						<description>Bond an chimera marksman rifle.</description>
+						<jobString>Bonding a chimera marksman rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_SniperRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_SniperRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_SniperRifle_Bond>1</XCOMCS_Gun_SniperRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_XCOMCS_Gun_SniperRifle_Bond_Reset" Abstract="True">
+						<label>Reset chimera marksman rifle</label>
+						<description>Reset a chimera marksman rifle.</description>
+						<jobString>Resetting a chimera marksman rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>XCOMCS_Gun_SniperRifle_Bond</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>XCOMCS_Gun_SniperRifle_Bond</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<XCOMCS_Gun_SniperRifle_Bond>1</XCOMCS_Gun_SniperRifle_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_VanillaXCOMChimeraSquadWeapons</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_OE_VanillaXCOMChimeraSquadWeapons</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Melee_ShockMace_Bond">
+												<defName>Make_OE_XCOMCS_Melee_ShockMace_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Melee_ShockMace_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Melee_ShockMace_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Melee_Sledgemace_Bond">
+												<defName>Make_OE_XCOMCS_Melee_Sledgemace_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Melee_Sledgemace_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Melee_Sledgemace_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_Rifle_Bond">
+												<defName>Make_OE_XCOMCS_Gun_Rifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_Rifle_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Gun_Rifle_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_Pistol_Bond">
+												<defName>Make_OE_XCOMCS_Gun_Pistol_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_Pistol_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Gun_Pistol_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_Shotgun_Bond">
+												<defName>Make_OE_XCOMCS_Gun_Shotgun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_Shotgun_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Gun_Shotgun_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_SMG_Bond">
+												<defName>Make_OE_XCOMCS_Gun_SMG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_SMG_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Gun_SMG_Bond_Reset</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_SniperRifle_Bond">
+												<defName>Make_OE_XCOMCS_Gun_SniperRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_OE_XCOMCS_Gun_SniperRifle_Bond_Reset">
+												<defName>Make_OE_XCOMCS_Gun_SniperRifle_Bond_Reset</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
