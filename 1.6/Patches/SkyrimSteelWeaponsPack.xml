@@ -1,0 +1,352 @@
+<?xml version="1.0" ?>
+<!--
+	===== Skyrim Steel Weapons Pack =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>doublec.skyrimsteelweaponspack</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_Skyrim_Steel_Dagger_Bond" Abstract="True">
+						<label>persona steel dagger</label>
+						<description>A short nord steel dagger. Pointy to the tip and great for stabbing.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_Dagger</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>0.65, 0.65</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>1.0</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>0.5</Mass>
+						</statBases>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12.117</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>blade</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>15.579</power>
+								<cooldownTime>1.275</cooldownTime>
+							</li>
+							<li>
+								<label>point</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>16.606</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_Skyrim_Steel_Sword_Bond" Abstract="True">
+						<label>persona steel sword</label>
+						<description>A steel sword of nord design. Good for killing bandits and dragons alike.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_Sword</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1, 0.9</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>1</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>0.85</Mass>
+						</statBases>
+						<relicChance>2</relicChance>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>13.162</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>point</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>20.0</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>edge</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>20.562</power>
+								<cooldownTime>1.615</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_Skyrim_Steel_Waraxe_Bond" Abstract="True">
+						<label>persona steel waraxe</label>
+						<description>A steel waraxe of nord design. Good for times of war when a weapon is always needed.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_WarAxe</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1, 0.7</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>0.9</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.5</Mass>
+						</statBases>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>13.162</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>edge</label>
+								<capacities>
+									<li>Demolish</li>
+									<li>Cut</li>
+								</capacities>
+								<power>19.437</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Blunt_Quality" Name="MeleeWeapon_Skyrim_Steel_Mace_Bond" Abstract="True">
+						<label>persona steel mace</label>
+						<description>A nord mace made of steel, consisting of a pointy stick and four blades.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_Mace</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.1,0.9</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>1.1</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.25</Mass>
+						</statBases>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>13.162</power>
+								<cooldownTime>1.615</cooldownTime>
+							</li>
+							<li>
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>20.0</power>
+								<cooldownTime>1.615</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_Skyrim_Steel_Greatsword_Bond" Abstract="True">
+						<label>persona steel greatsword</label>
+						<description>A two-handed steel greatsword of nord design. Good for more damage and quick strikes.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_GreatSword</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.5, 1.2</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>1.2</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.1</Mass>
+						</statBases>
+						<relicChance>2</relicChance>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>point</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>28.899</power>
+								<cooldownTime>2.125</cooldownTime>
+							</li>
+							<li>
+								<label>edge</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>28.899</power>
+								<cooldownTime>2.125</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_Skyrim_Steel_Battleaxe_Bond" Abstract="True">
+						<label>persona steel battleaxe</label>
+						<description>A two-handed steel battleaxe of nord design. The two-handed compromise for speed and power.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_BattleAxe</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.45,0.9</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>1.2</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.2</Mass>
+						</statBases>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>15.464</power>
+								<cooldownTime>1.785</cooldownTime>
+							</li>
+							<li>
+								<label>head</label>
+								<capacities>
+									<li>Demolish</li>
+									<li>Cut</li>
+								</capacities>
+								<power>30.0</power>
+								<cooldownTime>2.21</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_Skyrim_Steel_Warhammer_Bond" Abstract="True">
+						<label>persona steel warhammer</label>
+						<description>A two-handed steel warhammer of nord design. This two-handed powerhouse is perfect for smashing skulls.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Things/Item/Equipment/WeaponMelee/Skyrim_Steel_WarHammer</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.4, 1.0</drawSize>
+							<drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+							<drawOffsetEast>(0.1, 0.0, 0.0)</drawOffsetEast>
+							<drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+							<drawOffsetWest>(-0.1, 0.0, 0.0)</drawOffsetWest>
+						</graphicData>
+						<uiIconScale>1.2</uiIconScale>
+						<techLevel>Medieval</techLevel>
+						<weaponTags>
+							<li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<statBases>
+							<Mass>5</Mass>
+						</statBases>
+						<equippedAngleOffset>-65</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>15.464</power>
+								<cooldownTime>1.955</cooldownTime>
+							</li>
+							<li>
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>32.196</power>
+								<cooldownTime>2.465</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_SkyrimSteelWeaponsPack</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Dagger_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Dagger_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Sword_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Sword_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Waraxe_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Waraxe_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Mace_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Mace_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Greatsword_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Greatsword_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Battleaxe_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Battleaxe_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="MeleeWeapon_Skyrim_Steel_Warhammer_Bond">
+								<defName>MeleeWeapon_Skyrim_Steel_Warhammer_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
