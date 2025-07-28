@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<!--
+	===== Destiny 2 Weapon Package - Power Weapon =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>destiny2.weapon.power</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="FR_Raven_Bond" Abstract="True">
+						<label>persona One Thousand Voices</label>
+						<description>I can be anyone you wish, o murderer mine.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>one_thousand_voices</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_ChargeRifle</soundInteract>
+						<equippedAngleOffset>45</equippedAngleOffset>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.5</MoveSpeed>
+						</equippedStatOffsets>
+						<statBases>
+							<Mass>5.0</Mass>
+							<RangedWeapon_Cooldown>2.167</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs Inherit="False">
+							<li>
+								<label>High Energy Beam</label>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>proj_raven_Bond</defaultProjectile>
+								<ai_AvoidFriendlyFireRadius>3.9</ai_AvoidFriendlyFireRadius>
+								<minRange>3.9</minRange>
+								<range>29.9</range>
+								<forcedMissRadius>1.9</forcedMissRadius>
+								<noiseRadius>4</noiseRadius>
+								<burstShotCount>7</burstShotCount>
+								<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+								<warmupTime>3</warmupTime>
+								<soundCast>shot_raven</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>12</muzzleFlashScale>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>
+							</li>
+						</verbs>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<tools>
+							<li>
+								<label>Barrel</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>17.0</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="GL_SalvationsGrip_Bond" Abstract="True">
+						<label>persona Salvation's Grip</label>
+						<description>&quot;I respect what I cannot steal from and you cannot take from the dark.&quot; --Excerpt from an old Eliksni salvage manifest.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<graphicData>
+							<texPath>salvations_grip</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Rifle</soundInteract>
+						<equippedAngleOffset>45</equippedAngleOffset>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.5</MoveSpeed>
+						</equippedStatOffsets>
+						<statBases>
+							<Mass>5.0</Mass>
+							<RangedWeapon_Cooldown>4.335</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs Inherit="False">
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>proj_salvationgrip_Bond</defaultProjectile>
+								<range>25.9</range>
+								<ai_AvoidFriendlyFireRadius>5.9</ai_AvoidFriendlyFireRadius>
+								<forcedMissRadius>3.1</forcedMissRadius>
+								<burstShotCount>3</burstShotCount>
+								<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+								<warmupTime>4</warmupTime>
+								<soundCast>shot_salvationsgrip</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>
+								<muzzleFlashScale>6</muzzleFlashScale>
+							</li>
+						</verbs>
+						<weaponTags>
+							<li>SpacerGun</li>
+						</weaponTags>
+						<tools>
+							<li>
+								<label>Barrel</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>17.0</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="SP_Darci_Bond" Abstract="True">
+						<label>persona D.A.R.C.I.</label>
+						<description>Thank you for using the Data Analysis, Reconnaissance, and Cooperative Intelligence device. You may call me Darci.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<techLevel>Spacer</techLevel>
+						<equippedAngleOffset>45</equippedAngleOffset>
+						<graphicData>
+							<texPath>darci</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Rifle</soundInteract>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.5</MoveSpeed>
+							<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+							<ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+						</equippedStatOffsets>
+						<statBases>
+							<Mass>6.5</Mass>
+							<AccuracyTouch>0.605</AccuracyTouch>
+							<AccuracyShort>0.726</AccuracyShort>
+							<AccuracyMedium>1.21</AccuracyMedium>
+							<AccuracyLong>1.21</AccuracyLong>
+							<RangedWeapon_Cooldown>2.167</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Bullet_Darci_Bond</defaultProjectile>
+								<warmupTime>2</warmupTime>
+								<range>50</range>
+								<soundCast>shot_darci</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
+								<muzzleFlashScale>8</muzzleFlashScale>
+							</li>
+						</verbs>
+						<weaponTags>
+							<li>SpacerGun</li>
+							<li>SniperRifle</li>
+						</weaponTags>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>12.866</power>
+								<cooldownTime>3.4</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>12.866</power>
+								<cooldownTime>3.4</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef Name="MPBFPM_RavenProjectile" Abstract="True" ParentName="MPBFPM_BaseBullet">
+						<label>Projectile Special</label>
+						<thingClass>Projectile_Explosive</thingClass>
+						<projectile>
+							<speed>200</speed>
+							<arcHeightFactor>0.3</arcHeightFactor>
+							<shadowSize>0.1</shadowSize>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_RavenProjectile" Name="proj_raven_Bond" Abstract="True">
+						<label>Ahamkara's Eye</label>
+						<thingClass>Projectile_Explosive</thingClass>
+						<graphicData>
+							<texPath>ravenlaser</texPath>
+							<shaderType>MoteGlow</shaderType>
+						</graphicData>
+						<projectile>
+							<explosionRadius>1.9</explosionRadius>
+							<damageDef>Bomb_Raven</damageDef>
+							<explosionDelay>30</explosionDelay>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_RavenProjectile" Name="proj_salvationgrip_Bond" Abstract="True">
+						<label>Statis Crystal</label>
+						<thingClass>Projectile_Explosive</thingClass>
+						<graphicData>
+							<texPath>projectile_SG</texPath>
+							<shaderType>MoteGlow</shaderType>
+						</graphicData>
+						<projectile>
+							<explosionRadius>3.1</explosionRadius>
+							<damageDef>Bomb_Savlationsgrip</damageDef>
+							<explosionDelay>50</explosionDelay>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_Darci_Bond" Abstract="True">
+						<label>Power Bullet</label>
+						<graphicData>
+							<texPath>Things/Projectile/Bullet_Big</texPath>
+						</graphicData>
+						<projectile>
+							<damageAmountBase>46</damageAmountBase>
+							<speed>120</speed>
+							<armorPenetrationBase>1.0</armorPenetrationBase>
+							<stoppingPower>4</stoppingPower>
+						</projectile>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_Destiny2WeaponPackagePowerWeapon</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="FR_Raven_Bond">
+								<defName>FR_Raven_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="GL_SalvationsGrip_Bond">
+								<defName>GL_SalvationsGrip_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="SP_Darci_Bond">
+								<defName>SP_Darci_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="proj_raven_Bond">
+								<defName>proj_raven_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="proj_salvationgrip_Bond">
+								<defName>proj_salvationgrip_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Bullet_Darci_Bond">
+								<defName>Bullet_Darci_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
