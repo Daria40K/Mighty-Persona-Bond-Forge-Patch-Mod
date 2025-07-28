@@ -1011,6 +1011,14 @@
 	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
 		<defName>MightyPersonaBondForgePatch_5_0_0</defName>
 		<assemblyVersion>5.0.0</assemblyVersion>
-		<content>Added support for Caridion Arsenal (Continued), Caridion Arsenal (Continued), Ambition of the Cosmic [Continued], Support for Ambition of the Cosmic [Continued], Ambition of the Cosmic [Continued], Destiny 2 Exotic Weapons, Destiny 2 Weapon Package - Fusion Rifle, Destiny Leviathan Weapons (Continued), District 9 Weapon Pack (Continued), KEP Blast-Charge Weaponry (Continued), KEP Weapons - Toxic (Continued), Misstall's Armory Charge Weapons, PI's Ascendant Weapon pack, PlanetSide Endeavor Weapons</content>
+		<content>Added support for Caridion Arsenal (Continued), Ambition of the Cosmic [Continued], Destiny 2 Exotic Weapons, Destiny 2 Weapon Package - Fusion Rifle, Destiny Leviathan Weapons (Continued), District 9 Weapon Pack (Continued), KEP Blast-Charge Weaponry (Continued), KEP Weapons - Toxic (Continued), Misstall's Armory Charge Weapons, PI's Ascendant Weapon pack, PlanetSide Endeavor Weapons</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.1.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>MightyPersonaBondForgePatch_5_1_0</defName>
+		<assemblyVersion>5.1.0</assemblyVersion>
+		<content>Added support for Cerberus Equipment, GERZockers Armory, Destiny 2 Weapon Package - Power Weapon, Moritz's LegendaryWeapons (Continued), Support for Randy Random's Rayguns - Ordinary Spacer Weapons,  Seventh Seraph Weapons, Vanilla Weapons Expanded - Bioferrite, Vanilla Weapons Expanded - Coilguns, Vanilla XCOM Chimera Squad Weapons, Vanilla XCOM Chosen Weapons, Vanilla XCOM Laser Weapons, Vanilla XCOM Magnetic Weapons, Vanilla XCOM Plasma Weapons, Vanilla XCOM Weapons, Vaults of Vagar, Skyrim Bow Pack
+		</content>
 	</HugsLib.UpdateFeatureDef>
 </Defs>
