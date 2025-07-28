@@ -1,0 +1,2628 @@
+<?xml version="1.0" ?>
+<!--
+	===== Rimsenal - Core =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>rimsenal.core</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.FindMod">
+				<mods>
+					<li>statistno1.personabond</li>
+				</mods>
+				<packageId>true</packageId>
+				<caseFalse>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingCategoryDef Name="MPBFPM_GDWeapons" Abstract="True">
+								<label>persona</label>
+								<parent>GDWeapons</parent>
+							</ThingCategoryDef>
+							<ThingCategoryDef Name="MPBFPM_GDMSS" Abstract="True">
+								<label>persona</label>
+								<parent>GDMSS</parent>
+							</ThingCategoryDef>
+							<ThingCategoryDef Name="MPBFPM_GDMRS" Abstract="True">
+								<label>persona</label>
+								<parent>GDMRS</parent>
+							</ThingCategoryDef>
+							<ThingCategoryDef Name="MPBFPM_GDMulti" Abstract="True">
+								<label>persona</label>
+								<parent>GDMulti</parent>
+							</ThingCategoryDef>
+							<ThingCategoryDef Name="MPBFPM_JIWeapons" Abstract="True">
+								<label>persona</label>
+								<parent>JIWeapons</parent>
+							</ThingCategoryDef>
+							<ThingCategoryDef Name="MPBFPM_TEWeapons" Abstract="True">
+								<label>persona</label>
+								<parent>TEWeapons</parent>
+							</ThingCategoryDef>
+							<ThingCategoryDef Name="MPBFPM_YPWeapons" Abstract="True">
+								<label>persona</label>
+								<parent>YPWeapons</parent>
+							</ThingCategoryDef>
+							<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="GD_Sabertooth_Bond" Abstract="True">
+								<label>persona combat blade</label>
+								<description>The &quot;Sabertooth&quot; combat blade by Greydale Defence. Effective for chopping down trees or severing enemy limbs.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Sabertooth</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<techLevel>Spacer</techLevel>
+								<statBases>
+									<Mass>1.42</Mass>
+								</statBases>
+								<weaponTags>
+									<li>Shield_Sidearm</li>
+								</weaponTags>
+								<equippedAngleOffset>-35</equippedAngleOffset>
+								<equippedStatOffsets>
+									<PlantWorkSpeed>0.1</PlantWorkSpeed>
+								</equippedStatOffsets>
+								<tools>
+									<li>
+										<label>edge</label>
+										<capacities>
+											<li>Cut</li>
+										</capacities>
+										<power>23.359</power>
+										<cooldownTime>1.87</cooldownTime>
+									</li>
+									<li>
+										<label>handle</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>10.828</power>
+										<cooldownTime>0.85</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="YP_BingJu_Bond" Abstract="True">
+								<label>persona vibro-dagger</label>
+								<description>Yeonhwa Precision Vibro-Dagger Model 1q “BingJu” (Ice Pillar)
+The last sound they’ll never hear.
+The Model 1q “BingJu” is a lightweight, high-frequency vibro-dagger engineered for close-quarters elimination. Forged from ultra-sharp crystalline composite alloys and honed to molecular precision, it vibrates at frequencies capable of severing flesh, fiber, and light armor with minimal resistance.
+Standard issue for operatives in Yeonhwa Precision’s Aggressive Marketing Division, the BingJu is favored not only for its compact profile and lethality, but for the silence with which it operates. Where bullets are too loud and witnesses too inconvenient, the BingJu excels.
+Yeonhwa Precision: Efficiency Has an Edge.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/VibroDagger</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<statBases>
+									<Mass>0.85</Mass>
+								</statBases>
+								<equippedAngleOffset>0</equippedAngleOffset>
+								<tools>
+									<li>
+										<label>handle</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>8.449</power>
+										<cooldownTime>0.425</cooldownTime>
+									</li>
+									<li>
+										<label>point</label>
+										<capacities>
+											<li>Stab</li>
+										</capacities>
+										<power>8.449</power>
+										<cooldownTime>1.02</cooldownTime>
+										<armorPenetration>0.715</armorPenetration>
+									</li>
+									<li>
+										<label>edge</label>
+										<capacities>
+											<li>Cut</li>
+										</capacities>
+										<power>10.828</power>
+										<cooldownTime>0.425</cooldownTime>
+										<armorPenetration>0.297</armorPenetration>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Blunt_Quality" Name="JI_Ormbane_Bond" Abstract="True">
+								<label>persona Assault hammer</label>
+								<techLevel>Spacer</techLevel>
+								<description>The &quot;Ormbane&quot; is a massive combat sledgehammer manufactured by Jotun Interstellar.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Ormbane</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<statBases>
+									<Mass>10</Mass>
+								</statBases>
+								<equippedAngleOffset>0</equippedAngleOffset>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.3</MoveSpeed>
+								</equippedStatOffsets>
+								<tools>
+									<li>
+										<label>handle</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>17.742</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+									<li>
+										<label>head</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>44.164</power>
+										<cooldownTime>2.805</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="TE_Eris_Bond" Abstract="True">
+								<label>persona impact knuckle</label>
+								<description>A knuckle weapon with fast attack speed. It can knock enemies out momentarily.
+Tisiphone Enterprise Type-5 &quot;Eris&quot; close-range kinetic energy discharger.
+Because some things deserve a personal touch.
+The Eris is a high-speed knuckle-mounted kinetic discharger that delivers a focused shockwave on contact—enough to knock targets unconscious, or worse, depending on how personal things have gotten. Lightweight, brutal, and utterly satisfying, it was designed by the Tisiphone Enterprise Hunter Contingent—an outfit dedicated to the extermination of surviving Federation remnants, and not especially concerned with subtlety.
+Why knuckles? Because nothing quite matches the satisfaction of punching a Federation soldier to death with your own hands\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Eris</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<techLevel>Spacer</techLevel>
+								<statBases>
+									<Mass>0.52</Mass>
+								</statBases>
+								<equippedAngleOffset>11</equippedAngleOffset>
+								<weaponTags>
+									<li>Shield_Sidearm</li>
+								</weaponTags>
+								<tools>
+									<li>
+										<label>knuckle</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>13.162</power>
+										<cooldownTime>1.105</cooldownTime>
+									</li>
+									<li>
+										<label>discharger</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>10.828</power>
+										<cooldownTime>1.445</cooldownTime>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>8</amount>
+												<chance>0.3</chance>
+											</li>
+										</extraMeleeDamages>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="MeleeWeapon_TorchSword_Bond" Abstract="True">
+								<label>persona torch sword</label>
+								<description>The &quot;Purifier&quot; torch sword is a high-capacity plasma torch featuring both a grip and blade. It attacks in one of three modes at random: armor-piercing focus mode, dispersion mode for heavy damage, or incineration mode for fire damage.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/TorchSword</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<weaponTags>
+									<li>Shield_Sidearm</li>
+								</weaponTags>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<techLevel>Spacer</techLevel>
+								<statBases>
+									<Mass>1.42</Mass>
+								</statBases>
+								<equippedAngleOffset>-5</equippedAngleOffset>
+								<tools>
+									<li>
+										<label>focus</label>
+										<capacities>
+											<li>Stab</li>
+										</capacities>
+										<power>23.359</power>
+										<cooldownTime>2.125</cooldownTime>
+										<armorPenetration>0.55</armorPenetration>
+									</li>
+									<li>
+										<label>dispersion</label>
+										<capacities>
+											<li>Stab</li>
+										</capacities>
+										<power>33.292</power>
+										<cooldownTime>2.125</cooldownTime>
+										<armorPenetration>0.55</armorPenetration>
+									</li>
+									<li>
+										<label>incineration</label>
+										<capacities>
+											<li>Cut</li>
+										</capacities>
+										<power>15.464</power>
+										<cooldownTime>2.125</cooldownTime>
+										<extraMeleeDamages>
+											<li>
+												<def>Flame</def>
+												<amount>8</amount>
+												<chance>0.5</chance>
+											</li>
+										</extraMeleeDamages>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef Name="MPBFPM_BaseGDGun" Abstract="True" ParentName="MPBFPM_BaseWeapon">
+								<techLevel>Industrial</techLevel>
+								<thingCategories>
+									<li>MPBFPM_GDWeapons</li>
+								</thingCategories>
+								<weaponTags>
+									<li>IndustrialGunAdvanced</li>
+									<li>GDGun</li>
+								</weaponTags>
+								<generateCommonality>0.05</generateCommonality>
+								<comps>
+      </comps>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_MSST_Bond" Abstract="True">
+								<label>persona modular triple-shot</label>
+								<description>Standard close-range sidearm with good armor-piercing capability. Fires three rounds simultaneously.
+Graydale Defense ATX10 &quot;Ocelot&quot; series Modular Sidearm System, standard triple-shot pistol variant.
+Unlike more conventional firearms—such as its predecessor, the Lynx tactical pistol—the Ocelot uses electrically primed ammunition and a tubular magazine-chamber system. It can fire three armor-piercing rounds almost simultaneously.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MSST</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<statBases>
+									<Mass>1.25</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>0.726</AccuracyShort>
+									<AccuracyMedium>0.363</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>0.795</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedLight</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_MSST_Bond</defaultProjectile>
+										<warmupTime>0.6</warmupTime>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+										<range>22</range>
+										<soundCast>ShotLynx</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMSS</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>grip</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.488</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_MSSS_Bond" Abstract="True">
+								<label>persona modular spitfire</label>
+								<description>A short-range bullet-sprayer that compensates for its mediocre damage with sheer volume of fire.
+Graydale Defense ATX10 &quot;Ocelot&quot; series Modular Sidearm System, burst pistol variant. 
+Equipped with a tubular magazine, this pistol unleashes a rapid burst of metal darts at an exceptionally high rate of fire.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MSSS</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<weaponClasses>
+									<li>RangedLight</li>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>1.51</Mass>
+									<AccuracyTouch>1.089</AccuracyTouch>
+									<AccuracyShort>0.605</AccuracyShort>
+									<AccuracyMedium>0.423</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>1.337</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_MSSS_Bond</defaultProjectile>
+										<warmupTime>0.75</warmupTime>
+										<range>16</range>
+										<burstShotCount>8</burstShotCount>
+										<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+										<soundCast>ShotCaracal</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMSS</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>grip</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.488</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_MSSF_Bond" Abstract="True">
+								<label>persona modular flakker</label>
+								<description>A lightweight grenade launcher with a longer effective range than standard hand-thrown grenades.
+Graydale Defense ATX10 &quot;Ocelot&quot; series Modular Sidearm System, grenade pistol variant.
+Originally designed as a flare gun, it was quickly adapted to fire more lethal, explosive ammunition.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MSSF</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Autopistol</soundInteract>
+								<statBases>
+									<Mass>1.75</Mass>
+									<AccuracyTouch>0.605</AccuracyTouch>
+									<AccuracyShort>0.605</AccuracyShort>
+									<AccuracyMedium>0.605</AccuracyMedium>
+									<AccuracyLong>0.605</AccuracyLong>
+									<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedLight</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<forcedMissRadius>1</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_MSSF_Bond</defaultProjectile>
+										<warmupTime>1.2</warmupTime>
+										<range>20</range>
+										<soundCast>ShotLynx</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMSS</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>grip</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.657</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_MSSH_Bond" Abstract="True">
+								<label>persona modular hybrid pistol</label>
+								<description>An advanced pistol with burst-fire capability and generally solid performance.
+Graydale Defense ATX10-A &quot;Arctic Ocelot&quot; hybrid pistol.
+As the most technologically advanced model in the Ocelot Modular Sidearm System, the &quot;Arctic Ocelot&quot; fires powerful armor-piercing projectiles using an electrochemical hybrid firing mechanism. Due to its integrated design, the hybrid pistol cannot be disassembled into a modular sidearm kit.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MSSH</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+									<li>Shield_Sidearm</li>
+								</weaponTags>
+								<weaponClasses>
+									<li>RangedLight</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>2.1</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>0.786</AccuracyShort>
+									<AccuracyMedium>0.605</AccuracyMedium>
+									<AccuracyLong>0.484</AccuracyLong>
+									<RangedWeapon_Cooldown>0.686</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_MSSH_Bond</defaultProjectile>
+										<warmupTime>0.95</warmupTime>
+										<range>22</range>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+										<soundCast>ShotGRH</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>grip</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.657</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_ModularCarbine_Bond" Abstract="True">
+								<label>persona modular carbine</label>
+								<description>A carbine with solid close-quarters combat capabilities. When paired with a Modular Rifle System Kit, it can serve as the base for other MRS weapons built at a Graydale equipment assembly facility.
+Graydale Defense ATR-12 &quot;Panther&quot; series Modular Rifle System GEN6, carbine variant.
+This carbine is a capable close-quarters weapon in its own right, though it is often used as a foundation for constructing other MRS configurations. Its robust and straightforward design makes it a popular choice among security forces.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MRS-C</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<weaponClasses>
+									<li>RangedLight</li>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>2.5</Mass>
+									<AccuracyTouch>1.028</AccuracyTouch>
+									<AccuracyShort>1.077</AccuracyShort>
+									<AccuracyMedium>0.762</AccuracyMedium>
+									<AccuracyLong>0.629</AccuracyLong>
+									<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_ModularRifle_Bond</defaultProjectile>
+										<warmupTime>0.88</warmupTime>
+										<range>23</range>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+										<soundCast>ShotGRC</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>8.707</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_ModularRifle_Bond" Abstract="True">
+								<label>persona modular rifle</label>
+								<description>A jack-of-all-trades assault rifle equipped with an underbarrel micro missile launcher. Can be disassembled into a modular carbine and rifle kit using components from a Graydale equipment assembly facility.
+Graydale Defense ATR-12 &quot;Panther&quot; series Modular Rifle System GEN6, assault rifle variant.
+A versatile rifle that uses caseless ammunition. Thanks to its rugged and straightforward design, this model is widely favored by colonial militias. The under-barrel micro-missile launcher enhances tactical versatility.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MRS-R</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>3.5</Mass>
+									<AccuracyTouch>0.665</AccuracyTouch>
+									<AccuracyShort>0.786</AccuracyShort>
+									<AccuracyMedium>0.786</AccuracyMedium>
+									<AccuracyLong>0.665</AccuracyLong>
+									<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+								</statBases>
+								<thingCategories>
+									<li>MPBFPM_GDMRS</li>
+								</thingCategories>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_ModularRifle_Bond</defaultProjectile>
+										<warmupTime>1.1</warmupTime>
+										<range>30</range>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+										<soundCast>ShotGRC</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.488</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+								<comps Inherit="False">
+									<li Class="CompProperties_EquippableAbilityReloadable">
+										<abilityDef>MicroMissileLauncher</abilityDef>
+										<maxCharges>2</maxCharges>
+										<soundReload>Standard_Reload</soundReload>
+										<chargeNoun>micro missiles</chargeNoun>
+										<ammoDef>Steel</ammoDef>
+										<ammoCountPerCharge>10</ammoCountPerCharge>
+										<baseReloadTicks>60</baseReloadTicks>
+									</li>
+								</comps>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_ModularDMR_Bond" Abstract="True">
+								<label>persona modular DMR</label>
+								<description>A lightweight sniper weapon with a relatively high rate of fire but low damage output. Well-suited for hit-and-run tactics. Can be disassembled into a modular carbine and DMR kit using components from a Graydale equipment assembly facility.
+Graydale Defense ATR-12 &quot;Panther&quot; series Modular Rifle System GEN6, marksman rifle variant.
+Designed for precision fire support, this marksman rifle offers fast follow-up shots and reliable accuracy. It also serves as an effective tool for hunting in the field.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MRS-M</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>3.91</Mass>
+									<AccuracyTouch>0.786</AccuracyTouch>
+									<AccuracyShort>0.847</AccuracyShort>
+									<AccuracyMedium>1.089</AccuracyMedium>
+									<AccuracyLong>0.968</AccuracyLong>
+									<RangedWeapon_Cooldown>0.939</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+									<li>LongShots</li>
+								</weaponClasses>
+								<thingCategories>
+									<li>MPBFPM_GDMRS</li>
+								</thingCategories>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_ModularDMR_Bond</defaultProjectile>
+										<warmupTime>2.1</warmupTime>
+										<range>39</range>
+										<soundCast>ShotGRM</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+								<weaponTags>
+									<li>SniperRifle</li>
+								</weaponTags>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_ModularLMG_Bond" Abstract="True">
+								<label>persona modular LMG</label>
+								<description>An automatic weapon with greater range than a standard LMG. While it fires more rounds per burst than an assault rifle, its sustained fire rate limits its role to support engagements. Can be disassembled into a modular carbine and LMG kit using components from a Graydale equipment assembly facility.
+Graydale Defense ATR-12 &quot;Panther&quot; series Modular Rifle System GEN6, light machine gun variant.
+A sturdy and reliable LMG, this weapon excels in providing continuous suppressive fire in support of assault troops.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MRS-S</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>6.8</Mass>
+									<AccuracyTouch>0.484</AccuracyTouch>
+									<AccuracyShort>0.665</AccuracyShort>
+									<AccuracyMedium>0.605</AccuracyMedium>
+									<AccuracyLong>0.484</AccuracyLong>
+									<RangedWeapon_Cooldown>1.517</RangedWeapon_Cooldown>
+								</statBases>
+								<thingCategories>
+									<li>MPBFPM_GDMRS</li>
+								</thingCategories>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_ModularRifle_Bond</defaultProjectile>
+										<warmupTime>2</warmupTime>
+										<range>28</range>
+										<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+										<burstShotCount>8</burstShotCount>
+										<soundCast>ShotGRS</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<weaponTags>
+									<li>EliteGun</li>
+								</weaponTags>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.445</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_HybridRifle_Bond" Abstract="True">
+								<label>persona modular hybrid rifle</label>
+								<description>A general-purpose advanced rifle. It offers superior armor-piercing capability and a higher burst count than a standard charge rifle, though it falls short in raw damage and stopping power.
+Graydale Defense ATR-12 &quot;Panther&quot; series Modular Rifle System GEN6 Mod.5 &quot;Desert Panther&quot;, hybrid rifle variant.
+Unlike other Panther MRS models, the Desert Panther features an additional firing mechanism to enhance firepower and armor penetration. Its electromagnetic induction barrel accelerates projectiles to hypersonic speeds, making it highly effective against armored targets.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/MRS-H</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+								</weaponTags>
+								<statBases>
+									<Mass>4.4</Mass>
+									<AccuracyTouch>0.605</AccuracyTouch>
+									<AccuracyShort>0.665</AccuracyShort>
+									<AccuracyMedium>0.726</AccuracyMedium>
+									<AccuracyLong>0.641</AccuracyLong>
+									<RangedWeapon_Cooldown>1.517</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_MRSH_Bond</defaultProjectile>
+										<warmupTime>1.2</warmupTime>
+										<range>30</range>
+										<burstShotCount>4</burstShotCount>
+										<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+										<soundCast>ShotGRH</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_GrenadeLauncher_Bond" Abstract="True">
+								<label>persona GD multi launcher</label>
+								<description>One of the most versatile fire support weapons available, the Jaguar multi-launcher is both reliable and highly effective. Its configuration can be easily adjusted at a Graydale equipment assembly facility. When firing fragmentation grenades over long distances, it can become a serious threat—especially in enemy hands.
+Graydale Defense GMG31 &quot;Jaguar&quot; Multi-Purpose Support Launcher – Fragmentation Grenade Setting
+Available Settings:
+Frag: Default setting. Low damage, affects a wide area.
+Buckshot: Close-quarters combat setting. Fires a spread of buckshot for short-range engagements.
+Incendiary: Deals flame damage and ignites targets.
+Smoke: Non-lethal. Creates a smoke screen over the target area.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Jaguar</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<equippedAngleOffset>-15</equippedAngleOffset>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>5.5</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>0.484</AccuracyShort>
+									<AccuracyMedium>0.363</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.2</MoveSpeed>
+								</equippedStatOffsets>
+								<verbs>
+									<li>
+										<forcedMissRadius>1.8</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_MultiLauncher_Bond</defaultProjectile>
+										<warmupTime>3.2</warmupTime>
+										<range>24</range>
+										<burstShotCount>1</burstShotCount>
+										<soundCast>ShotGdgrenade</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>14</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMulti</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_INGrenadeLauncher_Bond" Abstract="True">
+								<label>persona GD incendiary launcher</label>
+								<description>One of the most versatile fire support weapons in the field, the Jaguar multi-launcher is both reliable and effective. Its settings can be easily reconfigured at a Graydale equipment assembly facility. In its incendiary mode, it launches fire grenades at long range—perfect for area denial or flushing out entrenched enemies. Simple, effective, and dangerous.
+Graydale Defense GMG31 &quot;Jaguar&quot; Multi-Purpose Support Launcher – Incendiary Grenade Setting
+Available Settings:
+Frag: Default setting. Low damage, affects a wide area.
+Buckshot: Close-quarters combat setting. Fires a spread of buckshot for short-range engagements.
+Incendiary: Deals flame damage and ignites targets.
+Smoke: Non-lethal. Creates a smoke screen over the target area.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/JaguarIN</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<equippedAngleOffset>-15</equippedAngleOffset>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>5.21</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>0.484</AccuracyShort>
+									<AccuracyMedium>0.363</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.2</MoveSpeed>
+								</equippedStatOffsets>
+								<verbs>
+									<li>
+										<forcedMissRadius>1.5</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_INGrenadeLauncher_Bond</defaultProjectile>
+										<warmupTime>2.8</warmupTime>
+										<range>20</range>
+										<burstShotCount>1</burstShotCount>
+										<soundCast>ShotGdgrenade</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>15</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMulti</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_SKGrenadeLauncher_Bond" Abstract="True">
+								<label>persona GD smoke launcher</label>
+								<description>One of the most versatile fire support weapons available, the Jaguar multi-launcher is a reliable and effective tool on the battlefield. Its firing mode can be easily reconfigured at a Graydale equipment assembly facility. In smoke grenade mode, it is typically deployed to provide concealment for allied forces or to disrupt enemy targeting and line of sight.
+Graydale Defense GMG31 &quot;Jaguar&quot; Multi-Purpose Support Launcher – Smoke Grenade Setting
+Available Settings:
+Frag: Default setting. Low damage, affects a wide area.
+Buckshot: Close-quarters combat setting. Fires a spread of buckshot for short-range engagements.
+Incendiary: Deals flame damage and ignites targets.
+Smoke: Non-lethal. Creates a smoke screen over the target area.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/JaguarSK</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<equippedAngleOffset>-15</equippedAngleOffset>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>5.21</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>0.484</AccuracyShort>
+									<AccuracyMedium>0.363</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+								</statBases>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.2</MoveSpeed>
+								</equippedStatOffsets>
+								<verbs>
+									<li>
+										<forcedMissRadius>1.5</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_SKGrenadeLauncher_Bond</defaultProjectile>
+										<warmupTime>2.8</warmupTime>
+										<range>20</range>
+										<onlyManualCast>true</onlyManualCast>
+										<burstShotCount>1</burstShotCount>
+										<soundCast>ShotGdgrenade</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>15</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMulti</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGDGun" Name="GD_BSLauncher_Bond" Abstract="True">
+								<label>persona GD buckshot launcher</label>
+								<description>One of the most versatile fire support weapons in deployment, the Jaguar multi-launcher is a reliable and effective battlefield asset. Its firing mode can be easily reconfigured at a Graydale equipment assembly facility. Unlike the other settings that launch explosive canisters, this mode fires a blast of buckshot, making it highly effective in close-quarters combat.
+Graydale Defense GMG31 &quot;Jaguar&quot; Multi-Purpose Support Launcher – Buckshot Setting
+Available Settings:
+Frag: Default setting. Low damage, affects a wide area.
+Buckshot: Close-quarters combat setting. Fires a spread of buckshot for short-range engagements.
+Incendiary: Deals flame damage and ignites targets.
+Smoke: Non-lethal. Creates a smoke screen over the target area.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/JaguarBS</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractGDWeapons</soundInteract>
+								<statBases>
+									<Mass>5.21</Mass>
+									<AccuracyTouch>0.484</AccuracyTouch>
+									<AccuracyShort>0.605</AccuracyShort>
+									<AccuracyMedium>0.363</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>0.83</RangedWeapon_Cooldown>
+								</statBases>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.2</MoveSpeed>
+								</equippedStatOffsets>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_BSLauncher_Bond</defaultProjectile>
+										<warmupTime>0.5</warmupTime>
+										<range>13</range>
+										<burstShotCount>5</burstShotCount>
+										<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+										<soundCast>ShotGRS</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>6</muzzleFlashScale>
+									</li>
+								</verbs>
+								<thingCategories>
+									<li>MPBFPM_GDMulti</li>
+								</thingCategories>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef Name="MPBFPM_BaseJIGun" Abstract="True" ParentName="MPBFPM_BaseWeapon">
+								<techLevel>Spacer</techLevel>
+								<thingCategories>
+									<li>MPBFPM_JIWeapons</li>
+								</thingCategories>
+								<weaponTags>
+									<li>JIGun</li>
+								</weaponTags>
+								<inspectorTabs>
+									<li>ITab_Art</li>
+								</inspectorTabs>
+								<generateCommonality>0.05</generateCommonality>
+								<comps>
+									<li Class="CompProperties_Art">
+										<nameMaker>NamerArtWeaponGun</nameMaker>
+										<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+										<minQualityForArtistic>Excellent</minQualityForArtistic>
+									</li>
+								</comps>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseJIGun" Name="JI_Hrunting_Bond" Abstract="True">
+								<label>persona ULM rifle</label>
+								<description>A heavy battle rifle with high damage and top-notch armor-piercing capability. It has low accuracy and a slow rate of fire.
+Jotun Interstellar JG-1421 &quot;Hrunting&quot; ULM (Ultra-density Liquefied Metal) rifle.
+Manufactured by Jotun Interstellar, this weapon fires molten metal as ammunition. The designer of the Hrunting never concerned himself with trivial matters like ergonomics—his sole focus was raw firepower.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Hrunting</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_ChargeRifle</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+								</weaponTags>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>6</Mass>
+									<AccuracyTouch>0.605</AccuracyTouch>
+									<AccuracyShort>0.871</AccuracyShort>
+									<AccuracyMedium>0.786</AccuracyMedium>
+									<AccuracyLong>0.581</AccuracyLong>
+									<RangedWeapon_Cooldown>0.795</RangedWeapon_Cooldown>
+								</statBases>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.1</MoveSpeed>
+								</equippedStatOffsets>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Hrunting_Bond</defaultProjectile>
+										<warmupTime>1.25</warmupTime>
+										<range>31</range>
+										<soundCast>RS_ShotJI</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>12</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseJIGun" Name="JI_Trollsverd_Bond" Abstract="True">
+								<label>persona ULM pistol</label>
+								<description>A heavy pistol with great firepower and strong armor-piercing capability.
+Jotun Interstellar JP-1844 &quot;Trollsverd&quot; ULM (Ultra-density Liquefied Metal) pistol.
+Firing molten metal as projectiles, a single shot from the Trollsverd can solve most of the problems faced by lonely frontier colonies.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Trollsverd</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_ChargeRifle</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+									<li>Shield_Sidearm</li>
+								</weaponTags>
+								<statBases>
+									<Mass>2.58</Mass>
+									<AccuracyTouch>0.968</AccuracyTouch>
+									<AccuracyShort>0.835</AccuracyShort>
+									<AccuracyMedium>0.714</AccuracyMedium>
+									<AccuracyLong>0.363</AccuracyLong>
+									<RangedWeapon_Cooldown>0.83</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Trollsverd_Bond</defaultProjectile>
+										<warmupTime>0.45</warmupTime>
+										<range>18</range>
+										<soundCast>RS_ShotJI</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseJIGun" Name="JI_Fafnir_Bond" Abstract="True">
+								<label>persona ULM shotgun</label>
+								<description>A heavy shotgun with excellent armor-piercing capability. If you need to deal with heavily armored targets at close range, this will be one of the best options.
+Jotun Interstellar JH-918 &quot;Fafnir&quot; ULM (Ultra-density Liquefied Metal) snub cannon.
+This oversized shotgun—crafted from a sawed-off anti-aircraft gun barrel—is designed for combating mechanoids in urban warfare. If a person were to accidentally take a burst from this siege weapon, they would be instantly reduced to a sticky red mist.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Fafnir</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_ChargeRifle</soundInteract>
+								<statBases>
+									<Mass>7</Mass>
+									<AccuracyTouch>1.113</AccuracyTouch>
+									<AccuracyShort>0.932</AccuracyShort>
+									<AccuracyMedium>0.665</AccuracyMedium>
+									<AccuracyLong>0.363</AccuracyLong>
+									<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.15</MoveSpeed>
+								</equippedStatOffsets>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Fafnir_Bond</defaultProjectile>
+										<warmupTime>1.15</warmupTime>
+										<range>15</range>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+										<soundCast>RS_ShotFafnir</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>14</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseJIGun" Name="JI_Gramr_Bond" Abstract="True">
+								<label>persona AMR</label>
+								<description>A super-heavy anti-materiel rifle. With extreme firepower and long range, it can engage most targets from a safe distance. However, due to its terrible rate of fire and staggering mass, it’s not suited for hit-and-run tactics.
+Jotun Interstellar JG-330 &quot;Gramr&quot; Anti-Mechanoid rifle.
+As heavy as a small truck and just as unwieldy, the recoil from a Gramr hits like a mule's kick. But its firepower justifies everything.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Gramr</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_ChargeRifle</soundInteract>
+								<statBases>
+									<Mass>10</Mass>
+									<AccuracyTouch>0.484</AccuracyTouch>
+									<AccuracyShort>0.811</AccuracyShort>
+									<AccuracyMedium>1.028</AccuracyMedium>
+									<AccuracyLong>0.968</AccuracyLong>
+									<RangedWeapon_Cooldown>2.023</RangedWeapon_Cooldown>
+								</statBases>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.25</MoveSpeed>
+								</equippedStatOffsets>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+									<li>LongShots</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Gramr_Bond</defaultProjectile>
+										<warmupTime>3.5</warmupTime>
+										<range>50</range>
+										<soundCast>RS_ShotJI</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>15</muzzleFlashScale>
+										<forcedMissRadius>0.1</forcedMissRadius>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseJIGun" Name="JI_Grendel_Bond" Abstract="True">
+								<label>persona siege gun</label>
+								<description>A portable, short-range, multiple explosive metal ball launcher. Effective against massed troops and fixed targets. Well, not much else to say.
+Jotun Interstellar JR-702 &quot;Grendel&quot; assault launcher.
+A legacy of the grim mechanoid wars, Jotun Interstellar’s &quot;Grendel&quot; siege gun is one of the most devastating man-portable siege weapons in the galaxy. It fires super-cooled liquid metal projectiles that instantly solidify upon impact, creating a violent explosion of metal shrapnel.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Grendel</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_ChargeRifle</soundInteract>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.25</MoveSpeed>
+								</equippedStatOffsets>
+								<statBases>
+									<Mass>10</Mass>
+									<AccuracyTouch>0.423</AccuracyTouch>
+									<AccuracyShort>0.665</AccuracyShort>
+									<AccuracyMedium>0.665</AccuracyMedium>
+									<AccuracyLong>0.665</AccuracyLong>
+									<RangedWeapon_Cooldown>2.529</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Grendel_Bond</defaultProjectile>
+										<burstShotCount>5</burstShotCount>
+										<ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+										<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+										<forcedMissRadius>1.5</forcedMissRadius>
+										<warmupTime>4.6</warmupTime>
+										<range>27</range>
+										<soundCast>RS_ShotGrendel</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<onlyManualCast>true</onlyManualCast>
+										<muzzleFlashScale>0</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseJIGun" Name="JI_Muspell_Bond" Abstract="True">
+								<label>persona suppressor cannon</label>
+								<description>An automatic weapon with high stopping power. While its long bursts leave the user vulnerable, it is well-suited for delaying enemy advances.
+Jotun Interstellar JM-7912 &quot;Muspell&quot; fragment discharger.
+The &quot;Muspell&quot; suppressor cannon is Jotun Interstellar’s answer to swarms of small &quot;militor&quot;-type mechanoids. It ceaselessly fires superheated metal fragments.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Muspell</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_ChargeRifle</soundInteract>
+								<statBases>
+									<Mass>8</Mass>
+									<AccuracyTouch>0.823</AccuracyTouch>
+									<AccuracyShort>0.75</AccuracyShort>
+									<AccuracyMedium>0.617</AccuracyMedium>
+									<AccuracyLong>0.496</AccuracyLong>
+									<RangedWeapon_Cooldown>0.686</RangedWeapon_Cooldown>
+								</statBases>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.25</MoveSpeed>
+								</equippedStatOffsets>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Muspell_Bond</defaultProjectile>
+										<warmupTime>1.9</warmupTime>
+										<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+										<burstShotCount>13</burstShotCount>
+										<range>29</range>
+										<soundCast>RS_ShotMuspell</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>12</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef Name="MPBFPM_BaseTEGun" Abstract="True" ParentName="MPBFPM_BaseWeapon">
+								<techLevel>Spacer</techLevel>
+								<thingCategories>
+									<li>MPBFPM_TEWeapons</li>
+								</thingCategories>
+								<weaponTags>
+									<li>TEGun</li>
+								</weaponTags>
+								<inspectorTabs>
+									<li>ITab_Art</li>
+								</inspectorTabs>
+								<generateCommonality>0.05</generateCommonality>
+								<comps>
+									<li Class="CompProperties_Art">
+										<nameMaker>NamerArtWeaponGun</nameMaker>
+										<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+										<minQualityForArtistic>Excellent</minQualityForArtistic>
+									</li>
+								</comps>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseTEGun" Name="TE_KineticRifle_Bond" Abstract="True">
+								<label>persona kinetic rifle</label>
+								<description>Tisiphone Enterprise Type-3 &quot;Tyrant&quot; kinetic blast rifle.
+It doesn’t kill cleanly. That’s the point.
+The Tyrant is the standard-issue rifle of the Tisiphone Hunter Contingent—built for close-quarters combat and designed with one purpose: deliver blunt-force trauma at high speed and with zero remorse. Firing high-velocity kinetic slugs that hit like a sledgehammer, the Tyrant trades range and raw damage for a brutally efficient firing cycle with rock-hard stopping power. 
+It’s paired with a cutting-edge targeting system for rapid acquisition and active tracking—because when you’re hunting Federation stragglers through the ruins of their sins, hesitation isn’t just dangerous. It’s disrespectful.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Tyrant</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractTEWeapons</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+								</weaponTags>
+								<statBases>
+									<Mass>3.35</Mass>
+									<AccuracyTouch>0.907</AccuracyTouch>
+									<AccuracyShort>0.968</AccuracyShort>
+									<AccuracyMedium>0.786</AccuracyMedium>
+									<AccuracyLong>0.605</AccuracyLong>
+									<RangedWeapon_Cooldown>0.398</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Tyrant_Bond</defaultProjectile>
+										<warmupTime>0.5</warmupTime>
+										<range>26</range>
+										<burstShotCount>1</burstShotCount>
+										<soundCast>ImpactM</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>8</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseTEGun" Name="TE_KineticPistol_Bond" Abstract="True">
+								<label>persona kinetic pistol</label>
+								<description>Tisiphone Enterprise Type-6 “Tormentor” Kinetic Blast Pistol
+Quick. Cruel. Personal.
+The Tormentor is the standard-issue sidearm of the Tisiphone Hunter Contingent—a hair-rising fast kinetic pistol designed for close-range ambushes, executions, and anything else that requires both speed and spite. With an exceptionally short firing cycle—even by pistol standards—it excels in hit-and-run engagements where every fraction of a millisecond counts. It delivers blunt-force kinetic trauma with high stopping power, making it less of a sidearm and more of a pocket-sized vendetta.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Tormentor</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractTEWeapons</soundInteract>
+								<weaponTags>
+									<li>Shield_Sidearm</li>
+									<li>SpacerGun</li>
+								</weaponTags>
+								<weaponClasses>
+									<li>RangedLight</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>1.85</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>1.028</AccuracyShort>
+									<AccuracyMedium>0.665</AccuracyMedium>
+									<AccuracyLong>0.303</AccuracyLong>
+									<RangedWeapon_Cooldown>0.326</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Tormentor_Bond</defaultProjectile>
+										<warmupTime>0.35</warmupTime>
+										<range>18</range>
+										<burstShotCount>1</burstShotCount>
+										<soundCast>ImpactM</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>8</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseTEGun" Name="TE_ThuddGun_Bond" Abstract="True">
+								<label>persona thudd gun</label>
+								<description>Tisiphone Enterprise Type-11 “Oppressor” Kinetic Canister Launcher
+For when there’s too many of them, and not enough of you.
+The Oppressor is Tisiphone’s answer to crowd control—assuming the crowd isn’t meant to survive. Firing charged kinetic canisters that detonate in area-blast shockwaves, it’s a close-range weapon by design, but don’t let that fool you: it remains deadly even at its farthest reach.
+The Oppressor doesn’t care much about precision. And why should it? Accuracy is a concern when you're aiming at a person. The Oppressor is aimed at problems—plural. It sends a message to massed Federation auxiliaries, swarming Seekers, and anything else foolish enough to cluster. 
+Loudly. Repeatedly. Permanently\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Oppressor</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractTEWeapons</soundInteract>
+								<weaponClasses>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>4.11</Mass>
+									<AccuracyTouch>1.028</AccuracyTouch>
+									<AccuracyShort>0.786</AccuracyShort>
+									<AccuracyMedium>0.726</AccuracyMedium>
+									<AccuracyLong>0.544</AccuracyLong>
+									<RangedWeapon_Cooldown>0.903</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<forcedMissRadius>1.0</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Oppressor_Bond</defaultProjectile>
+										<warmupTime>1</warmupTime>
+										<range>19</range>
+										<soundCast>ImpactB</soundCast>
+										<burstShotCount>1</burstShotCount>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>12</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseTEGun" Name="TE_KineticLongRifle_Bond" Abstract="True">
+								<label>persona kinetic long rifle</label>
+								<description>Tisiphone Enterprise Type-4 “Wailer” Kinetic Blast Rifle
+Sniper rifles are supposed to be patient. The Wailer is not.
+The Wailer is a fast-firing kinetic marksman rifle engineered for one job: outshoot the Federation’s finest before they finish exhaling. Built for rapid counter-sniper operations, it combines high stopping power with blisteringly fast target acquisition—unusual for its class, and deeply unpleasant for anything downrange. Rather than vaporize its targets, the Wailer prefers to break them apart—bone, armor, and confidence included. Blunt-force slugs. Rage in physical form. Fired fast enough to erase the idea of a fair fight.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Wailer</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractTEWeapons</soundInteract>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+									<li>LongShots</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>4</Mass>
+									<AccuracyTouch>0.786</AccuracyTouch>
+									<AccuracyShort>1.028</AccuracyShort>
+									<AccuracyMedium>1.004</AccuracyMedium>
+									<AccuracyLong>0.968</AccuracyLong>
+									<RangedWeapon_Cooldown>1.228</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Wailer_Bond</defaultProjectile>
+										<warmupTime>2.1</warmupTime>
+										<range>38</range>
+										<soundCast>ImpactL</soundCast>
+										<burstShotCount>1</burstShotCount>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>12</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseTEGun" Name="TE_StormCannon_Bond" Abstract="True">
+								<label>persona singularity projector</label>
+								<description>Tisiphone Enterprise Type-22 “Atrocity” Area Suppression System
+It doesn’t kill quickly. That’s what makes it cruel.
+The Atrocity is an area suppression weapon designed not to eliminate enemies, but to break their momentum, scatter their ranks, and remind them they’re not in control. Firing concentrated volleys of low-damage kinetic blasts, it slows movement, distorts formations, and grinds assaults to a halt. It’s not an assault weapon. It’s a disciplinary tool—with range. Feared more for what it denies than what it destroys, the Atrocity earned its name the honest way: through long minutes of confusion, pain, and frustration, delivered in kinetic blasts.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Atrocity</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+									<drawSize>1.5</drawSize>
+								</graphicData>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<soundInteract>InteractTEWeapons</soundInteract>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.15</MoveSpeed>
+								</equippedStatOffsets>
+								<statBases>
+									<Mass>6.85</Mass>
+									<AccuracyTouch>1.028</AccuracyTouch>
+									<AccuracyShort>0.544</AccuracyShort>
+									<AccuracyMedium>0.351</AccuracyMedium>
+									<AccuracyLong>0.133</AccuracyLong>
+									<RangedWeapon_Cooldown>1.517</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+										<forcedMissRadius>2</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Atrocity_Bond</defaultProjectile>
+										<warmupTime>2.8</warmupTime>
+										<range>27</range>
+										<soundCast>ImpactB</soundCast>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>12</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseTEGun" Name="TE_KineticLance_Bond" Abstract="True">
+								<label>persona kinetic lance</label>
+								<description>Tisiphone Enterprise Type-0 “Harrower” Directional Kinetic Wave Projector
+Not built for survivability. Built for spite.
+The Harrower is the blunt answer to the Federation’s mechsuits—a close-range kinetic lance that projects a continuous, focused shockwave capable of carving through composite armor and flaying flesh from bone. It doesn’t hit its targets. It unmakes them.
+Unlike most Tisiphone weapons, it demands patience, positioning, and a disturbing level of proximity. Its short range and long charge-up time make it a liability in most engagements—until it fires. Then nothing matters.
+Flesh is stripped. Armor is peeled. Mechsuits buckle. The Harrower was built as Tisiphone’s answer to the Federation’s towering war hulks, and it delivers that answer in one drawn-out, agonizing scream of kinetic violence.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/Harrower</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<soundInteract>InteractTEWeapons</soundInteract>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<equippedStatOffsets>
+									<MoveSpeed>-0.25</MoveSpeed>
+								</equippedStatOffsets>
+								<statBases>
+									<Mass>10</Mass>
+									<AccuracyTouch>0.847</AccuracyTouch>
+									<AccuracyShort>1.149</AccuracyShort>
+									<AccuracyMedium>1.077</AccuracyMedium>
+									<AccuracyLong>1.028</AccuracyLong>
+									<RangedWeapon_Cooldown>2.529</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<forcedMissRadius>0.5</forcedMissRadius>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_Harrower_Bond</defaultProjectile>
+										<warmupTime>3</warmupTime>
+										<range>22</range>
+										<soundCast>SoundHarrower</soundCast>
+										<burstShotCount>18</burstShotCount>
+										<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<muzzleFlashScale>18</muzzleFlashScale>
+									</li>
+								</verbs>
+							</ThingDef>
+							<ThingDef Name="MPBFPM_BaseYPGun" Abstract="True" ParentName="MPBFPM_BaseWeapon">
+								<techLevel>Spacer</techLevel>
+								<thingCategories>
+									<li>MPBFPM_YPWeapons</li>
+								</thingCategories>
+								<weaponTags>
+									<li>YPGun</li>
+								</weaponTags>
+								<inspectorTabs>
+									<li>ITab_Art</li>
+								</inspectorTabs>
+								<generateCommonality>0.05</generateCommonality>
+								<comps>
+									<li Class="CompProperties_Art">
+										<nameMaker>NamerArtWeaponGun</nameMaker>
+										<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+										<minQualityForArtistic>Excellent</minQualityForArtistic>
+									</li>
+								</comps>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseYPGun" Name="YP_SeoLi_Bond" Abstract="True">
+								<label>persona shard rifle</label>
+								<description>Yeonhwa Precision Shard Rifle Model 88c “SeoLi (Frost)”
+Because suppression is cheaper than resolution.
+An advanced close-quarters assault platform, the Model 88c “SeoLi” deploys high-velocity carbon-crystal shard projectiles at an exceptional rate of fire. While each individual round delivers minimal kinetic impact, the rifle’s sustained volume saturates targets with armor-piercing shards capable of overwhelming most modern personal defenses.
+Engineered for urban suppression and zero-distance escalation, the SeoLi trades effective range and raw stopping power for absolute control of confined environments. Boasting an extended magazine and near-zero recoil profile, it excels in scenarios where hesitation means sure death.
+Yeonhwa Precision: Efficiency is Eternal.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/SeoLi</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractYPWeapons</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+								</weaponTags>
+								<weaponClasses>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>3.12</Mass>
+									<AccuracyTouch>0.968</AccuracyTouch>
+									<AccuracyShort>0.907</AccuracyShort>
+									<AccuracyMedium>0.484</AccuracyMedium>
+									<AccuracyLong>0.242</AccuracyLong>
+									<RangedWeapon_Cooldown>0.614</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_SeoLi_Bond</defaultProjectile>
+										<warmupTime>0.85</warmupTime>
+										<range>23</range>
+										<burstShotCount>6</burstShotCount>
+										<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+										<soundCast>RS_ShotShard</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>4</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.488</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.445</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseYPGun" Name="YP_SagPung_Bond" Abstract="True">
+								<label>persona swarmer</label>
+								<description>Yeonhwa Precision Mechanite Swarm Projector Model 1331a “SagPung” (Boreas)
+You can run. You just won’t get far.
+Designated for close-range termination, the Model 1331a “SagPung” delivers a precision-guided payload of autonomous mechanites. Unlike conventional scatter-based shotguns, the SagPung replaces brute force with clinical accuracy—releasing a dense, adaptive swarm that locks onto and relentlessly pursues its target.
+Though its anti-armor performance is limited and its per-hit lethality modest, the SagPung compensates with its absolute hit certainty. No cover, no movement, no evasive measure escapes the swarm. It’s not designed to shatter steel—just to erase everything soft beneath it.
+Yeonhwa Precision: The Future Bleeds Clean.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/SagPung</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractYPWeapons</soundInteract>
+								<weaponTags>
+									<li>SpacerGun</li>
+								</weaponTags>
+								<weaponClasses>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<statBases>
+									<Mass>2.55</Mass>
+									<AccuracyTouch>0.907</AccuracyTouch>
+									<AccuracyShort>1.198</AccuracyShort>
+									<AccuracyMedium>1.198</AccuracyMedium>
+									<AccuracyLong>1.198</AccuracyLong>
+									<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+								</statBases>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_SagPung_Bond</defaultProjectile>
+										<warmupTime>0.9</warmupTime>
+										<range>17</range>
+										<burstShotCount>4</burstShotCount>
+										<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+										<soundCast>RS_ShotSwarm</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>9</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseYPGun" Name="YP_SangAe_Bond" Abstract="True">
+								<label>persona spike lance</label>
+								<description>Yeonhwa Precision Explosive Crystalline Projectile Accelerator Model 723a “SangAe” (Frost Haze)
+Pierce. Wait. Detonate.
+The Model 723a “SangAe” delivers shaped crystalline spikes engineered from high-density explosive compound. Each projectile embeds into the target before a delayed micro-detonation—ensuring optimal penetration and internal devastation.
+In contrast to traditional anti-armor platforms, the SangAe boasts a higher rate of fire, enabling sustained anti-material application without compromising mobility. Precision-charged and tactically efficient, it has become Yeonhwa Precision’s flagship answer to hardened threats across variable combat theaters.
+Yeonhwa Precision: Nothing is Impervious.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/SangAe</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractYPWeapons</soundInteract>
+								<statBases>
+									<Mass>3.37</Mass>
+									<AccuracyTouch>0.665</AccuracyTouch>
+									<AccuracyShort>0.786</AccuracyShort>
+									<AccuracyMedium>0.907</AccuracyMedium>
+									<AccuracyLong>1.149</AccuracyLong>
+									<RangedWeapon_Cooldown>1.842</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedHeavy</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_SangAe_Bond</defaultProjectile>
+										<forcedMissRadius>0.1</forcedMissRadius>
+										<warmupTime>2.2</warmupTime>
+										<range>36</range>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+										<soundCast>RS_ShotSpike</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>8</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.445</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseYPGun" Name="YP_SeolHwa_Bond" Abstract="True">
+								<label>persona dual shard pistols</label>
+								<description>Yeonhwa Precision Hyper Rapid Shard Accelerator Model 61t “SeolHwa” (Snow Blossom)
+Beauty. Velocity. Ruin.
+Originally conceived as a personal defense platform, the Model 61t “SeolHwa” quickly transcended its design brief. Now infamous for its blistering fire rate, the SeolHwa has become a fixture in high-clearance incidents, silent purges, and executive-level resolutions.
+It fires ultrathin 121㎛ crystalline shards that fracture on impact into razor-fine fractal splinters, maximizing internal trauma while minimizing over-penetration. Though its range is limited and stopping power low per round, its armor-piercing performance and volume of fire more than compensate in confined engagements.
+Yeonhwa Precision: When Seconds Are Too Long.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/SeolHwa</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractYPWeapons</soundInteract>
+								<statBases>
+									<Mass>3.52</Mass>
+									<AccuracyTouch>1.028</AccuracyTouch>
+									<AccuracyShort>1.089</AccuracyShort>
+									<AccuracyMedium>0.665</AccuracyMedium>
+									<AccuracyLong>0.181</AccuracyLong>
+									<RangedWeapon_Cooldown>0.398</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedLight</li>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_SeolHwa_Bond</defaultProjectile>
+										<warmupTime>0.55</warmupTime>
+										<range>12</range>
+										<burstShotCount>6</burstShotCount>
+										<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+										<soundCast>RS_ShotShard</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>3</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>grip</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.36</cooldownTime>
+									</li>
+									<li>
+										<label>blade</label>
+										<capacities>
+											<li>Cut</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.02</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseYPGun" Name="YP_GeugGwang_Bond" Abstract="True">
+								<label>persona microwave emmiter</label>
+								<description>Yeonhwa Precision Microwave Emitter Model 7r “GeugGwang” (Aurora)
+No blood. No mess. Just screaming.
+The Model 7r “GeugGwang” is a long-range area denial and suppression system designed for non-lethal deterrence—at least in theory. Emitting tightly-focused millimeter waves, the weapon rapidly excites water molecules in exposed skin, inducing searing, incapacitating pain without causing permanent physical trauma.
+While entirely ineffective against inorganic entities, the GeugGwang excels in breaking enemy formations, scattering crowds, and neutralizing biological threats without the administrative overhead of actual fatalities. Targets typically cease resistance in favor of extinguishing themselves.
+Yeonhwa Precision: Control Without Consequence.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/GeugGwang</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>Interact_Rifle</soundInteract>
+								<equippedAngleOffset>45</equippedAngleOffset>
+								<statBases>
+									<Mass>4.32</Mass>
+									<AccuracyTouch>0.726</AccuracyTouch>
+									<AccuracyShort>1.028</AccuracyShort>
+									<AccuracyMedium>0.907</AccuracyMedium>
+									<AccuracyLong>0.726</AccuracyLong>
+									<RangedWeapon_Cooldown>0.722</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>RangedLight</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<forcedMissRadius>0.5</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_GeugGwang_Bond</defaultProjectile>
+										<warmupTime>1.25</warmupTime>
+										<range>28</range>
+										<burstShotCount>1</burstShotCount>
+										<soundCast>RS_ShotBoreas</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>14</muzzleFlashScale>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseYPGun" Name="YP_VectorShot_Bond" Abstract="True">
+								<label>persona vector shot</label>
+								<description>Yeonhwa Precision Smart Projectile Launch System Model 2357b “NuRi” (Hail)
+Your walls are meaningless.
+The Model 2357b “NuRi” is a precision indirect-fire weapon system engineered for dense, urban environments. Launching smart-guided submunitions on steep arcs, the NuRi can strike targets obscured by cover, barricades, or interior structures—with no line of sight required.
+Equipped with a multispectral targeting suite and autonomous pathfinding logic, each bolt adjusts mid-flight to deliver targeted strikes with uncanny precision. However, its arcing trajectory demands open overhead clearance, rendering it unusable under subterranean ceilings.
+Yeonhwa Precision: Nowhere Left to Hide.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+								<graphicData>
+									<texPath>Things/A16/VectorShot</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+								</graphicData>
+								<soundInteract>InteractYPWeapons</soundInteract>
+								<statBases>
+									<Mass>3.06</Mass>
+									<AccuracyTouch>0.726</AccuracyTouch>
+									<AccuracyShort>0.968</AccuracyShort>
+									<AccuracyMedium>0.605</AccuracyMedium>
+									<AccuracyLong>0.363</AccuracyLong>
+									<RangedWeapon_Cooldown>0.694</RangedWeapon_Cooldown>
+								</statBases>
+								<weaponClasses>
+									<li>ShortShots</li>
+								</weaponClasses>
+								<verbs>
+									<li>
+										<forcedMissRadius>0.1</forcedMissRadius>
+										<verbClass>Verb_Shoot</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Bullet_VectorShot_Bond</defaultProjectile>
+										<warmupTime>1.05</warmupTime>
+										<requireLineOfSight>false</requireLineOfSight>
+										<range>10</range>
+										<burstShotCount>3</burstShotCount>
+										<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+										<soundCast>RS_ShotShard</soundCast>
+										<soundCastTail>GunTail_Light</soundCastTail>
+										<muzzleFlashScale>10</muzzleFlashScale>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+									</li>
+								</verbs>
+								<tools>
+									<li>
+										<label>stock</label>
+										<capacities>
+											<li>Blunt</li>
+										</capacities>
+										<power>9.75</power>
+										<cooldownTime>1.53</cooldownTime>
+									</li>
+									<li>
+										<label>barrel</label>
+										<capacities>
+											<li>Blunt</li>
+											<li>Poke</li>
+										</capacities>
+										<power>10.791</power>
+										<cooldownTime>1.615</cooldownTime>
+									</li>
+								</tools>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_MSST_Bond" Abstract="True">
+								<label>tactical pistol bullet</label>
+								<graphicData>
+									<texPath>Things/Projectile/Gbullet</texPath>
+								</graphicData>
+								<projectile>
+									<flyOverhead>false</flyOverhead>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>12</damageAmountBase>
+									<speed>65</speed>
+									<armorPenetrationBase>0.36</armorPenetrationBase>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_MSSS_Bond" Abstract="True">
+								<label>spitfire bullet</label>
+								<graphicData>
+									<texPath>Things/Projectile/Gbullet</texPath>
+								</graphicData>
+								<projectile>
+									<flyOverhead>false</flyOverhead>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>10</damageAmountBase>
+									<speed>65</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_MSSF_Bond" Abstract="True">
+								<label>grenade pistol bullet</label>
+								<graphicData>
+									<texPath>Things/Projectile/GShell</texPath>
+									<shaderType>TransparentPostLight</shaderType>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<speed>35</speed>
+									<damageDef>Bomb</damageDef>
+									<damageAmountBase>19</damageAmountBase>
+									<explosionRadius>1.5</explosionRadius>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_MSSH_Bond" Abstract="True">
+								<label>pistol projectile</label>
+								<graphicData>
+									<texPath>Things/Projectile/GbulletHybrid</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>15</damageAmountBase>
+									<armorPenetrationBase>0.4</armorPenetrationBase>
+									<stoppingPower>0.2</stoppingPower>
+									<speed>100</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_ModularRifle_Bond" Abstract="True">
+								<label>rifle bullet</label>
+								<graphicData>
+									<texPath>Things/Projectile/Gbullet</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>15</damageAmountBase>
+									<speed>85</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Proj_MicroMissile_Bond" Abstract="True">
+								<label>micro missile</label>
+								<graphicData>
+									<texPath>Things/Projectile/Missile_Micro</texPath>
+									<shaderType>TransparentPostLight</shaderType>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<damageDef>Bomb</damageDef>
+									<explosionRadius>1.5</explosionRadius>
+									<speed>50</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_ModularDMR_Bond" Abstract="True">
+								<label>marksman rifle bullet</label>
+								<graphicData>
+									<texPath>Things/Projectile/Gbullet</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>28</damageAmountBase>
+									<speed>80</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_MRSH_Bond" Abstract="True">
+								<label>rifle projectile</label>
+								<graphicData>
+									<texPath>Things/Projectile/GbulletHybrid</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>17</damageAmountBase>
+									<armorPenetrationBase>0.45</armorPenetrationBase>
+									<stoppingPower>0.2</stoppingPower>
+									<speed>100</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_GrenadeProjectile" Name="Bullet_MultiLauncher_Bond" Abstract="True">
+								<label>frag grenade</label>
+								<graphicData>
+									<texPath>Things/Projectile/GShell</texPath>
+									<shaderType>TransparentPostLight</shaderType>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<speed>22</speed>
+									<damageDef>Bomb</damageDef>
+									<damageAmountBase>30</damageAmountBase>
+									<explosionRadius>3</explosionRadius>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGrenadeProjectile" Name="Bullet_INGrenadeLauncher_Bond" Abstract="True">
+								<label>incendiary grenade</label>
+								<graphicData>
+									<texPath>Things/Projectile/GShellIN</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<speed>20</speed>
+									<damageDef>Flame</damageDef>
+									<damageAmountBase>19</damageAmountBase>
+									<explosionRadius>1.5</explosionRadius>
+									<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGrenadeProjectile" Name="Bullet_SKGrenadeLauncher_Bond" Abstract="True">
+								<label>smoke grenade</label>
+								<graphicData>
+									<texPath>Things/Projectile/GShellSK</texPath>
+									<shaderType>TransparentPostLight</shaderType>
+									<color>(140,135,156)</color>
+								</graphicData>
+								<projectile>
+									<speed>40</speed>
+									<damageDef>Smoke</damageDef>
+									<explosionRadius>2.4</explosionRadius>
+									<postExplosionGasType>BlindSmoke</postExplosionGasType>
+									<ai_IsIncendiary>true</ai_IsIncendiary>
+									<arcHeightFactor>0.2</arcHeightFactor>
+									<shadowSize>0.6</shadowSize>
+									<screenShakeFactor>0.5</screenShakeFactor>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_BSLauncher_Bond" Abstract="True">
+								<label>buckshot</label>
+								<graphicData>
+									<texPath>Things/Projectile/Gbullet</texPath>
+								</graphicData>
+								<projectile>
+									<flyOverhead>false</flyOverhead>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>11</damageAmountBase>
+									<speed>75</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_Hrunting_Bond" Abstract="True">
+								<label>hrunting slug</label>
+								<graphicData>
+									<texPath>Things/Projectile/Slug</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>29</damageAmountBase>
+									<speed>65</speed>
+									<stoppingPower>1</stoppingPower>
+									<armorPenetrationBase>0.71</armorPenetrationBase>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_Trollsverd_Bond" Abstract="True">
+								<label>trollsverd slug</label>
+								<graphicData>
+									<texPath>Things/Projectile/Slug</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>24</damageAmountBase>
+									<speed>80</speed>
+									<stoppingPower>1</stoppingPower>
+									<armorPenetrationBase>0.71</armorPenetrationBase>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_Fafnir_Bond" Abstract="True">
+								<label>fafnir bucks</label>
+								<graphicData>
+									<texPath>Things/Projectile/Slug</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>22</damageAmountBase>
+									<speed>80</speed>
+									<stoppingPower>1</stoppingPower>
+									<armorPenetrationBase>0.71</armorPenetrationBase>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Gramr_Bond" Abstract="True">
+								<label>gramr slug</label>
+								<graphicData>
+									<texPath>Things/Projectile/Shell</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<flyOverhead>False</flyOverhead>
+									<speed>90</speed>
+									<armorPenetrationBase>1</armorPenetrationBase>
+									<damageDef>Bomb</damageDef>
+									<damageAmountBase>62</damageAmountBase>
+									<explosionRadius>1</explosionRadius>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_GrenadeProjectile" Name="Bullet_Grendel_Bond" Abstract="True">
+								<label>grendel shell</label>
+								<graphicData>
+									<texPath>Things/Projectile/SCM</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<flyOverhead>False</flyOverhead>
+									<damageDef>Bomb</damageDef>
+									<damageAmountBase>27</damageAmountBase>
+									<explosionRadius>2</explosionRadius>
+									<speed>30</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_Muspell_Bond" Abstract="True">
+								<label>fragment</label>
+								<graphicData>
+									<texPath>Things/Projectile/Slug</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Bullet</damageDef>
+									<damageAmountBase>15</damageAmountBase>
+									<speed>85</speed>
+									<stoppingPower>1</stoppingPower>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Tyrant_Bond" Abstract="True">
+								<label>impact shell</label>
+								<graphicData>
+									<texPath>Things/Projectile/ImpactM</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Crush</damageDef>
+									<damageAmountBase>15</damageAmountBase>
+									<speed>75</speed>
+									<stoppingPower>2</stoppingPower>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Tormentor_Bond" Abstract="True">
+								<label>impact shell</label>
+								<graphicData>
+									<texPath>Things/Projectile/ImpactM</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Crush</damageDef>
+									<damageAmountBase>15</damageAmountBase>
+									<speed>75</speed>
+									<stoppingPower>2</stoppingPower>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Oppressor_Bond" Abstract="True">
+								<label>kinetic canister</label>
+								<graphicData>
+									<texPath>Things/Projectile/ImpactB</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<flyOverhead>False</flyOverhead>
+									<damageDef>KineticImpact</damageDef>
+									<damageAmountBase>19</damageAmountBase>
+									<explosionRadius>1</explosionRadius>
+									<speed>50</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Wailer_Bond" Abstract="True">
+								<label>impact shell</label>
+								<graphicData>
+									<texPath>Things/Projectile/ImpactL</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Crush</damageDef>
+									<damageAmountBase>30</damageAmountBase>
+									<speed>80</speed>
+									<stoppingPower>2</stoppingPower>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Atrocity_Bond" Abstract="True">
+								<label>singularity sphere</label>
+								<graphicData>
+									<texPath>Things/Projectile/ImpactC</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<flyOverhead>False</flyOverhead>
+									<damageDef>KineticImpact</damageDef>
+									<damageAmountBase>13</damageAmountBase>
+									<explosionRadius>2</explosionRadius>
+									<speed>75</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Harrower_Bond" Abstract="True">
+								<label>kinetic energy</label>
+								<graphicData>
+									<texPath>Things/Projectile/Harrower</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<flyOverhead>False</flyOverhead>
+									<damageDef>KineticImpact</damageDef>
+									<damageAmountBase>8</damageAmountBase>
+									<explosionRadius>0.5</explosionRadius>
+									<speed>300</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_SeoLi_Bond" Abstract="True">
+								<label>seoli shard</label>
+								<graphicData>
+									<texPath>Things/Projectile/Shard</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Shredder</damageDef>
+									<damageAmountBase>10</damageAmountBase>
+									<armorPenetrationBase>0.35</armorPenetrationBase>
+									<stoppingPower>0</stoppingPower>
+									<speed>80</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_SagPung_Bond" Abstract="True">
+								<label>sagpung swarm</label>
+								<graphicData>
+									<texPath>Things/Projectile/Swarm</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Shredder</damageDef>
+									<damageAmountBase>12</damageAmountBase>
+									<speed>70</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_SangAe_Bond" Abstract="True">
+								<label>sangae spike</label>
+								<graphicData>
+									<texPath>Things/Projectile/Spike</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<damageDef>Bomb</damageDef>
+									<damageAmountBase>29</damageAmountBase>
+									<speed>95</speed>
+									<stoppingPower>0</stoppingPower>
+									<explosionRadius>0.9</explosionRadius>
+									<explosionDelay>60</explosionDelay>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_SeolHwa_Bond" Abstract="True">
+								<label>seolhwa shard</label>
+								<graphicData>
+									<texPath>Things/Projectile/Shard</texPath>
+								</graphicData>
+								<projectile>
+									<damageDef>Shredder</damageDef>
+									<armorPenetrationBase>0.35</armorPenetrationBase>
+									<stoppingPower>0</stoppingPower>
+									<damageAmountBase>10</damageAmountBase>
+									<speed>90</speed>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_GeugGwang_Bond" Abstract="True">
+								<label>microwave</label>
+								<graphicData>
+									<texPath>Things/Projectile/Microwave</texPath>
+									<shaderType>TransparentPostLight</shaderType>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<speed>80</speed>
+									<damageDef>Microwave</damageDef>
+									<damageAmountBase>2</damageAmountBase>
+									<explosionRadius>1.5</explosionRadius>
+									<ai_IsIncendiary>true</ai_IsIncendiary>
+								</projectile>
+							</ThingDef>
+							<ThingDef ParentName="MPBFPM_BaseGrenadeProjectile" Name="Bullet_VectorShot_Bond" Abstract="True">
+								<label>smart bolt</label>
+								<graphicData>
+									<texPath>Things/Projectile/Vectorbolt</texPath>
+								</graphicData>
+								<thingClass>Projectile_Explosive</thingClass>
+								<projectile>
+									<damageDef>Shredder</damageDef>
+									<damageAmountBase>15</damageAmountBase>
+									<flyOverhead>True</flyOverhead>
+									<soundHitThickRoof>RS_ShotShard</soundHitThickRoof>
+									<speed>35</speed>
+									<explosionRadius>0.9</explosionRadius>
+									<arcHeightFactor>5</arcHeightFactor>
+									<shadowSize>0.6</shadowSize>
+									<screenShakeFactor>0.2</screenShakeFactor>
+								</projectile>
+							</ThingDef>
+						</value>
+					</Operation>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_RimsenalCore</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.PatchOperationAdd">
+								<xpath>Defs</xpath>
+								<value>
+									<ThingCategoryDef ParentName="MPBFPM_GDWeapons">
+										<defName>MPBFPM_GDWeapons</defName>
+									</ThingCategoryDef>
+									<ThingCategoryDef ParentName="MPBFPM_GDMSS">
+										<defName>MPBFPM_GDMSS</defName>
+									</ThingCategoryDef>
+									<ThingCategoryDef ParentName="MPBFPM_GDMRS">
+										<defName>MPBFPM_GDMRS</defName>
+									</ThingCategoryDef>
+									<ThingCategoryDef ParentName="MPBFPM_GDMulti">
+										<defName>MPBFPM_GDMulti</defName>
+									</ThingCategoryDef>
+									<ThingCategoryDef ParentName="MPBFPM_JIWeapons">
+										<defName>MPBFPM_JIWeapons</defName>
+									</ThingCategoryDef>
+									<ThingCategoryDef ParentName="MPBFPM_TEWeapons">
+										<defName>MPBFPM_TEWeapons</defName>
+									</ThingCategoryDef>
+									<ThingCategoryDef ParentName="MPBFPM_YPWeapons">
+										<defName>MPBFPM_YPWeapons</defName>
+									</ThingCategoryDef>
+									<ThingDef ParentName="GD_Sabertooth_Bond">
+										<defName>GD_Sabertooth_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_BingJu_Bond">
+										<defName>YP_BingJu_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Ormbane_Bond">
+										<defName>JI_Ormbane_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_Eris_Bond">
+										<defName>TE_Eris_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="MeleeWeapon_TorchSword_Bond">
+										<defName>MeleeWeapon_TorchSword_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_MSST_Bond">
+										<defName>GD_MSST_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_MSSS_Bond">
+										<defName>GD_MSSS_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_MSSF_Bond">
+										<defName>GD_MSSF_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_MSSH_Bond">
+										<defName>GD_MSSH_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_ModularCarbine_Bond">
+										<defName>GD_ModularCarbine_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_ModularRifle_Bond">
+										<defName>GD_ModularRifle_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_ModularDMR_Bond">
+										<defName>GD_ModularDMR_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_ModularLMG_Bond">
+										<defName>GD_ModularLMG_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_HybridRifle_Bond">
+										<defName>GD_HybridRifle_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_GrenadeLauncher_Bond">
+										<defName>GD_GrenadeLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_INGrenadeLauncher_Bond">
+										<defName>GD_INGrenadeLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_SKGrenadeLauncher_Bond">
+										<defName>GD_SKGrenadeLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="GD_BSLauncher_Bond">
+										<defName>GD_BSLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Hrunting_Bond">
+										<defName>JI_Hrunting_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Trollsverd_Bond">
+										<defName>JI_Trollsverd_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Fafnir_Bond">
+										<defName>JI_Fafnir_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Gramr_Bond">
+										<defName>JI_Gramr_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Grendel_Bond">
+										<defName>JI_Grendel_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="JI_Muspell_Bond">
+										<defName>JI_Muspell_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_KineticRifle_Bond">
+										<defName>TE_KineticRifle_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_KineticPistol_Bond">
+										<defName>TE_KineticPistol_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_ThuddGun_Bond">
+										<defName>TE_ThuddGun_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_KineticLongRifle_Bond">
+										<defName>TE_KineticLongRifle_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_StormCannon_Bond">
+										<defName>TE_StormCannon_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="TE_KineticLance_Bond">
+										<defName>TE_KineticLance_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_SeoLi_Bond">
+										<defName>YP_SeoLi_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_SagPung_Bond">
+										<defName>YP_SagPung_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_SangAe_Bond">
+										<defName>YP_SangAe_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_SeolHwa_Bond">
+										<defName>YP_SeolHwa_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_GeugGwang_Bond">
+										<defName>YP_GeugGwang_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="YP_VectorShot_Bond">
+										<defName>YP_VectorShot_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_MSST_Bond">
+										<defName>Bullet_MSST_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_MSSS_Bond">
+										<defName>Bullet_MSSS_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_MSSF_Bond">
+										<defName>Bullet_MSSF_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_MSSH_Bond">
+										<defName>Bullet_MSSH_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_ModularRifle_Bond">
+										<defName>Bullet_ModularRifle_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Proj_MicroMissile_Bond">
+										<defName>Proj_MicroMissile_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_ModularDMR_Bond">
+										<defName>Bullet_ModularDMR_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_MRSH_Bond">
+										<defName>Bullet_MRSH_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_MultiLauncher_Bond">
+										<defName>Bullet_MultiLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_INGrenadeLauncher_Bond">
+										<defName>Bullet_INGrenadeLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_SKGrenadeLauncher_Bond">
+										<defName>Bullet_SKGrenadeLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_BSLauncher_Bond">
+										<defName>Bullet_BSLauncher_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Hrunting_Bond">
+										<defName>Bullet_Hrunting_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Trollsverd_Bond">
+										<defName>Bullet_Trollsverd_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Fafnir_Bond">
+										<defName>Bullet_Fafnir_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Gramr_Bond">
+										<defName>Bullet_Gramr_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Grendel_Bond">
+										<defName>Bullet_Grendel_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Muspell_Bond">
+										<defName>Bullet_Muspell_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Tyrant_Bond">
+										<defName>Bullet_Tyrant_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Tormentor_Bond">
+										<defName>Bullet_Tormentor_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Oppressor_Bond">
+										<defName>Bullet_Oppressor_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Wailer_Bond">
+										<defName>Bullet_Wailer_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Atrocity_Bond">
+										<defName>Bullet_Atrocity_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_Harrower_Bond">
+										<defName>Bullet_Harrower_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_SeoLi_Bond">
+										<defName>Bullet_SeoLi_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_SagPung_Bond">
+										<defName>Bullet_SagPung_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_SangAe_Bond">
+										<defName>Bullet_SangAe_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_SeolHwa_Bond">
+										<defName>Bullet_SeolHwa_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_GeugGwang_Bond">
+										<defName>Bullet_GeugGwang_Bond</defName>
+									</ThingDef>
+									<ThingDef ParentName="Bullet_VectorShot_Bond">
+										<defName>Bullet_VectorShot_Bond</defName>
+									</ThingDef>
+								</value>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseFalse>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
