@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<!--
+	===== Rimsenal Faction Pack - Federation =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>rimsenal.federation</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_ConcussionBaton_Bond" Abstract="True">
+						<label>bond concussion baton</label>
+						<description>Bond an concussion baton.</description>
+						<jobString>Bonding a concussion baton.</jobString>
+						<researchPrerequisites>
+							<li>CrucibleTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_ConcussionBaton</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_ConcussionBaton</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_ConcussionBaton_Bond>1</AD_ConcussionBaton_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_CrucibleRifle_Bond" Abstract="True">
+						<label>bond crucible rifle</label>
+						<description>Bond an crucible rifle.</description>
+						<jobString>Bonding a crucible rifle.</jobString>
+						<researchPrerequisites>
+							<li>CrucibleTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_CrucibleRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_CrucibleRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_CrucibleRifle_Bond>1</AD_CrucibleRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_CruciblePistol_Bond" Abstract="True">
+						<label>bond crucible pistol</label>
+						<description>Bond an crucible pistol.</description>
+						<jobString>Bonding a crucible pistol.</jobString>
+						<researchPrerequisites>
+							<li>CrucibleTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_CruciblePistol</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_CruciblePistol</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_CruciblePistol_Bond>1</AD_CruciblePistol_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_HeatProjector_Bond" Abstract="True">
+						<label>bond heat projector</label>
+						<description>Bond an heat projector.</description>
+						<jobString>Bonding a heat projector.</jobString>
+						<researchPrerequisites>
+							<li>CrucibleTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_HeatProjector</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_HeatProjector</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_HeatProjector_Bond>1</AD_HeatProjector_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_CruciblePresicionRifle_Bond" Abstract="True">
+						<label>bond crucible precision rifle</label>
+						<description>Bond an crucible precision rifle.</description>
+						<jobString>Bonding a crucible precision rifle.</jobString>
+						<researchPrerequisites>
+							<li>CrucibleTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_CruciblePresicionRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_CruciblePresicionRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_CruciblePresicionRifle_Bond>1</AD_CruciblePresicionRifle_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_PlasmaCaliver_Bond" Abstract="True">
+						<label>bond plasma caliver</label>
+						<description>Bond an plasma caliver.</description>
+						<jobString>Bonding a plasma caliver.</jobString>
+						<researchPrerequisites>
+							<li>PlasmaTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_PlasmaCaliver</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_PlasmaCaliver</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_PlasmaCaliver_Bond>1</AD_PlasmaCaliver_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_CrucibleCarbine_Bond" Abstract="True">
+						<label>bond crucible carbine</label>
+						<description>Bond an crucible carbine.</description>
+						<jobString>Bonding a crucible carbine.</jobString>
+						<researchPrerequisites>
+							<li>CrucibleTech</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_CrucibleCarbine</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_CrucibleCarbine</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_CrucibleCarbine_Bond>1</AD_CrucibleCarbine_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_Sentinel_Bond" Abstract="True">
+						<label>bond plasma rifle</label>
+						<description>Bond an plasma rifle.</description>
+						<jobString>Bonding a plasma rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_Sentinel</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_Sentinel</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_Sentinel_Bond>1</AD_Sentinel_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AD_AuxPistol_Bond" Abstract="True">
+						<label>bond auxiliary pistol</label>
+						<description>Bond an auxiliary pistol.</description>
+						<jobString>Bonding a auxiliary pistol.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AD_AuxPistol</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AD_AuxPistol</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AD_AuxPistol_Bond>1</AD_AuxPistol_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Gun_MCrucibleRifle_Bond" Abstract="True">
+						<label>bond makeshift crucible rifle</label>
+						<description>Bond an makeshift crucible rifle.</description>
+						<jobString>Bonding a makeshift crucible rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_MCrucibleRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_MCrucibleRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_MCrucibleRifle_Bond>1</Gun_MCrucibleRifle_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_RimsenalFactionPackFederation</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_RimsenalFactionPackFederation</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_AD_ConcussionBaton_Bond">
+												<defName>Make_AD_ConcussionBaton_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_CrucibleRifle_Bond">
+												<defName>Make_AD_CrucibleRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_CruciblePistol_Bond">
+												<defName>Make_AD_CruciblePistol_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_HeatProjector_Bond">
+												<defName>Make_AD_HeatProjector_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_CruciblePresicionRifle_Bond">
+												<defName>Make_AD_CruciblePresicionRifle_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_PlasmaCaliver_Bond">
+												<defName>Make_AD_PlasmaCaliver_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_CrucibleCarbine_Bond">
+												<defName>Make_AD_CrucibleCarbine_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_Sentinel_Bond">
+												<defName>Make_AD_Sentinel_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AD_AuxPistol_Bond">
+												<defName>Make_AD_AuxPistol_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Gun_MCrucibleRifle_Bond">
+												<defName>Make_Gun_MCrucibleRifle_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
