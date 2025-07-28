@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<!--
+	===== Skyrim Steel Weapons Pack =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>doublec.skyrimsteelweaponspack</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Dagger_Bond" Abstract="True">
+						<label>bond steel dagger</label>
+						<description>Bond an steel dagger.</description>
+						<jobString>Bonding a steel dagger.</jobString>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Dagger</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Dagger</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Dagger_Bond>1</MeleeWeapon_Skyrim_Steel_Dagger_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Sword_Bond" Abstract="True">
+						<label>bond steel sword</label>
+						<description>Bond an steel sword.</description>
+						<jobString>Bonding a steel sword.</jobString>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Sword</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Sword</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Sword_Bond>1</MeleeWeapon_Skyrim_Steel_Sword_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Waraxe_Bond" Abstract="True">
+						<label>bond steel waraxe</label>
+						<description>Bond an steel waraxe.</description>
+						<jobString>Bonding a steel waraxe.</jobString>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Waraxe</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Waraxe</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Waraxe_Bond>1</MeleeWeapon_Skyrim_Steel_Waraxe_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Mace_Bond" Abstract="True">
+						<label>bond steel mace</label>
+						<description>Bond an steel mace.</description>
+						<jobString>Bonding a steel mace.</jobString>
+						<researchPrerequisites>
+							<li>Smithing</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Mace</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Mace</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Mace_Bond>1</MeleeWeapon_Skyrim_Steel_Mace_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Greatsword_Bond" Abstract="True">
+						<label>bond steel greatsword</label>
+						<description>Bond an steel greatsword.</description>
+						<jobString>Bonding a steel greatsword.</jobString>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Greatsword</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Greatsword</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Greatsword_Bond>1</MeleeWeapon_Skyrim_Steel_Greatsword_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Battleaxe_Bond" Abstract="True">
+						<label>bond steel battleaxe</label>
+						<description>Bond an steel battleaxe.</description>
+						<jobString>Bonding a steel battleaxe.</jobString>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Battleaxe</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Battleaxe</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Battleaxe_Bond>1</MeleeWeapon_Skyrim_Steel_Battleaxe_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_MeleeWeapon_Skyrim_Steel_Warhammer_Bond" Abstract="True">
+						<label>bond steel warhammer</label>
+						<description>Bond an steel warhammer.</description>
+						<jobString>Bonding a steel warhammer.</jobString>
+						<researchPrerequisites>
+							<li>LongBlades</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>MeleeWeapon_Skyrim_Steel_Warhammer</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>MeleeWeapon_Skyrim_Steel_Warhammer</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<MeleeWeapon_Skyrim_Steel_Warhammer_Bond>1</MeleeWeapon_Skyrim_Steel_Warhammer_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_SkyrimSteelWeaponsPack</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_SkyrimSteelWeaponsPack</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Dagger_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Dagger_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Sword_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Sword_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Waraxe_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Waraxe_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Mace_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Mace_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Greatsword_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Greatsword_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Battleaxe_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Battleaxe_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_MeleeWeapon_Skyrim_Steel_Warhammer_Bond">
+												<defName>Make_MeleeWeapon_Skyrim_Steel_Warhammer_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
