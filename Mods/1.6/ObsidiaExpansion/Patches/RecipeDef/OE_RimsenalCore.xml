@@ -1,0 +1,1997 @@
+<?xml version="1.0"?>
+<!--
+	===== Rimsenal - Core =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>rimsenal.core</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.FindMod">
+				<mods>
+					<li>statistno1.personabond</li>
+				</mods>
+				<packageId>true</packageId>
+				<caseFalse>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_Sabertooth_Bond" Abstract="True">
+								<label>bond combat blade</label>
+								<description>Bond an combat blade.</description>
+								<jobString>Bonding a combat blade.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_Sabertooth</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_Sabertooth</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_Sabertooth_Bond>1</GD_Sabertooth_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_Sabertooth_Bond_Reset" Abstract="True">
+								<label>Reset combat blade</label>
+								<description>Reset a combat blade.</description>
+								<jobString>Resetting a combat blade.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_Sabertooth_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_Sabertooth_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_Sabertooth_Bond>1</GD_Sabertooth_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_BingJu_Bond" Abstract="True">
+								<label>bond vibro-dagger</label>
+								<description>Bond an vibro-dagger.</description>
+								<jobString>Bonding a vibro-dagger.</jobString>
+								<researchPrerequisites>
+									<li>ShardTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_BingJu</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_BingJu</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_BingJu_Bond>1</YP_BingJu_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_BingJu_Bond_Reset" Abstract="True">
+								<label>Reset vibro-dagger</label>
+								<description>Reset a vibro-dagger.</description>
+								<jobString>Resetting a vibro-dagger.</jobString>
+								<researchPrerequisites>
+									<li>ShardTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_BingJu_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_BingJu_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_BingJu_Bond>1</YP_BingJu_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Ormbane_Bond" Abstract="True">
+								<label>bond Assault hammer</label>
+								<description>Bond an Assault hammer.</description>
+								<jobString>Bonding a Assault hammer.</jobString>
+								<researchPrerequisites>
+									<li>MoltenTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Ormbane</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Ormbane</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Ormbane_Bond>1</JI_Ormbane_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Ormbane_Bond_Reset" Abstract="True">
+								<label>Reset Assault hammer</label>
+								<description>Reset a Assault hammer.</description>
+								<jobString>Resetting a Assault hammer.</jobString>
+								<researchPrerequisites>
+									<li>MoltenTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Ormbane_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Ormbane_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Ormbane_Bond>1</JI_Ormbane_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_Eris_Bond" Abstract="True">
+								<label>bond impact knuckle</label>
+								<description>Bond an impact knuckle.</description>
+								<jobString>Bonding a impact knuckle.</jobString>
+								<researchPrerequisites>
+									<li>KineticTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_Eris</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_Eris</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_Eris_Bond>1</TE_Eris_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_Eris_Bond_Reset" Abstract="True">
+								<label>Reset impact knuckle</label>
+								<description>Reset a impact knuckle.</description>
+								<jobString>Resetting a impact knuckle.</jobString>
+								<researchPrerequisites>
+									<li>KineticTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_Eris_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_Eris_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_Eris_Bond>1</TE_Eris_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_MeleeWeapon_TorchSword_Bond" Abstract="True">
+								<label>bond torch sword</label>
+								<description>Bond an torch sword.</description>
+								<jobString>Bonding a torch sword.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>MeleeWeapon_TorchSword</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>MeleeWeapon_TorchSword</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<MeleeWeapon_TorchSword_Bond>1</MeleeWeapon_TorchSword_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_MeleeWeapon_TorchSword_Bond_Reset" Abstract="True">
+								<label>Reset torch sword</label>
+								<description>Reset a torch sword.</description>
+								<jobString>Resetting a torch sword.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>MeleeWeapon_TorchSword_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>MeleeWeapon_TorchSword_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<MeleeWeapon_TorchSword_Bond>1</MeleeWeapon_TorchSword_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_MSST_Bond" Abstract="True">
+								<label>bond modular triple-shot</label>
+								<description>Bond an modular triple-shot.</description>
+								<jobString>Bonding a modular triple-shot.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSST</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSST</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSST_Bond>1</GD_MSST_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_MSST_Bond_Reset" Abstract="True">
+								<label>Reset modular triple-shot</label>
+								<description>Reset a modular triple-shot.</description>
+								<jobString>Resetting a modular triple-shot.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSST_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSST_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSST_Bond>1</GD_MSST_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_MSSS_Bond" Abstract="True">
+								<label>bond modular spitfire</label>
+								<description>Bond an modular spitfire.</description>
+								<jobString>Bonding a modular spitfire.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSSS</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSSS</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSSS_Bond>1</GD_MSSS_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_MSSS_Bond_Reset" Abstract="True">
+								<label>Reset modular spitfire</label>
+								<description>Reset a modular spitfire.</description>
+								<jobString>Resetting a modular spitfire.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSSS_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSSS_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSSS_Bond>1</GD_MSSS_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_MSSF_Bond" Abstract="True">
+								<label>bond modular flakker</label>
+								<description>Bond an modular flakker.</description>
+								<jobString>Bonding a modular flakker.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSSF</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSSF</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSSF_Bond>1</GD_MSSF_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_MSSF_Bond_Reset" Abstract="True">
+								<label>Reset modular flakker</label>
+								<description>Reset a modular flakker.</description>
+								<jobString>Resetting a modular flakker.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSSF_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSSF_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSSF_Bond>1</GD_MSSF_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_MSSH_Bond" Abstract="True">
+								<label>bond modular hybrid pistol</label>
+								<description>Bond an modular hybrid pistol.</description>
+								<jobString>Bonding a modular hybrid pistol.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSSH</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSSH</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSSH_Bond>1</GD_MSSH_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_MSSH_Bond_Reset" Abstract="True">
+								<label>Reset modular hybrid pistol</label>
+								<description>Reset a modular hybrid pistol.</description>
+								<jobString>Resetting a modular hybrid pistol.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_MSSH_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_MSSH_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_MSSH_Bond>1</GD_MSSH_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_ModularCarbine_Bond" Abstract="True">
+								<label>bond modular carbine</label>
+								<description>Bond an modular carbine.</description>
+								<jobString>Bonding a modular carbine.</jobString>
+								<researchPrerequisites>
+									<li>BlowbackOperation</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularCarbine</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularCarbine</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularCarbine_Bond>1</GD_ModularCarbine_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_ModularCarbine_Bond_Reset" Abstract="True">
+								<label>Reset modular carbine</label>
+								<description>Reset a modular carbine.</description>
+								<jobString>Resetting a modular carbine.</jobString>
+								<researchPrerequisites>
+									<li>BlowbackOperation</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularCarbine_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularCarbine_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularCarbine_Bond>1</GD_ModularCarbine_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_ModularRifle_Bond" Abstract="True">
+								<label>bond modular rifle</label>
+								<description>Bond an modular rifle.</description>
+								<jobString>Bonding a modular rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularRifle</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularRifle</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularRifle_Bond>1</GD_ModularRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_ModularRifle_Bond_Reset" Abstract="True">
+								<label>Reset modular rifle</label>
+								<description>Reset a modular rifle.</description>
+								<jobString>Resetting a modular rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularRifle_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularRifle_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularRifle_Bond>1</GD_ModularRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_ModularDMR_Bond" Abstract="True">
+								<label>bond modular DMR</label>
+								<description>Bond an modular DMR.</description>
+								<jobString>Bonding a modular DMR.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularDMR</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularDMR</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularDMR_Bond>1</GD_ModularDMR_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_ModularDMR_Bond_Reset" Abstract="True">
+								<label>Reset modular DMR</label>
+								<description>Reset a modular DMR.</description>
+								<jobString>Resetting a modular DMR.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularDMR_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularDMR_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularDMR_Bond>1</GD_ModularDMR_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_ModularLMG_Bond" Abstract="True">
+								<label>bond modular LMG</label>
+								<description>Bond an modular LMG.</description>
+								<jobString>Bonding a modular LMG.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularLMG</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularLMG</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularLMG_Bond>1</GD_ModularLMG_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_ModularLMG_Bond_Reset" Abstract="True">
+								<label>Reset modular LMG</label>
+								<description>Reset a modular LMG.</description>
+								<jobString>Resetting a modular LMG.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_ModularLMG_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_ModularLMG_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_ModularLMG_Bond>1</GD_ModularLMG_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_HybridRifle_Bond" Abstract="True">
+								<label>bond modular hybrid rifle</label>
+								<description>Bond an modular hybrid rifle.</description>
+								<jobString>Bonding a modular hybrid rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_HybridRifle</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_HybridRifle</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_HybridRifle_Bond>1</GD_HybridRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_HybridRifle_Bond_Reset" Abstract="True">
+								<label>Reset modular hybrid rifle</label>
+								<description>Reset a modular hybrid rifle.</description>
+								<jobString>Resetting a modular hybrid rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_HybridRifle_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_HybridRifle_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_HybridRifle_Bond>1</GD_HybridRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_GrenadeLauncher_Bond" Abstract="True">
+								<label>bond GD multi launcher</label>
+								<description>Bond an GD multi launcher.</description>
+								<jobString>Bonding a GD multi launcher.</jobString>
+								<researchPrerequisites>
+									<li>Mortars</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_GrenadeLauncher</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_GrenadeLauncher</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_GrenadeLauncher_Bond>1</GD_GrenadeLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_GrenadeLauncher_Bond_Reset" Abstract="True">
+								<label>Reset GD multi launcher</label>
+								<description>Reset a GD multi launcher.</description>
+								<jobString>Resetting a GD multi launcher.</jobString>
+								<researchPrerequisites>
+									<li>Mortars</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_GrenadeLauncher_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_GrenadeLauncher_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_GrenadeLauncher_Bond>1</GD_GrenadeLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_INGrenadeLauncher_Bond" Abstract="True">
+								<label>bond GD incendiary launcher</label>
+								<description>Bond an GD incendiary launcher.</description>
+								<jobString>Bonding a GD incendiary launcher.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_INGrenadeLauncher</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_INGrenadeLauncher</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_INGrenadeLauncher_Bond>1</GD_INGrenadeLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_INGrenadeLauncher_Bond_Reset" Abstract="True">
+								<label>Reset GD incendiary launcher</label>
+								<description>Reset a GD incendiary launcher.</description>
+								<jobString>Resetting a GD incendiary launcher.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_INGrenadeLauncher_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_INGrenadeLauncher_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_INGrenadeLauncher_Bond>1</GD_INGrenadeLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_SKGrenadeLauncher_Bond" Abstract="True">
+								<label>bond GD smoke launcher</label>
+								<description>Bond an GD smoke launcher.</description>
+								<jobString>Bonding a GD smoke launcher.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_SKGrenadeLauncher</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_SKGrenadeLauncher</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_SKGrenadeLauncher_Bond>1</GD_SKGrenadeLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_SKGrenadeLauncher_Bond_Reset" Abstract="True">
+								<label>Reset GD smoke launcher</label>
+								<description>Reset a GD smoke launcher.</description>
+								<jobString>Resetting a GD smoke launcher.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_SKGrenadeLauncher_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_SKGrenadeLauncher_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_SKGrenadeLauncher_Bond>1</GD_SKGrenadeLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GD_BSLauncher_Bond" Abstract="True">
+								<label>bond GD buckshot launcher</label>
+								<description>Bond an GD buckshot launcher.</description>
+								<jobString>Bonding a GD buckshot launcher.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_BSLauncher</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_BSLauncher</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_BSLauncher_Bond>1</GD_BSLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GD_BSLauncher_Bond_Reset" Abstract="True">
+								<label>Reset GD buckshot launcher</label>
+								<description>Reset a GD buckshot launcher.</description>
+								<jobString>Resetting a GD buckshot launcher.</jobString>
+								<researchPrerequisites>
+									<li>DefenceTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>GD_BSLauncher_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>GD_BSLauncher_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<GD_BSLauncher_Bond>1</GD_BSLauncher_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Hrunting_Bond" Abstract="True">
+								<label>bond ULM rifle</label>
+								<description>Bond an ULM rifle.</description>
+								<jobString>Bonding a ULM rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Hrunting</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Hrunting</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Hrunting_Bond>1</JI_Hrunting_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Hrunting_Bond_Reset" Abstract="True">
+								<label>Reset ULM rifle</label>
+								<description>Reset a ULM rifle.</description>
+								<jobString>Resetting a ULM rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Hrunting_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Hrunting_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Hrunting_Bond>1</JI_Hrunting_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Trollsverd_Bond" Abstract="True">
+								<label>bond ULM pistol</label>
+								<description>Bond an ULM pistol.</description>
+								<jobString>Bonding a ULM pistol.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Trollsverd</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Trollsverd</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Trollsverd_Bond>1</JI_Trollsverd_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Trollsverd_Bond_Reset" Abstract="True">
+								<label>Reset ULM pistol</label>
+								<description>Reset a ULM pistol.</description>
+								<jobString>Resetting a ULM pistol.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Trollsverd_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Trollsverd_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Trollsverd_Bond>1</JI_Trollsverd_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Fafnir_Bond" Abstract="True">
+								<label>bond ULM shotgun</label>
+								<description>Bond an ULM shotgun.</description>
+								<jobString>Bonding a ULM shotgun.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Fafnir</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Fafnir</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Fafnir_Bond>1</JI_Fafnir_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Fafnir_Bond_Reset" Abstract="True">
+								<label>Reset ULM shotgun</label>
+								<description>Reset a ULM shotgun.</description>
+								<jobString>Resetting a ULM shotgun.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Fafnir_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Fafnir_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Fafnir_Bond>1</JI_Fafnir_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Gramr_Bond" Abstract="True">
+								<label>bond AMR</label>
+								<description>Bond an AMR.</description>
+								<jobString>Bonding a AMR.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Gramr</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Gramr</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Gramr_Bond>1</JI_Gramr_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Gramr_Bond_Reset" Abstract="True">
+								<label>Reset AMR</label>
+								<description>Reset a AMR.</description>
+								<jobString>Resetting a AMR.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Gramr_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Gramr_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Gramr_Bond>1</JI_Gramr_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Grendel_Bond" Abstract="True">
+								<label>bond siege gun</label>
+								<description>Bond an siege gun.</description>
+								<jobString>Bonding a siege gun.</jobString>
+								<researchPrerequisites>
+									<li>SiegeTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Grendel</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Grendel</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Grendel_Bond>1</JI_Grendel_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Grendel_Bond_Reset" Abstract="True">
+								<label>Reset siege gun</label>
+								<description>Reset a siege gun.</description>
+								<jobString>Resetting a siege gun.</jobString>
+								<researchPrerequisites>
+									<li>SiegeTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Grendel_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Grendel_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Grendel_Bond>1</JI_Grendel_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_JI_Muspell_Bond" Abstract="True">
+								<label>bond suppressor cannon</label>
+								<description>Bond an suppressor cannon.</description>
+								<jobString>Bonding a suppressor cannon.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Muspell</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Muspell</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Muspell_Bond>1</JI_Muspell_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_JI_Muspell_Bond_Reset" Abstract="True">
+								<label>Reset suppressor cannon</label>
+								<description>Reset a suppressor cannon.</description>
+								<jobString>Resetting a suppressor cannon.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>JI_Muspell_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>JI_Muspell_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<JI_Muspell_Bond>1</JI_Muspell_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_KineticRifle_Bond" Abstract="True">
+								<label>bond kinetic rifle</label>
+								<description>Bond an kinetic rifle.</description>
+								<jobString>Bonding a kinetic rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticRifle</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticRifle</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticRifle_Bond>1</TE_KineticRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_KineticRifle_Bond_Reset" Abstract="True">
+								<label>Reset kinetic rifle</label>
+								<description>Reset a kinetic rifle.</description>
+								<jobString>Resetting a kinetic rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticRifle_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticRifle_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticRifle_Bond>1</TE_KineticRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_KineticPistol_Bond" Abstract="True">
+								<label>bond kinetic pistol</label>
+								<description>Bond an kinetic pistol.</description>
+								<jobString>Bonding a kinetic pistol.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticPistol</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticPistol</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticPistol_Bond>1</TE_KineticPistol_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_KineticPistol_Bond_Reset" Abstract="True">
+								<label>Reset kinetic pistol</label>
+								<description>Reset a kinetic pistol.</description>
+								<jobString>Resetting a kinetic pistol.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticPistol_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticPistol_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticPistol_Bond>1</TE_KineticPistol_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_ThuddGun_Bond" Abstract="True">
+								<label>bond thudd gun</label>
+								<description>Bond an thudd gun.</description>
+								<jobString>Bonding a thudd gun.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_ThuddGun</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_ThuddGun</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_ThuddGun_Bond>1</TE_ThuddGun_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_ThuddGun_Bond_Reset" Abstract="True">
+								<label>Reset thudd gun</label>
+								<description>Reset a thudd gun.</description>
+								<jobString>Resetting a thudd gun.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_ThuddGun_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_ThuddGun_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_ThuddGun_Bond>1</TE_ThuddGun_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_KineticLongRifle_Bond" Abstract="True">
+								<label>bond kinetic long rifle</label>
+								<description>Bond an kinetic long rifle.</description>
+								<jobString>Bonding a kinetic long rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticLongRifle</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticLongRifle</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticLongRifle_Bond>1</TE_KineticLongRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_KineticLongRifle_Bond_Reset" Abstract="True">
+								<label>Reset kinetic long rifle</label>
+								<description>Reset a kinetic long rifle.</description>
+								<jobString>Resetting a kinetic long rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticLongRifle_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticLongRifle_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticLongRifle_Bond>1</TE_KineticLongRifle_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_StormCannon_Bond" Abstract="True">
+								<label>bond singularity projector</label>
+								<description>Bond an singularity projector.</description>
+								<jobString>Bonding a singularity projector.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_StormCannon</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_StormCannon</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_StormCannon_Bond>1</TE_StormCannon_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_StormCannon_Bond_Reset" Abstract="True">
+								<label>Reset singularity projector</label>
+								<description>Reset a singularity projector.</description>
+								<jobString>Resetting a singularity projector.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_StormCannon_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_StormCannon_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_StormCannon_Bond>1</TE_StormCannon_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_TE_KineticLance_Bond" Abstract="True">
+								<label>bond kinetic lance</label>
+								<description>Bond an kinetic lance.</description>
+								<jobString>Bonding a kinetic lance.</jobString>
+								<researchPrerequisites>
+									<li>FocusTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticLance</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticLance</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticLance_Bond>1</TE_KineticLance_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_TE_KineticLance_Bond_Reset" Abstract="True">
+								<label>Reset kinetic lance</label>
+								<description>Reset a kinetic lance.</description>
+								<jobString>Resetting a kinetic lance.</jobString>
+								<researchPrerequisites>
+									<li>FocusTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>TE_KineticLance_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>TE_KineticLance_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<TE_KineticLance_Bond>1</TE_KineticLance_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_SeoLi_Bond" Abstract="True">
+								<label>bond shard rifle</label>
+								<description>Bond an shard rifle.</description>
+								<jobString>Bonding a shard rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SeoLi</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SeoLi</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SeoLi_Bond>1</YP_SeoLi_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_SeoLi_Bond_Reset" Abstract="True">
+								<label>Reset shard rifle</label>
+								<description>Reset a shard rifle.</description>
+								<jobString>Resetting a shard rifle.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SeoLi_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SeoLi_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SeoLi_Bond>1</YP_SeoLi_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_SagPung_Bond" Abstract="True">
+								<label>bond swarmer</label>
+								<description>Bond an swarmer.</description>
+								<jobString>Bonding a swarmer.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SagPung</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SagPung</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SagPung_Bond>1</YP_SagPung_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_SagPung_Bond_Reset" Abstract="True">
+								<label>Reset swarmer</label>
+								<description>Reset a swarmer.</description>
+								<jobString>Resetting a swarmer.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SagPung_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SagPung_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SagPung_Bond>1</YP_SagPung_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_SangAe_Bond" Abstract="True">
+								<label>bond spike lance</label>
+								<description>Bond an spike lance.</description>
+								<jobString>Bonding a spike lance.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SangAe</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SangAe</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SangAe_Bond>1</YP_SangAe_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_SangAe_Bond_Reset" Abstract="True">
+								<label>Reset spike lance</label>
+								<description>Reset a spike lance.</description>
+								<jobString>Resetting a spike lance.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SangAe_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SangAe_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SangAe_Bond>1</YP_SangAe_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_SeolHwa_Bond" Abstract="True">
+								<label>bond dual shard pistols</label>
+								<description>Bond an dual shard pistols.</description>
+								<jobString>Bonding a dual shard pistols.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SeolHwa</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SeolHwa</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SeolHwa_Bond>1</YP_SeolHwa_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_SeolHwa_Bond_Reset" Abstract="True">
+								<label>Reset dual shard pistols</label>
+								<description>Reset a dual shard pistols.</description>
+								<jobString>Resetting a dual shard pistols.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_SeolHwa_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_SeolHwa_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_SeolHwa_Bond>1</YP_SeolHwa_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_GeugGwang_Bond" Abstract="True">
+								<label>bond microwave emmiter</label>
+								<description>Bond an microwave emmiter.</description>
+								<jobString>Bonding a microwave emmiter.</jobString>
+								<researchPrerequisites>
+									<li>MicrowaveTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_GeugGwang</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_GeugGwang</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_GeugGwang_Bond>1</YP_GeugGwang_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_GeugGwang_Bond_Reset" Abstract="True">
+								<label>Reset microwave emmiter</label>
+								<description>Reset a microwave emmiter.</description>
+								<jobString>Resetting a microwave emmiter.</jobString>
+								<researchPrerequisites>
+									<li>MicrowaveTech</li>
+								</researchPrerequisites>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_GeugGwang_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_GeugGwang_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_GeugGwang_Bond>1</YP_GeugGwang_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_YP_VectorShot_Bond" Abstract="True">
+								<label>bond vector shot</label>
+								<description>Bond an vector shot.</description>
+								<jobString>Bonding a vector shot.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_VectorShot</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_VectorShot</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_VectorShot_Bond>1</YP_VectorShot_Bond>
+								</products>
+							</RecipeDef>
+							<RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_YP_VectorShot_Bond_Reset" Abstract="True">
+								<label>Reset vector shot</label>
+								<description>Reset a vector shot.</description>
+								<jobString>Resetting a vector shot.</jobString>
+								<ingredients>
+									<li>
+										<filter>
+											<thingDefs>
+												<li>YP_VectorShot_Bond</li>
+											</thingDefs>
+										</filter>
+										<count>1</count>
+									</li>
+								</ingredients>
+								<fixedIngredientFilter>
+									<thingDefs>
+										<li>YP_VectorShot_Bond</li>
+									</thingDefs>
+								</fixedIngredientFilter>
+								<products>
+									<YP_VectorShot_Bond>1</YP_VectorShot_Bond>
+								</products>
+							</RecipeDef>
+						</value>
+					</Operation>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_RimsenalCore</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_OE_RimsenalCore</key>
+								<defaultValue>true</defaultValue>
+								<caseTrue>
+									<Operation Class="XmlExtensions.OptionalPatch">
+										<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+										<key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+										<defaultValue>false</defaultValue>
+										<caseFalse>
+											<Operation Class="XmlExtensions.PatchOperationAdd">
+												<xpath>Defs</xpath>
+												<value>
+													<RecipeDef ParentName="Make_OE_GD_Sabertooth_Bond">
+														<defName>Make_OE_GD_Sabertooth_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_Sabertooth_Bond_Reset">
+														<defName>Make_OE_GD_Sabertooth_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_BingJu_Bond">
+														<defName>Make_OE_YP_BingJu_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_BingJu_Bond_Reset">
+														<defName>Make_OE_YP_BingJu_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Ormbane_Bond">
+														<defName>Make_OE_JI_Ormbane_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Ormbane_Bond_Reset">
+														<defName>Make_OE_JI_Ormbane_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_Eris_Bond">
+														<defName>Make_OE_TE_Eris_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_Eris_Bond_Reset">
+														<defName>Make_OE_TE_Eris_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_MeleeWeapon_TorchSword_Bond">
+														<defName>Make_OE_MeleeWeapon_TorchSword_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_MeleeWeapon_TorchSword_Bond_Reset">
+														<defName>Make_OE_MeleeWeapon_TorchSword_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSST_Bond">
+														<defName>Make_OE_GD_MSST_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSST_Bond_Reset">
+														<defName>Make_OE_GD_MSST_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSSS_Bond">
+														<defName>Make_OE_GD_MSSS_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSSS_Bond_Reset">
+														<defName>Make_OE_GD_MSSS_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSSF_Bond">
+														<defName>Make_OE_GD_MSSF_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSSF_Bond_Reset">
+														<defName>Make_OE_GD_MSSF_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSSH_Bond">
+														<defName>Make_OE_GD_MSSH_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_MSSH_Bond_Reset">
+														<defName>Make_OE_GD_MSSH_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularCarbine_Bond">
+														<defName>Make_OE_GD_ModularCarbine_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularCarbine_Bond_Reset">
+														<defName>Make_OE_GD_ModularCarbine_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularRifle_Bond">
+														<defName>Make_OE_GD_ModularRifle_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularRifle_Bond_Reset">
+														<defName>Make_OE_GD_ModularRifle_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularDMR_Bond">
+														<defName>Make_OE_GD_ModularDMR_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularDMR_Bond_Reset">
+														<defName>Make_OE_GD_ModularDMR_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularLMG_Bond">
+														<defName>Make_OE_GD_ModularLMG_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_ModularLMG_Bond_Reset">
+														<defName>Make_OE_GD_ModularLMG_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_HybridRifle_Bond">
+														<defName>Make_OE_GD_HybridRifle_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_HybridRifle_Bond_Reset">
+														<defName>Make_OE_GD_HybridRifle_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_GrenadeLauncher_Bond">
+														<defName>Make_OE_GD_GrenadeLauncher_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_GrenadeLauncher_Bond_Reset">
+														<defName>Make_OE_GD_GrenadeLauncher_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_INGrenadeLauncher_Bond">
+														<defName>Make_OE_GD_INGrenadeLauncher_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_INGrenadeLauncher_Bond_Reset">
+														<defName>Make_OE_GD_INGrenadeLauncher_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_SKGrenadeLauncher_Bond">
+														<defName>Make_OE_GD_SKGrenadeLauncher_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_SKGrenadeLauncher_Bond_Reset">
+														<defName>Make_OE_GD_SKGrenadeLauncher_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_BSLauncher_Bond">
+														<defName>Make_OE_GD_BSLauncher_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_GD_BSLauncher_Bond_Reset">
+														<defName>Make_OE_GD_BSLauncher_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Hrunting_Bond">
+														<defName>Make_OE_JI_Hrunting_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Hrunting_Bond_Reset">
+														<defName>Make_OE_JI_Hrunting_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Trollsverd_Bond">
+														<defName>Make_OE_JI_Trollsverd_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Trollsverd_Bond_Reset">
+														<defName>Make_OE_JI_Trollsverd_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Fafnir_Bond">
+														<defName>Make_OE_JI_Fafnir_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Fafnir_Bond_Reset">
+														<defName>Make_OE_JI_Fafnir_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Gramr_Bond">
+														<defName>Make_OE_JI_Gramr_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Gramr_Bond_Reset">
+														<defName>Make_OE_JI_Gramr_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Grendel_Bond">
+														<defName>Make_OE_JI_Grendel_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Grendel_Bond_Reset">
+														<defName>Make_OE_JI_Grendel_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Muspell_Bond">
+														<defName>Make_OE_JI_Muspell_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_JI_Muspell_Bond_Reset">
+														<defName>Make_OE_JI_Muspell_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticRifle_Bond">
+														<defName>Make_OE_TE_KineticRifle_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticRifle_Bond_Reset">
+														<defName>Make_OE_TE_KineticRifle_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticPistol_Bond">
+														<defName>Make_OE_TE_KineticPistol_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticPistol_Bond_Reset">
+														<defName>Make_OE_TE_KineticPistol_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_ThuddGun_Bond">
+														<defName>Make_OE_TE_ThuddGun_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_ThuddGun_Bond_Reset">
+														<defName>Make_OE_TE_ThuddGun_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticLongRifle_Bond">
+														<defName>Make_OE_TE_KineticLongRifle_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticLongRifle_Bond_Reset">
+														<defName>Make_OE_TE_KineticLongRifle_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_StormCannon_Bond">
+														<defName>Make_OE_TE_StormCannon_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_StormCannon_Bond_Reset">
+														<defName>Make_OE_TE_StormCannon_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticLance_Bond">
+														<defName>Make_OE_TE_KineticLance_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_TE_KineticLance_Bond_Reset">
+														<defName>Make_OE_TE_KineticLance_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SeoLi_Bond">
+														<defName>Make_OE_YP_SeoLi_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SeoLi_Bond_Reset">
+														<defName>Make_OE_YP_SeoLi_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SagPung_Bond">
+														<defName>Make_OE_YP_SagPung_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SagPung_Bond_Reset">
+														<defName>Make_OE_YP_SagPung_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SangAe_Bond">
+														<defName>Make_OE_YP_SangAe_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SangAe_Bond_Reset">
+														<defName>Make_OE_YP_SangAe_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SeolHwa_Bond">
+														<defName>Make_OE_YP_SeolHwa_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_SeolHwa_Bond_Reset">
+														<defName>Make_OE_YP_SeolHwa_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_GeugGwang_Bond">
+														<defName>Make_OE_YP_GeugGwang_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_GeugGwang_Bond_Reset">
+														<defName>Make_OE_YP_GeugGwang_Bond_Reset</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_VectorShot_Bond">
+														<defName>Make_OE_YP_VectorShot_Bond</defName>
+													</RecipeDef>
+													<RecipeDef ParentName="Make_OE_YP_VectorShot_Bond_Reset">
+														<defName>Make_OE_YP_VectorShot_Bond_Reset</defName>
+													</RecipeDef>
+												</value>
+											</Operation>
+										</caseFalse>
+									</Operation>
+								</caseTrue>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseFalse>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
