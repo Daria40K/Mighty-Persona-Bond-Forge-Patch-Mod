@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<!--
+	===== Destiny 2 Weapon Package - Power Weapon =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>destiny2.weapon.power</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_FR_Raven_Bond" Abstract="True">
+						<label>bond One Thousand Voices</label>
+						<description>Bond an One Thousand Voices.</description>
+						<jobString>Bonding a One Thousand Voices.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>FR_Raven</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>FR_Raven</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<FR_Raven_Bond>1</FR_Raven_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_GL_SalvationsGrip_Bond" Abstract="True">
+						<label>bond Salvation's Grip</label>
+						<description>Bond an Salvation's Grip.</description>
+						<jobString>Bonding a Salvation's Grip.</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>GL_SalvationsGrip</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>GL_SalvationsGrip</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<GL_SalvationsGrip_Bond>1</GL_SalvationsGrip_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_SP_Darci_Bond" Abstract="True">
+						<label>bond D.A.R.C.I.</label>
+						<description>Bond an D.A.R.C.I..</description>
+						<jobString>Bonding a D.A.R.C.I..</jobString>
+						<researchPrerequisites>
+							<li>ChargedShot</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>SP_Darci</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>SP_Darci</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<SP_Darci_Bond>1</SP_Darci_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_Destiny2WeaponPackagePowerWeapon</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_Destiny2WeaponPackagePowerWeapon</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_FR_Raven_Bond">
+												<defName>Make_FR_Raven_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_GL_SalvationsGrip_Bond">
+												<defName>Make_GL_SalvationsGrip_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_SP_Darci_Bond">
+												<defName>Make_SP_Darci_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
