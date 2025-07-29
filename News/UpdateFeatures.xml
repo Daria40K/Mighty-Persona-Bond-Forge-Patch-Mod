@@ -1021,4 +1021,11 @@
 		<content>Added support for Cerberus Equipment, GERZockers Armory, Destiny 2 Weapon Package - Power Weapon, Moritz's LegendaryWeapons (Continued), Support for Randy Random's Rayguns - Ordinary Spacer Weapons,  Seventh Seraph Weapons, Vanilla Weapons Expanded - Bioferrite, Vanilla Weapons Expanded - Coilguns, Vanilla XCOM Chimera Squad Weapons, Vanilla XCOM Chosen Weapons, Vanilla XCOM Laser Weapons, Vanilla XCOM Magnetic Weapons, Vanilla XCOM Plasma Weapons, Vanilla XCOM Weapons, Vaults of Vagar, Skyrim Bow Pack
 		</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.2.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>MightyPersonaBondForgePatch_5_2_0</defName>
+		<assemblyVersion>5.2.0</assemblyVersion>
+		<content>Added support for Rimsenal Faction Pack - Spacer, Rimsenal Faction Pack - Federation, Skyrim Steel Weapons Pack, Skyrim Orcish Weapons Pack, Skyrim Glass Weapons Pack, Skyrim Elven Weapons Pack, Skyrim Ebony Weapons Pack, Skyrim Dwarven Weapons Pack, Skyrim Dragonbone Weapons Pack, Skyrim Daedric Weapons Pack, Rimsenal - Core, Plasma Weaponry (Continued), Ion Weaponry (Continued), Eltex Weaponry (Continued)</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
