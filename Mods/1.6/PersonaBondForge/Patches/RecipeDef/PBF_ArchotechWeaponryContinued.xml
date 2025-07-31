@@ -1,0 +1,357 @@
+<?xml version="1.0" ?>
+<!--
+	===== Archotech Weaponry (Continued) =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>zal.archotechweaponry</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechSword_Bond" Abstract="True">
+						<label>bond archotech sword</label>
+						<description>Bond an archotech sword.</description>
+						<jobString>Bonding a archotech sword.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechSword</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechSword</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechSword_Bond>1</AW_ArchotechSword_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechHeavySword_Bond" Abstract="True">
+						<label>bond archotech heavy sword</label>
+						<description>Bond an archotech heavy sword.</description>
+						<jobString>Bonding a archotech heavy sword.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechHeavySword</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechHeavySword</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechHeavySword_Bond>1</AW_ArchotechHeavySword_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechMinigun_Bond" Abstract="True">
+						<label>bond archotech minigun</label>
+						<description>Bond an archotech minigun.</description>
+						<jobString>Bonding a archotech minigun.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechMinigun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechMinigun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechMinigun_Bond>1</AW_ArchotechMinigun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechShotgun_Bond" Abstract="True">
+						<label>bond archotech shotgun</label>
+						<description>Bond an archotech shotgun.</description>
+						<jobString>Bonding a archotech shotgun.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechShotgun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechShotgun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechShotgun_Bond>1</AW_ArchotechShotgun_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechLMG_Bond" Abstract="True">
+						<label>bond archotech LMG</label>
+						<description>Bond an archotech LMG.</description>
+						<jobString>Bonding a archotech LMG.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechLMG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechLMG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechLMG_Bond>1</AW_ArchotechLMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechPistol_Bond" Abstract="True">
+						<label>bond archotech pistol</label>
+						<description>Bond an archotech pistol.</description>
+						<jobString>Bonding a archotech pistol.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechPistol</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechPistol</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechPistol_Bond>1</AW_ArchotechPistol_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechVoidlauncher_Bond" Abstract="True">
+						<label>bond archotech voidlauncher</label>
+						<description>Bond an archotech voidlauncher.</description>
+						<jobString>Bonding a archotech voidlauncher.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechVoidlauncher</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechVoidlauncher</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechVoidlauncher_Bond>1</AW_ArchotechVoidlauncher_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechCrossbow_Bond" Abstract="True">
+						<label>bond archotech crossbow</label>
+						<description>Bond an archotech crossbow.</description>
+						<jobString>Bonding a archotech crossbow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechCrossbow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechCrossbow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechCrossbow_Bond>1</AW_ArchotechCrossbow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechBow_Bond" Abstract="True">
+						<label>bond archotech bow</label>
+						<description>Bond an archotech bow.</description>
+						<jobString>Bonding a archotech bow.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechBow</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechBow</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechBow_Bond>1</AW_ArchotechBow_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechSMG_Bond" Abstract="True">
+						<label>bond archotech smg</label>
+						<description>Bond an archotech smg.</description>
+						<jobString>Bonding a archotech smg.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechSMG</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechSMG</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechSMG_Bond>1</AW_ArchotechSMG_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechSniper_Bond" Abstract="True">
+						<label>bond archotech sniper</label>
+						<description>Bond an archotech sniper.</description>
+						<jobString>Bonding a archotech sniper.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechSniper</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechSniper</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechSniper_Bond>1</AW_ArchotechSniper_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AW_ArchotechRifle_Bond" Abstract="True">
+						<label>bond archotech rifle</label>
+						<description>Bond an archotech rifle.</description>
+						<jobString>Bonding a archotech rifle.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>AW_ArchotechRifle</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>AW_ArchotechRifle</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<AW_ArchotechRifle_Bond>1</AW_ArchotechRifle_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_ArchotechWeaponryContinued</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_ArchotechWeaponryContinued</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_AW_ArchotechSword_Bond">
+												<defName>Make_AW_ArchotechSword_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechHeavySword_Bond">
+												<defName>Make_AW_ArchotechHeavySword_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechMinigun_Bond">
+												<defName>Make_AW_ArchotechMinigun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechShotgun_Bond">
+												<defName>Make_AW_ArchotechShotgun_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechLMG_Bond">
+												<defName>Make_AW_ArchotechLMG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechPistol_Bond">
+												<defName>Make_AW_ArchotechPistol_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechVoidlauncher_Bond">
+												<defName>Make_AW_ArchotechVoidlauncher_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechCrossbow_Bond">
+												<defName>Make_AW_ArchotechCrossbow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechBow_Bond">
+												<defName>Make_AW_ArchotechBow_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechSMG_Bond">
+												<defName>Make_AW_ArchotechSMG_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechSniper_Bond">
+												<defName>Make_AW_ArchotechSniper_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_AW_ArchotechRifle_Bond">
+												<defName>Make_AW_ArchotechRifle_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
