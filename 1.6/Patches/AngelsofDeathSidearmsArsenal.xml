@@ -1,0 +1,610 @@
+<?xml version="1.0" ?>
+<!--
+	===== Angels of Death - Sidearms Arsenal =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>sorxchi.sidearms.arsenal</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="AstartesKnife_Bond" Abstract="True">
+						<label>persona astartes combat knife</label>
+						<description>A combat knife forged for the Angels of Death — Space Marines. Though compact, it is engineered with unyielding alloys and honed to molecular sharpness. In the hands of an Astartes, it is a weapon of brutal efficiency, capable of piercing carapace armor and cleaving limbs in a single motion.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Knives/AstartesKnife</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(0.9, 0.9)</drawSize>
+						</graphicData>
+						<equippedAngleOffset>-60</equippedAngleOffset>
+						<uiIconScale>1.3</uiIconScale>
+						<techLevel>Spacer</techLevel>
+						<weaponTags>
+							<li>SpacerMeleeElite</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.2</Mass>
+						</statBases>
+						<equippedStatOffsets>
+							<MeleeHitChance>0.05</MeleeHitChance>
+							<MoveSpeed>0.1</MoveSpeed>
+						</equippedStatOffsets>
+						<relicChance>1</relicChance>
+						<tools>
+							<li>
+								<label>pommel</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>10.828</power>
+								<cooldownTime>1.105</cooldownTime>
+							</li>
+							<li>
+								<label>blade point</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>17.742</power>
+								<cooldownTime>1.7</cooldownTime>
+								<armorPenetration>0.715</armorPenetration>
+							</li>
+							<li>
+								<label>blade edge</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>20.0</power>
+								<cooldownTime>1.53</cooldownTime>
+								<armorPenetration>0.88</armorPenetration>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="AstartesPowerKnife_Bond" Abstract="True">
+						<label>persona astartes power knife</label>
+						<description>A rare and deadly relic among the Space Marines. The Astartes power knife is sheathed in a disruptive energy field that tears through armor and vaporizes flesh on contact. Though small, it strikes with the force of a chainsword, and only the most elite warriors wield such a weapon in battle.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
+						<meleeHitSound>BEWH_SFX_PowerswordHit</meleeHitSound>
+						<possessionCount>1</possessionCount>
+						<graphicData>
+							<texPath>Knives/AstartesPowerKnife</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(0.9, 0.9)</drawSize>
+						</graphicData>
+						<equippedAngleOffset>-60</equippedAngleOffset>
+						<uiIconScale>1.35</uiIconScale>
+						<techLevel>Spacer</techLevel>
+						<weaponTags>
+							<li>SpacerMeleeElite</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.4</Mass>
+							<Flammability>0.0</Flammability>
+						</statBases>
+						<equippedStatOffsets>
+							<MeleeHitChance>0.08</MeleeHitChance>
+							<MoveSpeed>0.1</MoveSpeed>
+						</equippedStatOffsets>
+						<relicChance>1</relicChance>
+						<tools>
+							<li>
+								<label>hilt strike</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>13.162</power>
+								<cooldownTime>1.19</cooldownTime>
+							</li>
+							<li>
+								<label>power tip</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>22.243</power>
+								<cooldownTime>1.53</cooldownTime>
+								<armorPenetration>0.605</armorPenetration>
+							</li>
+							<li>
+								<label>power edge</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>26.69</power>
+								<cooldownTime>1.615</cooldownTime>
+								<armorPenetration>0.825</armorPenetration>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Blunt" Name="InfernoStaff_Bond" Abstract="True">
+						<label>persona Inferno Staff</label>
+						<description>The Inferno Staff channels raw pyromantic energy, turning its wielder into a living beacon of destruction. With a single gesture, it unleashes torrents of searing flame, reducing foes to ash and leaving only scorched earth behind.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Staff/InfernoStaff</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>1.5</drawSize>
+						</graphicData>
+						<uiIconScale>1.1</uiIconScale>
+						<techLevel>Spacer</techLevel>
+						<weaponTags>
+							<li>AdvancedMelee</li>
+						</weaponTags>
+						<equippedStatOffsets>
+							<PsychicRitualQuality>0.5</PsychicRitualQuality>
+							<PsychicEntropyRecoveryRate>50</PsychicEntropyRecoveryRate>
+							<PsychicEntropyMax>60</PsychicEntropyMax>
+							<ResearchSpeed>0.5</ResearchSpeed>
+						</equippedStatOffsets>
+						<statBases>
+							<Mass>2</Mass>
+						</statBases>
+						<equippedAngleOffset>-22</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>8.449</power>
+								<cooldownTime>2.55</cooldownTime>
+							</li>
+							<li>
+								<label>head</label>
+								<labelUsedInLogging>false</labelUsedInLogging>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>13.162</power>
+								<cooldownTime>2.55</cooldownTime>
+							</li>
+						</tools>
+						<comps>
+							<li Class="CompProperties_EquippableAbilityReloadable">
+								<abilityDef>LibrarianStaff_Pyroclasm</abilityDef>
+							</li>
+						</comps>
+						<modExtensions>
+							<li Class="VEF.Things.ThingDefExtension">
+								<weaponCarryDrawOffsets>
+									<north>
+										<angleOffset>0</angleOffset>
+										<drawOffset>(0, 0, -0.35)</drawOffset>
+									</north>
+									<east>
+										<angleOffset>0</angleOffset>
+										<drawOffset>(-0.05, 0, -0.35)</drawOffset>
+									</east>
+									<south>
+										<angleOffset>0</angleOffset>
+										<drawOffset>(0, 0, -0.35)</drawOffset>
+									</south>
+									<west>
+										<angleOffset>0</angleOffset>
+										<drawOffset>(0.05, 0, -0.35)</drawOffset>
+									</west>
+								</weaponCarryDrawOffsets>
+							</li>
+						</modExtensions>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="BoltPistol_Bond" Abstract="True">
+						<label>persona Bolt Pistol</label>
+						<description>Astartes Bolt Pistol — a compact yet devastating sidearm used by the Space Marines. It fires explosive .75 caliber bolts capable of tearing through flesh and armor alike. Favored for its reliability in close-quarters combat, this weapon delivers lethal force in the hands of a genetically enhanced warrior.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Pistols/BoltPistol</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Autopistol</soundInteract>
+						<weaponClasses>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>ShortShots</li>
+						</weaponTags>
+						<statBases>
+							<Mass>2.2</Mass>
+							<AccuracyTouch>1.089</AccuracyTouch>
+							<AccuracyShort>0.968</AccuracyShort>
+							<AccuracyMedium>0.484</AccuracyMedium>
+							<AccuracyLong>0.303</AccuracyLong>
+							<RangedWeapon_Cooldown>1.084</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>BEWH_BolterRound_Bond</defaultProjectile>
+								<forcedMissRadius>0.1</forcedMissRadius>
+								<warmupTime>0.6</warmupTime>
+								<range>18.0</range>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+								<burstShotCount>3</burstShotCount>
+								<soundCast>BEWH_SFX_BolterShot</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>10</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<modExtensions>
+							<li Class="VEF.Things.ThingDefExtension">
+								<weaponCarryDrawOffsets>
+									<north>
+										<drawOffset>(0, 0, -0.2)</drawOffset>
+									</north>
+									<east>
+										<drawOffset>(-0.1, 0, -0.2)</drawOffset>
+									</east>
+									<south>
+										<angleOffset>-20</angleOffset>
+										<drawOffset>(0, 0, -0.2)</drawOffset>
+									</south>
+									<west>
+										<drawOffset>(0.1, 0, -0.2)</drawOffset>
+									</west>
+								</weaponCarryDrawOffsets>
+							</li>
+						</modExtensions>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="InfernoPistol_Bond" Abstract="True">
+						<label>persona Inferno Pistol</label>
+						<description>The Inferno Pistol is a compact, yet devastating weapon of pyromantic fury. It fires concentrated bursts of superheated promethium, igniting armor and flesh alike, leaving nothing but fire and ruin in its wake.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Pistols/InfernoPistol</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Autopistol</soundInteract>
+						<weaponClasses>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>Flamethrower</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.5</Mass>
+							<AccuracyTouch>0.968</AccuracyTouch>
+							<AccuracyShort>0.847</AccuracyShort>
+							<AccuracyMedium>0.363</AccuracyMedium>
+							<AccuracyLong>0.181</AccuracyLong>
+							<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_ArcSprayIncinerator</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<warmupTime>1</warmupTime>
+								<range>14.0</range>
+								<minRange>3</minRange>
+								<beamFullWidthRange>11</beamFullWidthRange>
+								<burstShotCount>20</burstShotCount>
+								<showBurstShotStats>false</showBurstShotStats>
+								<requireLineOfSight>true</requireLineOfSight>
+								<beamWidth>6</beamWidth>
+								<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+								<beamDamageDef>Flame</beamDamageDef>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+								<soundCastBeam>Flamethrower_Firing</soundCastBeam>
+								<beamGroundFleckDef>Fleck_IncineratorBeamBurn</beamGroundFleckDef>
+								<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+								<beamMaxDeviation>0.5</beamMaxDeviation>
+								<beamCurvature>0</beamCurvature>
+								<beamEndEffecterDef>IncineratorBeam_End</beamEndEffecterDef>
+								<beamChanceToStartFire>0.85</beamChanceToStartFire>
+								<beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+								<beamStartOffset>.5</beamStartOffset>
+								<beamHitsNeighborCells>true</beamHitsNeighborCells>
+								<beamCantHitWithinMinRange>true</beamCantHitWithinMinRange>
+								<beamHitsNeighborCellsRequiresLOS>true</beamHitsNeighborCellsRequiresLOS>
+								<beamSetsGroundOnFire>true</beamSetsGroundOnFire>
+								<ai_BeamIsIncendiary>true</ai_BeamIsIncendiary>
+								<beamLineFleckDef>Fleck_IncineratorBeamSmoke</beamLineFleckDef>
+								<highlightColor>(180, 60, 10)</highlightColor>
+								<secondaryHighlightColor>(220, 210, 20)</secondaryHighlightColor>
+								<beamLineFleckChanceCurve>
+									<points>
+										<li>(0, 0)</li>
+										<li>(0.65, 0.02)</li>
+										<li>(1, .5)</li>
+									</points>
+								</beamLineFleckChanceCurve>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>
+								<flammabilityAttachFireChanceCurve>
+									<points>
+										<li>(0.6, 0)</li>
+										<li>(0.7, 0.2)</li>
+										<li>(1.2, 0.8)</li>
+									</points>
+								</flammabilityAttachFireChanceCurve>
+								<rangedFireRulepack>Combat_RangedFlamethrower</rangedFireRulepack>
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CompProperties_Styleable"/>
+						</comps>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="InfernoPistolBlessed_Bond" Abstract="True">
+						<label>persona Seraphic Flame</label>
+						<description>The Seraphic Flame is a sanctified relic of war, its blessed promethium igniting with divine fury. In the hands of the faithful, it burns not only flesh but also the taint of heresy, cleansing the battlefield with holy fire.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Pistols/InfernoPistolBlessed</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Autopistol</soundInteract>
+						<weaponClasses>
+							<li>RangedHeavy</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>Flamethrower</li>
+						</weaponTags>
+						<statBases>
+							<Mass>1.8</Mass>
+							<AccuracyTouch>1.089</AccuracyTouch>
+							<AccuracyShort>0.968</AccuracyShort>
+							<AccuracyMedium>0.544</AccuracyMedium>
+							<AccuracyLong>0.303</AccuracyLong>
+							<RangedWeapon_Cooldown>0.867</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_ArcSprayIncinerator</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<warmupTime>0.5</warmupTime>
+								<range>18.0</range>
+								<minRange>3</minRange>
+								<beamFullWidthRange>11</beamFullWidthRange>
+								<burstShotCount>20</burstShotCount>
+								<showBurstShotStats>false</showBurstShotStats>
+								<requireLineOfSight>true</requireLineOfSight>
+								<beamWidth>6</beamWidth>
+								<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+								<beamDamageDef>Flame</beamDamageDef>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>9</muzzleFlashScale>
+								<soundCastBeam>Flamethrower_Firing</soundCastBeam>
+								<beamGroundFleckDef>Fleck_IncineratorBeamBurn</beamGroundFleckDef>
+								<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+								<beamMaxDeviation>0.5</beamMaxDeviation>
+								<beamCurvature>0</beamCurvature>
+								<beamEndEffecterDef>IncineratorBeam_End</beamEndEffecterDef>
+								<beamChanceToStartFire>0.85</beamChanceToStartFire>
+								<beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+								<beamStartOffset>.5</beamStartOffset>
+								<beamHitsNeighborCells>true</beamHitsNeighborCells>
+								<beamCantHitWithinMinRange>true</beamCantHitWithinMinRange>
+								<beamHitsNeighborCellsRequiresLOS>true</beamHitsNeighborCellsRequiresLOS>
+								<beamSetsGroundOnFire>true</beamSetsGroundOnFire>
+								<ai_BeamIsIncendiary>true</ai_BeamIsIncendiary>
+								<beamLineFleckDef>Fleck_IncineratorBeamSmoke</beamLineFleckDef>
+								<highlightColor>(180, 60, 10)</highlightColor>
+								<secondaryHighlightColor>(220, 210, 20)</secondaryHighlightColor>
+								<beamLineFleckChanceCurve>
+									<points>
+										<li>(0, 0)</li>
+										<li>(0.65, 0.02)</li>
+										<li>(1, .5)</li>
+									</points>
+								</beamLineFleckChanceCurve>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>
+								<flammabilityAttachFireChanceCurve>
+									<points>
+										<li>(0.6, 0)</li>
+										<li>(0.7, 0.2)</li>
+										<li>(1.2, 0.8)</li>
+									</points>
+								</flammabilityAttachFireChanceCurve>
+								<rangedFireRulepack>Combat_RangedFlamethrower</rangedFireRulepack>
+							</li>
+						</verbs>
+						<comps>
+							<li Class="CompProperties_Styleable"/>
+						</comps>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="PlasmaPistol_Bond" Abstract="True">
+						<label>persona Plasma Pistol</label>
+						<description>Astartes Plasma Pistol — a high-energy sidearm designed to unleash searing bolts of superheated plasma. Though prone to overheating, it offers immense stopping power capable of vaporizing heavily armored targets. A weapon reserved for elite warriors who can handle its volatile nature.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Pistols/PlasmaPistol</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Autopistol</soundInteract>
+						<weaponClasses>
+							<li>RangedLight</li>
+						</weaponClasses>
+						<weaponTags>
+							<li>ShortShots</li>
+						</weaponTags>
+						<statBases>
+							<Mass>2.2</Mass>
+							<AccuracyTouch>1.149</AccuracyTouch>
+							<AccuracyShort>1.089</AccuracyShort>
+							<AccuracyMedium>0.726</AccuracyMedium>
+							<AccuracyLong>0.423</AccuracyLong>
+							<RangedWeapon_Cooldown>1.011</RangedWeapon_Cooldown>
+						</statBases>
+						<verbs>
+							<li>
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Projectile_Plasma_Bond</defaultProjectile>
+								<forcedMissRadius>0.0</forcedMissRadius>
+								<warmupTime>1.6</warmupTime>
+								<range>22.0</range>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+								<burstShotCount>1</burstShotCount>
+								<soundCast>Def_Plasma</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>8</muzzleFlashScale>
+							</li>
+						</verbs>
+						<tools>
+							<li>
+								<label>grip</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+							<li>
+								<label>barrel</label>
+								<capacities>
+									<li>Blunt</li>
+									<li>Poke</li>
+								</capacities>
+								<power>9.75</power>
+								<cooldownTime>1.7</cooldownTime>
+							</li>
+						</tools>
+						<modExtensions>
+							<li Class="VEF.Things.ThingDefExtension">
+								<weaponCarryDrawOffsets>
+									<north>
+										<drawOffset>(0, 0, -0.2)</drawOffset>
+									</north>
+									<east>
+										<drawOffset>(-0.1, 0, -0.2)</drawOffset>
+									</east>
+									<south>
+										<angleOffset>-20</angleOffset>
+										<drawOffset>(0, 0, -0.2)</drawOffset>
+									</south>
+									<west>
+										<drawOffset>(0.1, 0, -0.2)</drawOffset>
+									</west>
+								</weaponCarryDrawOffsets>
+							</li>
+						</modExtensions>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Projectile_Plasma_Bond" Abstract="True">
+						<label>plasma</label>
+						<graphicData>
+							<texPath>Projectile/Projectile_Plasma</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Flame</damageDef>
+							<damageAmountBase>62</damageAmountBase>
+							<stoppingPower>.92</stoppingPower>
+							<speed>53</speed>
+						</projectile>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseBullet" Name="Projectile_FireBlast_Bond" Abstract="True">
+						<label>fire blast projectile</label>
+						<graphicData>
+							<texPath>Projectile/Projectile_FireBlast</texPath>
+						</graphicData>
+						<projectile>
+							<damageDef>Flame</damageDef>
+							<damageAmountBase>52</damageAmountBase>
+							<explosionRadius>2.5</explosionRadius>
+							<speed>50</speed>
+							<stoppingPower>0.8</stoppingPower>
+						</projectile>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_AngelsofDeathSidearmsArsenal</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="AstartesKnife_Bond">
+								<defName>AstartesKnife_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="AstartesPowerKnife_Bond">
+								<defName>AstartesPowerKnife_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="InfernoStaff_Bond">
+								<defName>InfernoStaff_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="BoltPistol_Bond">
+								<defName>BoltPistol_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="InfernoPistol_Bond">
+								<defName>InfernoPistol_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="InfernoPistolBlessed_Bond">
+								<defName>InfernoPistolBlessed_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="PlasmaPistol_Bond">
+								<defName>PlasmaPistol_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Projectile_Plasma_Bond">
+								<defName>Projectile_Plasma_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Projectile_FireBlast_Bond">
+								<defName>Projectile_FireBlast_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
