@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!--
+	===== Odyssey [Official DLC] =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>ludeon.rimworld.odyssey</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationInsert">
+				<xpath>Defs/XmlExtensions.SettingsMenuDef[modId=&quot;Daria40K.MightyPersonaBondForgePatch&quot;]/settings/li[@Class=&quot;XmlExtensions.Setting.TabView&quot;]/tabs/li[tKey=&quot;Daria40K_MightyPersonaBondForgePatch_WeaponsTab&quot;]/settings/li[@Class=&quot;XmlExtensions.Setting.Gap&quot;]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li Class="XmlExtensions.Setting.Checkbox">
+						<key>Daria40K_MightyPersonaBondForgePatch_OdysseyOfficialDLC</key>
+						<label>Odyssey [Official DLC]</label>
+						<defaultValue>true</defaultValue>
+					</li>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.FindMod">
+				<mods>
+					<li>statistno1.personabond</li>
+				</mods>
+				<packageId>true</packageId>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationInsert">
+						<xpath>Defs/XmlExtensions.SettingsMenuDef[modId=&quot;Daria40K.MightyPersonaBondForgePatch&quot;]/settings/li[@Class=&quot;XmlExtensions.Setting.TabView&quot;]/tabs/li[tKey=&quot;Daria40K_MightyPersonaBondForgePatch_PersonaBondForgeTab&quot;]/settings/li[@Class=&quot;XmlExtensions.Setting.Gap&quot;]</xpath>
+						<order>Prepend</order>
+						<value>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>Daria40K_MightyPersonaBondForgePatch_PBF_OdysseyOfficialDLC</key>
+								<label>Odyssey [Official DLC]</label>
+								<defaultValue>true</defaultValue>
+							</li>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+			<Operation Class="XmlExtensions.FindMod">
+				<mods>
+					<li>obsidiaexpansion.core</li>
+				</mods>
+				<packageId>true</packageId>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationInsert">
+						<xpath>Defs/XmlExtensions.SettingsMenuDef[modId=&quot;Daria40K.MightyPersonaBondForgePatch&quot;]/settings/li[@Class=&quot;XmlExtensions.Setting.TabView&quot;]/tabs/li[tKey=&quot;Daria40K_MightyPersonaBondForgePatch_ObsidiaExpansionTab&quot;]/settings/li[@Class=&quot;XmlExtensions.Setting.Gap&quot;]</xpath>
+						<order>Prepend</order>
+						<value>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>Daria40K_MightyPersonaBondForgePatch_OE_OdysseyOfficialDLC</key>
+								<label>Odyssey [Official DLC]</label>
+								<defaultValue>true</defaultValue>
+							</li>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
