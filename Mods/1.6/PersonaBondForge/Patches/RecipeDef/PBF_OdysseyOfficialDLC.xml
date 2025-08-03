@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!--
+	===== Odyssey [Official DLC] =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>ludeon.rimworld.odyssey</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Gun_BeamRepeater_Bond" Abstract="True">
+						<label>bond beam repeater</label>
+						<description>Bond an beam repeater.</description>
+						<jobString>Bonding a beam repeater.</jobString>
+						<researchPrerequisites>
+							<li>BeamWeapons</li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_BeamRepeater</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_BeamRepeater</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_BeamRepeater_Bond>1</Gun_BeamRepeater_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Gun_Scattergun_Bond" Abstract="True">
+						<label>bond scattergun</label>
+						<description>Bond an scattergun.</description>
+						<jobString>Bonding a scattergun.</jobString>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Gun_Scattergun</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Gun_Scattergun</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Gun_Scattergun_Bond>1</Gun_Scattergun_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_OdysseyOfficialDLC</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_OdysseyOfficialDLC</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_Gun_BeamRepeater_Bond">
+												<defName>Make_Gun_BeamRepeater_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Gun_Scattergun_Bond">
+												<defName>Make_Gun_Scattergun_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
