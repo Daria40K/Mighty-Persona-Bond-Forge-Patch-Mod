@@ -1028,4 +1028,11 @@
 		<assemblyVersion>5.2.0</assemblyVersion>
 		<content>Added support for Rimsenal Faction Pack - Spacer, Rimsenal Faction Pack - Federation, Skyrim Steel Weapons Pack, Skyrim Orcish Weapons Pack, Skyrim Glass Weapons Pack, Skyrim Elven Weapons Pack, Skyrim Ebony Weapons Pack, Skyrim Dwarven Weapons Pack, Skyrim Dragonbone Weapons Pack, Skyrim Daedric Weapons Pack, Rimsenal - Core, Plasma Weaponry (Continued), Ion Weaponry (Continued), Eltex Weaponry (Continued)</content>
 	</HugsLib.UpdateFeatureDef>
+
+	<!-- v5.3.0 -->
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+		<defName>MightyPersonaBondForgePatch_5_3_0</defName>
+		<assemblyVersion>5.3.0</assemblyVersion>
+		<content>Added support for Angels of Death - Sidearms Arsenal, Archotech Rifles, Archotech Weaponry (Continued), Exotic Arsenal (Continued), HALO - UNSC Faction (1.6), Laser Guns, Odyssey [Official DLC], Phase Weaponry, Phasers, PlanetsidePew (Continued), Project Itzal - Charge Pack (Continued), Project Itzal - Lasers (Continued), Pulse Weaponry, Signalis - Weapon, Vanilla Friendly Laser Guns (Continued), Vaults of Vagar: Light Bolters, Vaults of Vagar: Medium Bolters, Vaults of Vagar: Melee Armaments, Vaults of Vagar: Rayguns</content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>
