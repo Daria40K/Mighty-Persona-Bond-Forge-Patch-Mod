@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<!--
+	===== [Monmin]Excalibur and Caliburn =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>mon.excaliburn</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Monmin_Caliburn_Bond" Abstract="True">
+						<label>bond Caliburn</label>
+						<description>Bond an Caliburn.</description>
+						<jobString>Bonding a Caliburn.</jobString>
+						<researchPrerequisites>
+							<li>
+                </li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Monmin_Caliburn</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Monmin_Caliburn</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Monmin_Caliburn_Bond>1</Monmin_Caliburn_Bond>
+						</products>
+					</RecipeDef>
+					<RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Monmin_Excalibur_Bond" Abstract="True">
+						<label>bond Excalibur</label>
+						<description>Bond an Excalibur.</description>
+						<jobString>Bonding a Excalibur.</jobString>
+						<researchPrerequisites>
+							<li>
+            </li>
+						</researchPrerequisites>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Monmin_Excalibur</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Monmin_Excalibur</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<Monmin_Excalibur_Bond>1</Monmin_Excalibur_Bond>
+						</products>
+					</RecipeDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_MonminExcaliburandCaliburn</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.OptionalPatch">
+						<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+						<key>Daria40K_MightyPersonaBondForgePatch_PBF_MonminExcaliburandCaliburn</key>
+						<defaultValue>true</defaultValue>
+						<caseTrue>
+							<Operation Class="XmlExtensions.OptionalPatch">
+								<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+								<key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+								<defaultValue>false</defaultValue>
+								<caseFalse>
+									<Operation Class="XmlExtensions.PatchOperationAdd">
+										<xpath>Defs</xpath>
+										<value>
+											<RecipeDef ParentName="Make_Monmin_Caliburn_Bond">
+												<defName>Make_Monmin_Caliburn_Bond</defName>
+											</RecipeDef>
+											<RecipeDef ParentName="Make_Monmin_Excalibur_Bond">
+												<defName>Make_Monmin_Excalibur_Bond</defName>
+											</RecipeDef>
+										</value>
+									</Operation>
+								</caseFalse>
+							</Operation>
+						</caseTrue>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

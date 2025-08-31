@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<!--
+	===== [Monmin]Excalibur and Caliburn =====
+-->
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>mon.excaliburn</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			<Operation Class="XmlExtensions.PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Monmin_Caliburn_Bond" Abstract="True">
+						<equippedStatOffsets>
+							<MeleeDodgeChance>0.2</MeleeDodgeChance>
+						</equippedStatOffsets>
+						<label>persona Caliburn</label>
+						<description>Its blueprint originates from a transcendent world.\nSome say it was once a ceremonial relic, while others claim it was modified by a malevolent super-mind into an unstoppable weapon.\nIt contains intricate psy-circuits which allow a wielder with psylink to convert psyfocus into a destructive energy ray.\nThe original is said to be lost to legend — this, too, is but a replica.\nThose who wield it may yet be destined to be a king.\n\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Weapons/MonCaliburn</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(1.35, 1.35)</drawSize>
+						</graphicData>
+						<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+						<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+						<statBases>
+							<Mass>3</Mass>
+						</statBases>
+						<weaponClasses>
+							<li>Melee</li>
+						</weaponClasses>
+						<equippedAngleOffset>-60</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>thrust</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>30.0</power>
+								<armorPenetration>0.77</armorPenetration>
+								<cooldownTime>1.454</cooldownTime>
+							</li>
+							<li>
+								<label>slash</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>26.69</power>
+								<armorPenetration>0.55</armorPenetration>
+								<cooldownTime>1.36</cooldownTime>
+							</li>
+						</tools>
+						<comps>
+							<li Class="Monmin_Excaliburn.CompProperties_EquippablePsycast">
+								<abilityDef>Mon_Caliburn</abilityDef>
+							</li>
+							<li Class="CompProperties_Styleable"/>
+						</comps>
+					</ThingDef>
+					<ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Monmin_Excalibur_Bond" Abstract="True">
+						<label>persona Excalibur</label>
+						<description>Its blueprint originates from a transcendent world.\nThe purpose behind the creation of this weapon is no longer known.\nIt contains dense arrays of microscopic psy-circuits, allowing a wielder with psylink to convert psyfocus into a devastating photon cannon.\nThe original is said to be lost to legend — this, too, is but a replica.\nThe blade is unimaginably sharp, capable of slicing through plasteel with ease.\n\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+						<graphicData>
+							<texPath>Weapons/MonExcalibur</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(1.6, 1.9)</drawSize>
+						</graphicData>
+						<equippedStatOffsets>
+							<MeleeHitChance>0.2</MeleeHitChance>
+							<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+						</equippedStatOffsets>
+						<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+						<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+						<statBases>
+							<Mass>6.0</Mass>
+						</statBases>
+						<weaponClasses>
+							<li>Melee</li>
+						</weaponClasses>
+						<equippedAngleOffset>-60</equippedAngleOffset>
+						<tools>
+							<li>
+								<label>handle</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>30.0</power>
+								<armorPenetration>0.55</armorPenetration>
+								<cooldownTime>1.785</cooldownTime>
+							</li>
+							<li>
+								<label>thrust</label>
+								<capacities>
+									<li>Stab</li>
+								</capacities>
+								<power>32.196</power>
+								<armorPenetration>0.88</armorPenetration>
+								<cooldownTime>1.573</cooldownTime>
+							</li>
+							<li>
+								<label>slash</label>
+								<capacities>
+									<li>Cut</li>
+								</capacities>
+								<power>37.657</power>
+								<armorPenetration>0.715</armorPenetration>
+								<cooldownTime>1.402</cooldownTime>
+							</li>
+						</tools>
+						<comps>
+							<li Class="Monmin_Excaliburn.CompProperties_EquippablePsycast">
+								<abilityDef>Mon_Excalibur</abilityDef>
+							</li>
+							<li Class="CompProperties_Styleable"/>
+						</comps>
+					</ThingDef>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>Daria40K.MightyPersonaBondForgePatch</modId>
+				<key>Daria40K_MightyPersonaBondForgePatch_MonminExcaliburandCaliburn</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="Monmin_Caliburn_Bond">
+								<defName>Monmin_Caliburn_Bond</defName>
+							</ThingDef>
+							<ThingDef ParentName="Monmin_Excalibur_Bond">
+								<defName>Monmin_Excalibur_Bond</defName>
+							</ThingDef>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
