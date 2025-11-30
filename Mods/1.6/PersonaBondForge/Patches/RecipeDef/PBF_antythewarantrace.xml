@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== Anty the war ant race =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>roo.antyracemod</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_Sickle_Bond" Abstract="True">
+    <label>bond Sickle</label>
+    <description>Bond an Sickle.</description>
+    <jobString>Bonding a Sickle.</jobString><researchPrerequisites><li>Smithing</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_Sickle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_Sickle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_Sickle_Bond>1</AT_Sickle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_Halberd_Bond" Abstract="True">
+    <label>bond Halberd</label>
+    <description>Bond an Halberd.</description>
+    <jobString>Bonding a Halberd.</jobString><researchPrerequisites><li>Smithing</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_Halberd</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_Halberd</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_Halberd_Bond>1</AT_Halberd_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_Hammer_Bond" Abstract="True">
+    <label>bond Hammer</label>
+    <description>Bond an Hammer.</description>
+    <jobString>Bonding a Hammer.</jobString><researchPrerequisites><li>Smithing</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_Hammer</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_Hammer</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_Hammer_Bond>1</AT_Hammer_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_AcidRifle_Bond" Abstract="True">
+    <label>bond Acid Rifle</label>
+    <description>Bond an Acid Rifle.</description>
+    <jobString>Bonding a Acid Rifle.</jobString><researchPrerequisites><li>AntyAcidweapon_B</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_AcidRifle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_AcidRifle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_AcidRifle_Bond>1</AT_AcidRifle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_AcidAssaultRifle_Bond" Abstract="True">
+    <label>bond Acid Assault Rifle</label>
+    <description>Bond an Acid Assault Rifle.</description>
+    <jobString>Bonding a Acid Assault Rifle.</jobString><researchPrerequisites><li>AntyAcidweapon_C</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_AcidAssaultRifle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_AcidAssaultRifle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_AcidAssaultRifle_Bond>1</AT_AcidAssaultRifle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_AcidLineRifle_Bond" Abstract="True">
+    <label>bond Acid Line Rifle</label>
+    <description>Bond an Acid Line Rifle.</description>
+    <jobString>Bonding a Acid Line Rifle.</jobString><researchPrerequisites><li>AntyAcidweapon_C</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_AcidLineRifle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_AcidLineRifle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_AcidLineRifle_Bond>1</AT_AcidLineRifle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_LMG_Bond" Abstract="True">
+    <label>bond Acid Light Machine Gun</label>
+    <description>Bond an Acid Light Machine Gun.</description>
+    <jobString>Bonding a Acid Light Machine Gun.</jobString><researchPrerequisites><li>AntyAcidweapon_D</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_LMG</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_LMG</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_LMG_Bond>1</AT_LMG_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_AcidLauncher_Bond" Abstract="True">
+    <label>bond Acid launcher</label>
+    <description>Bond an Acid launcher.</description>
+    <jobString>Bonding a Acid launcher.</jobString><researchPrerequisites><li>AntyAcidweapon_D</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_AcidLauncher</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_AcidLauncher</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_AcidLauncher_Bond>1</AT_AcidLauncher_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_Combatglue_Bond" Abstract="True">
+    <label>bond Combat glue launcher</label>
+    <description>Bond an Combat glue launcher.</description>
+    <jobString>Bonding a Combat glue launcher.</jobString><researchPrerequisites><li>Combatglue</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_Combatglue</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_Combatglue</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_Combatglue_Bond>1</AT_Combatglue_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_AcidCross_Bond" Abstract="True">
+    <label>bond Acid Crossbow</label>
+    <description>Bond an Acid Crossbow.</description>
+    <jobString>Bonding a Acid Crossbow.</jobString><researchPrerequisites><li>Smithing</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_AcidCross</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_AcidCross</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_AcidCross_Bond>1</AT_AcidCross_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_AT_PP_S_Bond" Abstract="True">
+    <label>bond Anty X-war Gift box</label>
+    <description>Bond an Anty X-war Gift box.</description>
+    <jobString>Bonding a Anty X-war Gift box.</jobString>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>AT_PP_S</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>AT_PP_S</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <AT_PP_S_Bond>1</AT_PP_S_Bond>
+    </products>
+</RecipeDef></value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_antythewarantrace</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_PBF_antythewarantrace</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value><RecipeDef ParentName="Make_AT_Sickle_Bond">
+    <defName>Make_AT_Sickle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_Halberd_Bond">
+    <defName>Make_AT_Halberd_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_Hammer_Bond">
+    <defName>Make_AT_Hammer_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_AcidRifle_Bond">
+    <defName>Make_AT_AcidRifle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_AcidAssaultRifle_Bond">
+    <defName>Make_AT_AcidAssaultRifle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_AcidLineRifle_Bond">
+    <defName>Make_AT_AcidLineRifle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_LMG_Bond">
+    <defName>Make_AT_LMG_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_AcidLauncher_Bond">
+    <defName>Make_AT_AcidLauncher_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_Combatglue_Bond">
+    <defName>Make_AT_Combatglue_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_AcidCross_Bond">
+    <defName>Make_AT_AcidCross_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_AT_PP_S_Bond">
+    <defName>Make_AT_PP_S_Bond</defName>
+</RecipeDef></value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>      
+        </caseTrue>
+    </Operation>
+</Patch>

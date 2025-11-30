@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== Anty the war ant race =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>roo.antyracemod</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value><ThingCategoryDef Name="MPBFPM_AT_Weapons" Abstract="True">
+    <label>persona</label>
+    <parent>AT_Weapons</parent>
+</ThingCategoryDef><ThingDef Name="MPBFPM_MakeableShellBase_AT" ParentName="MPBFPM_ShellBase" Abstract="True">
+        </ThingDef>
+
+
+    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="AT_Sickle_Bond" Abstract="True">
+        <label>persona Sickle</label>
+        <description>An oversized sythe used by Anties.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Sickle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <weaponTags>
+            <li>ATCharge</li>
+        </weaponTags>
+        <statBases>
+            <Mass>1.15</Mass>
+        </statBases>
+        <tools>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>15.464</power>
+                <armorPenetration>0.165</armorPenetration>
+                <cooldownTime>1.062</cooldownTime>
+            </li>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7.236</power>
+                <armorPenetration>0.242</armorPenetration>
+                <cooldownTime>2.55</cooldownTime>
+            </li>
+        </tools>
+        <meleeHitSound>AT_MeleeImpact_B</meleeHitSound>
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>MPBFPM_AT_Weapons</li>
+        </thingCategories>
+        <tradeTags>
+            <li>AT_WeaponAll</li>
+        </tradeTags>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="AT_Halberd_Bond" Abstract="True">
+        <label>persona Halberd</label>
+        <description>A giant axe beloved by Anty warriors. The axeblade is often used as a drawing board.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Halberd</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <weaponTags>
+            <li>ATCharge</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3.75</Mass>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>Axe</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20.0</power>
+                <armorPenetration>0.33</armorPenetration>
+                <cooldownTime>1.53</cooldownTime>
+            </li>
+            <li>
+                <label>Spear</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>17.742</power>
+                <armorPenetration>0.33</armorPenetration>
+                <cooldownTime>1.53</cooldownTime>
+            </li>
+            <li>
+                <label>Hook</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>17.742</power>
+                <armorPenetration>0.33</armorPenetration>
+                <cooldownTime>1.53</cooldownTime>
+            </li>
+        </tools>
+        <meleeHitSound>AT_MeleeImpact_A</meleeHitSound>
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>MPBFPM_AT_Weapons</li>
+        </thingCategories>
+        <tradeTags>
+            <li>AT_WeaponAll</li>
+        </tradeTags>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Blunt_Quality" Name="AT_Hammer_Bond" Abstract="True">
+        <label>persona Hammer</label>
+        <description>A hammer beloved by Anty warriors. When not in combat, it is used to break the heads of patients and prisoners alike.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Hammer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <weaponTags>
+            <li>ATCharge</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3.95</Mass>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>Hammer</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>22.243</power>
+                <armorPenetration>0.22</armorPenetration>
+                <cooldownTime>2.04</cooldownTime>
+            </li>
+        </tools>
+        <meleeHitSound>AT_ChainSoundE</meleeHitSound>
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>MPBFPM_AT_Weapons</li>
+        </thingCategories>
+        <tradeTags>
+            <li>AT_WeaponAll</li>
+        </tradeTags>
+    </ThingDef><ThingDef Name="MPBFPM_BaseMakeableGun_Anty" ParentName="MPBFPM_BaseGunWithQuality" Abstract="True">
+        <techLevel>Industrial</techLevel>
+
+
+        <descriptionHyperlinks Inherit="False">
+            <HediffDef>Chemicaldissolution</HediffDef>
+        </descriptionHyperlinks>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories Inherit="False">
+            <li>MPBFPM_AT_Weapons</li>
+        </thingCategories>
+        <tradeTags>
+            <li>WeaponRanged</li>
+            <li>AT_AcidWeaponRanged</li>
+            <li>AT_WeaponAll</li>
+        </tradeTags>
+    </ThingDef>
+
+
+    <ThingDef ParentName="MPBFPM_BaseMakeableGun_Anty" Name="AT_AcidRifle_Bond" Abstract="True">
+        <label>persona Acid Rifle</label>
+        <description>An early type of modern weapon that shoots Anty-Acid, the acid that builds up in the body of Anties.\n\nIt does not provide reliable firepower due to its unstable nozzle and lack of propulsion power.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/AT_AcidRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponTags>
+            <li>AcidRifle</li>
+            <li>ammo_none</li>
+        </weaponTags>
+        <statBases>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.715</AccuracyTouch>
+            <AccuracyShort>0.66</AccuracyShort>
+            <AccuracyMedium>0.66</AccuracyMedium>
+            <AccuracyLong>0.44</AccuracyLong>
+            <RangedWeapon_Cooldown>1.02</RangedWeapon_Cooldown>
+            <AT_Acid_damage>0.1</AT_Acid_damage>
+            <AT_Acid_damage_duration>20</AT_Acid_damage_duration>
+            <AT_Acid_damage_destruction>60</AT_Acid_damage_destruction>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_AcidRifle_Bond</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>30.9</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <soundCast>ShotAnty_C</soundCast><!--  C     -->
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>4.25</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMakeableGun_Anty" Name="AT_AcidAssaultRifle_Bond" Abstract="True">
+        <label>persona Acid Assault Rifle</label>
+        <description>A firearm that fires more Anty-Acid, an acid that builds up in the body of Anties, faster and further.\n\nThe nozzle stabilizer and pressure amplifier provide superior range and accuracy than the earlier version.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/AT_HighpressureRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponTags>
+            <li>AcidRifle</li>
+            <li>AcidRifle_R</li>
+            <li>ammo_none</li>
+        </weaponTags>
+        <statBases>
+            <Mass>2.6</Mass>
+            <AccuracyTouch>0.77</AccuracyTouch>
+            <AccuracyShort>0.715</AccuracyShort>
+            <AccuracyMedium>0.715</AccuracyMedium>
+            <AccuracyLong>0.44</AccuracyLong>
+            <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+            <AT_Acid_damage>0.1</AT_Acid_damage>
+            <AT_Acid_damage_duration>20</AT_Acid_damage_duration>
+            <AT_Acid_damage_destruction>60</AT_Acid_damage_destruction>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_AcidRifleMid_Bond</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>34.9</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <soundCast>ShotAnty_B</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>4.25</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMakeableGun_Anty" Name="AT_AcidLineRifle_Bond" Abstract="True">
+        <label>persona Acid Line Rifle</label>
+        <description>A firearm that fires more Anty-Acid, an acid that builds up in the body of Anties, faster and further.\n\nIt is designed to be used behind the Melee, and in front of the ranged combatants, supporting both.\n\nIt is very effective in close range.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/AT_LineHighpressureRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponTags>
+            <li>AcidRifle_L</li>
+            <li>ammo_none</li>
+        </weaponTags>
+        <statBases>
+            <Mass>2.6</Mass>
+            <AccuracyTouch>0.715</AccuracyTouch>
+            <AccuracyShort>0.825</AccuracyShort>
+            <AccuracyMedium>0.275</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+            <AT_Acid_damage>0.1</AT_Acid_damage>
+            <AT_Acid_damage_duration>20</AT_Acid_damage_duration>
+            <AT_Acid_damage_destruction>60</AT_Acid_damage_destruction>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_AcidRifleHigh_Bond</defaultProjectile>
+                <warmupTime>1.1</warmupTime>
+                <range>19.9</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAnty_B</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>12.866</power>
+                <armorPenetration>0.2</armorPenetration>
+                <cooldownTime>0.85</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMakeableGun_Anty" Name="AT_LMG_Bond" Abstract="True">
+        <label>persona Acid Light Machine Gun</label>
+        <description>A firearm that fires more Anty-Acid, an acid that builds up in the body of Anties, faster and further.\n\nIts focus on fire rate resulted in weaker shots.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/AT_LMG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponTags>
+            <li>AcidRifle_M</li>
+            <li>ammo_none</li>
+        </weaponTags>
+        <statBases>
+            <Mass>6.1</Mass>
+            <AccuracyTouch>0.44</AccuracyTouch>
+            <AccuracyShort>0.55</AccuracyShort>
+            <AccuracyMedium>0.44</AccuracyMedium>
+            <AccuracyLong>0.22</AccuracyLong>
+            <RangedWeapon_Cooldown>2.55</RangedWeapon_Cooldown>
+            <AT_Acid_damage>0.1</AT_Acid_damage>
+            <AT_Acid_damage_duration>20</AT_Acid_damage_duration>
+            <AT_Acid_damage_destruction>60</AT_Acid_damage_destruction>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_AcidRifle_Bond</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>30.9</range>
+                <burstShotCount>15</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>ShotAnty_B</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>4.25</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMakeableGun_Anty" Name="AT_AcidLauncher_Bond" Abstract="True">
+        <label>persona Acid launcher</label>
+        <description>A firearm that fires more Anty-Acid, an acid that builds up in the body of Anties, further in a larger area.\n\nEffective against heavy armored or clustered enemies.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/AT_Acidlauncher</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <generateCommonality>0.3</generateCommonality>
+        <weaponTags>
+            <li>AcidLauncher_A</li>
+            <li>ammo_none</li>
+        </weaponTags>
+        <statBases>
+            <Mass>4.1</Mass>
+            <RangedWeapon_Cooldown>2.975</RangedWeapon_Cooldown>
+            <AT_Acid_damage>0.1</AT_Acid_damage>
+            <AT_Acid_damage_duration>20</AT_Acid_damage_duration>
+            <AT_Acid_damage_destruction>60</AT_Acid_damage_destruction>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BulletAcidLauncher_Bond</defaultProjectile>
+                <warmupTime>2</warmupTime>
+                <minRange>7.1</minRange>
+                <range>30.9</range>
+                <forcedMissRadius>2.9</forcedMissRadius>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+                <soundCast>ShotAnty_D</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMakeableGun_Anty" Name="AT_Combatglue_Bond" Abstract="True">
+        <label>persona Combat glue launcher</label>
+        <description>A firearm used to fire Anties adhesive to protect the ranged combatants from the charging enemies. Anties are not affected by the adhesive.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <descriptionHyperlinks Inherit="False">
+            <HediffDef>AT_glue_Link</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Weapons/AT_Combatglue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <generateCommonality>0.3</generateCommonality>
+        <weaponTags>
+            <li>AcidLauncher_B</li>
+            <li>ammo_industrial</li>
+        </weaponTags>
+        <statBases>
+            <Mass>4.1</Mass>
+            <RangedWeapon_Cooldown>2.975</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BulletCombatglueLauncher_Bond</defaultProjectile>
+                <warmupTime>2</warmupTime>
+                <range>44.9</range>
+                <forcedMissRadius>2.9</forcedMissRadius>
+                <burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+                <soundCast>ShotAnty_D</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseWeaponNeolithic" Name="AT_AcidCross_Bond" Abstract="True">
+        <label>persona Acid Crossbow</label>
+        <description>A ranged weapon that shoots bolts covered in Anty-Acid, the acid that builds upon a body of Anties. The Anty-Acid is applied manually before firing because it corrodes the tip otherwise.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <descriptionHyperlinks Inherit="False">
+            <HediffDef>Chemicaldissolution</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Weapons/AcidCross</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Bow_Large</soundInteract>
+        <statBases>
+            <Mass>1.5</Mass>
+            <AccuracyTouch>0.825</AccuracyTouch>
+            <AccuracyShort>0.715</AccuracyShort>
+            <AccuracyMedium>0.605</AccuracyMedium>
+            <AccuracyLong>0.44</AccuracyLong>
+            <RangedWeapon_Cooldown>0.935</RangedWeapon_Cooldown>
+            <AT_Acid_damage>0.1</AT_Acid_damage>
+            <AT_Acid_damage_duration>20</AT_Acid_damage_duration>
+            <AT_Acid_damage_destruction>60</AT_Acid_damage_destruction>
+        </statBases>
+        <weaponTags>
+            <li>AcidCross_A</li>
+            <li>ammo_primitive</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>AT_Aicdbolt_Bond</defaultProjectile>
+                <warmupTime>1.25</warmupTime>
+                <range>24.9</range>
+                <soundCast>Bow_Large</soundCast>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>5.559</power>
+                <cooldownTime>1.02</cooldownTime>
+            </li>
+        </tools>
+        <techLevel>Medieval</techLevel>
+        <weaponClasses>
+            <li>Ranged</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories Inherit="False">
+            <li>MPBFPM_AT_Weapons</li>
+        </thingCategories>
+        <tradeTags>
+            <li>AT_WeaponAll</li>
+        </tradeTags>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseGun" Name="AT_PP_S_Bond" Abstract="True">
+        <label>persona Anty X-war Gift box</label>
+        <description>We wish you a merry warfare\n\nWe wish you a merry warfare\n\nWe wish you a merry warfare and a Painful death!\n\nGood tidings we bring to you and your kin\n\nWe wish you a merry warfare and a Painful death!\n\nOh, bring us some pirate pudding\n\nOh, bring us some Tribal pudding\n\nOh, bring us some Empire pudding\n\nAnd bring it right here\n\nGood tidings we bring to you and your kin\n\nWe wish you a merry warfare and a Painful death!\n\nWe won't go until we get victory\n\nWe won't go until we get victory\n\nWe won't go until we get victory\n\nSo bring it right here\n\nGood tidings we bring to you and your kin\n\nWe wish you a merry warfare and a Painful death...again!\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Weapons/Deadlylove</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1100.0</MarketValue>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>10.2</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>1</MoveSpeed>
+            <WorkSpeedGlobal>-0.7</WorkSpeedGlobal>
+            <IncomingDamageFactor>1.5</IncomingDamageFactor>
+        </equippedStatOffsets>
+        <techLevel>Medieval</techLevel>
+        <weaponTags>
+            <li>Anty_GunSingleUse_PP</li>
+            <li>ammo_none</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_PP_A_Bond</defaultProjectile>
+                <forcedMissRadius>5.9</forcedMissRadius>
+                <warmupTime>0.1</warmupTime>
+                <range>9.9</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>5</burstShotCount>
+                <soundCast>ThrowGrenade</soundCast>
+                <onlyManualCast>true</onlyManualCast>
+                <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <muzzleFlashScale>1</muzzleFlashScale>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>Box corner</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10.791</power>
+                <cooldownTime>2.677</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.9</explosiveRadius>
+                <explosiveDamageType>Anty_Bomb_SS</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <preExplosionSpawnThingDef>Chocolate</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+            </li>
+        </comps>
+        <thingCategories Inherit="False">
+            <li>MPBFPM_AT_Weapons</li>
+        </thingCategories>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_AcidRifle_Bond" Abstract="True">
+        <label>Acid Bullet</label>
+        <graphicData>
+            <texPath>Things/Weapons/jan</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <speed>70</speed>
+            <damageDef>AT_AcidBullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <armorPenetrationBase>0.013</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+        <comps>
+            <li Class="CompProperties_ProjectileEffecter">
+                <effecterDef>AT_AcidLaunched</effecterDef>
+            </li>
+        </comps>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_AcidRifleMid_Bond" Abstract="True">
+        <label>Acid Bullet</label>
+        <graphicData>
+            <texPath>Things/Weapons/jan</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <speed>70</speed>
+            <damageDef>AT_AcidBullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <armorPenetrationBase>0.013</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+        <comps>
+            <li Class="CompProperties_ProjectileEffecter">
+                <effecterDef>AT_AcidLaunched</effecterDef>
+            </li>
+        </comps>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_AcidRifleHigh_Bond" Abstract="True">
+        <label>Acid Bullet</label>
+        <graphicData>
+            <texPath>Things/Weapons/jan</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <speed>70</speed>
+            <damageDef>AT_AcidBullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <armorPenetrationBase>0.013</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+        <comps>
+            <li Class="CompProperties_ProjectileEffecter">
+                <effecterDef>AT_AcidLaunched</effecterDef>
+            </li>
+        </comps>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="BulletAcidLauncher_Bond" Abstract="True">
+        <label>Acid Grenade</label>
+        <graphicData>
+            <texPath>Things/Weapons/lan</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <speed>30</speed>
+            <damageDef>AT_AcidBomb</damageDef>
+            <explosionRadius>1.9</explosionRadius>
+            <explosionDelay>45</explosionDelay>
+            <preExplosionSpawnThingDef>Filth_AntyAcid</preExplosionSpawnThingDef>
+            <preExplosionSpawnChance>0</preExplosionSpawnChance>
+            <arcHeightFactor>0.4</arcHeightFactor>
+            <shadowSize>0.6</shadowSize>
+        </projectile>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="BulletCombatglueLauncher_Bond" Abstract="True">
+        <label>Combat glue Grenade</label>
+        <graphicData>
+            <texPath>Things/Weapons/lan</texPath>
+            <color>(20, 150, 20, 100)</color>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <speed>50</speed>
+            <damageDef>AT_glueBomb</damageDef>
+            <explosionRadius>4.1</explosionRadius>
+            <explosionDelay>30</explosionDelay>
+            <preExplosionSpawnThingDef>Filth_AntyGlue</preExplosionSpawnThingDef>
+            <preExplosionSpawnChance>0.35</preExplosionSpawnChance>
+            <arcHeightFactor>0.4</arcHeightFactor>
+            <shadowSize>0.6</shadowSize>
+        </projectile>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_Shell_AT_glueBomb_Bond" Abstract="True">
+        <label>Combat glue shell</label>
+        <graphicData>
+            <texPath>Things/Weapons/lan</texPath>
+            <color>(20, 150, 20, 100)</color>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>AT_glueBomb_B</damageDef>
+            <speed>50</speed>
+            <explosionRadius>5.1</explosionRadius>
+            <explosionDelay>30</explosionDelay>
+            <preExplosionSpawnThingDef>Filth_AntyGlue</preExplosionSpawnThingDef>
+            <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+            <arcHeightFactor>0.4</arcHeightFactor>
+            <shadowSize>0.6</shadowSize>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+        </projectile>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="AT_Aicdbolt_Bond" Abstract="True">
+        <label>Aicd Bolt</label>
+        <graphicData>
+            <texPath>Things/Projectile/Arrow_Small</texPath>
+            </graphicData>
+        <projectile>
+            <speed>70</speed>
+            <damageDef>AT_AcidArrow</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <armorPenetrationBase>0</armorPenetrationBase>
+        </projectile>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="Bullet_PP_A_Bond" Abstract="True">
+        <label>Giftbox</label>
+        <graphicData>
+            <texPath>Things/Weapons/Deadlylove</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Anty_Bomb_SS</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.05</armorPenetrationBase>
+            <explosionRadius>1.1</explosionRadius>
+            <speed>15</speed>
+            <explosionDelay>150</explosionDelay>
+            <arcHeightFactor>5</arcHeightFactor>
+            <shadowSize>0.72</shadowSize>
+        </projectile>
+    </ThingDef></value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_antythewarantrace</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value><ThingCategoryDef ParentName="MPBFPM_AT_Weapons">
+    <defName>MPBFPM_AT_Weapons</defName>
+</ThingCategoryDef><ThingDef ParentName="AT_Sickle_Bond">
+    <defName>AT_Sickle_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_Halberd_Bond">
+    <defName>AT_Halberd_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_Hammer_Bond">
+    <defName>AT_Hammer_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_AcidRifle_Bond">
+    <defName>AT_AcidRifle_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_AcidAssaultRifle_Bond">
+    <defName>AT_AcidAssaultRifle_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_AcidLineRifle_Bond">
+    <defName>AT_AcidLineRifle_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_LMG_Bond">
+    <defName>AT_LMG_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_AcidLauncher_Bond">
+    <defName>AT_AcidLauncher_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_Combatglue_Bond">
+    <defName>AT_Combatglue_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_AcidCross_Bond">
+    <defName>AT_AcidCross_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_PP_S_Bond">
+    <defName>AT_PP_S_Bond</defName>
+</ThingDef><ThingDef ParentName="Bullet_AcidRifle_Bond">
+    <defName>Bullet_AcidRifle_Bond</defName>
+</ThingDef><ThingDef ParentName="Bullet_AcidRifleMid_Bond">
+    <defName>Bullet_AcidRifleMid_Bond</defName>
+</ThingDef><ThingDef ParentName="Bullet_AcidRifleHigh_Bond">
+    <defName>Bullet_AcidRifleHigh_Bond</defName>
+</ThingDef><ThingDef ParentName="BulletAcidLauncher_Bond">
+    <defName>BulletAcidLauncher_Bond</defName>
+</ThingDef><ThingDef ParentName="BulletCombatglueLauncher_Bond">
+    <defName>BulletCombatglueLauncher_Bond</defName>
+</ThingDef><ThingDef ParentName="Bullet_Shell_AT_glueBomb_Bond">
+    <defName>Bullet_Shell_AT_glueBomb_Bond</defName>
+</ThingDef><ThingDef ParentName="AT_Aicdbolt_Bond">
+    <defName>AT_Aicdbolt_Bond</defName>
+</ThingDef><ThingDef ParentName="Bullet_PP_A_Bond">
+    <defName>Bullet_PP_A_Bond</defName>
+</ThingDef></value>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
