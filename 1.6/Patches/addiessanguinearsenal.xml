@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== Addie's Sanguine Arsenal =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>addie.addiessanguinearsenal</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value><ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Addie_BloodScythe_Bond" Abstract="True">
+        <label>persona sanguine reaper</label>
+        <relicChance>1</relicChance>
+        <description>A purpose forged bloodstained katana. The vorpal edge reaps to sustain a bloodfeeder's hemogen need.\n\nInflicts sanguine hemorrhage, causing a bloody explosion on critical buildup.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>BloodScythe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.15</drawSize>
+        </graphicData>
+        <weaponTags>
+            <li>Addie_BloodWeapon</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="BloodWeapons.BW_Hemogen_Cost_Extension">
+                <hemogenCost>0.20</hemogenCost>
+            </li>
+        </modExtensions>
+
+
+        <statBases>
+            <Mass>4</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <equippedAngleOffset>-40</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>13.162</power>
+                <cooldownTime>1.062</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Addie_BloodStab</li>
+                </capacities>
+                <power>30.0</power>
+                <armorPenetration>0.341</armorPenetration>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Addie_BloodCut</li>
+                </capacities>
+                <power>32.196</power>
+                <armorPenetration>0.275</armorPenetration>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+
+
+        <comps>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="BloodWeapons.CompProperties_Bloodthirster">
+                <hemogenGain>0.15</hemogenGain>
+            </li>
+        </comps>
+
+
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Addie_ThreadedCane_Bond" Abstract="True">
+        <label>persona threaded cane</label>
+        <description>A regal looking cane popular as a self-defence weapon among bloodfeeders. This cain is actually a threaded chain of razor shard blades, and is used like a whip.\n\nInflicts sanguine hemorrhage, causing a bloody explosion on critical buildup.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+
+
+        <tradeability>Sellable</tradeability>
+
+
+        <weaponTags>
+            <li>Addie_BloodWeapons</li>
+        </weaponTags>
+
+
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+
+
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <techLevel>Industrial</techLevel>
+
+
+        <graphicData>
+            <texPath>ThreadedCane</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+
+
+        </graphicData>
+
+
+        <equippedStatOffsets>
+        </equippedStatOffsets>
+
+
+        <statBases>
+            <MarketValue>1485.0</MarketValue>
+            <RangedWeapon_Cooldown>2.125</RangedWeapon_Cooldown>
+            <Flammability>1</Flammability>
+            <Beauty>0</Beauty>
+            <Mass>2</Mass>
+        </statBases>
+
+
+        <equippedAngleOffset>-65</equippedAngleOffset>
+
+
+        <tools>
+            <li>
+                <label>pommel</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>11.829</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>23.173</power>
+                <armorPenetration>0.40</armorPenetration>
+                <cooldownTime>1.615</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>24.199</power>
+                <armorPenetration>0.30</armorPenetration>
+                <cooldownTime>1.615</cooldownTime>
+            </li>
+        </tools>
+
+
+        <verbs>
+            <li>
+                <verbClass>HeavyWeapons.Verb_Shoot</verbClass>
+                <label>cane lash</label>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Addie_Canelash_Bond</defaultProjectile>
+                <soundCast>Addie_ChainLashSound</soundCast>
+                <warmupTime>0.5</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <minRange>0</minRange>
+                <range>5.9</range>
+                <accuracyTouch>0.95</accuracyTouch>
+                <accuracyShort>0.85</accuracyShort>
+                <accuracyMedium>0.75</accuracyMedium>
+                <accuracyLong>0.65</accuracyLong>
+                <muzzleFlashScale>0</muzzleFlashScale>
+            </li>
+        </verbs>
+
+
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset/>
+                    </north>
+                    <south>
+                        <drawOffset/>
+                    </south>
+                    <east>
+                        <drawOffset>(0.22,0,0.2)</drawOffset>
+                        <angleOffset>-45</angleOffset>
+                    </east>
+                    <west>
+                        <drawOffset>(-0.22,0,0.2)</drawOffset>
+                        <angleOffset>45</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+
+
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Addie_ExanguisHandgun_Bond" Abstract="True">
+        <label>persona exanguis handgun</label>
+        <description>A handgun used by bloodfeeders. Contains a mechanism that can channel a bloodfeeder's hemogen into explosive bursts of blood projectiles\n\nBlood burst inflicts sanguine hemorrhage, causing a bloody explosion on critical buildup.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>BloodGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Revolver</soundInteract>
+        <statBases>
+            <Mass>2</Mass>
+            <AccuracyTouch>0.715</AccuracyTouch>
+            <AccuracyShort>0.935</AccuracyShort>
+            <AccuracyMedium>0.825</AccuracyMedium>
+            <AccuracyLong>0.715</AccuracyLong>
+            <RangedWeapon_Cooldown>1.53</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <modExtensions>
+            <li Class="BloodWeapons.BW_Hemogen_Cost_Extension">
+                <hemogenCost>0.03</hemogenCost>
+            </li>
+        </modExtensions>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Addie_ExanguisBullet_Bond</defaultProjectile>
+                <warmupTime>0.6</warmupTime>
+                <range>25.9</range>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+            <li>
+                <verbClass>BloodWeapons.Verb_Shoot</verbClass>
+                <label>blood burst</label>
+                <defaultProjectile>Addie_ExanguisBloodBullet_Bond</defaultProjectile>
+                <hasStandardCommand>true</hasStandardCommand>
+                <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+                <warmupTime>0.75</warmupTime>
+                <minRange>1.9</minRange>
+                <range>9.5</range>
+                <burstShotCount>3</burstShotCount>
+                <forcedMissRadius>0.9</forcedMissRadius>
+                <soundCast>Mortar_LaunchA</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <requireLineOfSight>false</requireLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+
+
+        <comps>
+
+
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponGun</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            </comps>
+
+
+        <weaponTags>
+            <li>Addie_BloodWeapon</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8.707</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>bayonet</label>
+                <capacities>
+                    <li>Cut</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>15.968</power>
+                <cooldownTime>1.7</cooldownTime>
+                <armorPenetration>0.22</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Addie_BloodKatana_Bond" Abstract="True">
+        <label>persona sanguine katana</label>
+        <relicChance>1</relicChance>
+        <description>A purpose forged bloodstained katana. The sanguine blade contains a mechanism can channel a bloodfeeder's hemogen into a razor-thin wave of blood.\n\nInflicts sanguine hemorrhage, causing a bloody explosion on critical buildup.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>BloodKatana</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.15</drawSize>
+        </graphicData>
+        <weaponTags>
+            <li>Addie_BloodWeapon</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="BloodWeapons.BW_Hemogen_Cost_Extension">
+                <hemogenCost>0.20</hemogenCost>
+            </li>
+        </modExtensions>
+
+
+        <statBases>
+            <Mass>4</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <equippedAngleOffset>-40</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10.791</power>
+                <cooldownTime>1.062</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Addie_BloodStab</li>
+                </capacities>
+                <power>26.25</power>
+                <armorPenetration>0.31</armorPenetration>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Addie_BloodCut</li>
+                </capacities>
+                <power>28.299</power>
+                <armorPenetration>0.25</armorPenetration>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+
+
+        <verbs>
+            <li>
+                <verbClass>BloodWeapons.Verb_Shoot</verbClass>
+                <label>blood slash</label>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Addie_BloodSlashProjectile_Bond</defaultProjectile>
+                <soundCast>Addie_BloodSlashSound</soundCast>
+                <warmupTime>0.35</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <minRange>0</minRange>
+                <range>6.9</range>
+                <beamSetsGroundOnFire>false</beamSetsGroundOnFire>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>1</accuracyShort>
+                <accuracyMedium>1</accuracyMedium>
+                <accuracyLong>1</accuracyLong>
+                <muzzleFlashScale>0</muzzleFlashScale>
+            </li>
+        </verbs>
+
+
+        <comps>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+
+
+            <li Class="MVCF.Comps.CompProperties_VerbProps">
+                <compClass>MVCF.Comps.Comp_VerbProps</compClass>
+                <verbProps>
+                    <li>
+                        <label>blood slash</label>
+                        <canBeToggled>true</canBeToggled>
+                        <brawlerCaresAbout>false</brawlerCaresAbout>
+                        <visualLabel>blood slash</visualLabel>
+                        <description>fire a razor thin slash of hemogen.</description>
+                        <graphic>
+                            <texPath>Projectile/Proj_Bloodwave/BloodWave03</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphic>
+                    </li>
+                </verbProps>
+            </li>
+        </comps>
+
+
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="Addie_BloodMusket_Bond" Abstract="True">
+        <label>persona sanguine musket</label>
+        <description>Not actually a musket, this deadly rifle can channel a bloodfeeder's hemogen into a cutting beam\n\nInflicts sanguine hemorrhage, causing a bloody explosion on critical buildup.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>BloodMusket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.15</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <statBases>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.77</AccuracyTouch>
+            <AccuracyShort>0.935</AccuracyShort>
+            <AccuracyMedium>0.99</AccuracyMedium>
+            <AccuracyLong>0.88</AccuracyLong>
+            <RangedWeapon_Cooldown>2.125</RangedWeapon_Cooldown>
+        </statBases>
+        <modExtensions>
+            <li Class="BloodWeapons.BW_Hemogen_Cost_Extension">
+                <hemogenCost>0.03</hemogenCost>
+            </li>
+        </modExtensions>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Addie_BloodMusketBullet_Bond</defaultProjectile>
+                <warmupTime>1.7</warmupTime>
+                <range>36.9</range>
+                <soundCast>Shot_BoltActionRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+
+
+            <li>
+                <verbClass>BloodWeapons.Verb_ShootBeam</verbClass>
+                <label>sanguine beam</label>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>1.0</warmupTime>
+                <range>24.9</range>
+                <minRange>3.9</minRange>
+                <beamFullWidthRange>6.9</beamFullWidthRange>
+                <burstShotCount>5</burstShotCount>
+                <showBurstShotStats>false</showBurstShotStats>
+                <beamWidth>1</beamWidth>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <beamDamageDef>Addie_BloodBeam</beamDamageDef>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <soundCastBeam>BeamGraser_Shooting</soundCastBeam>
+                <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+                <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+                <beamMaxDeviation>1.5</beamMaxDeviation>
+                <beamCurvature>0</beamCurvature>
+                <beamMoteDef>Addie_BloodBeamBase</beamMoteDef>
+                <beamEndEffecterDef>Addie_Beam_End</beamEndEffecterDef>
+                <beamChanceToStartFire>0.85</beamChanceToStartFire>
+                <beamChanceToAttachFire>0.85</beamChanceToAttachFire>
+                <beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+                <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+                <beamStartOffset>0.8</beamStartOffset>
+                <beamLineFleckChanceCurve>
+                    <points>
+                        <li>(0, 0)</li>
+                        <li>(0.65, 0.4)</li>
+                        <li>(1, 0.75)</li>
+                    </points>
+                </beamLineFleckChanceCurve>
+            </li>
+
+
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9.75</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Addie_BloodDagger_Bond" Abstract="True">
+    <label>persona sanguine dagger</label>
+    <description>A deadly sthrowing dagger favored by those who feed on the blood of others.\n\nInflicts sanguine hemorrhage, causing a bloody explosion on critical buildup.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+   <graphicData>
+      <texPath>BloodDagger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+     <equippedAngleOffset>-60</equippedAngleOffset>
+    <equippedStatOffsets>
+    <MeleeDodgeChance>0.2</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <statBases>
+      <Mass>0.85</Mass>
+      <MarketValue>1512.5</MarketValue>
+      <RangedWeapon_Cooldown>1.02</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <weaponTags>
+        <li>Addie_BloodWeapon</li>
+    </weaponTags>
+  <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Addie_BloodDaggerThrown_Bond</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>15</range>
+        <soundCast>ThrowGrenade</soundCast>
+      </li>
+  </verbs>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Addie_BloodStab</li>
+        </capacities>
+        <power>15.968</power>
+        <cooldownTime>1.02</cooldownTime>
+    <armorPenetration>0.5</armorPenetration>
+      </li>
+<li>
+        <label>edge</label>
+        <capacities>
+          <li>Addie_BloodCut</li>
+        </capacities>
+        <power>18.031</power>
+        <cooldownTime>1.02</cooldownTime>
+      </li>
+   </tools>
+  </ThingDef><ThingDef ParentName="MPBFPM_Bullet" Name="Addie_ExanguisBullet_Bond" Abstract="True">
+        <label>exanguis bullet</label>
+        <graphicData>
+            <texPath>Projectile/BloodBullet</texPath>
+            </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>27</damageAmountBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseBullet" Name="Addie_ExanguisBloodBullet_Bond" Abstract="True">
+        <thingClass>Projectile_Explosive</thingClass>
+        <category>Projectile</category>
+        <projectile>
+            <damageDef>Addie_BloodImpact</damageDef>
+            <explosionRadius>1.9</explosionRadius>
+            <damageAmountBase>23</damageAmountBase>
+            <armorPenetrationBase>0.24</armorPenetrationBase>
+            <preExplosionSpawnThingDef>Filth_Blood</preExplosionSpawnThingDef>
+            <stoppingPower>2.0</stoppingPower>
+            <speed>40</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Projectile/BloodGlobProjectile</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(2.25, 2.25)</drawSize>
+        </graphicData>
+    </ThingDef><ThingDef ParentName="MPBFPM_Bullet" Name="Addie_BloodMusketBullet_Bond" Abstract="True">
+        <label>blood musket bullet</label>
+        <graphicData>
+            <texPath>Projectile/BloodBullet</texPath>
+            </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>31</damageAmountBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef><ThingDef ParentName="MPBFPM_BaseProjectileNeolithic" Name="Addie_BloodDaggerThrown_Bond" Abstract="True">
+    <label>blood dagger</label>
+    <graphicData>
+      <texPath>Projectile/BloodDaggerThrown</texPath>
+      </graphicData>
+    <projectile>
+     <damageDef>Addie_BloodStab</damageDef>
+    <damageAmountBase>24</damageAmountBase>
+    <stoppingPower>0.5</stoppingPower>
+    <armorPenetrationBase>0.10</armorPenetrationBase>
+    <speed>26</speed>
+    </projectile>
+  </ThingDef></value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_addiessanguinearsenal</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value><ThingDef ParentName="Addie_BloodScythe_Bond">
+    <defName>Addie_BloodScythe_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_ThreadedCane_Bond">
+    <defName>Addie_ThreadedCane_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_ExanguisHandgun_Bond">
+    <defName>Addie_ExanguisHandgun_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_BloodKatana_Bond">
+    <defName>Addie_BloodKatana_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_BloodMusket_Bond">
+    <defName>Addie_BloodMusket_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_BloodDagger_Bond">
+    <defName>Addie_BloodDagger_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_ExanguisBullet_Bond">
+    <defName>Addie_ExanguisBullet_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_ExanguisBloodBullet_Bond">
+    <defName>Addie_ExanguisBloodBullet_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_BloodMusketBullet_Bond">
+    <defName>Addie_BloodMusketBullet_Bond</defName>
+</ThingDef><ThingDef ParentName="Addie_BloodDaggerThrown_Bond">
+    <defName>Addie_BloodDaggerThrown_Bond</defName>
+</ThingDef></value>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
