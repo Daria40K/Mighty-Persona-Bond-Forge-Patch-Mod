@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== GravTech =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>als.gravtech</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GravBlaster_Bond" Abstract="True">
+                        <label>bond grav blaster</label>
+                        <description>Bond an grav blaster.</description>
+                        <jobString>Bonding a grav blaster.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravBlaster</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravBlaster</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravBlaster_Bond>1</GravBlaster_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GravBlaster_Bond_Reset" Abstract="True">
+                        <label>Reset grav blaster</label>
+                        <description>Reset a grav blaster.</description>
+                        <jobString>Resetting a grav blaster.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravBlaster_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravBlaster_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravBlaster_Bond>1</GravBlaster_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GravBeamCannon_Bond" Abstract="True">
+                        <label>bond grav beam cannon</label>
+                        <description>Bond an grav beam cannon.</description>
+                        <jobString>Bonding a grav beam cannon.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravBeamCannon</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravBeamCannon</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravBeamCannon_Bond>1</GravBeamCannon_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GravBeamCannon_Bond_Reset" Abstract="True">
+                        <label>Reset grav beam cannon</label>
+                        <description>Reset a grav beam cannon.</description>
+                        <jobString>Resetting a grav beam cannon.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravBeamCannon_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravBeamCannon_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravBeamCannon_Bond>1</GravBeamCannon_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GravRifle_Bond" Abstract="True">
+                        <label>bond grav rifle</label>
+                        <description>Bond an grav rifle.</description>
+                        <jobString>Bonding a grav rifle.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravRifle_Bond>1</GravRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GravRifle_Bond_Reset" Abstract="True">
+                        <label>Reset grav rifle</label>
+                        <description>Reset a grav rifle.</description>
+                        <jobString>Resetting a grav rifle.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravRifle_Bond>1</GravRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_GravHammer_Bond" Abstract="True">
+                        <label>bond grav hammer</label>
+                        <description>Bond an grav hammer.</description>
+                        <jobString>Bonding a grav hammer.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravHammer</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravHammer</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravHammerBladelink>1</GravHammerBladelink>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_GravHammer_Bond_Reset" Abstract="True">
+                        <label>Reset grav hammer</label>
+                        <description>Reset a grav hammer.</description>
+                        <jobString>Resetting a grav hammer.</jobString>
+                        <researchPrerequisites>
+                            <li />
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>GravHammerBladelink</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>GravHammerBladelink</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <GravHammerBladelink>1</GravHammerBladelink>
+                        </products>
+                    </RecipeDef>
+                </value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_gravtech</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_OE_gravtech</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value>
+                                            <RecipeDef ParentName="Make_OE_GravBlaster_Bond">
+                                                <defName>Make_OE_GravBlaster_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravBlaster_Bond_Reset">
+                                                <defName>Make_OE_GravBlaster_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravBeamCannon_Bond">
+                                                <defName>Make_OE_GravBeamCannon_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravBeamCannon_Bond_Reset">
+                                                <defName>Make_OE_GravBeamCannon_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravRifle_Bond">
+                                                <defName>Make_OE_GravRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravRifle_Bond_Reset">
+                                                <defName>Make_OE_GravRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravHammer_Bond">
+                                                <defName>Make_OE_GravHammer_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_GravHammer_Bond_Reset">
+                                                <defName>Make_OE_GravHammer_Bond_Reset</defName>
+                                            </RecipeDef>
+                                        </value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
