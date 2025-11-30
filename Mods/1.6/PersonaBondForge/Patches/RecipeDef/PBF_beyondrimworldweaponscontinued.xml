@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== Beyond Rimworld: Weapons (Continued) =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>zal.beyondrimworldweapons</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_SilencedPistol_Bond" Abstract="True">
+    <label>bond silenced pistol</label>
+    <description>Bond an silenced pistol.</description>
+    <jobString>Bonding a silenced pistol.</jobString><researchPrerequisites><li>SilencedWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_SilencedPistol</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_SilencedPistol</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_SilencedPistol_Bond>1</BRW_SilencedPistol_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_Nailgun_Bond" Abstract="True">
+    <label>bond nailgun</label>
+    <description>Bond an nailgun.</description>
+    <jobString>Bonding a nailgun.</jobString><researchPrerequisites><li>BlowbackOperation</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_Nailgun</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_Nailgun</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_Nailgun_Bond>1</BRW_Nailgun_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_BreachShotgun_Bond" Abstract="True">
+    <label>bond breach shotgun</label>
+    <description>Bond an breach shotgun.</description>
+    <jobString>Bonding a breach shotgun.</jobString><researchPrerequisites><li>CompactWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_BreachShotgun</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_BreachShotgun</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_BreachShotgun_Bond>1</BRW_BreachShotgun_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_LeverActionCarbine_Bond" Abstract="True">
+    <label>bond lever action carbine</label>
+    <description>Bond an lever action carbine.</description>
+    <jobString>Bonding a lever action carbine.</jobString><researchPrerequisites><li>SteamworldWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_LeverActionCarbine</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_LeverActionCarbine</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_LeverActionCarbine_Bond>1</BRW_LeverActionCarbine_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_AdvancedRifle_Bond" Abstract="True">
+    <label>bond advanced rifle</label>
+    <description>Bond an advanced rifle.</description>
+    <jobString>Bonding a advanced rifle.</jobString><researchPrerequisites><li>AdvancedWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_AdvancedRifle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_AdvancedRifle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_AdvancedRifle_Bond>1</BRW_AdvancedRifle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_CompactRifle_Bond" Abstract="True">
+    <label>bond compact rifle</label>
+    <description>Bond an compact rifle.</description>
+    <jobString>Bonding a compact rifle.</jobString><researchPrerequisites><li>CompactWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_CompactRifle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_CompactRifle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_CompactRifle_Bond>1</BRW_CompactRifle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_CompactPistol_Bond" Abstract="True">
+    <label>bond compact pistol</label>
+    <description>Bond an compact pistol.</description>
+    <jobString>Bonding a compact pistol.</jobString><researchPrerequisites><li>CompactWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_CompactPistol</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_CompactPistol</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_CompactPistol_Bond>1</BRW_CompactPistol_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_BreakActionPistol_Bond" Abstract="True">
+    <label>bond break-action pistol</label>
+    <description>Bond an break-action pistol.</description>
+    <jobString>Bonding a break-action pistol.</jobString><researchPrerequisites><li>SteamworldWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_BreakActionPistol</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_BreakActionPistol</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_BreakActionPistol_Bond>1</BRW_BreakActionPistol_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_AdvancedPistol_Bond" Abstract="True">
+    <label>bond advanced pistol</label>
+    <description>Bond an advanced pistol.</description>
+    <jobString>Bonding a advanced pistol.</jobString><researchPrerequisites><li>AdvancedWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_AdvancedPistol</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_AdvancedPistol</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_AdvancedPistol_Bond>1</BRW_AdvancedPistol_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_CompactLMG_Bond" Abstract="True">
+    <label>bond compact LMG</label>
+    <description>Bond an compact LMG.</description>
+    <jobString>Bonding a compact LMG.</jobString><researchPrerequisites><li>CompactWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_CompactLMG</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_CompactLMG</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_CompactLMG_Bond>1</BRW_CompactLMG_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_TacticalRifle_Bond" Abstract="True">
+    <label>bond tactical rifle</label>
+    <description>Bond an tactical rifle.</description>
+    <jobString>Bonding a tactical rifle.</jobString><researchPrerequisites><li>TacticalWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_TacticalRifle</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_TacticalRifle</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_TacticalRifle_Bond>1</BRW_TacticalRifle_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_TacticalSMG_Bond" Abstract="True">
+    <label>bond tactical SMG</label>
+    <description>Bond an tactical SMG.</description>
+    <jobString>Bonding a tactical SMG.</jobString><researchPrerequisites><li>TacticalWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_TacticalSMG</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_TacticalSMG</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_TacticalSMG_Bond>1</BRW_TacticalSMG_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_BRW_CompactMachinePistol_Bond" Abstract="True">
+    <label>bond compact machine pistol</label>
+    <description>Bond an compact machine pistol.</description>
+    <jobString>Bonding a compact machine pistol.</jobString><researchPrerequisites><li>CompactWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>BRW_CompactMachinePistol</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>BRW_CompactMachinePistol</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <BRW_CompactMachinePistol_Bond>1</BRW_CompactMachinePistol_Bond>
+    </products>
+</RecipeDef></value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_beyondrimworldweaponscontinued</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_PBF_beyondrimworldweaponscontinued</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value><RecipeDef ParentName="Make_BRW_SilencedPistol_Bond">
+    <defName>Make_BRW_SilencedPistol_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_Nailgun_Bond">
+    <defName>Make_BRW_Nailgun_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_BreachShotgun_Bond">
+    <defName>Make_BRW_BreachShotgun_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_LeverActionCarbine_Bond">
+    <defName>Make_BRW_LeverActionCarbine_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_AdvancedRifle_Bond">
+    <defName>Make_BRW_AdvancedRifle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_CompactRifle_Bond">
+    <defName>Make_BRW_CompactRifle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_CompactPistol_Bond">
+    <defName>Make_BRW_CompactPistol_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_BreakActionPistol_Bond">
+    <defName>Make_BRW_BreakActionPistol_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_AdvancedPistol_Bond">
+    <defName>Make_BRW_AdvancedPistol_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_CompactLMG_Bond">
+    <defName>Make_BRW_CompactLMG_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_TacticalRifle_Bond">
+    <defName>Make_BRW_TacticalRifle_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_TacticalSMG_Bond">
+    <defName>Make_BRW_TacticalSMG_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_BRW_CompactMachinePistol_Bond">
+    <defName>Make_BRW_CompactMachinePistol_Bond</defName>
+</RecipeDef></value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>      
+        </caseTrue>
+    </Operation>
+</Patch>
