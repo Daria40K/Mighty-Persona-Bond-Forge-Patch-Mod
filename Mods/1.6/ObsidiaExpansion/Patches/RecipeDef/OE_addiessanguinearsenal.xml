@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== Addie's Sanguine Arsenal =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>addie.addiessanguinearsenal</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Addie_BloodScythe_Bond" Abstract="True">
+    <label>bond sanguine reaper</label>
+    <description>Bond an sanguine reaper.</description>
+    <jobString>Bonding a sanguine reaper.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodScythe</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodScythe</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodScythe_Bond>1</Addie_BloodScythe_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Addie_BloodScythe_Bond_Reset" Abstract="True">
+    <label>Reset sanguine reaper</label>
+    <description>Reset a sanguine reaper.</description>
+    <jobString>Resetting a sanguine reaper.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodScythe_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodScythe_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodScythe_Bond>1</Addie_BloodScythe_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Addie_ThreadedCane_Bond" Abstract="True">
+    <label>bond threaded cane</label>
+    <description>Bond an threaded cane.</description>
+    <jobString>Bonding a threaded cane.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_ThreadedCane</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_ThreadedCane</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_ThreadedCane_Bond>1</Addie_ThreadedCane_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Addie_ThreadedCane_Bond_Reset" Abstract="True">
+    <label>Reset threaded cane</label>
+    <description>Reset a threaded cane.</description>
+    <jobString>Resetting a threaded cane.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_ThreadedCane_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_ThreadedCane_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_ThreadedCane_Bond>1</Addie_ThreadedCane_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Addie_ExanguisHandgun_Bond" Abstract="True">
+    <label>bond exanguis handgun</label>
+    <description>Bond an exanguis handgun.</description>
+    <jobString>Bonding a exanguis handgun.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_ExanguisHandgun</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_ExanguisHandgun</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_ExanguisHandgun_Bond>1</Addie_ExanguisHandgun_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Addie_ExanguisHandgun_Bond_Reset" Abstract="True">
+    <label>Reset exanguis handgun</label>
+    <description>Reset a exanguis handgun.</description>
+    <jobString>Resetting a exanguis handgun.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_ExanguisHandgun_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_ExanguisHandgun_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_ExanguisHandgun_Bond>1</Addie_ExanguisHandgun_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Addie_BloodKatana_Bond" Abstract="True">
+    <label>bond sanguine katana</label>
+    <description>Bond an sanguine katana.</description>
+    <jobString>Bonding a sanguine katana.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodKatana</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodKatana</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodKatana_Bond>1</Addie_BloodKatana_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Addie_BloodKatana_Bond_Reset" Abstract="True">
+    <label>Reset sanguine katana</label>
+    <description>Reset a sanguine katana.</description>
+    <jobString>Resetting a sanguine katana.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodKatana_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodKatana_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodKatana_Bond>1</Addie_BloodKatana_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Addie_BloodMusket_Bond" Abstract="True">
+    <label>bond sanguine musket</label>
+    <description>Bond an sanguine musket.</description>
+    <jobString>Bonding a sanguine musket.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodMusket</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodMusket</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodMusket_Bond>1</Addie_BloodMusket_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Addie_BloodMusket_Bond_Reset" Abstract="True">
+    <label>Reset sanguine musket</label>
+    <description>Reset a sanguine musket.</description>
+    <jobString>Resetting a sanguine musket.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodMusket_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodMusket_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodMusket_Bond>1</Addie_BloodMusket_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Addie_BloodDagger_Bond" Abstract="True">
+    <label>bond sanguine dagger</label>
+    <description>Bond an sanguine dagger.</description>
+    <jobString>Bonding a sanguine dagger.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodDagger</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodDagger</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodDagger_Bond>1</Addie_BloodDagger_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Addie_BloodDagger_Bond_Reset" Abstract="True">
+    <label>Reset sanguine dagger</label>
+    <description>Reset a sanguine dagger.</description>
+    <jobString>Resetting a sanguine dagger.</jobString><researchPrerequisites><li>Addie_BloodWeapons</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Addie_BloodDagger_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Addie_BloodDagger_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Addie_BloodDagger_Bond>1</Addie_BloodDagger_Bond>
+    </products>
+</RecipeDef></value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_addiessanguinearsenal</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_OE_addiessanguinearsenal</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value><RecipeDef ParentName="Make_OE_Addie_BloodScythe_Bond">
+    <defName>Make_OE_Addie_BloodScythe_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodScythe_Bond_Reset">
+    <defName>Make_OE_Addie_BloodScythe_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_ThreadedCane_Bond">
+    <defName>Make_OE_Addie_ThreadedCane_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_ThreadedCane_Bond_Reset">
+    <defName>Make_OE_Addie_ThreadedCane_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_ExanguisHandgun_Bond">
+    <defName>Make_OE_Addie_ExanguisHandgun_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_ExanguisHandgun_Bond_Reset">
+    <defName>Make_OE_Addie_ExanguisHandgun_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodKatana_Bond">
+    <defName>Make_OE_Addie_BloodKatana_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodKatana_Bond_Reset">
+    <defName>Make_OE_Addie_BloodKatana_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodMusket_Bond">
+    <defName>Make_OE_Addie_BloodMusket_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodMusket_Bond_Reset">
+    <defName>Make_OE_Addie_BloodMusket_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodDagger_Bond">
+    <defName>Make_OE_Addie_BloodDagger_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Addie_BloodDagger_Bond_Reset">
+    <defName>Make_OE_Addie_BloodDagger_Bond_Reset</defName>
+</RecipeDef></value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>      
+        </caseTrue>
+    </Operation>
+</Patch>
