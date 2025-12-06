@@ -27,4 +27,13 @@
 		<li IfModActive="obsidiaexpansion.core">Mods/1.5/ObsidiaExpansion</li>
 		<li IfModActive="Imranfish.XMLExtensions">Mods/1.5/XMLExtensions</li>
 	</v1.5>
+
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="unlimitedhugs.hugslib">News</li>
+		<li IfModActive="statistno1.personabond">Mods/1.6/PersonaBondForge</li>
+		<li IfModActive="obsidiaexpansion.core">Mods/1.6/ObsidiaExpansion</li>
+		<li IfModActive="Imranfish.XMLExtensions">Mods/1.6/XMLExtensions</li>
+	</v1.6>
 </loadFolders>
