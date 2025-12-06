@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== Sparkling Worlds - Full Mod =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>albion.sparklingworlds.full</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <ThingDef Name="MPBFPM_BaseGunSW" Abstract="True" ParentName="MPBFPM_BaseWeaponSW">
+                        <techLevel>Industrial</techLevel>
+                        <relicChance>1</relicChance>
+                        <thingCategories>
+                            <li>PersonaWeaponsRanged</li>
+                        </thingCategories>
+                        <weaponClasses>
+                            <li>Ranged</li>
+                        </weaponClasses>
+                        <inspectorTabs>
+                            <li>ITab_Art</li>
+                        </inspectorTabs>
+                        <tradeTags>
+                            <li>WeaponRanged</li>
+                        </tradeTags>
+                        <weaponTags>
+                            <li>Gun</li>
+                        </weaponTags>
+                        <statBases>
+                            <Flammability>0.5</Flammability>
+                        </statBases>
+                        <comps>
+                            <li Class="CompProperties_Art">
+                                <nameMaker>NamerArtWeaponGun</nameMaker>
+                                <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+                                <minQualityForArtistic>Excellent</minQualityForArtistic>
+                            </li>
+                        </comps>
+                    </ThingDef>
+
+
+                    <ThingDef Name="MPBFPM_BaseMakeableGlitterworldGunSW" ParentName="MPBFPM_BaseGunSW" Abstract="True">
+                        <weaponTags>
+                            <li>Gun</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>Ranged</li>
+                        </weaponClasses>
+                    </ThingDef>
+
+
+                    <ThingDef Name="MPBFPM_BaseNonLethalWeaponSW" Abstract="True" ParentName="MPBFPM_BaseWeaponSW">
+                        <techLevel>Industrial</techLevel>
+                        <weaponTags>
+                            <li>SpacerMeleeAdvanced</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>Melee</li>
+                        </weaponClasses>
+                        <thingCategories>
+                            <li>MPBFPM_WeaponsMelee</li>
+                        </thingCategories>
+                        <tradeTags>
+                            <li>WeaponMelee</li>
+                        </tradeTags>
+                        <comps>
+                            <li Class="CompProperties_Art">
+                                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                                <minQualityForArtistic>Excellent</minQualityForArtistic>
+                            </li>
+                        </comps>
+                        <equippedAngleOffset>-65</equippedAngleOffset>
+                    </ThingDef>
+
+
+                    <ThingDef Abstract="True" Name="MPBFPM_BaseWeaponSW" ParentName="MPBFPM_BaseWeapon">
+                        <thingClass>ThingWithComps</thingClass>
+                        <category>Item</category>
+                        <drawerType>MapMeshOnly</drawerType>
+                        <drawGUIOverlay>true</drawGUIOverlay>
+                        <altitudeLayer>Item</altitudeLayer>
+                        <alwaysHaulable>true</alwaysHaulable>
+                        <tickerType>Never</tickerType>
+                        <equipmentType>Primary</equipmentType>
+                        <useHitPoints>true</useHitPoints>
+                        <pathCost>14</pathCost>
+                        <selectable>true</selectable>
+                        <statBases>
+                            <MaxHitPoints>100</MaxHitPoints>
+                            <Flammability>1.0</Flammability>
+                            <DeteriorationRate>2</DeteriorationRate>
+                            <Beauty>-3</Beauty>
+                            <SellPriceFactor>0.20</SellPriceFactor>
+                        </statBases>
+                        <comps>
+                            <li Class="CompProperties_Styleable" />
+                        </comps>
+                        <graphicData>
+                            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+                        </graphicData>
+                        <allowedArchonexusCount>1</allowedArchonexusCount>
+                    </ThingDef>
+
+
+                    <ThingDef ParentName="MPBFPM_BaseMakeableGlitterworldGunSW" Name="Gun_GaussrifleSW_Bond" Abstract="True">
+                        <label>persona gauss rifle</label>
+                        <description>Electrically accelerated high-speed projectile assault rifle. Usually built on Glitterworlds.\nAlthough the damage is lower compared to charge rifles, the high armor penetration makes this weapon very effective against armored targets.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <graphicData>
+                            <texPath>Things/Items/GaussrifleSW</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <soundInteract>Interact_ChargeRifle</soundInteract>
+                        <statBases>
+                            <Mass>4</Mass>
+                            <AccuracyTouch>0.748</AccuracyTouch>
+                            <AccuracyShort>0.77</AccuracyShort>
+                            <AccuracyMedium>0.792</AccuracyMedium>
+                            <AccuracyLong>0.693</AccuracyLong>
+                            <RangedWeapon_Cooldown>0.595</RangedWeapon_Cooldown>
+                        </statBases>
+                        <generateCommonality>1</generateCommonality>
+                        <techLevel>Spacer</techLevel>
+                        <weaponTags>
+                            <li>SpacerGun</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>RangedLight</li>
+                        </weaponClasses>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>Bullet_GaussrifleSW_Bond</defaultProjectile>
+                                <warmupTime>0.5</warmupTime>
+                                <minRange>1.5</minRange>
+                                <range>31.9</range>
+                                <soundCast>Shot_ChargeRifle</soundCast>
+                                <soundCastTail>GunTail_Medium</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <tools>
+                            <li>
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMakeableGlitterworldGunSW" Name="Gun_RailgunSW_Bond" Abstract="True">
+                        <label>persona gauss lance</label>
+                        <description>Electrically accelerated high-speed long range lance weapon. Usually built on Glitterworlds.\nAlthough the damage is lower compared to charge lances, the high armor penetration and longer range makes this weapon very effective against armored targets.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <graphicData>
+                            <texPath>Things/Items/RailgunSW</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <soundInteract>Interact_ChargeRifle</soundInteract>
+                        <statBases>
+                            <Mass>5</Mass>
+                            <AccuracyTouch>0.605</AccuracyTouch>
+                            <AccuracyShort>0.825</AccuracyShort>
+                            <AccuracyMedium>0.935</AccuracyMedium>
+                            <AccuracyLong>0.88</AccuracyLong>
+                            <RangedWeapon_Cooldown>2.405</RangedWeapon_Cooldown>
+                        </statBases>
+                        <generateCommonality>0.6</generateCommonality>
+                        <techLevel>Spacer</techLevel>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>Bullet_RailgunSW_Bond</defaultProjectile>
+                                <warmupTime>2.3</warmupTime>
+                                <minRange>1.5</minRange>
+                                <range>44.9</range>
+                                <soundCast>Shot_ChargeBlaster</soundCast>
+                                <soundCastTail>GunTail_Heavy</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <tools>
+                            <li>
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>10.791</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                        <weaponTags>
+                            <li>SniperRifle</li>
+                            <li>SpacerGun</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>RangedHeavy</li>
+                        </weaponClasses>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMakeableGlitterworldGunSW" Name="Gun_BulletstormSW_Bond" Abstract="True">
+                        <label>persona bulletstorm</label>
+                        <description>Nicknamed Bulletstorm this gun rapidly fires a continues stream of electrically accelerated high-speed projectiles. Usually built on Glitterworlds.\nThe high armor penetration makes this weapon very effective against armored targets.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <graphicData>
+                            <texPath>Things/Items/BulletstormSW</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <soundInteract>Interact_ChargeRifle</soundInteract>
+                        <statBases>
+                            <Mass>3.4</Mass>
+                            <AccuracyTouch>0.88</AccuracyTouch>
+                            <AccuracyShort>0.803</AccuracyShort>
+                            <AccuracyMedium>0.704</AccuracyMedium>
+                            <AccuracyLong>0.616</AccuracyLong>
+                            <RangedWeapon_Cooldown>0.043</RangedWeapon_Cooldown>
+                        </statBases>
+                        <generateCommonality>0.4</generateCommonality>
+                        <techLevel>Spacer</techLevel>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>Bullet_BulletstormSW_Bond</defaultProjectile>
+                                <warmupTime>0.05</warmupTime>
+                                <minRange>1.5</minRange>
+                                <range>20.9</range>
+                                <soundCast>Shot_ChargeBlaster</soundCast>
+                                <soundCastTail>GunTail_Heavy</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <tools>
+                            <li>
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                        <weaponTags>
+                            <li>SpacerGun</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>RangedLight</li>
+                        </weaponClasses>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMakeableGlitterworldGunSW" Name="Gun_PlasmaGunSW_Bond" Abstract="True">
+                        <label>persona plasma gun</label>
+                        <description>Nicknamed the centipede killer, this weapon fires a lump of plasma at a target. The plasma burns through heavy armor like tin foil and might kill the target with a single hit.\nUnfortunately the plasma gun is rather inaccurate.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <graphicData>
+                            <texPath>Things/Items/PlasmaGunSW</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <soundInteract>Interact_ChargeRifle</soundInteract>
+                        <statBases>
+                            <Mass>6</Mass>
+                            <AccuracyTouch>0.66</AccuracyTouch>
+                            <AccuracyShort>0.462</AccuracyShort>
+                            <AccuracyMedium>0.308</AccuracyMedium>
+                            <AccuracyLong>0.22</AccuracyLong>
+                            <RangedWeapon_Cooldown>2.55</RangedWeapon_Cooldown>
+                        </statBases>
+                        <generateCommonality>0.1</generateCommonality>
+                        <techLevel>Ultra</techLevel>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>Bullet_PlasmaGunSW_Bond</defaultProjectile>
+                                <warmupTime>2.4</warmupTime>
+                                <minRange>1.5</minRange>
+                                <range>31.9</range>
+                                <soundCast>Shot_IncendiaryLauncher</soundCast>
+                                <soundCastTail>GunTail_Heavy</soundCastTail>
+                                <muzzleFlashScale>12</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <tools>
+                            <li>
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>BurnSW</li>
+                                </capacities>
+                                <power>14.935</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                        <weaponTags>
+                            <li>PlasmaGunSW</li>
+                            <li>SpacerGun</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>RangedHeavy</li>
+                        </weaponClasses>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_GaussrifleSW_Bond" Abstract="True">
+                        <label>gauss projectile</label>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Big</texPath>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>13</damageAmountBase>
+                            <armorPenetrationBase>0.8</armorPenetrationBase>
+                            <speed>120</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_RailgunSW_Bond" Abstract="True">
+                        <label>gauss projectile</label>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Big</texPath>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>28</damageAmountBase>
+                            <stoppingPower>1.5</stoppingPower>
+                            <armorPenetrationBase>1.20</armorPenetrationBase>
+                            <speed>120</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_BulletstormSW_Bond" Abstract="True">
+                        <label>gauss projectile</label>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Small</texPath>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>5</damageAmountBase>
+                            <armorPenetrationBase>0.40</armorPenetrationBase>
+                            <speed>90</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="Bullet_PlasmaGunSW_Bond" Abstract="True">
+                        <label>plasma shot</label>
+                        <graphicData>
+                            <texPath>Things/Items/PlasmaShotSW</texPath>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>PlasmaSW</damageDef>
+                            <damageAmountBase>131</damageAmountBase>
+                            <speed>50</speed>
+                            <armorPenetrationBase>4</armorPenetrationBase>
+                        </projectile>
+                    </ThingDef>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_sparklingworldsfullmod</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+                            <ThingDef ParentName="Gun_GaussrifleSW_Bond">
+                                <defName>Gun_GaussrifleSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Gun_RailgunSW_Bond">
+                                <defName>Gun_RailgunSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Gun_BulletstormSW_Bond">
+                                <defName>Gun_BulletstormSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Gun_PlasmaGunSW_Bond">
+                                <defName>Gun_PlasmaGunSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Bullet_GaussrifleSW_Bond">
+                                <defName>Bullet_GaussrifleSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Bullet_RailgunSW_Bond">
+                                <defName>Bullet_RailgunSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Bullet_BulletstormSW_Bond">
+                                <defName>Bullet_BulletstormSW_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Bullet_PlasmaGunSW_Bond">
+                                <defName>Bullet_PlasmaGunSW_Bond</defName>
+                            </ThingDef>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

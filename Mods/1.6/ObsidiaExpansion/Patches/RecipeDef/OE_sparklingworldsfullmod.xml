@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ===== Sparkling Worlds - Full Mod =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>albion.sparklingworlds.full</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_GaussrifleSW_Bond" Abstract="True">
+    <label>bond gauss rifle</label>
+    <description>Bond an gauss rifle.</description>
+    <jobString>Bonding a gauss rifle.</jobString><researchPrerequisites><li>RailgunSW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_GaussrifleSW</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_GaussrifleSW</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_GaussrifleSW_Bond>1</Gun_GaussrifleSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_GaussrifleSW_Bond_Reset" Abstract="True">
+    <label>Reset gauss rifle</label>
+    <description>Reset a gauss rifle.</description>
+    <jobString>Resetting a gauss rifle.</jobString><researchPrerequisites><li>RailgunSW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_GaussrifleSW_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_GaussrifleSW_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_GaussrifleSW_Bond>1</Gun_GaussrifleSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_RailgunSW_Bond" Abstract="True">
+    <label>bond gauss lance</label>
+    <description>Bond an gauss lance.</description>
+    <jobString>Bonding a gauss lance.</jobString><researchPrerequisites><li>RailgunSW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_RailgunSW</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_RailgunSW</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_RailgunSW_Bond>1</Gun_RailgunSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_RailgunSW_Bond_Reset" Abstract="True">
+    <label>Reset gauss lance</label>
+    <description>Reset a gauss lance.</description>
+    <jobString>Resetting a gauss lance.</jobString><researchPrerequisites><li>RailgunSW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_RailgunSW_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_RailgunSW_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_RailgunSW_Bond>1</Gun_RailgunSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_BulletstormSW_Bond" Abstract="True">
+    <label>bond bulletstorm</label>
+    <description>Bond an bulletstorm.</description>
+    <jobString>Bonding a bulletstorm.</jobString><researchPrerequisites><li>RailgunSW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_BulletstormSW</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_BulletstormSW</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_BulletstormSW_Bond>1</Gun_BulletstormSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_BulletstormSW_Bond_Reset" Abstract="True">
+    <label>Reset bulletstorm</label>
+    <description>Reset a bulletstorm.</description>
+    <jobString>Resetting a bulletstorm.</jobString><researchPrerequisites><li>RailgunSW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_BulletstormSW_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_BulletstormSW_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_BulletstormSW_Bond>1</Gun_BulletstormSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_Gun_PlasmaGunSW_Bond" Abstract="True">
+    <label>bond plasma gun</label>
+    <description>Bond an plasma gun.</description>
+    <jobString>Bonding a plasma gun.</jobString><researchPrerequisites><li>PlasmaGunnerySW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_PlasmaGunSW</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_PlasmaGunSW</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_PlasmaGunSW_Bond>1</Gun_PlasmaGunSW_Bond>
+    </products>
+</RecipeDef><RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_Gun_PlasmaGunSW_Bond_Reset" Abstract="True">
+    <label>Reset plasma gun</label>
+    <description>Reset a plasma gun.</description>
+    <jobString>Resetting a plasma gun.</jobString><researchPrerequisites><li>PlasmaGunnerySW</li></researchPrerequisites>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Gun_PlasmaGunSW_Bond</li>
+                </thingDefs>
+            </filter>
+            <count>1</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Gun_PlasmaGunSW_Bond</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <Gun_PlasmaGunSW_Bond>1</Gun_PlasmaGunSW_Bond>
+    </products>
+</RecipeDef></value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_sparklingworldsfullmod</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_OE_sparklingworldsfullmod</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value><RecipeDef ParentName="Make_OE_Gun_GaussrifleSW_Bond">
+    <defName>Make_OE_Gun_GaussrifleSW_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_GaussrifleSW_Bond_Reset">
+    <defName>Make_OE_Gun_GaussrifleSW_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_RailgunSW_Bond">
+    <defName>Make_OE_Gun_RailgunSW_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_RailgunSW_Bond_Reset">
+    <defName>Make_OE_Gun_RailgunSW_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_BulletstormSW_Bond">
+    <defName>Make_OE_Gun_BulletstormSW_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_BulletstormSW_Bond_Reset">
+    <defName>Make_OE_Gun_BulletstormSW_Bond_Reset</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_PlasmaGunSW_Bond">
+    <defName>Make_OE_Gun_PlasmaGunSW_Bond</defName>
+</RecipeDef><RecipeDef ParentName="Make_OE_Gun_PlasmaGunSW_Bond_Reset">
+    <defName>Make_OE_Gun_PlasmaGunSW_Bond_Reset</defName>
+</RecipeDef></value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>      
+        </caseTrue>
+    </Operation>
+</Patch>
