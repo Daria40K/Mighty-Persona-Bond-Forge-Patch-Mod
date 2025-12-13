@@ -1,0 +1,2758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== Wolfein Race =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>melondove.wolfeinrace</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_Baton_Bond" Abstract="True">
+                        <label>bond Wolfein Riot Baton</label>
+                        <description>Bond an Wolfein Riot Baton.</description>
+                        <jobString>Bonding a Wolfein Riot Baton.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_Baton</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_Baton</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_Baton_Bond>1</W_Weapon_Melee_Baton_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_Baton_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Riot Baton</label>
+                        <description>Reset a Wolfein Riot Baton.</description>
+                        <jobString>Resetting a Wolfein Riot Baton.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_Baton_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_Baton_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_Baton_Bond>1</W_Weapon_Melee_Baton_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_HeavyPowerAxe_Bond" Abstract="True">
+                        <label>bond Wolfein Heavy Power Axe</label>
+                        <description>Bond an Wolfein Heavy Power Axe.</description>
+                        <jobString>Bonding a Wolfein Heavy Power Axe.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_HeavyPowerAxe</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_HeavyPowerAxe</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_HeavyPowerAxe_Bond>1</W_Weapon_Melee_HeavyPowerAxe_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_HeavyPowerAxe_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Heavy Power Axe</label>
+                        <description>Reset a Wolfein Heavy Power Axe.</description>
+                        <jobString>Resetting a Wolfein Heavy Power Axe.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_HeavyPowerAxe_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_HeavyPowerAxe_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_HeavyPowerAxe_Bond>1</W_Weapon_Melee_HeavyPowerAxe_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_HeavyMachete_Bond" Abstract="True">
+                        <label>bond Wolfein Heavy Machete</label>
+                        <description>Bond an Wolfein Heavy Machete.</description>
+                        <jobString>Bonding a Wolfein Heavy Machete.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_HeavyMachete</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_HeavyMachete</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_HeavyMachete_Bond>1</W_Weapon_Melee_HeavyMachete_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_HeavyMachete_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Heavy Machete</label>
+                        <description>Reset a Wolfein Heavy Machete.</description>
+                        <jobString>Resetting a Wolfein Heavy Machete.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_HeavyMachete_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_HeavyMachete_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_HeavyMachete_Bond>1</W_Weapon_Melee_HeavyMachete_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_AlloySabre_Bond" Abstract="True">
+                        <label>bond Wolfein Alloy Sabre</label>
+                        <description>Bond an Wolfein Alloy Sabre.</description>
+                        <jobString>Bonding a Wolfein Alloy Sabre.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_AlloySabre</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_AlloySabre</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_AlloySabre_Bond>1</W_Weapon_Melee_AlloySabre_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_AlloySabre_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Alloy Sabre</label>
+                        <description>Reset a Wolfein Alloy Sabre.</description>
+                        <jobString>Resetting a Wolfein Alloy Sabre.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_AlloySabre_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_AlloySabre_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_AlloySabre_Bond>1</W_Weapon_Melee_AlloySabre_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_AlloyDagger_Bond" Abstract="True">
+                        <label>bond Wolfein Alloy Dagger</label>
+                        <description>Bond an Wolfein Alloy Dagger.</description>
+                        <jobString>Bonding a Wolfein Alloy Dagger.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_AlloyDagger</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_AlloyDagger</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_AlloyDagger_Bond>1</W_Weapon_Melee_AlloyDagger_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_AlloyDagger_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Alloy Dagger</label>
+                        <description>Reset a Wolfein Alloy Dagger.</description>
+                        <jobString>Resetting a Wolfein Alloy Dagger.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_AlloyDagger_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_AlloyDagger_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_AlloyDagger_Bond>1</W_Weapon_Melee_AlloyDagger_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_HeavySabre_Bond" Abstract="True">
+                        <label>bond Wolfein Heavy Sabre</label>
+                        <description>Bond an Wolfein Heavy Sabre.</description>
+                        <jobString>Bonding a Wolfein Heavy Sabre.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_HeavySabre</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_HeavySabre</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_HeavySabre_Bond>1</W_Weapon_Melee_HeavySabre_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_HeavySabre_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Heavy Sabre</label>
+                        <description>Reset a Wolfein Heavy Sabre.</description>
+                        <jobString>Resetting a Wolfein Heavy Sabre.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_HeavySabre_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_HeavySabre_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_HeavySabre_Bond>1</W_Weapon_Melee_HeavySabre_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_SimpleDagger_Bond" Abstract="True">
+                        <label>bond Wolfein Simple Dagger</label>
+                        <description>Bond an Wolfein Simple Dagger.</description>
+                        <jobString>Bonding a Wolfein Simple Dagger.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_SimpleDagger</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_SimpleDagger</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_SimpleDagger_Bond>1</W_Weapon_Melee_SimpleDagger_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_SimpleDagger_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Simple Dagger</label>
+                        <description>Reset a Wolfein Simple Dagger.</description>
+                        <jobString>Resetting a Wolfein Simple Dagger.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_SimpleDagger_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_SimpleDagger_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_SimpleDagger_Bond>1</W_Weapon_Melee_SimpleDagger_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_SimpleSpear_Bond" Abstract="True">
+                        <label>bond Wolfein Simple Spear</label>
+                        <description>Bond an Wolfein Simple Spear.</description>
+                        <jobString>Bonding a Wolfein Simple Spear.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_SimpleSpear</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_SimpleSpear</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_SimpleSpear_Bond>1</W_Weapon_Melee_SimpleSpear_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_SimpleSpear_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Simple Spear</label>
+                        <description>Reset a Wolfein Simple Spear.</description>
+                        <jobString>Resetting a Wolfein Simple Spear.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_SimpleSpear_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_SimpleSpear_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_SimpleSpear_Bond>1</W_Weapon_Melee_SimpleSpear_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_SimpleMace_Bond" Abstract="True">
+                        <label>bond Wolfein Simple Mace</label>
+                        <description>Bond an Wolfein Simple Mace.</description>
+                        <jobString>Bonding a Wolfein Simple Mace.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_SimpleMace</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_SimpleMace</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_SimpleMace_Bond>1</W_Weapon_Melee_SimpleMace_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_SimpleMace_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Simple Mace</label>
+                        <description>Reset a Wolfein Simple Mace.</description>
+                        <jobString>Resetting a Wolfein Simple Mace.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_SimpleMace_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_SimpleMace_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_SimpleMace_Bond>1</W_Weapon_Melee_SimpleMace_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_RebelAlloyDagger_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Alloy Dagger</label>
+                        <description>Bond an Wolfein Rebel Alloy Dagger.</description>
+                        <jobString>Bonding a Wolfein Rebel Alloy Dagger.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_RebelAlloyDagger</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_RebelAlloyDagger</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_RebelAlloyDagger_Bond>1</W_Weapon_Melee_RebelAlloyDagger_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_RebelAlloyDagger_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Alloy Dagger</label>
+                        <description>Reset a Wolfein Rebel Alloy Dagger.</description>
+                        <jobString>Resetting a Wolfein Rebel Alloy Dagger.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_RebelAlloyDagger_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_RebelAlloyDagger_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_RebelAlloyDagger_Bond>1</W_Weapon_Melee_RebelAlloyDagger_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_AIPTChainSaw_Bond" Abstract="True">
+                        <label>bond Wolfein AIPT Chain Saw</label>
+                        <description>Bond an Wolfein AIPT Chain Saw.</description>
+                        <jobString>Bonding a Wolfein AIPT Chain Saw.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_AIPTChainSaw</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_AIPTChainSaw</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_AIPTChainSaw_Bond>1</W_Weapon_Melee_AIPTChainSaw_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_AIPTChainSaw_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein AIPT Chain Saw</label>
+                        <description>Reset a Wolfein AIPT Chain Saw.</description>
+                        <jobString>Resetting a Wolfein AIPT Chain Saw.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_AIPTChainSaw_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_AIPTChainSaw_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_AIPTChainSaw_Bond>1</W_Weapon_Melee_AIPTChainSaw_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_RebelPowerHammer_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Heavy Power Hammer</label>
+                        <description>Bond an Wolfein Rebel Heavy Power Hammer.</description>
+                        <jobString>Bonding a Wolfein Rebel Heavy Power Hammer.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_RebelPowerHammer</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_RebelPowerHammer</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_RebelPowerHammer_Bond>1</W_Weapon_Melee_RebelPowerHammer_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_RebelPowerHammer_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Heavy Power Hammer</label>
+                        <description>Reset a Wolfein Rebel Heavy Power Hammer.</description>
+                        <jobString>Resetting a Wolfein Rebel Heavy Power Hammer.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_MeleeWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_RebelPowerHammer_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_RebelPowerHammer_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_RebelPowerHammer_Bond>1</W_Weapon_Melee_RebelPowerHammer_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Melee_PrototypeGunlance_Bond" Abstract="True">
+                        <label>bond Wolfein Prototype Gunlance</label>
+                        <description>Bond an Wolfein Prototype Gunlance.</description>
+                        <jobString>Bonding a Wolfein Prototype Gunlance.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_PrototypeGunlance</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_PrototypeGunlance</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_PrototypeGunlance_Bond>1</W_Weapon_Melee_PrototypeGunlance_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Melee_PrototypeGunlance_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Prototype Gunlance</label>
+                        <description>Reset a Wolfein Prototype Gunlance.</description>
+                        <jobString>Resetting a Wolfein Prototype Gunlance.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Melee_PrototypeGunlance_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Melee_PrototypeGunlance_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Melee_PrototypeGunlance_Bond>1</W_Weapon_Melee_PrototypeGunlance_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_HG_HomemadePistol_Bond" Abstract="True">
+                        <label>bond Wolfein Homemade Pistol</label>
+                        <description>Bond an Wolfein Homemade Pistol.</description>
+                        <jobString>Bonding a Wolfein Homemade Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_II</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_HomemadePistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_HomemadePistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_HomemadePistol_Bond>1</W_Weapon_HG_HomemadePistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_HG_HomemadePistol_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Homemade Pistol</label>
+                        <description>Reset a Wolfein Homemade Pistol.</description>
+                        <jobString>Resetting a Wolfein Homemade Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_II</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_HomemadePistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_HomemadePistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_HomemadePistol_Bond>1</W_Weapon_HG_HomemadePistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_HG_HeavyPistol_Bond" Abstract="True">
+                        <label>bond Wolfein Heavy Pistol</label>
+                        <description>Bond an Wolfein Heavy Pistol.</description>
+                        <jobString>Bonding a Wolfein Heavy Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_HeavyPistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_HeavyPistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_HeavyPistol_Bond>1</W_Weapon_HG_HeavyPistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_HG_HeavyPistol_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Heavy Pistol</label>
+                        <description>Reset a Wolfein Heavy Pistol.</description>
+                        <jobString>Resetting a Wolfein Heavy Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_HeavyPistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_HeavyPistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_HeavyPistol_Bond>1</W_Weapon_HG_HeavyPistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_HG_MachinePistol_Bond" Abstract="True">
+                        <label>bond Wolfein Machine Pistol</label>
+                        <description>Bond an Wolfein Machine Pistol.</description>
+                        <jobString>Bonding a Wolfein Machine Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_MachinePistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_MachinePistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_MachinePistol_Bond>1</W_Weapon_HG_MachinePistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_HG_MachinePistol_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Machine Pistol</label>
+                        <description>Reset a Wolfein Machine Pistol.</description>
+                        <jobString>Resetting a Wolfein Machine Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_MachinePistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_MachinePistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_MachinePistol_Bond>1</W_Weapon_HG_MachinePistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_HG_Pistol_Bond" Abstract="True">
+                        <label>bond Wolfein Pistol</label>
+                        <description>Bond an Wolfein Pistol.</description>
+                        <jobString>Bonding a Wolfein Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_Pistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_Pistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_Pistol_Bond>1</W_Weapon_HG_Pistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_HG_Pistol_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Pistol</label>
+                        <description>Reset a Wolfein Pistol.</description>
+                        <jobString>Resetting a Wolfein Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_Pistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_Pistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_Pistol_Bond>1</W_Weapon_HG_Pistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_HG_RebelPistol_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Pistol</label>
+                        <description>Bond an Wolfein Rebel Pistol.</description>
+                        <jobString>Bonding a Wolfein Rebel Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_RebelPistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_RebelPistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_RebelPistol_Bond>1</W_Weapon_HG_RebelPistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_HG_RebelPistol_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Pistol</label>
+                        <description>Reset a Wolfein Rebel Pistol.</description>
+                        <jobString>Resetting a Wolfein Rebel Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_RebelPistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_RebelPistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_RebelPistol_Bond>1</W_Weapon_HG_RebelPistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_HG_ChargeRapidFirePistol_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Rapid-Fire Pistol</label>
+                        <description>Bond an Wolfein Charge Rapid-Fire Pistol.</description>
+                        <jobString>Bonding a Wolfein Charge Rapid-Fire Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_ChargeRapidFirePistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_ChargeRapidFirePistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_ChargeRapidFirePistol_Bond>1</W_Weapon_HG_ChargeRapidFirePistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_HG_ChargeRapidFirePistol_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Rapid-Fire Pistol</label>
+                        <description>Reset a Wolfein Charge Rapid-Fire Pistol.</description>
+                        <jobString>Resetting a Wolfein Charge Rapid-Fire Pistol.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_HG_ChargeRapidFirePistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_HG_ChargeRapidFirePistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_HG_ChargeRapidFirePistol_Bond>1</W_Weapon_HG_ChargeRapidFirePistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SMG_LightSubmachineGun_Bond" Abstract="True">
+                        <label>bond Wolfein Light Submachine Gun</label>
+                        <description>Bond an Wolfein Light Submachine Gun.</description>
+                        <jobString>Bonding a Wolfein Light Submachine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SMG_LightSubmachineGun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SMG_LightSubmachineGun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SMG_LightSubmachineGun_Bond>1</W_Weapon_SMG_LightSubmachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SMG_LightSubmachineGun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Light Submachine Gun</label>
+                        <description>Reset a Wolfein Light Submachine Gun.</description>
+                        <jobString>Resetting a Wolfein Light Submachine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SMG_LightSubmachineGun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SMG_LightSubmachineGun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SMG_LightSubmachineGun_Bond>1</W_Weapon_SMG_LightSubmachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SMG_RebelSubmachineGun_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Submachine Gun</label>
+                        <description>Bond an Wolfein Rebel Submachine Gun.</description>
+                        <jobString>Bonding a Wolfein Rebel Submachine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SMG_RebelSubmachineGun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SMG_RebelSubmachineGun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SMG_RebelSubmachineGun_Bond>1</W_Weapon_SMG_RebelSubmachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SMG_RebelSubmachineGun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Submachine Gun</label>
+                        <description>Reset a Wolfein Rebel Submachine Gun.</description>
+                        <jobString>Resetting a Wolfein Rebel Submachine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SMG_RebelSubmachineGun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SMG_RebelSubmachineGun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SMG_RebelSubmachineGun_Bond>1</W_Weapon_SMG_RebelSubmachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SMG_ChargeSubmachineGun_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Submachine Gun</label>
+                        <description>Bond an Wolfein Charge Submachine Gun.</description>
+                        <jobString>Bonding a Wolfein Charge Submachine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SMG_ChargeSubmachineGun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SMG_ChargeSubmachineGun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SMG_ChargeSubmachineGun_Bond>1</W_Weapon_SMG_ChargeSubmachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SMG_ChargeSubmachineGun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Submachine Gun</label>
+                        <description>Reset a Wolfein Charge Submachine Gun.</description>
+                        <jobString>Resetting a Wolfein Charge Submachine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SMG_ChargeSubmachineGun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SMG_ChargeSubmachineGun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SMG_ChargeSubmachineGun_Bond>1</W_Weapon_SMG_ChargeSubmachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_HomemadeRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Homemade Rifle</label>
+                        <description>Bond an Wolfein Homemade Rifle.</description>
+                        <jobString>Bonding a Wolfein Homemade Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_II</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_HomemadeRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_HomemadeRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_HomemadeRifle_Bond>1</W_Weapon_AR_HomemadeRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_HomemadeRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Homemade Rifle</label>
+                        <description>Reset a Wolfein Homemade Rifle.</description>
+                        <jobString>Resetting a Wolfein Homemade Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_II</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_HomemadeRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_HomemadeRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_HomemadeRifle_Bond>1</W_Weapon_AR_HomemadeRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_Carbine_Bond" Abstract="True">
+                        <label>bond Wolfein Military Carbine Gun</label>
+                        <description>Bond an Wolfein Military Carbine Gun.</description>
+                        <jobString>Bonding a Wolfein Military Carbine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_Carbine</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_Carbine</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_Carbine_Bond>1</W_Weapon_AR_Carbine_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_Carbine_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Military Carbine Gun</label>
+                        <description>Reset a Wolfein Military Carbine Gun.</description>
+                        <jobString>Resetting a Wolfein Military Carbine Gun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_Carbine_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_Carbine_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_Carbine_Bond>1</W_Weapon_AR_Carbine_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_AssaultRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Military Assault Rifle</label>
+                        <description>Bond an Wolfein Military Assault Rifle.</description>
+                        <jobString>Bonding a Wolfein Military Assault Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_AssaultRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_AssaultRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_AssaultRifle_Bond>1</W_Weapon_AR_AssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_AssaultRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Military Assault Rifle</label>
+                        <description>Reset a Wolfein Military Assault Rifle.</description>
+                        <jobString>Resetting a Wolfein Military Assault Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_AssaultRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_AssaultRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_AssaultRifle_Bond>1</W_Weapon_AR_AssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_RebelAssaultRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Assault Rifle</label>
+                        <description>Bond an Wolfein Rebel Assault Rifle.</description>
+                        <jobString>Bonding a Wolfein Rebel Assault Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_RebelAssaultRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_RebelAssaultRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_RebelAssaultRifle_Bond>1</W_Weapon_AR_RebelAssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_RebelAssaultRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Assault Rifle</label>
+                        <description>Reset a Wolfein Rebel Assault Rifle.</description>
+                        <jobString>Resetting a Wolfein Rebel Assault Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_RebelAssaultRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_RebelAssaultRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_RebelAssaultRifle_Bond>1</W_Weapon_AR_RebelAssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_ChargeAssaultRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Assault Rifle</label>
+                        <description>Bond an Wolfein Charge Assault Rifle.</description>
+                        <jobString>Bonding a Wolfein Charge Assault Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_ChargeAssaultRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_ChargeAssaultRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_ChargeAssaultRifle_Bond>1</W_Weapon_AR_ChargeAssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_ChargeAssaultRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Assault Rifle</label>
+                        <description>Reset a Wolfein Charge Assault Rifle.</description>
+                        <jobString>Resetting a Wolfein Charge Assault Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_ChargeAssaultRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_ChargeAssaultRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_ChargeAssaultRifle_Bond>1</W_Weapon_AR_ChargeAssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_ChargeCombatRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Combat Rifle</label>
+                        <description>Bond an Wolfein Charge Combat Rifle.</description>
+                        <jobString>Bonding a Wolfein Charge Combat Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_ChargeCombatRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_ChargeCombatRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_ChargeCombatRifle_Bond>1</W_Weapon_AR_ChargeCombatRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_ChargeCombatRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Combat Rifle</label>
+                        <description>Reset a Wolfein Charge Combat Rifle.</description>
+                        <jobString>Resetting a Wolfein Charge Combat Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_ChargeCombatRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_ChargeCombatRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_ChargeCombatRifle_Bond>1</W_Weapon_AR_ChargeCombatRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_AR_AIPTStungun_Bond" Abstract="True">
+                        <label>bond Wolfein AIPT Stun Rifle</label>
+                        <description>Bond an Wolfein AIPT Stun Rifle.</description>
+                        <jobString>Bonding a Wolfein AIPT Stun Rifle.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_AIPTStungun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_AIPTStungun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_AIPTStungun_Bond>1</W_Weapon_AR_AIPTStungun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_AR_AIPTStungun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein AIPT Stun Rifle</label>
+                        <description>Reset a Wolfein AIPT Stun Rifle.</description>
+                        <jobString>Resetting a Wolfein AIPT Stun Rifle.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_AR_AIPTStungun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_AR_AIPTStungun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_AR_AIPTStungun_Bond>1</W_Weapon_AR_AIPTStungun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_RF_HomemadeBolt-actionRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Homemade Bolt-action Rifle</label>
+                        <description>Bond an Wolfein Homemade Bolt-action Rifle.</description>
+                        <jobString>Bonding a Wolfein Homemade Bolt-action Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_II</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_HomemadeBolt-actionRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_HomemadeBolt-actionRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_HomemadeBolt-actionRifle_Bond>1</W_Weapon_RF_HomemadeBolt-actionRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_RF_HomemadeBolt-actionRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Homemade Bolt-action Rifle</label>
+                        <description>Reset a Wolfein Homemade Bolt-action Rifle.</description>
+                        <jobString>Resetting a Wolfein Homemade Bolt-action Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_II</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_HomemadeBolt-actionRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_HomemadeBolt-actionRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_HomemadeBolt-actionRifle_Bond>1</W_Weapon_RF_HomemadeBolt-actionRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_RF_SniperRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Sniper Rifle</label>
+                        <description>Bond an Wolfein Sniper Rifle.</description>
+                        <jobString>Bonding a Wolfein Sniper Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_SniperRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_SniperRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_SniperRifle_Bond>1</W_Weapon_RF_SniperRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_RF_SniperRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Sniper Rifle</label>
+                        <description>Reset a Wolfein Sniper Rifle.</description>
+                        <jobString>Resetting a Wolfein Sniper Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_SniperRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_SniperRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_SniperRifle_Bond>1</W_Weapon_RF_SniperRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_RF_ChargeSniperRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Sniper Rifle</label>
+                        <description>Bond an Wolfein Charge Sniper Rifle.</description>
+                        <jobString>Bonding a Wolfein Charge Sniper Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_ChargeSniperRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_ChargeSniperRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_ChargeSniperRifle_Bond>1</W_Weapon_RF_ChargeSniperRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_RF_ChargeSniperRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Sniper Rifle</label>
+                        <description>Reset a Wolfein Charge Sniper Rifle.</description>
+                        <jobString>Resetting a Wolfein Charge Sniper Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_ChargeSniperRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_ChargeSniperRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_ChargeSniperRifle_Bond>1</W_Weapon_RF_ChargeSniperRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_RF_HighAccuracyCannon_Bond" Abstract="True">
+                        <label>bond Wolfein High-Accuracy Cannon</label>
+                        <description>Bond an Wolfein High-Accuracy Cannon.</description>
+                        <jobString>Bonding a Wolfein High-Accuracy Cannon.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_HighAccuracyCannon</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_HighAccuracyCannon</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_HighAccuracyCannon_Bond>1</W_Weapon_RF_HighAccuracyCannon_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_RF_HighAccuracyCannon_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein High-Accuracy Cannon</label>
+                        <description>Reset a Wolfein High-Accuracy Cannon.</description>
+                        <jobString>Resetting a Wolfein High-Accuracy Cannon.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_HighAccuracyCannon_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_HighAccuracyCannon_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_HighAccuracyCannon_Bond>1</W_Weapon_RF_HighAccuracyCannon_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_RF_RebelSniperRifle_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Sniper Rifle</label>
+                        <description>Bond an Wolfein Rebel Sniper Rifle.</description>
+                        <jobString>Bonding a Wolfein Rebel Sniper Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_RebelSniperRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_RebelSniperRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_RebelSniperRifle_Bond>1</W_Weapon_RF_RebelSniperRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_RF_RebelSniperRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Sniper Rifle</label>
+                        <description>Reset a Wolfein Rebel Sniper Rifle.</description>
+                        <jobString>Resetting a Wolfein Rebel Sniper Rifle.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RF_RebelSniperRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RF_RebelSniperRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RF_RebelSniperRifle_Bond>1</W_Weapon_RF_RebelSniperRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_MG_Minigun_Bond" Abstract="True">
+                        <label>bond Wolfein Minigun</label>
+                        <description>Bond an Wolfein Minigun.</description>
+                        <jobString>Bonding a Wolfein Minigun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_Minigun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_Minigun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_Minigun_Bond>1</W_Weapon_MG_Minigun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_MG_Minigun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Minigun</label>
+                        <description>Reset a Wolfein Minigun.</description>
+                        <jobString>Resetting a Wolfein Minigun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_Minigun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_Minigun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_Minigun_Bond>1</W_Weapon_MG_Minigun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_MG_RebelLightMachineGun_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Light MachineGun</label>
+                        <description>Bond an Wolfein Rebel Light MachineGun.</description>
+                        <jobString>Bonding a Wolfein Rebel Light MachineGun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_RebelLightMachineGun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_RebelLightMachineGun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_RebelLightMachineGun_Bond>1</W_Weapon_MG_RebelLightMachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_MG_RebelLightMachineGun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Light MachineGun</label>
+                        <description>Reset a Wolfein Rebel Light MachineGun.</description>
+                        <jobString>Resetting a Wolfein Rebel Light MachineGun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_RebelLightMachineGun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_RebelLightMachineGun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_RebelLightMachineGun_Bond>1</W_Weapon_MG_RebelLightMachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_MG_ChargeMinigun_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Minigun</label>
+                        <description>Bond an Wolfein Charge Minigun.</description>
+                        <jobString>Bonding a Wolfein Charge Minigun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_ChargeMinigun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_ChargeMinigun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_ChargeMinigun_Bond>1</W_Weapon_MG_ChargeMinigun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_MG_ChargeMinigun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Minigun</label>
+                        <description>Reset a Wolfein Charge Minigun.</description>
+                        <jobString>Resetting a Wolfein Charge Minigun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_ChargeMinigun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_ChargeMinigun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_ChargeMinigun_Bond>1</W_Weapon_MG_ChargeMinigun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_MG_TwinChargeMinigun_Bond" Abstract="True">
+                        <label>bond Wolfein Twin-Charge Minigun</label>
+                        <description>Bond an Wolfein Twin-Charge Minigun.</description>
+                        <jobString>Bonding a Wolfein Twin-Charge Minigun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_TwinChargeMinigun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_TwinChargeMinigun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_TwinChargeMinigun_Bond>1</W_Weapon_MG_TwinChargeMinigun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_MG_TwinChargeMinigun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Twin-Charge Minigun</label>
+                        <description>Reset a Wolfein Twin-Charge Minigun.</description>
+                        <jobString>Resetting a Wolfein Twin-Charge Minigun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MG_TwinChargeMinigun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MG_TwinChargeMinigun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MG_TwinChargeMinigun_Bond>1</W_Weapon_MG_TwinChargeMinigun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SG_Shotgun_Bond" Abstract="True">
+                        <label>bond Wolfein Long Barreled Shotgun</label>
+                        <description>Bond an Wolfein Long Barreled Shotgun.</description>
+                        <jobString>Bonding a Wolfein Long Barreled Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_Shotgun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_Shotgun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_Shotgun_Bond>1</W_Weapon_SG_Shotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SG_Shotgun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Long Barreled Shotgun</label>
+                        <description>Reset a Wolfein Long Barreled Shotgun.</description>
+                        <jobString>Resetting a Wolfein Long Barreled Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_Shotgun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_Shotgun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_Shotgun_Bond>1</W_Weapon_SG_Shotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SG_AutomaticShotgun_Bond" Abstract="True">
+                        <label>bond Wolfein Automatic Shotgun</label>
+                        <description>Bond an Wolfein Automatic Shotgun.</description>
+                        <jobString>Bonding a Wolfein Automatic Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_AutomaticShotgun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_AutomaticShotgun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_AutomaticShotgun_Bond>1</W_Weapon_SG_AutomaticShotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SG_AutomaticShotgun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Automatic Shotgun</label>
+                        <description>Reset a Wolfein Automatic Shotgun.</description>
+                        <jobString>Resetting a Wolfein Automatic Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_AutomaticShotgun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_AutomaticShotgun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_AutomaticShotgun_Bond>1</W_Weapon_SG_AutomaticShotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SG_ChargeAutomaticShotgun_Bond" Abstract="True">
+                        <label>bond Wolfein Charge Automatic Shotgun</label>
+                        <description>Bond an Wolfein Charge Automatic Shotgun.</description>
+                        <jobString>Bonding a Wolfein Charge Automatic Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_ChargeAutomaticShotgun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_ChargeAutomaticShotgun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_ChargeAutomaticShotgun_Bond>1</W_Weapon_SG_ChargeAutomaticShotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SG_ChargeAutomaticShotgun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Charge Automatic Shotgun</label>
+                        <description>Reset a Wolfein Charge Automatic Shotgun.</description>
+                        <jobString>Resetting a Wolfein Charge Automatic Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_IV</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_ChargeAutomaticShotgun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_ChargeAutomaticShotgun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_ChargeAutomaticShotgun_Bond>1</W_Weapon_SG_ChargeAutomaticShotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_SG_RebelShotgun_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Shotgun</label>
+                        <description>Bond an Wolfein Rebel Shotgun.</description>
+                        <jobString>Bonding a Wolfein Rebel Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_RebelShotgun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_RebelShotgun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_RebelShotgun_Bond>1</W_Weapon_SG_RebelShotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_SG_RebelShotgun_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Shotgun</label>
+                        <description>Reset a Wolfein Rebel Shotgun.</description>
+                        <jobString>Resetting a Wolfein Rebel Shotgun.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_SG_RebelShotgun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_SG_RebelShotgun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_SG_RebelShotgun_Bond>1</W_Weapon_SG_RebelShotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Launcher_GrenadeLauncher_Bond" Abstract="True">
+                        <label>bond Wolfein Grenade Launcher</label>
+                        <description>Bond an Wolfein Grenade Launcher.</description>
+                        <jobString>Bonding a Wolfein Grenade Launcher.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Launcher_GrenadeLauncher</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Launcher_GrenadeLauncher</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Launcher_GrenadeLauncher_Bond>1</W_Weapon_Launcher_GrenadeLauncher_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Launcher_GrenadeLauncher_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Grenade Launcher</label>
+                        <description>Reset a Wolfein Grenade Launcher.</description>
+                        <jobString>Resetting a Wolfein Grenade Launcher.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_III</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Launcher_GrenadeLauncher_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Launcher_GrenadeLauncher_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Launcher_GrenadeLauncher_Bond>1</W_Weapon_Launcher_GrenadeLauncher_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_Longbow_Bond" Abstract="True">
+                        <label>bond Wolfein Longbow</label>
+                        <description>Bond an Wolfein Longbow.</description>
+                        <jobString>Bonding a Wolfein Longbow.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Longbow</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Longbow</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Longbow_Bond>1</W_Weapon_Longbow_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_Longbow_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Longbow</label>
+                        <description>Reset a Wolfein Longbow.</description>
+                        <jobString>Resetting a Wolfein Longbow.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_I</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_Longbow_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_Longbow_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_Longbow_Bond>1</W_Weapon_Longbow_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_PrototypeRailBalista_Bond" Abstract="True">
+                        <label>bond Wolfein Prototype Rail Ballista</label>
+                        <description>Bond an Wolfein Prototype Rail Ballista.</description>
+                        <jobString>Bonding a Wolfein Prototype Rail Ballista.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_PrototypeRailBalista</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_PrototypeRailBalista</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_PrototypeRailBalista_Bond>1</W_Weapon_PrototypeRailBalista_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_PrototypeRailBalista_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Prototype Rail Ballista</label>
+                        <description>Reset a Wolfein Prototype Rail Ballista.</description>
+                        <jobString>Resetting a Wolfein Prototype Rail Ballista.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_Weapon_V</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_PrototypeRailBalista_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_PrototypeRailBalista_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_PrototypeRailBalista_Bond>1</W_Weapon_PrototypeRailBalista_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_MissileLauncher_Bond" Abstract="True">
+                        <label>bond Wolfein Missile Launcher</label>
+                        <description>Bond an Wolfein Missile Launcher.</description>
+                        <jobString>Bonding a Wolfein Missile Launcher.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_BlastWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MissileLauncher</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MissileLauncher</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MissileLauncher_Bond>1</W_Weapon_MissileLauncher_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_MissileLauncher_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Missile Launcher</label>
+                        <description>Reset a Wolfein Missile Launcher.</description>
+                        <jobString>Resetting a Wolfein Missile Launcher.</jobString>
+                        <researchPrerequisites>
+                            <li>Wolfein_BlastWeapon</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_MissileLauncher_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_MissileLauncher_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_MissileLauncher_Bond>1</W_Weapon_MissileLauncher_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_W_Weapon_RebelMissileLauncher_Bond" Abstract="True">
+                        <label>bond Wolfein Rebel Missile Launcher</label>
+                        <description>Bond an Wolfein Rebel Missile Launcher.</description>
+                        <jobString>Bonding a Wolfein Rebel Missile Launcher.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RebelMissileLauncher</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RebelMissileLauncher</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RebelMissileLauncher_Bond>1</W_Weapon_RebelMissileLauncher_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_W_Weapon_RebelMissileLauncher_Bond_Reset" Abstract="True">
+                        <label>Reset Wolfein Rebel Missile Launcher</label>
+                        <description>Reset a Wolfein Rebel Missile Launcher.</description>
+                        <jobString>Resetting a Wolfein Rebel Missile Launcher.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>W_Weapon_RebelMissileLauncher_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>W_Weapon_RebelMissileLauncher_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <W_Weapon_RebelMissileLauncher_Bond>1</W_Weapon_RebelMissileLauncher_Bond>
+                        </products>
+                    </RecipeDef>
+                </value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_wolfeinrace</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_OE_wolfeinrace</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_Baton_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_Baton_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_Baton_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_Baton_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_HeavyPowerAxe_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_HeavyPowerAxe_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_HeavyPowerAxe_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_HeavyPowerAxe_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_HeavyMachete_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_HeavyMachete_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_HeavyMachete_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_HeavyMachete_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_AlloySabre_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_AlloySabre_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_AlloySabre_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_AlloySabre_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_AlloyDagger_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_AlloyDagger_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_AlloyDagger_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_AlloyDagger_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_HeavySabre_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_HeavySabre_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_HeavySabre_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_HeavySabre_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_SimpleDagger_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_SimpleDagger_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_SimpleDagger_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_SimpleDagger_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_SimpleSpear_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_SimpleSpear_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_SimpleSpear_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_SimpleSpear_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_SimpleMace_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_SimpleMace_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_SimpleMace_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_SimpleMace_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_RebelAlloyDagger_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_RebelAlloyDagger_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_RebelAlloyDagger_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_RebelAlloyDagger_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_AIPTChainSaw_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_AIPTChainSaw_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_AIPTChainSaw_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_AIPTChainSaw_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_RebelPowerHammer_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_RebelPowerHammer_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_RebelPowerHammer_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_RebelPowerHammer_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_PrototypeGunlance_Bond">
+                                                <defName>Make_OE_W_Weapon_Melee_PrototypeGunlance_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Melee_PrototypeGunlance_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Melee_PrototypeGunlance_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_HomemadePistol_Bond">
+                                                <defName>Make_OE_W_Weapon_HG_HomemadePistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_HomemadePistol_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_HG_HomemadePistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_HeavyPistol_Bond">
+                                                <defName>Make_OE_W_Weapon_HG_HeavyPistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_HeavyPistol_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_HG_HeavyPistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_MachinePistol_Bond">
+                                                <defName>Make_OE_W_Weapon_HG_MachinePistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_MachinePistol_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_HG_MachinePistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_Pistol_Bond">
+                                                <defName>Make_OE_W_Weapon_HG_Pistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_Pistol_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_HG_Pistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_RebelPistol_Bond">
+                                                <defName>Make_OE_W_Weapon_HG_RebelPistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_RebelPistol_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_HG_RebelPistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_ChargeRapidFirePistol_Bond">
+                                                <defName>Make_OE_W_Weapon_HG_ChargeRapidFirePistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_HG_ChargeRapidFirePistol_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_HG_ChargeRapidFirePistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SMG_LightSubmachineGun_Bond">
+                                                <defName>Make_OE_W_Weapon_SMG_LightSubmachineGun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SMG_LightSubmachineGun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SMG_LightSubmachineGun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SMG_RebelSubmachineGun_Bond">
+                                                <defName>Make_OE_W_Weapon_SMG_RebelSubmachineGun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SMG_RebelSubmachineGun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SMG_RebelSubmachineGun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SMG_ChargeSubmachineGun_Bond">
+                                                <defName>Make_OE_W_Weapon_SMG_ChargeSubmachineGun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SMG_ChargeSubmachineGun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SMG_ChargeSubmachineGun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_HomemadeRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_HomemadeRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_HomemadeRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_HomemadeRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_Carbine_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_Carbine_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_Carbine_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_Carbine_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_AssaultRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_AssaultRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_AssaultRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_AssaultRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_RebelAssaultRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_RebelAssaultRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_RebelAssaultRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_RebelAssaultRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_ChargeAssaultRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_ChargeAssaultRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_ChargeAssaultRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_ChargeAssaultRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_ChargeCombatRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_ChargeCombatRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_ChargeCombatRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_ChargeCombatRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_AIPTStungun_Bond">
+                                                <defName>Make_OE_W_Weapon_AR_AIPTStungun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_AR_AIPTStungun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_AR_AIPTStungun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_HomemadeBolt-actionRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_RF_HomemadeBolt-actionRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_HomemadeBolt-actionRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_RF_HomemadeBolt-actionRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_SniperRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_RF_SniperRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_SniperRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_RF_SniperRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_ChargeSniperRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_RF_ChargeSniperRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_ChargeSniperRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_RF_ChargeSniperRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_HighAccuracyCannon_Bond">
+                                                <defName>Make_OE_W_Weapon_RF_HighAccuracyCannon_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_HighAccuracyCannon_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_RF_HighAccuracyCannon_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_RebelSniperRifle_Bond">
+                                                <defName>Make_OE_W_Weapon_RF_RebelSniperRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RF_RebelSniperRifle_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_RF_RebelSniperRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_Minigun_Bond">
+                                                <defName>Make_OE_W_Weapon_MG_Minigun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_Minigun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_MG_Minigun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_RebelLightMachineGun_Bond">
+                                                <defName>Make_OE_W_Weapon_MG_RebelLightMachineGun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_RebelLightMachineGun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_MG_RebelLightMachineGun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_ChargeMinigun_Bond">
+                                                <defName>Make_OE_W_Weapon_MG_ChargeMinigun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_ChargeMinigun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_MG_ChargeMinigun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_TwinChargeMinigun_Bond">
+                                                <defName>Make_OE_W_Weapon_MG_TwinChargeMinigun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MG_TwinChargeMinigun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_MG_TwinChargeMinigun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_Shotgun_Bond">
+                                                <defName>Make_OE_W_Weapon_SG_Shotgun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_Shotgun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SG_Shotgun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_AutomaticShotgun_Bond">
+                                                <defName>Make_OE_W_Weapon_SG_AutomaticShotgun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_AutomaticShotgun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SG_AutomaticShotgun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_ChargeAutomaticShotgun_Bond">
+                                                <defName>Make_OE_W_Weapon_SG_ChargeAutomaticShotgun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_ChargeAutomaticShotgun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SG_ChargeAutomaticShotgun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_RebelShotgun_Bond">
+                                                <defName>Make_OE_W_Weapon_SG_RebelShotgun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_SG_RebelShotgun_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_SG_RebelShotgun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Launcher_GrenadeLauncher_Bond">
+                                                <defName>Make_OE_W_Weapon_Launcher_GrenadeLauncher_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Launcher_GrenadeLauncher_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Launcher_GrenadeLauncher_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Longbow_Bond">
+                                                <defName>Make_OE_W_Weapon_Longbow_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_Longbow_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_Longbow_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_PrototypeRailBalista_Bond">
+                                                <defName>Make_OE_W_Weapon_PrototypeRailBalista_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_PrototypeRailBalista_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_PrototypeRailBalista_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MissileLauncher_Bond">
+                                                <defName>Make_OE_W_Weapon_MissileLauncher_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_MissileLauncher_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_MissileLauncher_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RebelMissileLauncher_Bond">
+                                                <defName>Make_OE_W_Weapon_RebelMissileLauncher_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_W_Weapon_RebelMissileLauncher_Bond_Reset">
+                                                <defName>Make_OE_W_Weapon_RebelMissileLauncher_Bond_Reset</defName>
+                                            </RecipeDef>
+                                        </value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
