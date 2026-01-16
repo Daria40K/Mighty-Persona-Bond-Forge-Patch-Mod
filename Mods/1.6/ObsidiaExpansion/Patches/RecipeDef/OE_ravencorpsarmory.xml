@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== RavenCorp's Armory =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>cutlassfish.ravencorp</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_BallisticKnife_Bond" Abstract="True">
+                        <label>bond Serica</label>
+                        <description>Bond an Serica.</description>
+                        <jobString>Bonding a Serica.</jobString>
+                        <researchPrerequisites>
+                            <li>Smithing</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_BallisticKnife</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_BallisticKnife</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_BallisticKnife_Bond>1</RCW_BallisticKnife_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_BallisticKnife_Bond_Reset" Abstract="True">
+                        <label>Reset Serica</label>
+                        <description>Reset a Serica.</description>
+                        <jobString>Resetting a Serica.</jobString>
+                        <researchPrerequisites>
+                            <li>Smithing</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_BallisticKnife_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_BallisticKnife_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_BallisticKnife_Bond>1</RCW_BallisticKnife_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_Jackhammer_Bond" Abstract="True">
+                        <label>bond Glandarius</label>
+                        <description>Bond an Glandarius.</description>
+                        <jobString>Bonding a Glandarius.</jobString>
+                        <researchPrerequisites>
+                            <li>Smithing</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Jackhammer</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Jackhammer</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Jackhammer_Bond>1</RCW_Jackhammer_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_Jackhammer_Bond_Reset" Abstract="True">
+                        <label>Reset Glandarius</label>
+                        <description>Reset a Glandarius.</description>
+                        <jobString>Resetting a Glandarius.</jobString>
+                        <researchPrerequisites>
+                            <li>Smithing</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Jackhammer_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Jackhammer_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Jackhammer_Bond>1</RCW_Jackhammer_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_AssaultRifle_Bond" Abstract="True">
+                        <label>bond Dauuricus</label>
+                        <description>Bond an Dauuricus.</description>
+                        <jobString>Bonding a Dauuricus.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_AssaultRifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_AssaultRifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_AssaultRifle_Bond>1</RCW_AssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_AssaultRifle_Bond_Reset" Abstract="True">
+                        <label>Reset Dauuricus</label>
+                        <description>Reset a Dauuricus.</description>
+                        <jobString>Resetting a Dauuricus.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_AssaultRifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_AssaultRifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_AssaultRifle_Bond>1</RCW_AssaultRifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_Shotgun_Bond" Abstract="True">
+                        <label>bond Frugilegus</label>
+                        <description>Bond an Frugilegus.</description>
+                        <jobString>Bonding a Frugilegus.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Shotgun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Shotgun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Shotgun_Bond>1</RCW_Shotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_Shotgun_Bond_Reset" Abstract="True">
+                        <label>Reset Frugilegus</label>
+                        <description>Reset a Frugilegus.</description>
+                        <jobString>Resetting a Frugilegus.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Shotgun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Shotgun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Shotgun_Bond>1</RCW_Shotgun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_Machine_Pistol_Bond" Abstract="True">
+                        <label>bond Cornix</label>
+                        <description>Bond an Cornix.</description>
+                        <jobString>Bonding a Cornix.</jobString>
+                        <researchPrerequisites>
+                            <li>BlowbackOperation</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Machine_Pistol</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Machine_Pistol</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Machine_Pistol_Bond>1</RCW_Machine_Pistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_Machine_Pistol_Bond_Reset" Abstract="True">
+                        <label>Reset Cornix</label>
+                        <description>Reset a Cornix.</description>
+                        <jobString>Resetting a Cornix.</jobString>
+                        <researchPrerequisites>
+                            <li>BlowbackOperation</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Machine_Pistol_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Machine_Pistol_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Machine_Pistol_Bond>1</RCW_Machine_Pistol_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_Sniper_Rifle_Bond" Abstract="True">
+                        <label>bond Corax</label>
+                        <description>Bond an Corax.</description>
+                        <jobString>Bonding a Corax.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Sniper_Rifle</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Sniper_Rifle</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Sniper_Rifle_Bond>1</RCW_Sniper_Rifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_Sniper_Rifle_Bond_Reset" Abstract="True">
+                        <label>Reset Corax</label>
+                        <description>Reset a Corax.</description>
+                        <jobString>Resetting a Corax.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_Sniper_Rifle_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_Sniper_Rifle_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_Sniper_Rifle_Bond>1</RCW_Sniper_Rifle_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_SubMachinegun_Bond" Abstract="True">
+                        <label>bond Albus</label>
+                        <description>Bond an Albus.</description>
+                        <jobString>Bonding a Albus.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_SubMachinegun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_SubMachinegun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_SubMachinegun_Bond>1</RCW_SubMachinegun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_SubMachinegun_Bond_Reset" Abstract="True">
+                        <label>Reset Albus</label>
+                        <description>Reset a Albus.</description>
+                        <jobString>Resetting a Albus.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_SubMachinegun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_SubMachinegun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_SubMachinegun_Bond>1</RCW_SubMachinegun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OERecipeDefBase" Name="Make_OE_RCW_GeneralPurposeMachineGun_Bond" Abstract="True">
+                        <label>bond Splendens</label>
+                        <description>Bond an Splendens.</description>
+                        <jobString>Bonding a Splendens.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_GeneralPurposeMachineGun</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_GeneralPurposeMachineGun</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_GeneralPurposeMachineGun_Bond>1</RCW_GeneralPurposeMachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_OEResetRecipeDefBase" Name="Make_OE_RCW_GeneralPurposeMachineGun_Bond_Reset" Abstract="True">
+                        <label>Reset Splendens</label>
+                        <description>Reset a Splendens.</description>
+                        <jobString>Resetting a Splendens.</jobString>
+                        <researchPrerequisites>
+                            <li>PrecisionRifling</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>RCW_GeneralPurposeMachineGun_Bond</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>RCW_GeneralPurposeMachineGun_Bond</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <RCW_GeneralPurposeMachineGun_Bond>1</RCW_GeneralPurposeMachineGun_Bond>
+                        </products>
+                    </RecipeDef>
+                </value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_ravencorpsarmory</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_OE_ravencorpsarmory</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisableObsidiaExpansion</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value>
+                                            <RecipeDef ParentName="Make_OE_RCW_BallisticKnife_Bond">
+                                                <defName>Make_OE_RCW_BallisticKnife_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_BallisticKnife_Bond_Reset">
+                                                <defName>Make_OE_RCW_BallisticKnife_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Jackhammer_Bond">
+                                                <defName>Make_OE_RCW_Jackhammer_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Jackhammer_Bond_Reset">
+                                                <defName>Make_OE_RCW_Jackhammer_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_AssaultRifle_Bond">
+                                                <defName>Make_OE_RCW_AssaultRifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_AssaultRifle_Bond_Reset">
+                                                <defName>Make_OE_RCW_AssaultRifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Shotgun_Bond">
+                                                <defName>Make_OE_RCW_Shotgun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Shotgun_Bond_Reset">
+                                                <defName>Make_OE_RCW_Shotgun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Machine_Pistol_Bond">
+                                                <defName>Make_OE_RCW_Machine_Pistol_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Machine_Pistol_Bond_Reset">
+                                                <defName>Make_OE_RCW_Machine_Pistol_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Sniper_Rifle_Bond">
+                                                <defName>Make_OE_RCW_Sniper_Rifle_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_Sniper_Rifle_Bond_Reset">
+                                                <defName>Make_OE_RCW_Sniper_Rifle_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_SubMachinegun_Bond">
+                                                <defName>Make_OE_RCW_SubMachinegun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_SubMachinegun_Bond_Reset">
+                                                <defName>Make_OE_RCW_SubMachinegun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_GeneralPurposeMachineGun_Bond">
+                                                <defName>Make_OE_RCW_GeneralPurposeMachineGun_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_OE_RCW_GeneralPurposeMachineGun_Bond_Reset">
+                                                <defName>Make_OE_RCW_GeneralPurposeMachineGun_Bond_Reset</defName>
+                                            </RecipeDef>
+                                        </value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
