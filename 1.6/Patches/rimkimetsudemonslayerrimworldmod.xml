@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== RimKimetsu -Demon Slayer Rimworld Mod =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>will.demonslayerrimworldmod</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_AgatsumaZenitsu_Bond" Abstract="True">
+                        <label>persona Zenitsu's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_AgatsumaZenitsu</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <equipmentType>Primary</equipmentType>
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_Basic_Bond" Abstract="True">
+                        <label>persona Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_Normal</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <equipmentType>Primary</equipmentType>
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_HashibiraInosuke_Bond" Abstract="True">
+                        <label>persona Inosuke's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_HashibiraInosuke</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_HashibiraInosukeDual_Bond" Abstract="True">
+                        <label>persona Inosuke's Nichirin Blade (dont use WIP)</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_HashibiraInosukeDual</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offset>(0.4, 0, 0.4)</offset>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_IguroObanai_Bond" Abstract="True">
+                        <label>persona Obanai's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_IguroObanai</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_KamadoTanjiro_Bond" Abstract="True">
+                        <label>persona Tanjiro's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_KamadoTanjiro</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_KanrojiMitsuri_Bond" Abstract="True">
+                        <label>persona Mitsuri's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_KanrojiMitsuri</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_KochoKanae_Bond" Abstract="True">
+                        <label>persona Kanae's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_KochoKanae</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_KochoShinobu_Bond" Abstract="True">
+                        <label>persona Shinobu's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_KochoShinobu</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_Kokushibo_two_Bond" Abstract="True">
+                        <label>persona Full Flesh Nichirin</label>
+                        <description>A warped version of a Nichirin.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_Kokushibo_2</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_Kokushibo_Bond" Abstract="True">
+                        <label>persona Flesh Nichirin</label>
+                        <description>A warped version of a Nichirin.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_Kokushibo</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_RengokuKyojuro_Bond" Abstract="True">
+                        <label>persona Rengoku's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_RengokuKyojuro</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_ShinazugawaGenya_Bond" Abstract="True">
+                        <label>persona Genya's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_ShinazugawaGenya</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_ShinazugawaSanemi_Bond" Abstract="True">
+                        <label>persona Sanemi's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_ShinazugawaSanemi</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_TokitoMuichiro_Bond" Abstract="True">
+                        <label>persona Muochiro's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_TokitoMuichiro</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_TomiokaGiyu_Bond" Abstract="True">
+                        <label>persona Giyu's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_TomiokaGiyu</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_TsugikuniMichikatsu_Bond" Abstract="True">
+                        <label>persona Michikatsu's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_TsugikuniMichikatsu</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_TsugikuniYoriichi_Bond" Abstract="True">
+                        <label>persona Yoriichi's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_TsugikuniYoriichi</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_TsuyuriKanao_Bond" Abstract="True">
+                        <label>persona Kanao's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_TsuyuriKanao</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_UzuiTengen_Bond" Abstract="True">
+                        <label>persona Uzui's Nichirin Blade</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_UzuiTengen</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                        <modExtensions>
+                            <li Class="AnimeArsenal.GeneDamageModExtension">
+                                <damageType>Cut</damageType>
+                                <damageAmount>30</damageAmount>
+                                <targetGene>BloodDemonArt</targetGene>
+                                <armorPenetration>0.8</armorPenetration>
+                                <targetBodyParts>
+                                    <li>Neck</li>
+                                    <li>AA_DemonNeck</li>
+                                </targetBodyParts>
+                                <damageOnHit>true</damageOnHit>
+                                <continuousDamage>false</continuousDamage>
+                                <applyOnGeneAdd>false</applyOnGeneAdd>
+                                <applyOnGeneRemove>false</applyOnGeneRemove>
+                            </li>
+                            <li Class="AnimeArsenal.DrawOffsetExt">
+                                <offsetEast>(0.2, 0, 0.5)</offsetEast>
+                                <offsetWest>(-0.05, 0, -0.3)</offsetWest>
+                                <offsetNorth>(0, 0, 0.05)</offsetNorth>
+                                <offsetSouth>(0, -0.1, 0.15)</offsetSouth>
+                            </li>
+                        </modExtensions>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="NichirinSword_UzuiTengenDual_Bond" Abstract="True">
+                        <label>persona Uzui's Nichirin Blade (dont use WIP)</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinSword_UzuiTengenDual</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Sharp_Quality" Name="Nichirin_Chained_Spiked_Flail_and_Axe_Bond" Abstract="True">
+                        <label>persona The Nichirin Chained Spiked Flail and Axe</label>
+                        <description>A nichirin blade capable of killing demons.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/Fail_SpikeBall</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>1.2</drawSize>
+                        </graphicData>
+                        <drawerType>MapMeshAndRealTime</drawerType>
+                        <recipeMaker />
+                        <equipmentType>Primary</equipmentType>
+                        <techLevel>Medieval</techLevel>
+
+
+                        <statBases>
+                            <Mass>1.5</Mass>
+                        </statBases>
+                        <recipeMaker>
+                            <skillRequirements>
+                                <Crafting>12</Crafting>
+                            </skillRequirements>
+                            <displayPriority>400</displayPriority>
+                        </recipeMaker>
+                        <equippedAngleOffset>-50</equippedAngleOffset>
+                        <equippedDistanceOffset>0</equippedDistanceOffset>
+                        <tools>
+                            <li>
+                                <label>blade back</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>17.742</power>
+                                <cooldownTime>1.53</cooldownTime>
+                            </li>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>30.0</power>
+                                <cooldownTime>0.935</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="NichirinGun_ShinazugawaGenya_Bond" Abstract="True">
+                        <label>persona Nichirin Shotgun</label>
+                        <description>A double-barreled shotgun that fires specialized ammunition.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Things/Item/Equipment/WeaponMelee/NichirinGun_ShinazugawaGenya</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <uiIconScale>1.4</uiIconScale>
+                        <soundInteract>Interact_Shotgun</soundInteract>
+                        <statBases>
+                            <Mass>1.4</Mass>
+                            <AccuracyTouch>0.88</AccuracyTouch>
+                            <AccuracyShort>0.825</AccuracyShort>
+                            <AccuracyMedium>0.495</AccuracyMedium>
+                            <AccuracyLong>0.385</AccuracyLong>
+                            <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
+                        </statBases>
+                        <weaponTags>
+                            <li>SimpleGun</li>
+                            <li>Gun</li>
+                        </weaponTags>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>NichirinBullet_Bond</defaultProjectile>
+                                <warmupTime>0.3</warmupTime>
+                                <range>25.9</range>
+                                <soundCast>Shot_Shotgun</soundCast>
+                                <soundCastTail>GunTail_Light</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <tools>
+                            <li>
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_rimkimetsudemonslayerrimworldmod</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+                            <ThingDef ParentName="NichirinSword_AgatsumaZenitsu_Bond">
+                                <defName>NichirinSword_AgatsumaZenitsu_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_Basic_Bond">
+                                <defName>NichirinSword_Basic_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_HashibiraInosuke_Bond">
+                                <defName>NichirinSword_HashibiraInosuke_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_HashibiraInosukeDual_Bond">
+                                <defName>NichirinSword_HashibiraInosukeDual_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_IguroObanai_Bond">
+                                <defName>NichirinSword_IguroObanai_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_KamadoTanjiro_Bond">
+                                <defName>NichirinSword_KamadoTanjiro_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_KanrojiMitsuri_Bond">
+                                <defName>NichirinSword_KanrojiMitsuri_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_KochoKanae_Bond">
+                                <defName>NichirinSword_KochoKanae_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_KochoShinobu_Bond">
+                                <defName>NichirinSword_KochoShinobu_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_Kokushibo_two_Bond">
+                                <defName>NichirinSword_Kokushibo_two_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_Kokushibo_Bond">
+                                <defName>NichirinSword_Kokushibo_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_RengokuKyojuro_Bond">
+                                <defName>NichirinSword_RengokuKyojuro_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_ShinazugawaGenya_Bond">
+                                <defName>NichirinSword_ShinazugawaGenya_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_ShinazugawaSanemi_Bond">
+                                <defName>NichirinSword_ShinazugawaSanemi_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_TokitoMuichiro_Bond">
+                                <defName>NichirinSword_TokitoMuichiro_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_TomiokaGiyu_Bond">
+                                <defName>NichirinSword_TomiokaGiyu_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_TsugikuniMichikatsu_Bond">
+                                <defName>NichirinSword_TsugikuniMichikatsu_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_TsugikuniYoriichi_Bond">
+                                <defName>NichirinSword_TsugikuniYoriichi_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_TsuyuriKanao_Bond">
+                                <defName>NichirinSword_TsuyuriKanao_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_UzuiTengen_Bond">
+                                <defName>NichirinSword_UzuiTengen_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinSword_UzuiTengenDual_Bond">
+                                <defName>NichirinSword_UzuiTengenDual_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="Nichirin_Chained_Spiked_Flail_and_Axe_Bond">
+                                <defName>Nichirin_Chained_Spiked_Flail_and_Axe_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="NichirinGun_ShinazugawaGenya_Bond">
+                                <defName>NichirinGun_ShinazugawaGenya_Bond</defName>
+                            </ThingDef>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

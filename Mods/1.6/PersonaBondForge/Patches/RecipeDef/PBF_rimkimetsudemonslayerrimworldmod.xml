@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== RimKimetsu -Demon Slayer Rimworld Mod =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>will.demonslayerrimworldmod</li>
+        </mods>
+        <packageId>true</packageId>
+
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_AgatsumaZenitsu_Bond" Abstract="True">
+                        <label>bond Zenitsu's Nichirin Blade</label>
+                        <description>Bond an Zenitsu's Nichirin Blade.</description>
+                        <jobString>Bonding a Zenitsu's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_AgatsumaZenitsu</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_AgatsumaZenitsu</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_AgatsumaZenitsu_Bond>1</NichirinSword_AgatsumaZenitsu_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_Basic_Bond" Abstract="True">
+                        <label>bond Nichirin Blade</label>
+                        <description>Bond an Nichirin Blade.</description>
+                        <jobString>Bonding a Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_Basic</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_Basic</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_Basic_Bond>1</NichirinSword_Basic_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_HashibiraInosuke_Bond" Abstract="True">
+                        <label>bond Inosuke's Nichirin Blade</label>
+                        <description>Bond an Inosuke's Nichirin Blade.</description>
+                        <jobString>Bonding a Inosuke's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_HashibiraInosuke</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_HashibiraInosuke</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_HashibiraInosuke_Bond>1</NichirinSword_HashibiraInosuke_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_HashibiraInosukeDual_Bond" Abstract="True">
+                        <label>bond Inosuke's Nichirin Blade (dont use WIP)</label>
+                        <description>Bond an Inosuke's Nichirin Blade (dont use WIP).</description>
+                        <jobString>Bonding a Inosuke's Nichirin Blade (dont use WIP).</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_HashibiraInosukeDual</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_HashibiraInosukeDual</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_HashibiraInosukeDual_Bond>1</NichirinSword_HashibiraInosukeDual_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_IguroObanai_Bond" Abstract="True">
+                        <label>bond Obanai's Nichirin Blade</label>
+                        <description>Bond an Obanai's Nichirin Blade.</description>
+                        <jobString>Bonding a Obanai's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_IguroObanai</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_IguroObanai</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_IguroObanai_Bond>1</NichirinSword_IguroObanai_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_KamadoTanjiro_Bond" Abstract="True">
+                        <label>bond Tanjiro's Nichirin Blade</label>
+                        <description>Bond an Tanjiro's Nichirin Blade.</description>
+                        <jobString>Bonding a Tanjiro's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_KamadoTanjiro</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_KamadoTanjiro</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_KamadoTanjiro_Bond>1</NichirinSword_KamadoTanjiro_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_KanrojiMitsuri_Bond" Abstract="True">
+                        <label>bond Mitsuri's Nichirin Blade</label>
+                        <description>Bond an Mitsuri's Nichirin Blade.</description>
+                        <jobString>Bonding a Mitsuri's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_KanrojiMitsuri</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_KanrojiMitsuri</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_KanrojiMitsuri_Bond>1</NichirinSword_KanrojiMitsuri_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_KochoKanae_Bond" Abstract="True">
+                        <label>bond Kanae's Nichirin Blade</label>
+                        <description>Bond an Kanae's Nichirin Blade.</description>
+                        <jobString>Bonding a Kanae's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_KochoKanae</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_KochoKanae</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_KochoKanae_Bond>1</NichirinSword_KochoKanae_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_KochoShinobu_Bond" Abstract="True">
+                        <label>bond Shinobu's Nichirin Blade</label>
+                        <description>Bond an Shinobu's Nichirin Blade.</description>
+                        <jobString>Bonding a Shinobu's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_KochoShinobu</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_KochoShinobu</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_KochoShinobu_Bond>1</NichirinSword_KochoShinobu_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_Kokushibo_two_Bond" Abstract="True">
+                        <label>bond Full Flesh Nichirin</label>
+                        <description>Bond an Full Flesh Nichirin.</description>
+                        <jobString>Bonding a Full Flesh Nichirin.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_FleshBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_Kokushibo_two</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_Kokushibo_two</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_Kokushibo_two_Bond>1</NichirinSword_Kokushibo_two_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_Kokushibo_Bond" Abstract="True">
+                        <label>bond Flesh Nichirin</label>
+                        <description>Bond an Flesh Nichirin.</description>
+                        <jobString>Bonding a Flesh Nichirin.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_FleshBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_Kokushibo</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_Kokushibo</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_Kokushibo_Bond>1</NichirinSword_Kokushibo_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_RengokuKyojuro_Bond" Abstract="True">
+                        <label>bond Rengoku's Nichirin Blade</label>
+                        <description>Bond an Rengoku's Nichirin Blade.</description>
+                        <jobString>Bonding a Rengoku's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_RengokuKyojuro</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_RengokuKyojuro</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_RengokuKyojuro_Bond>1</NichirinSword_RengokuKyojuro_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_ShinazugawaGenya_Bond" Abstract="True">
+                        <label>bond Genya's Nichirin Blade</label>
+                        <description>Bond an Genya's Nichirin Blade.</description>
+                        <jobString>Bonding a Genya's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_ShinazugawaGenya</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_ShinazugawaGenya</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_ShinazugawaGenya_Bond>1</NichirinSword_ShinazugawaGenya_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_ShinazugawaSanemi_Bond" Abstract="True">
+                        <label>bond Sanemi's Nichirin Blade</label>
+                        <description>Bond an Sanemi's Nichirin Blade.</description>
+                        <jobString>Bonding a Sanemi's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_ShinazugawaSanemi</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_ShinazugawaSanemi</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_ShinazugawaSanemi_Bond>1</NichirinSword_ShinazugawaSanemi_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_TokitoMuichiro_Bond" Abstract="True">
+                        <label>bond Muochiro's Nichirin Blade</label>
+                        <description>Bond an Muochiro's Nichirin Blade.</description>
+                        <jobString>Bonding a Muochiro's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_TokitoMuichiro</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_TokitoMuichiro</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_TokitoMuichiro_Bond>1</NichirinSword_TokitoMuichiro_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_TomiokaGiyu_Bond" Abstract="True">
+                        <label>bond Giyu's Nichirin Blade</label>
+                        <description>Bond an Giyu's Nichirin Blade.</description>
+                        <jobString>Bonding a Giyu's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_TomiokaGiyu</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_TomiokaGiyu</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_TomiokaGiyu_Bond>1</NichirinSword_TomiokaGiyu_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_TsugikuniMichikatsu_Bond" Abstract="True">
+                        <label>bond Michikatsu's Nichirin Blade</label>
+                        <description>Bond an Michikatsu's Nichirin Blade.</description>
+                        <jobString>Bonding a Michikatsu's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_TsugikuniMichikatsu</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_TsugikuniMichikatsu</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_TsugikuniMichikatsu_Bond>1</NichirinSword_TsugikuniMichikatsu_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_TsugikuniYoriichi_Bond" Abstract="True">
+                        <label>bond Yoriichi's Nichirin Blade</label>
+                        <description>Bond an Yoriichi's Nichirin Blade.</description>
+                        <jobString>Bonding a Yoriichi's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_TsugikuniYoriichi</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_TsugikuniYoriichi</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_TsugikuniYoriichi_Bond>1</NichirinSword_TsugikuniYoriichi_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_TsuyuriKanao_Bond" Abstract="True">
+                        <label>bond Kanao's Nichirin Blade</label>
+                        <description>Bond an Kanao's Nichirin Blade.</description>
+                        <jobString>Bonding a Kanao's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_TsuyuriKanao</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_TsuyuriKanao</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_TsuyuriKanao_Bond>1</NichirinSword_TsuyuriKanao_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_UzuiTengen_Bond" Abstract="True">
+                        <label>bond Uzui's Nichirin Blade</label>
+                        <description>Bond an Uzui's Nichirin Blade.</description>
+                        <jobString>Bonding a Uzui's Nichirin Blade.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_UzuiTengen</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_UzuiTengen</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_UzuiTengen_Bond>1</NichirinSword_UzuiTengen_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinSword_UzuiTengenDual_Bond" Abstract="True">
+                        <label>bond Uzui's Nichirin Blade (dont use WIP)</label>
+                        <description>Bond an Uzui's Nichirin Blade (dont use WIP).</description>
+                        <jobString>Bonding a Uzui's Nichirin Blade (dont use WIP).</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinSword_UzuiTengenDual</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinSword_UzuiTengenDual</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinSword_UzuiTengenDual_Bond>1</NichirinSword_UzuiTengenDual_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_Nichirin_Chained_Spiked_Flail_and_Axe_Bond" Abstract="True">
+                        <label>bond The Nichirin Chained Spiked Flail and Axe</label>
+                        <description>Bond an The Nichirin Chained Spiked Flail and Axe.</description>
+                        <jobString>Bonding a The Nichirin Chained Spiked Flail and Axe.</jobString>
+                        <researchPrerequisites>
+                            <li>AA_NichinrinBladeResearch</li>
+                        </researchPrerequisites>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Nichirin_Chained_Spiked_Flail_and_Axe</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>Nichirin_Chained_Spiked_Flail_and_Axe</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <Nichirin_Chained_Spiked_Flail_and_Axe_Bond>1</Nichirin_Chained_Spiked_Flail_and_Axe_Bond>
+                        </products>
+                    </RecipeDef>
+                    <RecipeDef ParentName="MPBFPM_RecipeDefBase" Name="Make_NichirinGun_ShinazugawaGenya_Bond" Abstract="True">
+                        <label>bond Nichirin Shotgun</label>
+                        <description>Bond an Nichirin Shotgun.</description>
+                        <jobString>Bonding a Nichirin Shotgun.</jobString>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>NichirinGun_ShinazugawaGenya</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>NichirinGun_ShinazugawaGenya</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NichirinGun_ShinazugawaGenya_Bond>1</NichirinGun_ShinazugawaGenya_Bond>
+                        </products>
+                    </RecipeDef>
+                </value>
+            </Operation>
+
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_rimkimetsudemonslayerrimworldmod</key>
+                <defaultValue>true</defaultValue>
+
+                <caseTrue>
+                    <Operation Class="XmlExtensions.OptionalPatch">
+                        <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                        <key>Daria40K_MightyPersonaBondForgePatch_PBF_rimkimetsudemonslayerrimworldmod</key>
+                        <defaultValue>true</defaultValue>
+
+                        <caseTrue>
+                            <Operation Class="XmlExtensions.OptionalPatch">
+                                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                                <key>Daria40K_MightyPersonaBondForgePatch_DisablePersonaBondForge</key>
+                                <defaultValue>false</defaultValue>
+
+                                <caseFalse>
+                                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                                        <xpath>Defs</xpath>
+                                        <value>
+                                            <RecipeDef ParentName="Make_NichirinSword_AgatsumaZenitsu_Bond">
+                                                <defName>Make_NichirinSword_AgatsumaZenitsu_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_Basic_Bond">
+                                                <defName>Make_NichirinSword_Basic_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_HashibiraInosuke_Bond">
+                                                <defName>Make_NichirinSword_HashibiraInosuke_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_HashibiraInosukeDual_Bond">
+                                                <defName>Make_NichirinSword_HashibiraInosukeDual_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_IguroObanai_Bond">
+                                                <defName>Make_NichirinSword_IguroObanai_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_KamadoTanjiro_Bond">
+                                                <defName>Make_NichirinSword_KamadoTanjiro_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_KanrojiMitsuri_Bond">
+                                                <defName>Make_NichirinSword_KanrojiMitsuri_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_KochoKanae_Bond">
+                                                <defName>Make_NichirinSword_KochoKanae_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_KochoShinobu_Bond">
+                                                <defName>Make_NichirinSword_KochoShinobu_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_Kokushibo_two_Bond">
+                                                <defName>Make_NichirinSword_Kokushibo_two_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_Kokushibo_Bond">
+                                                <defName>Make_NichirinSword_Kokushibo_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_RengokuKyojuro_Bond">
+                                                <defName>Make_NichirinSword_RengokuKyojuro_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_ShinazugawaGenya_Bond">
+                                                <defName>Make_NichirinSword_ShinazugawaGenya_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_ShinazugawaSanemi_Bond">
+                                                <defName>Make_NichirinSword_ShinazugawaSanemi_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_TokitoMuichiro_Bond">
+                                                <defName>Make_NichirinSword_TokitoMuichiro_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_TomiokaGiyu_Bond">
+                                                <defName>Make_NichirinSword_TomiokaGiyu_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_TsugikuniMichikatsu_Bond">
+                                                <defName>Make_NichirinSword_TsugikuniMichikatsu_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_TsugikuniYoriichi_Bond">
+                                                <defName>Make_NichirinSword_TsugikuniYoriichi_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_TsuyuriKanao_Bond">
+                                                <defName>Make_NichirinSword_TsuyuriKanao_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_UzuiTengen_Bond">
+                                                <defName>Make_NichirinSword_UzuiTengen_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinSword_UzuiTengenDual_Bond">
+                                                <defName>Make_NichirinSword_UzuiTengenDual_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_Nichirin_Chained_Spiked_Flail_and_Axe_Bond">
+                                                <defName>Make_Nichirin_Chained_Spiked_Flail_and_Axe_Bond</defName>
+                                            </RecipeDef>
+                                            <RecipeDef ParentName="Make_NichirinGun_ShinazugawaGenya_Bond">
+                                                <defName>Make_NichirinGun_ShinazugawaGenya_Bond</defName>
+                                            </RecipeDef>
+                                        </value>
+                                    </Operation>
+                                </caseFalse>
+                            </Operation>
+                        </caseTrue>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
