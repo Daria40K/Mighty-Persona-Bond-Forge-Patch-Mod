@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ===== RavenCorp's Armory =====
+-->
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>cutlassfish.ravencorp</li>
+        </mods>
+        <packageId>true</packageId>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Blunt_Quality" Name="RCW_BallisticKnife_Bond" Abstract="True">
+                        <label>persona Serica</label>
+                        <description>A heavy dagger with strong thrusting power.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Ballistic Melee/Ballistic Knife</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(0.7,0.7)</drawSize>
+                        </graphicData>
+                        <equippedAngleOffset>-65</equippedAngleOffset>
+                        <weaponTags>
+                            <li>IndustrialMeleeDecent</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>Melee</li>
+                        </weaponClasses>
+                        <uiIconScale>1.4</uiIconScale>
+                        <techLevel>Industrial</techLevel>
+                        <statBases>
+                            <Mass>0.55</Mass>
+                        </statBases>
+                        <tools>
+                            <li>
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>19.437</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>tip</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>13.74</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseMeleeWeapon_Blunt_Quality" Name="RCW_Jackhammer_Bond" Abstract="True">
+                        <label>persona Glandarius</label>
+                        <description>An industrial jackhammer.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <possessionCount>1</possessionCount>
+                        <graphicData>
+                            <texPath>Ballistic Melee/Jackhammer</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(1.3,1.3)</drawSize>
+                        </graphicData>
+                        <equippedAngleOffset>-65</equippedAngleOffset>
+                        <weaponTags>
+                            <li>IndustrialMeleeDecent</li>
+                        </weaponTags>
+                        <weaponClasses>
+                            <li>Melee</li>
+                        </weaponClasses>
+                        <uiIconScale>1.4</uiIconScale>
+                        <techLevel>Industrial</techLevel>
+                        <statBases>
+                            <Mass>4.5</Mass>
+                        </statBases>
+                        <tools>
+                            <li>
+                                <label>body</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>12.0</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>dril</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>19.437</power>
+                                <cooldownTime>0.34</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="RCW_AssaultRifle_Bond" Abstract="True">
+                        <label>persona Dauuricus</label>
+                        <description>A special rifle that fires armor-piercing rounds; effective against armored targets.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <uiIconScale>1.4</uiIconScale>
+                        <graphicData>
+                            <texPath>Ballistic Weapons/VG-1</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(1.5,1.5)</drawSize>
+                        </graphicData>
+                        <soundInteract>Interact_Rifle</soundInteract>
+                        <statBases>
+                            <Mass>4.5</Mass>
+                            <AccuracyTouch>0.715</AccuracyTouch>
+                            <AccuracyShort>0.66</AccuracyShort>
+                            <AccuracyMedium>0.638</AccuracyMedium>
+                            <AccuracyLong>0.44</AccuracyLong>
+                            <RangedWeapon_Cooldown>1.53</RangedWeapon_Cooldown>
+                        </statBases>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>RCW_Bolt_Bond</defaultProjectile>
+                                <warmupTime>1.2</warmupTime>
+                                <range>27.9</range>
+                                <burstShotCount>5</burstShotCount>
+                                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                                <soundCast>Shot_AssaultRifle</soundCast>
+                                <soundCastTail>GunTail_Medium</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <weaponTags>
+                            <li>IndustrialGunAdvanced</li>
+                            <li>AssaultRifle</li>
+                        </weaponTags>
+                        <tools>
+                            <li>
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="RCW_Shotgun_Bond" Abstract="True">
+                        <label>persona Frugilegus</label>
+                        <description>A weapon that fires rounds from multiple chambers, scattering to one target.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <uiIconScale>1.4</uiIconScale>
+                        <graphicData>
+                            <texPath>Ballistic Weapons/Hydra</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(1.5,1.5)</drawSize>
+                        </graphicData>
+                        <soundInteract>Interact_Shotgun</soundInteract>
+                        <statBases>
+                            <Mass>4.5</Mass>
+                            <AccuracyTouch>0.957</AccuracyTouch>
+                            <AccuracyShort>0.77</AccuracyShort>
+                            <AccuracyMedium>0.44</AccuracyMedium>
+                            <AccuracyLong>0.275</AccuracyLong>
+                            <RangedWeapon_Cooldown>1.53</RangedWeapon_Cooldown>
+                        </statBases>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>RCW_Pallet_Bond</defaultProjectile>
+                                <warmupTime>1.0</warmupTime>
+                                <range>15.9</range>
+                                <soundCast>Shot_Shotgun</soundCast>
+                                <soundCastTail>GunTail_Heavy</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <weaponTags>
+                            <li>IndustrialGunAdvanced</li>
+                            <li>Shotgun</li>
+                        </weaponTags>
+                        <tools>
+                            <li>
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="RCW_Machine_Pistol_Bond" Abstract="True">
+                        <label>persona Cornix</label>
+                        <description>A portable personal defense weapon that fires pistol rounds in rapid succession.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <uiIconScale>1.4</uiIconScale>
+                        <graphicData>
+                            <texPath>Ballistic Weapons/PPZ</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(0.7,0.7)</drawSize>
+                        </graphicData>
+                        <soundInteract>Interact_SMG</soundInteract>
+                        <statBases>
+                            <Mass>2.5</Mass>
+                            <AccuracyTouch>0.99</AccuracyTouch>
+                            <AccuracyShort>0.77</AccuracyShort>
+                            <AccuracyMedium>0.385</AccuracyMedium>
+                            <AccuracyLong>0.165</AccuracyLong>
+                            <RangedWeapon_Cooldown>0.722</RangedWeapon_Cooldown>
+                        </statBases>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>RCW_Bullet_Pistol_Bond</defaultProjectile>
+                                <warmupTime>0.4</warmupTime>
+                                <range>19.9</range>
+                                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                                <burstShotCount>4</burstShotCount>
+                                <soundCast>Shot_MachinePistol</soundCast>
+                                <soundCastTail>GunTail_Light</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <weaponTags>
+                            <li>IndustrialGunAdvanced</li>
+                            <li>MachinePistol</li>
+                        </weaponTags>
+                        <tools>
+                            <li>
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="RCW_Sniper_Rifle_Bond" Abstract="True">
+                        <label>persona Corax</label>
+                        <description>A weapon designed exclusively for large targets, firing powerful rounds.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <uiIconScale>1.4</uiIconScale>
+                        <graphicData>
+                            <texPath>Ballistic Weapons/&#352;ARAC 99</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(1.6,1.6)</drawSize>
+                        </graphicData>
+                        <soundInteract>Interact_Rifle</soundInteract>
+                        <statBases>
+                            <Mass>5.5</Mass>
+                            <AccuracyTouch>0.385</AccuracyTouch>
+                            <AccuracyShort>0.165</AccuracyShort>
+                            <AccuracyMedium>0.715</AccuracyMedium>
+                            <AccuracyLong>0.99</AccuracyLong>
+                            <RangedWeapon_Cooldown>2.125</RangedWeapon_Cooldown>
+                        </statBases>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>RCW_Shell_Bond</defaultProjectile>
+                                <warmupTime>2.4</warmupTime>
+                                <range>42.9</range>
+                                <soundCast>Shot_TurretSniper</soundCast>
+                                <soundCastTail>GunTail_Heavy</soundCastTail>
+                                <muzzleFlashScale>10</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <weaponTags>
+                            <li>IndustrialGunAdvanced</li>
+                            <li>SniperRifle</li>
+                        </weaponTags>
+                        <tools>
+                            <li>
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="RCW_SubMachinegun_Bond" Abstract="True">
+                        <label>persona Albus</label>
+                        <description>A portable personal defense weapon that fires small-caliber rounds in rapid succession.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <uiIconScale>1.4</uiIconScale>
+                        <graphicData>
+                            <texPath>Ballistic Weapons/PP-90</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(1.4,1.4)</drawSize>
+                        </graphicData>
+                        <soundInteract>Interact_SMG</soundInteract>
+                        <statBases>
+                            <Mass>4.5</Mass>
+                            <AccuracyTouch>0.715</AccuracyTouch>
+                            <AccuracyShort>0.66</AccuracyShort>
+                            <AccuracyMedium>0.638</AccuracyMedium>
+                            <AccuracyLong>0.44</AccuracyLong>
+                            <RangedWeapon_Cooldown>1.53</RangedWeapon_Cooldown>
+                        </statBases>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>RCW_Bullet_SMG_Bond</defaultProjectile>
+                                <warmupTime>0.5</warmupTime>
+                                <range>22.9</range>
+                                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                                <burstShotCount>4</burstShotCount>
+                                <soundCast>Shot_MachinePistol</soundCast>
+                                <soundCastTail>GunTail_Light</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <weaponTags>
+                            <li>IndustrialGunAdvanced</li>
+                            <li>SubMachineGun</li>
+                        </weaponTags>
+                        <tools>
+                            <li>
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseHumanMakeableGun" Name="RCW_GeneralPurposeMachineGun_Bond" Abstract="True">
+                        <label>persona Splendens</label>
+                        <description>A squad support weapon useful in a variety of situations.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+                        <uiIconScale>1.4</uiIconScale>
+                        <graphicData>
+                            <texPath>Ballistic Weapons/FG-42</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                            <drawSize>(1.5,1.5)</drawSize>
+                        </graphicData>
+                        <soundInteract>Interact_Rifle</soundInteract>
+                        <statBases>
+                            <Mass>4.5</Mass>
+                            <AccuracyTouch>0.715</AccuracyTouch>
+                            <AccuracyShort>0.66</AccuracyShort>
+                            <AccuracyMedium>0.638</AccuracyMedium>
+                            <AccuracyLong>0.44</AccuracyLong>
+                            <RangedWeapon_Cooldown>1.53</RangedWeapon_Cooldown>
+                        </statBases>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>RCW_Bullet_LMG_Bond</defaultProjectile>
+                                <warmupTime>1.6</warmupTime>
+                                <range>30.9</range>
+                                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                                <burstShotCount>8</burstShotCount>
+                                <soundCast>Shot_Minigun</soundCast>
+                                <soundCastTail>GunTail_Medium</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                            </li>
+                        </verbs>
+                        <weaponTags>
+                            <li>IndustrialGunAdvanced</li>
+                            <li>SubMachineGun</li>
+                        </weaponTags>
+                        <tools>
+                            <li>
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                            <li>
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>9.75</power>
+                                <cooldownTime>1.7</cooldownTime>
+                            </li>
+                        </tools>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="RCW_Bolt_Bond" Abstract="True">
+                        <label>assault rifle bullet</label>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Big</texPath>
+                            <drawSize>1.3</drawSize>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>18</damageAmountBase>
+                            <stoppingPower>2</stoppingPower>
+                            <armorPenetrationBase>0.4</armorPenetrationBase>
+                            <speed>65</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_BaseBullet" Name="RCW_Pallet_Bond" Abstract="True">
+                        <label>shotgun pallet</label>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+                            <drawSize>1.5</drawSize>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Stab</damageDef>
+                            <damageAmountBase>24</damageAmountBase>
+                            <stoppingPower>4</stoppingPower>
+                            <armorPenetrationBase>0.1</armorPenetrationBase>
+                            <speed>70</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="RCW_Bullet_Pistol_Bond" Abstract="True">
+                        <label>machine pistol bullet</label>
+                        <thingClass>Bullet</thingClass>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Small</texPath>
+                            <drawSize>1.2</drawSize>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>11</damageAmountBase>
+                            <speed>55</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="RCW_Shell_Bond" Abstract="True">
+                        <label>sniper rifle bullet</label>
+                        <thingClass>Bullet</thingClass>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Big</texPath>
+                            <drawSize>1.5</drawSize>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>68</damageAmountBase>
+                            <stoppingPower>1</stoppingPower>
+                            <armorPenetrationBase>0.7</armorPenetrationBase>
+                            <speed>85</speed>
+                            <extraDamages>
+                                <li>
+                                    <def>Bomb</def>
+                                    <amount>20</amount>
+                                    <chance>1.0</chance>
+                                </li>
+                            </extraDamages>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="RCW_Bullet_SMG_Bond" Abstract="True">
+                        <label>machine pistol bullet</label>
+                        <thingClass>Bullet</thingClass>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Small</texPath>
+                            <drawSize>1.2</drawSize>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>13</damageAmountBase>
+                            <speed>55</speed>
+                        </projectile>
+                    </ThingDef>
+                    <ThingDef ParentName="MPBFPM_Bullet" Name="RCW_Bullet_LMG_Bond" Abstract="True">
+                        <label>machine pistol bullet</label>
+                        <thingClass>Bullet</thingClass>
+                        <graphicData>
+                            <texPath>Things/Projectile/Bullet_Small</texPath>
+                            <drawSize>1.3</drawSize>
+                            <shaderType>TransparentPostLight</shaderType>
+                        </graphicData>
+                        <projectile>
+                            <damageDef>Bullet</damageDef>
+                            <damageAmountBase>15</damageAmountBase>
+                            <stoppingPower>1</stoppingPower>
+                            <armorPenetrationBase>0.2</armorPenetrationBase>
+                            <speed>65</speed>
+                        </projectile>
+                    </ThingDef>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Daria40K.MightyPersonaBondForgePatch</modId>
+                <key>Daria40K_MightyPersonaBondForgePatch_ravencorpsarmory</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+                            <ThingDef ParentName="RCW_BallisticKnife_Bond">
+                                <defName>RCW_BallisticKnife_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Jackhammer_Bond">
+                                <defName>RCW_Jackhammer_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_AssaultRifle_Bond">
+                                <defName>RCW_AssaultRifle_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Shotgun_Bond">
+                                <defName>RCW_Shotgun_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Machine_Pistol_Bond">
+                                <defName>RCW_Machine_Pistol_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Sniper_Rifle_Bond">
+                                <defName>RCW_Sniper_Rifle_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_SubMachinegun_Bond">
+                                <defName>RCW_SubMachinegun_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_GeneralPurposeMachineGun_Bond">
+                                <defName>RCW_GeneralPurposeMachineGun_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Bolt_Bond">
+                                <defName>RCW_Bolt_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Pallet_Bond">
+                                <defName>RCW_Pallet_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Bullet_Pistol_Bond">
+                                <defName>RCW_Bullet_Pistol_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Shell_Bond">
+                                <defName>RCW_Shell_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Bullet_SMG_Bond">
+                                <defName>RCW_Bullet_SMG_Bond</defName>
+                            </ThingDef>
+                            <ThingDef ParentName="RCW_Bullet_LMG_Bond">
+                                <defName>RCW_Bullet_LMG_Bond</defName>
+                            </ThingDef>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
